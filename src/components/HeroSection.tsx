@@ -15,7 +15,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-center">
           {/* Content */}
           <div className="text-white animate-fade-in-up">
             {/* Badge */}
@@ -87,7 +87,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in lg:animate-float" style={{ transform: 'scale(3)', transformOrigin: 'center' }}>
+          <div className="relative animate-scale-in lg:animate-float" style={{ transform: 'scale(2.5)', transformOrigin: 'center', width: '150%', marginLeft: '-25%' }}>
             <div className="relative">
               <img
                 src={heroImage}
