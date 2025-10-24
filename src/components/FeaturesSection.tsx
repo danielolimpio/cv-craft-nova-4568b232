@@ -68,7 +68,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Main Feature Highlight */}
-        <div className="card-premium mb-16 animate-scale-in">
+        <div className="bg-accent/10 border border-accent/20 rounded-2xl shadow-xl p-8 mb-16 animate-scale-in">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
