@@ -2,55 +2,51 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Eye, Download, Sparkles, Star, Zap } from "lucide-react";
 import templatesImage from "@/assets/templates-showcase.jpg";
-
 const TemplatesSection = () => {
-  const templates = [
-    {
-      name: "Harvard Executive",
-      category: "Premium",
-      rating: 4.9,
-      downloads: "15.2k",
-      features: ["ATS Otimizado", "Design Executivo", "2 Páginas"],
-      color: "from-blue-600 to-purple-600",
-      popular: true
-    },
-    {
-      name: "Stanford Tech",
-      category: "Tecnologia",
-      rating: 4.8,
-      downloads: "12.8k",
-      features: ["Clean Design", "Tech Focus", "1 Página"],
-      color: "from-green-600 to-teal-600",
-      popular: false
-    },
-    {
-      name: "McKinsey Consulting",
-      category: "Consultoria",
-      rating: 4.9,
-      downloads: "18.5k",
-      features: ["Ultra Clean", "Consultoria", "1-2 Páginas"],
-      color: "from-purple-600 to-pink-600",
-      popular: true
-    },
-    {
-      name: "Goldman Finance",
-      category: "Financeiro",
-      rating: 4.7,
-      downloads: "9.3k",
-      features: ["Conservador", "Elegante", "1 Página"],
-      color: "from-indigo-600 to-blue-600",
-      popular: false
-    }
-  ];
-
-  return (
-    <section id="templates" className="py-24 bg-muted/30">
+  const templates = [{
+    name: "Harvard Executive",
+    category: "Premium",
+    rating: 4.9,
+    downloads: "15.2k",
+    features: ["ATS Otimizado", "Design Executivo", "2 Páginas"],
+    color: "from-blue-600 to-purple-600",
+    popular: true
+  }, {
+    name: "Stanford Tech",
+    category: "Tecnologia",
+    rating: 4.8,
+    downloads: "12.8k",
+    features: ["Clean Design", "Tech Focus", "1 Página"],
+    color: "from-green-600 to-teal-600",
+    popular: false
+  }, {
+    name: "McKinsey Consulting",
+    category: "Consultoria",
+    rating: 4.9,
+    downloads: "18.5k",
+    features: ["Ultra Clean", "Consultoria", "1-2 Páginas"],
+    color: "from-purple-600 to-pink-600",
+    popular: true
+  }, {
+    name: "Goldman Finance",
+    category: "Financeiro",
+    rating: 4.7,
+    downloads: "9.3k",
+    features: ["Conservador", "Elegante", "1 Página"],
+    color: "from-indigo-600 to-blue-600",
+    popular: false
+  }];
+  return <section id="templates" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center space-x-2 bg-secondary/10 rounded-full px-4 py-2 mb-6">
-            <Star className="w-4 h-4" style={{ color: '#01F0FF' }} />
-            <span className="font-semibold" style={{ color: '#01F0FF' }}>Templates Premiados</span>
+            <Star className="w-4 h-4" style={{
+            color: '#01F0FF'
+          }} />
+            <span className="font-semibold" style={{
+            color: '#01F0FF'
+          }}>Templates Premiados</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -64,11 +60,13 @@ const TemplatesSection = () => {
         </div>
 
         {/* Featured Templates Showcase */}
-        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{ backgroundColor: '#434343' }}>
+        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{
+        backgroundColor: '#434343'
+      }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 gradient-accent rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 gradient-accent rounded-xl flex items-center justify-center bg-cyan-400">
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -84,17 +82,26 @@ const TemplatesSection = () => {
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {[
-                  { label: "Templates Disponíveis", value: "50+" },
-                  { label: "Aprovação ATS", value: "100%" },
-                  { label: "Áreas Cobertas", value: "25+" },
-                  { label: "Atualizações", value: "Mensais" }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center p-4 gradient-card rounded-lg">
-                    <div className="text-2xl font-bold mb-1" style={{ color: '#323B4C' }}>{stat.value}</div>
-                    <div className="text-sm" style={{ color: '#323B4C' }}>{stat.label}</div>
-                  </div>
-                ))}
+                {[{
+                label: "Templates Disponíveis",
+                value: "50+"
+              }, {
+                label: "Aprovação ATS",
+                value: "100%"
+              }, {
+                label: "Áreas Cobertas",
+                value: "25+"
+              }, {
+                label: "Atualizações",
+                value: "Mensais"
+              }].map((stat, index) => <div key={index} className="text-center p-4 gradient-card rounded-lg">
+                    <div className="text-2xl font-bold mb-1" style={{
+                  color: '#323B4C'
+                }}>{stat.value}</div>
+                    <div className="text-sm" style={{
+                  color: '#323B4C'
+                }}>{stat.label}</div>
+                  </div>)}
               </div>
               
               <Button className="btn-hero">
@@ -104,11 +111,7 @@ const TemplatesSection = () => {
             </div>
             
             <div className="relative">
-              <img
-                src={templatesImage}
-                alt="Showcase de templates profissionais"
-                className="w-full h-auto rounded-xl shadow-2xl"
-              />
+              <img src={templatesImage} alt="Showcase de templates profissionais" className="w-full h-auto rounded-xl shadow-2xl" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-xl" />
               
               {/* Floating badges */}
@@ -124,20 +127,15 @@ const TemplatesSection = () => {
 
         {/* Templates Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {templates.map((template, index) => (
-            <div
-              key={index}
-              className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {template.popular && (
-                <div className="absolute top-4 right-4 z-10">
+          {templates.map((template, index) => <div key={index} className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden" style={{
+          animationDelay: `${index * 100}ms`
+        }}>
+              {template.popular && <div className="absolute top-4 right-4 z-10">
                   <Badge className="bg-secondary text-secondary-foreground font-semibold">
                     <Zap className="w-3 h-3 mr-1" />
                     Popular
                   </Badge>
-                </div>
-              )}
+                </div>}
               
               {/* Template Preview */}
               <div className={`h-48 rounded-lg mb-4 bg-gradient-to-br ${template.color} flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
@@ -163,7 +161,9 @@ const TemplatesSection = () => {
                     {template.name}
                   </h3>
                   <div className="flex items-center space-x-1">
-                    <Star className="w-4 h-4 fill-current" style={{ color: '#01F0FF' }} />
+                    <Star className="w-4 h-4 fill-current" style={{
+                  color: '#01F0FF'
+                }} />
                     <span className="text-sm font-semibold">{template.rating}</span>
                   </div>
                 </div>
@@ -176,15 +176,12 @@ const TemplatesSection = () => {
                 </div>
                 
                 <div className="flex flex-wrap gap-1">
-                  {template.features.map((feature, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-xs">
+                  {template.features.map((feature, idx) => <Badge key={idx} variant="secondary" className="text-xs">
                       {feature}
-                    </Badge>
-                  ))}
+                    </Badge>)}
                 </div>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* CTA */}
@@ -198,8 +195,6 @@ const TemplatesSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TemplatesSection;

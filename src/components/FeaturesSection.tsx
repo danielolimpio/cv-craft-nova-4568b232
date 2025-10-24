@@ -68,9 +68,9 @@ const FeaturesSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{
+                <div style={{
                 background: 'rgba(0, 0, 0, 0.2)'
-              }}>
+              }} className="w-12 h-12 rounded-xl flex items-center justify-center bg-cyan-400">
                   <Brain className="w-6 h-6 text-white" />
                 </div>
                 <div>
