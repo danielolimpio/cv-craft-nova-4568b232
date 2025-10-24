@@ -2,7 +2,7 @@ import { FileText, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram }
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-footer-background text-footer-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
             </div>
             
-            <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-lg">
+            <p className="text-footer-foreground/80 leading-relaxed mb-6 max-w-lg">
               A plataforma mais avançada do Brasil para criação de currículos profissionais. 
               Utilizamos inteligência artificial para garantir que seu currículo se destaque 
               e seja aprovado pelas melhores empresas.
@@ -28,7 +28,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300"
+                  className="w-10 h-10 bg-footer-foreground/10 rounded-lg flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                 >
                   <Social className="w-5 h-5" />
                 </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-primary-foreground/80 hover:text-secondary transition-colors duration-300"
+                    className="text-footer-foreground/80 hover:text-accent transition-colors duration-300"
                   >
                     {link}
                   </a>
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-primary-foreground/80 hover:text-secondary transition-colors duration-300"
+                    className="text-footer-foreground/80 hover:text-accent transition-colors duration-300"
                   >
                     {link}
                   </a>
@@ -85,15 +85,15 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-primary-foreground/80">
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">contato@criarcurriculogratis.com</span>
               </div>
-              <div className="flex items-center space-x-2 text-primary-foreground/80">
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">(11) 99999-9999</span>
               </div>
-              <div className="flex items-center space-x-2 text-primary-foreground/80">
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">São Paulo, SP - Brasil</span>
               </div>
@@ -102,20 +102,20 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="py-8 border-t border-primary-foreground/10">
+        <div className="py-8 border-t border-footer-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-primary-foreground/60 text-sm">
+            <div className="text-footer-foreground/60 text-sm">
               © 2024 CriarCurriculoGratis.com. Todos os direitos reservados.
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-primary-foreground/60">
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+            <div className="flex items-center space-x-6 text-sm text-footer-foreground/60">
+              <a href="#" className="hover:text-accent transition-colors duration-300">
                 Política de Privacidade
               </a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+              <a href="#" className="hover:text-accent transition-colors duration-300">
                 Termos de Uso
               </a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">
+              <a href="#" className="hover:text-accent transition-colors duration-300">
                 LGPD
               </a>
             </div>
