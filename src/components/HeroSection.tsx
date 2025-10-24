@@ -5,15 +5,6 @@ import heroImage from "@/assets/hero-curriculos.png";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 50% 50%, hsl(var(--secondary)) 0%, transparent 50%)`,
-          backgroundSize: '100px 100px',
-          backgroundPosition: '0 0, 50px 50px'
-        }} />
-      </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-center">
           {/* Content */}
