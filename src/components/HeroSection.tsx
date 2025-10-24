@@ -87,7 +87,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in lg:animate-float lg:scale-150">
+          <div className="relative animate-scale-in lg:animate-float" style={{ transform: 'scale(1.8)', transformOrigin: 'center' }}>
             <div className="relative">
               <img
                 src={heroImage}
@@ -96,21 +96,21 @@ const HeroSection = () => {
                 loading="eager"
               />
               {/* Floating Elements */}
-              <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-sm border border-white/5 rounded-xl p-4 glass-effect animate-float">
+              <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float">
                 <div className="flex items-center space-x-2 text-white">
-                  <TrendingUp className="w-5 h-5 text-success" />
+                  <TrendingUp className="w-4 h-4 text-success" />
                   <div>
-                    <div className="text-sm font-semibold">Score de Qualidade</div>
-                    <div className="text-2xl font-bold text-success">98%</div>
+                    <div className="text-xs font-semibold">Score de Qualidade</div>
+                    <div className="text-xl font-bold text-success">98%</div>
                   </div>
                 </div>
               </div>
               
-              <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-sm border border-white/5 rounded-xl p-4 glass-effect animate-float" style={{ animationDelay: '2s' }}>
+              <div className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{ animationDelay: '2s' }}>
                 <div className="flex items-center space-x-2 text-white">
-                  <CheckCircle className="w-5 h-5 text-secondary" />
+                  <CheckCircle className="w-4 h-4 text-secondary" />
                   <div>
-                    <div className="text-sm font-semibold">ATS Compatível</div>
+                    <div className="text-xs font-semibold">ATS Compatível</div>
                     <div className="text-lg font-bold text-secondary">100%</div>
                   </div>
                 </div>
