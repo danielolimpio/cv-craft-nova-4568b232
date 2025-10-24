@@ -65,7 +65,7 @@ const FeaturesSection = () => {
         <div style={{
         backgroundColor: '#01F0FF'
       }} className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in bg-neutral-700">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center bg-neutral-700">
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <div style={{
