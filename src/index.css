@@ -195,8 +195,7 @@
 
   /* Professional Gradients */
   .gradient-hero {
-    background: linear-gradient(135deg, rgb(0, 58, 96) 0%, rgb(0, 42, 69) 100%), 
-                url('/src/assets/hero-background.jpg');
+    background: url('/src/assets/hero-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
