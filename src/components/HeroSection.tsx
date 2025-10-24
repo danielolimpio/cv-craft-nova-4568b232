@@ -87,7 +87,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in lg:animate-float" style={{ transform: 'scale(2.5)', transformOrigin: 'center', width: '150%', marginLeft: '-25%' }}>
+          <div className="relative animate-scale-in lg:animate-float" style={{ transform: 'scale(2.2)', transformOrigin: 'center', width: '130%', marginLeft: '-15%' }}>
             <div className="relative">
               <img
                 src={heroImage}
