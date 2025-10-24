@@ -96,7 +96,7 @@ const HeroSection = () => {
                 loading="eager"
               />
               {/* Floating Elements */}
-              <div className="absolute top-0 right-0 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float">
+              <div className="absolute top-12 left-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float">
                 <div className="flex items-center space-x-2 text-white">
                   <TrendingUp className="w-4 h-4 text-success" />
                   <div>
@@ -106,7 +106,7 @@ const HeroSection = () => {
                 </div>
               </div>
               
-              <div className="absolute bottom-0 left-0 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{ animationDelay: '2s' }}>
+              <div className="absolute bottom-12 right-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{ animationDelay: '2s' }}>
                 <div className="flex items-center space-x-2 text-white">
                   <CheckCircle className="w-4 h-4 text-secondary" />
                   <div>
