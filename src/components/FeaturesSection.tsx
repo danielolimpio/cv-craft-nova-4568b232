@@ -95,7 +95,7 @@ const FeaturesSection = () => {
                   "Score de compatibilidade em tempo real"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
+                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#035D54' }} />
                     <span className="text-white font-medium">{item}</span>
                   </div>
                 ))}
@@ -123,7 +123,7 @@ const FeaturesSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className={`w-14 h-14 ${feature.bgColor} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className={`w-7 h-7 ${feature.color}`} />
+                <feature.icon className="w-7 h-7" style={{ color: '#01F0FF' }} />
               </div>
               
               <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">

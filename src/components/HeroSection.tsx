@@ -89,10 +89,10 @@ const HeroSection = () => {
               {/* Floating Elements */}
               <div className="absolute top-12 left-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float">
                 <div className="flex items-center space-x-2 text-white">
-                  <TrendingUp className="w-4 h-4 text-success" />
+                  <TrendingUp className="w-4 h-4" style={{ color: '#01F0FF' }} />
                   <div>
                     <div className="text-xs font-semibold">Score de Qualidade</div>
-                    <div className="text-xl font-bold text-success">98%</div>
+                    <div className="text-xl font-bold" style={{ color: '#01F0FF' }}>98%</div>
                   </div>
                 </div>
               </div>

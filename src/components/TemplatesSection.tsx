@@ -91,8 +91,8 @@ const TemplatesSection = () => {
                   { label: "Atualizações", value: "Mensais" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 gradient-card rounded-lg">
-                    <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-                    <div className="text-sm text-white/70">{stat.label}</div>
+                    <div className="text-2xl font-bold mb-1" style={{ color: '#323B4C' }}>{stat.value}</div>
+                    <div className="text-sm" style={{ color: '#323B4C' }}>{stat.label}</div>
                   </div>
                 ))}
               </div>
