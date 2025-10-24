@@ -105,8 +105,9 @@ const FeaturesSection = () => {
             <div className="relative">
               <img
                 src={aiAnalysisIcon}
-                alt="IA analisando currículo"
+                alt="Modelo de currículo profissional Prime"
                 className="w-full h-auto rounded-xl shadow-lg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-xl" />
             </div>
