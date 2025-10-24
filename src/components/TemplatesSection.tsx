@@ -44,9 +44,9 @@ const TemplatesSection = () => {
             <Star className="w-4 h-4" style={{
             color: '#01F0FF'
           }} />
-            <span className="font-semibold" style={{
+            <span style={{
             color: '#01F0FF'
-          }}>Templates Premiados</span>
+          }} className="font-semibold text-emerald-600">Templates Premiados</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -186,7 +186,7 @@ const TemplatesSection = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-in-up">
-          <Button size="lg" className="btn-hero text-lg px-8 py-4">
+          <Button size="lg" className="btn-hero text-lg px-8 py-4 bg-emerald-700 hover:bg-emerald-600">
             <Sparkles className="w-5 h-5 mr-2" />
             Começar com Template Premium
           </Button>
