@@ -64,7 +64,7 @@ const TemplatesSection = () => {
         </div>
 
         {/* Featured Templates Showcase */}
-        <div className="bg-accent/10 border border-accent/20 rounded-2xl shadow-xl p-8 mb-16 animate-scale-in">
+        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{ backgroundColor: '#434343' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
@@ -72,12 +72,12 @@ const TemplatesSection = () => {
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Templates Inteligentes</h3>
-                  <p className="text-muted-foreground">Adaptação automática por área</p>
+                  <h3 className="text-2xl font-bold text-white">Templates Inteligentes</h3>
+                  <p className="text-white/70">Adaptação automática por área</p>
                 </div>
               </div>
               
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-lg text-white/80 mb-6 leading-relaxed">
                 Nossos templates não são apenas bonitos - eles são inteligentes. Nossa IA adapta 
                 automaticamente o layout, cores e estrutura baseado na sua área profissional e 
                 nível de experiência.
@@ -91,8 +91,8 @@ const TemplatesSection = () => {
                   { label: "Atualizações", value: "Mensais" }
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 gradient-card rounded-lg">
-                    <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
+                    <div className="text-sm text-white/70">{stat.label}</div>
                   </div>
                 ))}
               </div>

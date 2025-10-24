@@ -68,7 +68,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Main Feature Highlight */}
-        <div className="bg-accent/10 border border-accent/20 rounded-2xl shadow-xl p-8 mb-16 animate-scale-in">
+        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{ backgroundColor: '#434343' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
@@ -76,12 +76,12 @@ const FeaturesSection = () => {
                   <Brain className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">IA Especializada em RH</h3>
-                  <p className="text-muted-foreground">Powered by GPT-4 e dados exclusivos</p>
+                  <h3 className="text-2xl font-bold text-white">IA Especializada em RH</h3>
+                  <p className="text-white/70">Powered by GPT-4 e dados exclusivos</p>
                 </div>
               </div>
               
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-lg text-white/80 mb-6 leading-relaxed">
                 Nossa IA foi treinada com mais de 100.000 currículos aprovados por empresas como Google, 
                 Microsoft, McKinsey e outras líderes de mercado. Ela entende exatamente o que os 
                 recrutadores procuram.
@@ -96,7 +96,7 @@ const FeaturesSection = () => {
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 rounded-full bg-primary" />
-                    <span className="text-foreground font-medium">{item}</span>
+                    <span className="text-white font-medium">{item}</span>
                   </div>
                 ))}
               </div>
