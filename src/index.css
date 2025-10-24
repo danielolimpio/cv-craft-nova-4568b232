@@ -195,7 +195,11 @@
 
   /* Professional Gradients */
   .gradient-hero {
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, rgba(0, 58, 96, 0.95) 0%, rgba(0, 42, 69, 0.95) 100%), 
+                url('/src/assets/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .gradient-card {

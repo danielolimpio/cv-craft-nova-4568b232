@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Play, CheckCircle, TrendingUp, Award } from "lucide-react";
-import heroImage from "@/assets/hero-professional.jpg";
+import heroImage from "@/assets/hero-curriculos.png";
 
 const HeroSection = () => {
   return (
@@ -91,8 +91,9 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src={heroImage}
-                alt="Profissional criando currículo com IA"
+                alt="Templates de currículos profissionais"
                 className="w-full h-auto rounded-2xl shadow-2xl"
+                loading="eager"
               />
               {/* Floating Elements */}
               <div className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 glass-effect animate-float">
