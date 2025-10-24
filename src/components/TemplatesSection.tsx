@@ -49,8 +49,8 @@ const TemplatesSection = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center space-x-2 bg-secondary/10 rounded-full px-4 py-2 mb-6">
-            <Star className="w-4 h-4 text-secondary" />
-            <span className="text-secondary font-semibold">Templates Premiados</span>
+            <Star className="w-4 h-4" style={{ color: '#01F0FF' }} />
+            <span className="font-semibold" style={{ color: '#01F0FF' }}>Templates Premiados</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -163,7 +163,7 @@ const TemplatesSection = () => {
                     {template.name}
                   </h3>
                   <div className="flex items-center space-x-1">
-                    <Star className="w-4 h-4 text-secondary fill-current" />
+                    <Star className="w-4 h-4 fill-current" style={{ color: '#01F0FF' }} />
                     <span className="text-sm font-semibold">{template.rating}</span>
                   </div>
                 </div>

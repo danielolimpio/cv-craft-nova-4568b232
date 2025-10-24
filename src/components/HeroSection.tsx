@@ -11,7 +11,7 @@ const HeroSection = () => {
           <div className="text-white animate-fade-in-up">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 glass-effect">
-              <Award className="w-4 h-4 text-secondary" />
+              <Award className="w-4 h-4" style={{ color: '#01F0FF' }} />
               <span className="text-sm font-medium">Nível Harvard de Qualidade</span>
             </div>
 
@@ -37,8 +37,8 @@ const HeroSection = () => {
                 { icon: Sparkles, text: "Compatibilidade ATS garantida" }
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3 animate-slide-in-right" style={{ animationDelay: `${index * 100}ms` }}>
-                  <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <feature.icon className="w-3 h-3 text-secondary" />
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(1, 240, 255, 0.2)' }}>
+                    <feature.icon className="w-3 h-3" style={{ color: '#01F0FF' }} />
                   </div>
                   <span className="text-white/90 font-medium">{feature.text}</span>
                 </div>
@@ -99,10 +99,10 @@ const HeroSection = () => {
               
               <div className="absolute bottom-12 right-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{ animationDelay: '2s' }}>
                 <div className="flex items-center space-x-2 text-white">
-                  <CheckCircle className="w-4 h-4 text-secondary" />
+                  <CheckCircle className="w-4 h-4" style={{ color: '#01F0FF' }} />
                   <div>
                     <div className="text-xs font-semibold">ATS Compatível</div>
-                    <div className="text-lg font-bold text-secondary">100%</div>
+                    <div className="text-lg font-bold" style={{ color: '#01F0FF' }}>100%</div>
                   </div>
                 </div>
               </div>

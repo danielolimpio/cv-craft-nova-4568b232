@@ -53,8 +53,8 @@ const FeaturesSection = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-6">
-            <Zap className="w-4 h-4 text-primary" />
-            <span className="text-primary font-semibold">Ferramentas Revolucionárias</span>
+            <Zap className="w-4 h-4" style={{ color: '#01F0FF' }} />
+            <span className="font-semibold" style={{ color: '#01F0FF' }}>Ferramentas Revolucionárias</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -68,11 +68,11 @@ const FeaturesSection = () => {
         </div>
 
         {/* Main Feature Highlight */}
-        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{ backgroundColor: '#434343' }}>
+        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{ backgroundColor: '#01F0FF' }}>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 gradient-premium rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(0, 0, 0, 0.2)' }}>
                   <Brain className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -95,7 +95,7 @@ const FeaturesSection = () => {
                   "Score de compatibilidade em tempo real"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#035D54' }} />
+                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#ffffff' }} />
                     <span className="text-white font-medium">{item}</span>
                   </div>
                 ))}
@@ -150,9 +150,9 @@ const FeaturesSection = () => {
           ].map((stat, index) => (
             <div key={index} className="text-center group">
               <div className="w-16 h-16 gradient-card rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <stat.icon className="w-8 h-8 text-primary" />
+                <stat.icon className="w-8 h-8" style={{ color: '#01F0FF' }} />
               </div>
-              <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold mb-2" style={{ color: '#01F0FF' }}>{stat.value}</div>
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
           ))}
