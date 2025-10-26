@@ -25,6 +25,9 @@ const Header = () => {
             <a href="#inicio" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Início
             </a>
+            <Link to="/sobre" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
+              Sobre
+            </Link>
             <Link to="/como-funciona" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Como Funciona
             </Link>
@@ -34,9 +37,6 @@ const Header = () => {
             <a href="#ferramentas" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Ferramentas IA
             </a>
-            <a href="#sobre" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
-              Sobre
-            </a>
           </nav>
 
           {/* Desktop CTA */}
@@ -44,10 +44,12 @@ const Header = () => {
             <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               Entrar
             </Button>
-            <Button className="btn-hero">
-              <Sparkles className="w-4 h-4 mr-2" />
-              Criar Currículo Grátis
-            </Button>
+            <Link to="/criar-curriculo">
+              <Button className="btn-hero">
+                <Sparkles className="w-4 h-4 mr-2" />
+                Criar Currículo Grátis
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,6 +73,13 @@ const Header = () => {
                 Início
               </a>
               <Link
+                to="/sobre"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
+              >
+                Sobre
+              </Link>
+              <Link
                 to="/como-funciona"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
@@ -91,21 +100,16 @@ const Header = () => {
               >
                 Ferramentas IA
               </a>
-              <a
-                href="#sobre"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
-              >
-                Sobre
-              </a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   Entrar
                 </Button>
-                <Button className="btn-hero">
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  Criar Currículo Grátis
-                </Button>
+                <Link to="/criar-curriculo">
+                  <Button className="btn-hero">
+                    <Sparkles className="w-4 h-4 mr-2" />
+                    Criar Currículo Grátis
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>

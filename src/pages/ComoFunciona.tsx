@@ -1,126 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, Printer, Trash2, ArrowLeft } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowLeft, Palette, Upload, Type, FileText, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import CurriculumForm from "@/components/curriculum/CurriculumForm";
-import CurriculumPreview from "@/components/curriculum/CurriculumPreview";
-import { CurriculumData } from "@/types/curriculum";
-import { useToast } from "@/hooks/use-toast";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 
 const ComoFunciona = () => {
-  const { toast } = useToast();
-  
-  const [curriculumData, setCurriculumData] = useState<CurriculumData>({
-    personalData: {
-      name: "",
-      position: "",
-      summary: "",
-    },
-    contact: {
-      email: "",
-      phone: "",
-      linkedin: "",
-      github: "",
-      website: "",
-    },
-    address: {
-      street: "",
-      number: "",
-      neighborhood: "",
-      city: "",
-      state: "",
-      zipCode: "",
-    },
-    education: [],
-    experience: [],
-    photo: null,
-    photoStyle: "circular",
-    visualSettings: {
-      font: "Arial",
-      fontSize: "medium",
-      textColor: "#000000",
-      backgroundColor: "#ffffff",
-      lineStyle: "thin",
-      spacing: "normal",
-      alignment: "left",
-    },
-  });
-
-  const handleDownloadPDF = async () => {
-    const element = document.getElementById("curriculum-preview");
-    if (!element) return;
-
-    try {
-      toast({
-        title: "Gerando PDF...",
-        description: "Aguarde enquanto preparamos seu currículo.",
-      });
-
-      const canvas = await html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-      });
-
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF({
-        orientation: "portrait",
-        unit: "mm",
-        format: "a4",
-      });
-
-      const imgWidth = 210; // A4 width in mm
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-      pdf.save("curriculo.pdf");
-
-      toast({
-        title: "PDF gerado com sucesso!",
-        description: "Seu currículo foi baixado.",
-      });
-    } catch (error) {
-      toast({
-        title: "Erro ao gerar PDF",
-        description: "Tente novamente mais tarde.",
-        variant: "destructive",
-      });
-    }
-  };
-
-  const handlePrint = () => {
-    window.print();
-  };
-
-  const handleClearAll = () => {
-    if (window.confirm("Tem certeza que deseja limpar todos os dados?")) {
-      setCurriculumData({
-        personalData: { name: "", position: "", summary: "" },
-        contact: { email: "", phone: "", linkedin: "", github: "", website: "" },
-        address: { street: "", number: "", neighborhood: "", city: "", state: "", zipCode: "" },
-        education: [],
-        experience: [],
-        photo: null,
-        photoStyle: "circular",
-        visualSettings: {
-          font: "Arial",
-          fontSize: "medium",
-          textColor: "#000000",
-          backgroundColor: "#ffffff",
-          lineStyle: "thin",
-          spacing: "normal",
-          alignment: "left",
-        },
-      });
-      toast({
-        title: "Dados limpos!",
-        description: "Todos os campos foram resetados.",
-      });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -131,39 +14,193 @@ const ComoFunciona = () => {
               <ArrowLeft className="w-5 h-5" />
               <span className="font-semibold">Voltar</span>
             </Link>
-            <h1 className="text-2xl font-bold">Ver Como Funciona</h1>
-            <div className="flex gap-2">
-              <Button onClick={handlePrint} variant="outline" size="sm">
-                <Printer className="w-4 h-4 mr-2" />
-                Imprimir
-              </Button>
-              <Button onClick={handleDownloadPDF} size="sm" style={{ color: "#01F0FF", borderColor: "#01F0FF" }} variant="outline">
-                <Download className="w-4 h-4 mr-2" style={{ color: "#01F0FF" }} />
-                Baixar PDF
-              </Button>
-              <Button onClick={handleClearAll} variant="destructive" size="sm">
-                <Trash2 className="w-4 h-4 mr-2" />
-                Limpar
-              </Button>
-            </div>
+            <h1 className="text-2xl font-bold">Como Funciona</h1>
+            <div className="w-24"></div>
           </div>
         </div>
       </header>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Form Section */}
-          <div className="order-2 lg:order-1">
-            <CurriculumForm data={curriculumData} onChange={setCurriculumData} />
-          </div>
+      {/* Hero Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Criar Seu Currículo Profissional Nunca Foi Tão Fácil
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Nosso sistema intuitivo permite que você crie um currículo profissional em minutos, 
+            totalmente grátis e com personalização completa.
+          </p>
+          <Link to="/criar-curriculo">
+            <Button className="btn-hero" size="lg">
+              <Sparkles className="w-5 h-5 mr-2" />
+              Começar Agora Grátis
+            </Button>
+          </Link>
+        </div>
+      </section>
 
-          {/* Preview Section */}
-          <div className="order-1 lg:order-2 lg:sticky lg:top-8 h-fit">
-            <CurriculumPreview data={curriculumData} />
+      {/* Features Grid */}
+      <section className="py-16 px-4 bg-accent/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <FileText className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Preencha Seus Dados</CardTitle>
+                <CardDescription>
+                  Digite suas informações pessoais, experiências profissionais, formação acadêmica 
+                  e habilidades de forma simples e organizada.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <Upload className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Adicione Sua Foto</CardTitle>
+                <CardDescription>
+                  Faça upload de uma foto profissional e escolha entre diferentes estilos de 
+                  exibição: circular, quadrada ou sem foto.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <Type className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Personalize o Texto</CardTitle>
+                <CardDescription>
+                  Escolha entre diversas fontes profissionais (Arial, Georgia, Roboto, etc.) e 
+                  ajuste o tamanho do texto para criar o visual perfeito.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <Palette className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Ajuste as Cores</CardTitle>
+                <CardDescription>
+                  Personalize as cores do texto e do fundo do currículo para criar um documento 
+                  que reflita sua personalidade profissional.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <Sparkles className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Visualização em Tempo Real</CardTitle>
+                <CardDescription>
+                  Veja todas as alterações instantaneamente no preview. O que você vê é exatamente 
+                  o que será gerado no PDF final.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
+                  <Download className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                </div>
+                <CardTitle>Baixe em PDF</CardTitle>
+                <CardDescription>
+                  Quando estiver satisfeito com o resultado, baixe seu currículo profissional em 
+                  formato PDF de alta qualidade, pronto para enviar.
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* How to Use Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h3 className="text-3xl font-bold text-center mb-12">Passo a Passo</h3>
+          
+          <div className="space-y-8">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+                1
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">Clique em "Criar Currículo Grátis"</h4>
+                <p className="text-muted-foreground">
+                  Comece clicando no botão azul em qualquer página do site. Você será direcionado 
+                  para o editor de currículos.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+                2
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">Preencha Suas Informações</h4>
+                <p className="text-muted-foreground">
+                  Complete os campos com seus dados pessoais, experiências profissionais, formação 
+                  acadêmica e informações de contato. Todos os campos são opcionais, preencha apenas 
+                  o que deseja incluir.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+                3
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">Personalize o Visual</h4>
+                <p className="text-muted-foreground">
+                  Use as opções de personalização para ajustar fontes, cores, espaçamento e 
+                  alinhamento. Experimente diferentes combinações até encontrar o estilo perfeito.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+                4
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">Baixe Seu Currículo</h4>
+                <p className="text-muted-foreground">
+                  Quando estiver satisfeito, clique no botão "Baixar PDF" para salvar seu currículo 
+                  profissional. Você também pode imprimir diretamente ou compartilhar online.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 px-4 bg-accent/20">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h3 className="text-3xl font-bold mb-4">Pronto Para Criar Seu Currículo?</h3>
+          <p className="text-xl text-muted-foreground mb-8">
+            É 100% grátis, sem cadastro necessário e você pode criar quantos currículos quiser!
+          </p>
+          <Link to="/criar-curriculo">
+            <Button className="btn-hero" size="lg">
+              <Sparkles className="w-5 h-5 mr-2" />
+              Criar Meu Currículo Grátis
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };
