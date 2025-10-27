@@ -3,38 +3,38 @@ import aiAnalysisIcon from "@/assets/ai-analysis-icon.jpg";
 const FeaturesSection = () => {
   const features = [{
     icon: Brain,
-    title: "IA Avançada para Conteúdo",
-    description: "Nossa inteligência artificial analisa milhares de currículos aprovados e sugere o conteúdo ideal para cada posição.",
+    title: "Editor Avançado",
+    description: "Plataforma completa com recursos profissionais para criar currículos impecáveis e personalizados.",
     color: "text-blue-500",
     bgColor: "bg-blue-50"
   }, {
     icon: Target,
-    title: "Otimização ATS Automática",
+    title: "Otimização ATS",
     description: "Garantimos 100% de compatibilidade com sistemas ATS das maiores empresas. Seu currículo sempre chegará no RH.",
     color: "text-green-500",
     bgColor: "bg-green-50"
   }, {
     icon: BarChart3,
-    title: "Score de Qualidade",
-    description: "Receba uma pontuação em tempo real do seu currículo e sugestões específicas para melhorar cada seção.",
+    title: "Personalização Completa",
+    description: "Controle total sobre cores, fontes, espaçamento e layout para criar um currículo único e profissional.",
     color: "text-purple-500",
     bgColor: "bg-purple-50"
   }, {
     icon: Sparkles,
-    title: "Templates Harvard Premium",
+    title: "Templates Premium",
     description: "Designs aprovados por consultores de RH das melhores universidades e empresas do mundo.",
     color: "text-secondary",
     bgColor: "bg-secondary/10"
   }, {
     icon: FileCheck,
-    title: "Análise de Palavras-Chave",
-    description: "Identificamos as palavras-chave mais importantes da sua área e sugerimos onde incluí-las estrategicamente.",
+    title: "Exportação em PDF",
+    description: "Baixe seu currículo em PDF de alta qualidade, pronto para enviar para empresas ou imprimir.",
     color: "text-indigo-500",
     bgColor: "bg-indigo-50"
   }, {
     icon: Shield,
     title: "Privacidade Total",
-    description: "Seus dados são protegidos com criptografia militar. Nunca compartilhamos suas informações com terceiros.",
+    description: "Seus dados nunca são armazenados em nossos servidores. Tudo fica apenas no seu navegador.",
     color: "text-red-500",
     bgColor: "bg-red-50"
   }];
@@ -44,51 +44,51 @@ const FeaturesSection = () => {
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-6">
             <Zap className="w-4 h-4" style={{
-            color: '#01F0FF'
+            color: '#006B3D'
           }} />
             <span className="font-semibold" style={{
-            color: '#01F0FF'
+            color: '#006B3D'
           }}>Ferramentas Revolucionárias</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Tecnologia de <span className="text-gradient-primary">Inteligência Artificial</span> Mais Avançada
+            Ferramentas <span className="text-gradient-primary">Profissionais</span> e Avançadas
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Desenvolvemos as ferramentas mais inovadoras do mercado para garantir que seu currículo 
+            Desenvolvemos as ferramentas mais completas do mercado para garantir que seu currículo 
             se destaque e seja aprovado pelas melhores empresas do Brasil e do mundo.
           </p>
         </div>
 
         {/* Main Feature Highlight */}
-        <div style={{
-        backgroundColor: '#01F0FF'
-      }} className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in bg-neutral-700">
-          <div className="grid lg:grid-cols-2 gap-12 items-center bg-neutral-700">
+        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{
+          backgroundColor: '#2C2C2C'
+        }}>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <div style={{
-                background: 'rgba(0, 0, 0, 0.2)'
-              }} className="w-12 h-12 rounded-xl flex items-center justify-center bg-cyan-400">
-                  <Brain className="w-6 h-6 text-white" />
+                background: 'rgba(0, 100, 61, 0.3)'
+              }} className="w-12 h-12 rounded-xl flex items-center justify-center">
+                  <Brain className="w-6 h-6" style={{ color: '#006B3D' }} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">IA Especializada em RH</h3>
-                  <p className="text-white/70">Powered by GPT-4 e dados exclusivos</p>
+                  <h3 className="text-2xl font-bold text-white">Editor Profissional Completo</h3>
+                  <p className="text-white/70">Recursos avançados e intuitivos</p>
                 </div>
               </div>
               
               <p className="text-lg text-white/80 mb-6 leading-relaxed">
-                Nossa IA foi treinada com mais de 100.000 currículos aprovados por empresas como Google, 
-                Microsoft, McKinsey e outras líderes de mercado. Ela entende exatamente o que os 
-                recrutadores procuram.
+                Nossa plataforma oferece ferramentas completas de edição e personalização, 
+                desenvolvidas com base nas melhores práticas de RH de empresas como Google, 
+                Microsoft, McKinsey e outras líderes de mercado.
               </p>
               
               <div className="space-y-4">
-                {["Análise semântica avançada do conteúdo", "Sugestões de melhoria personalizadas", "Otimização automática para ATS", "Score de compatibilidade em tempo real"].map((item, index) => <div key={index} className="flex items-center space-x-3">
+                {["Editor visual intuitivo e completo", "Personalização total de cores e fontes", "Compatibilidade garantida com ATS", "Exportação em PDF profissional"].map((item, index) => <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 rounded-full" style={{
-                  backgroundColor: '#ffffff'
+                  backgroundColor: '#006B3D'
                 }} />
                     <span className="text-white font-medium">{item}</span>
                   </div>)}
@@ -96,7 +96,7 @@ const FeaturesSection = () => {
             </div>
             
             <div className="relative">
-              <img src={aiAnalysisIcon} alt="Modelo de currículo profissional Prime" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
+              <img src={aiAnalysisIcon} alt="Editor de currículo profissional" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-xl" />
             </div>
           </div>
@@ -109,7 +109,7 @@ const FeaturesSection = () => {
         }}>
               <div className={`w-14 h-14 ${feature.bgColor} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <feature.icon className="w-7 h-7" style={{
-              color: '#01F0FF'
+              color: '#006B3D'
             }} />
               </div>
               
@@ -147,11 +147,11 @@ const FeaturesSection = () => {
         }].map((stat, index) => <div key={index} className="text-center group">
               <div className="w-16 h-16 gradient-card rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <stat.icon className="w-8 h-8" style={{
-              color: '#01F0FF'
+              color: '#006B3D'
             }} />
               </div>
               <div className="text-3xl font-bold mb-2" style={{
-            color: '#01F0FF'
+            color: '#006B3D'
           }}>{stat.value}</div>
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>)}

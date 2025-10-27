@@ -13,13 +13,13 @@ const Footer = () => {
                 <FileText className="w-6 h-6 text-secondary-foreground" />
               </div>
               <div className="text-xl font-bold">
-                CriarCurriculoGratis.com
+                FazerCurriculo.com
               </div>
             </div>
             
             <p className="text-footer-foreground/80 leading-relaxed mb-6 max-w-lg">
-              A plataforma mais avançada do Brasil para criação de currículos profissionais. 
-              Utilizamos inteligência artificial para garantir que seu currículo se destaque 
+              A plataforma mais completa do Brasil para criação de currículos profissionais. 
+              Ferramentas avançadas e gratuitas para garantir que seu currículo se destaque 
               e seja aprovado pelas melhores empresas.
             </p>
             
@@ -87,15 +87,18 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">contato@criarcurriculogratis.com</span>
+                <span className="text-sm">contato@fazercurriculo.com</span>
               </div>
               <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">(11) 99999-9999</span>
+                <span className="text-sm">(12) 98251-9116</span>
               </div>
               <div className="flex items-center space-x-2 text-footer-foreground/80">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">São Paulo, SP - Brasil</span>
+                <span className="text-sm">Av. Julia Freire, 1200 - Expedicionários</span>
+              </div>
+              <div className="flex items-center space-x-2 text-footer-foreground/80 ml-6">
+                <span className="text-sm">João Pessoa - PB - Brasil</span>
               </div>
             </div>
           </div>
@@ -105,7 +108,7 @@ const Footer = () => {
         <div className="py-8 border-t border-footer-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-footer-foreground/60 text-sm">
-              © 2024 CriarCurriculoGratis.com. Todos os direitos reservados.
+              © 2024 FazerCurriculo.com. Todos os direitos reservados.
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-footer-foreground/60">

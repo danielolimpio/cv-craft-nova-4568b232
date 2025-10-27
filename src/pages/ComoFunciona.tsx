@@ -1,31 +1,22 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Palette, Upload, Type, FileText, Download, Sparkles } from "lucide-react";
+import { Palette, Upload, Type, FileText, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ComoFunciona = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 text-foreground hover:opacity-80">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-semibold">Voltar</span>
-            </Link>
-            <h1 className="text-2xl font-bold">Como Funciona</h1>
-            <div className="w-24"></div>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-screen">
+      <Header />
 
       {/* Hero Section */}
+      <main className="pt-24">
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Criar Seu Currículo Profissional Nunca Foi Tão Fácil
-          </h2>
+          </h1>
           <p className="text-xl text-muted-foreground mb-8">
             Nosso sistema intuitivo permite que você crie um currículo profissional em minutos, 
             totalmente grátis e com personalização completa.
@@ -45,8 +36,8 @@ const ComoFunciona = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <FileText className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <FileText className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Preencha Seus Dados</CardTitle>
                 <CardDescription>
@@ -58,8 +49,8 @@ const ComoFunciona = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Upload className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Upload className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Adicione Sua Foto</CardTitle>
                 <CardDescription>
@@ -71,8 +62,8 @@ const ComoFunciona = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Type className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Type className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Personalize o Texto</CardTitle>
                 <CardDescription>
@@ -84,8 +75,8 @@ const ComoFunciona = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Palette className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Palette className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Ajuste as Cores</CardTitle>
                 <CardDescription>
@@ -97,8 +88,8 @@ const ComoFunciona = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Sparkles className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Sparkles className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Visualização em Tempo Real</CardTitle>
                 <CardDescription>
@@ -110,8 +101,8 @@ const ComoFunciona = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Download className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Download className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Baixe em PDF</CardTitle>
                 <CardDescription>
@@ -131,7 +122,7 @@ const ComoFunciona = () => {
           
           <div className="space-y-8">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#006B3D", color: "white" }}>
                 1
               </div>
               <div>
@@ -144,7 +135,7 @@ const ComoFunciona = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#006B3D", color: "white" }}>
                 2
               </div>
               <div>
@@ -158,7 +149,7 @@ const ComoFunciona = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#006B3D", color: "white" }}>
                 3
               </div>
               <div>
@@ -171,7 +162,7 @@ const ComoFunciona = () => {
             </div>
 
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#01F0FF", color: "white" }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg" style={{ backgroundColor: "#006B3D", color: "white" }}>
                 4
               </div>
               <div>
@@ -201,6 +192,9 @@ const ComoFunciona = () => {
           </Link>
         </div>
       </section>
+      </main>
+
+      <Footer />
     </div>
   );
 };

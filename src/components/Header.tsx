@@ -16,7 +16,7 @@ const Header = () => {
               <FileText className="w-6 h-6 text-white" />
             </div>
             <div className="text-xl font-bold text-gradient-primary">
-              CriarCurriculoGratis.com
+              FazerCurriculo.com
             </div>
           </div>
 

@@ -1,7 +1,8 @@
 import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Download, Printer, Trash2, ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Download, Printer, Trash2 } from "lucide-react";
 import CurriculumForm from "@/components/curriculum/CurriculumForm";
 import CurriculumPreview from "@/components/curriculum/CurriculumPreview";
 import { CurriculumData } from "@/types/curriculum";
@@ -9,7 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
-const ComoFunciona = () => {
+const CriarCurriculo = () => {
   const { toast } = useToast();
   
   const [curriculumData, setCurriculumData] = useState<CurriculumData>({
@@ -122,23 +123,21 @@ const ComoFunciona = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4">
+    <div className="min-h-screen">
+      <Header />
+      
+      {/* Toolbar */}
+      <div className="fixed top-16 left-0 right-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 text-foreground hover:opacity-80">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-semibold">Voltar</span>
-            </Link>
-            <h1 className="text-2xl font-bold">Ver Como Funciona</h1>
+            <h1 className="text-xl font-bold">Criar Meu Currículo</h1>
             <div className="flex gap-2">
               <Button onClick={handlePrint} variant="outline" size="sm">
                 <Printer className="w-4 h-4 mr-2" />
                 Imprimir
               </Button>
-              <Button onClick={handleDownloadPDF} size="sm" style={{ color: "#01F0FF", borderColor: "#01F0FF" }} variant="outline">
-                <Download className="w-4 h-4 mr-2" style={{ color: "#01F0FF" }} />
+              <Button onClick={handleDownloadPDF} size="sm" style={{ backgroundColor: "#006B3D", color: "white" }}>
+                <Download className="w-4 h-4 mr-2" />
                 Baixar PDF
               </Button>
               <Button onClick={handleClearAll} variant="destructive" size="sm">
@@ -148,24 +147,28 @@ const ComoFunciona = () => {
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Form Section */}
-          <div className="order-2 lg:order-1">
-            <CurriculumForm data={curriculumData} onChange={setCurriculumData} />
-          </div>
+      <main className="pt-32 pb-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Form Section */}
+            <div className="order-2 lg:order-1">
+              <CurriculumForm data={curriculumData} onChange={setCurriculumData} />
+            </div>
 
-          {/* Preview Section */}
-          <div className="order-1 lg:order-2 lg:sticky lg:top-8 h-fit">
-            <CurriculumPreview data={curriculumData} />
+            {/* Preview Section */}
+            <div className="order-1 lg:order-2 lg:sticky lg:top-32 h-fit">
+              <CurriculumPreview data={curriculumData} />
+            </div>
           </div>
         </div>
-      </div>
+      </main>
+
+      <Footer />
     </div>
   );
 };
 
-export default ComoFunciona;
+export default CriarCurriculo;

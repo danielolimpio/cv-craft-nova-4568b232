@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Sparkles, Play, CheckCircle, TrendingUp, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-curriculos.png";
+import profile1 from "@/assets/profile-1.jpg";
+import profile2 from "@/assets/profile-2.jpg";
+import profile3 from "@/assets/profile-3.jpg";
 const HeroSection = () => {
   return <section id="inicio" className="relative min-h-screen flex items-center gradient-hero overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -18,25 +21,25 @@ const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold leading-none mb-6">
-              Crie Seu <span className="text-cyan-400">Currículo</span> Profissional com{" "}
-              <span className="text-cyan-400">Inteligência Artificial</span>
+              Crie Seu <span className="text-cyan-400">Currículo</span> Profissional{" "}
+              <span className="text-cyan-400">Grátis</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed mb-8 max-w-2xl">
-              A plataforma mais avançada do Brasil para criação de currículos. 
-              Ferramentas de IA que analisam, otimizam e garantem que seu currículo 
-              passe pelos sistemas ATS das melhores empresas.
+              A plataforma mais completa do Brasil para criação de currículos profissionais. 
+              Ferramentas avançadas de edição e personalização que garantem que seu currículo 
+              se destaque e passe pelos sistemas ATS das melhores empresas.
             </p>
 
             {/* Features List */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               {[{
               icon: CheckCircle,
-              text: "IA que otimiza seu conteúdo"
+              text: "Editor completo e intuitivo"
             }, {
               icon: TrendingUp,
-              text: "Score de qualidade em tempo real"
+              text: "Personalização profissional"
             }, {
               icon: Award,
               text: "Templates aprovados por RH"
@@ -77,9 +80,9 @@ const HeroSection = () => {
             <div className="mt-8 flex items-center space-x-6 text-white/70">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-secondary/20 border-2 border-white/30" />
-                  <div className="w-8 h-8 rounded-full bg-secondary/20 border-2 border-white/30" />
-                  <div className="w-8 h-8 rounded-full bg-secondary/20 border-2 border-white/30" />
+                  <img src={profile1} alt="Usuário satisfeito" className="w-8 h-8 rounded-full border-2 border-white/30 object-cover" />
+                  <img src={profile2} alt="Usuário satisfeito" className="w-8 h-8 rounded-full border-2 border-white/30 object-cover" />
+                  <img src={profile3} alt="Usuário satisfeito" className="w-8 h-8 rounded-full border-2 border-white/30 object-cover" />
                 </div>
                 <span className="text-sm font-medium">+50.000 currículos criados</span>
               </div>

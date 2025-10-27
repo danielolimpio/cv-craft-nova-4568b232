@@ -1,31 +1,22 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Heart, Target, Users, Sparkles } from "lucide-react";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Heart, Target, Users, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Sobre = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 text-foreground hover:opacity-80">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-semibold">Voltar</span>
-            </Link>
-            <h1 className="text-2xl font-bold">Sobre Nós</h1>
-            <div className="w-24"></div>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-screen">
+      <Header />
 
       {/* Hero Section */}
+      <main className="pt-24">
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Nossa Missão: Democratizar o Acesso a Currículos Profissionais
-          </h2>
+          </h1>
           <p className="text-xl text-muted-foreground">
             Acreditamos que todos merecem ter acesso a ferramentas profissionais de qualidade, 
             independentemente de sua situação financeira.
@@ -39,8 +30,8 @@ const Sobre = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Target className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Target className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Nossa Visão</CardTitle>
                 <CardDescription>
@@ -53,8 +44,8 @@ const Sobre = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Heart className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Heart className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Nossos Valores</CardTitle>
                 <CardDescription>
@@ -66,8 +57,8 @@ const Sobre = () => {
 
             <Card>
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "#01F0FF20" }}>
-                  <Users className="w-6 h-6" style={{ color: "#01F0FF" }} />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(0, 107, 61, 0.1)" }}>
+                  <Users className="w-6 h-6" style={{ color: "#006B3D" }} />
                 </div>
                 <CardTitle>Nossa Comunidade</CardTitle>
                 <CardDescription>
@@ -85,11 +76,11 @@ const Sobre = () => {
         <div className="container mx-auto max-w-4xl">
           <h3 className="text-3xl font-bold text-center mb-8">Nossa História</h3>
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            <p className="mb-6">
-              O <strong>CriarCurriculoGratis.com</strong> nasceu da frustração de ver tantas pessoas 
-              talentosas sendo impedidas de progredir em suas carreiras simplesmente por não terem 
-              acesso a ferramentas profissionais de criação de currículos.
-            </p>
+              <p className="mb-6">
+                O <strong>FazerCurriculo.com</strong> nasceu da frustração de ver tantas pessoas 
+                talentosas sendo impedidas de progredir em suas carreiras simplesmente por não terem 
+                acesso a ferramentas profissionais de criação de currículos.
+              </p>
             <p className="mb-6">
               Percebemos que a maioria das plataformas cobrava valores elevados por recursos básicos, 
               ou oferecia versões gratuitas tão limitadas que não eram realmente úteis. Decidimos 
@@ -115,7 +106,7 @@ const Sobre = () => {
           <h3 className="text-3xl font-bold text-center mb-12">Por Que Nos Escolher?</h3>
           <div className="space-y-6">
             <div className="flex gap-4 items-start">
-              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#01F0FF" }}></div>
+              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">100% Gratuito Para Sempre</h4>
                 <p className="text-muted-foreground">
@@ -126,7 +117,7 @@ const Sobre = () => {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#01F0FF" }}></div>
+              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Sem Cadastro Necessário</h4>
                 <p className="text-muted-foreground">
@@ -137,7 +128,7 @@ const Sobre = () => {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#01F0FF" }}></div>
+              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Qualidade Profissional</h4>
                 <p className="text-muted-foreground">
@@ -148,7 +139,7 @@ const Sobre = () => {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#01F0FF" }}></div>
+              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Privacidade Garantida</h4>
                 <p className="text-muted-foreground">
@@ -159,7 +150,7 @@ const Sobre = () => {
             </div>
 
             <div className="flex gap-4 items-start">
-              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#01F0FF" }}></div>
+              <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Suporte Contínuo</h4>
                 <p className="text-muted-foreground">
@@ -187,6 +178,9 @@ const Sobre = () => {
           </Link>
         </div>
       </section>
+      </main>
+
+      <Footer />
     </div>
   );
 };
