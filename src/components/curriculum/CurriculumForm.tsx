@@ -318,6 +318,21 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:col-span-2">
+            <Label htmlFor="zipCode">CEP</Label>
+            <Input
+              id="zipCode"
+              value={data.address.zipCode}
+              onChange={(e) => handleCepChange(e.target.value)}
+              placeholder="00000-000"
+              maxLength={9}
+              disabled={loadingCep}
+            />
+            <p className="text-xs text-muted-foreground mt-1">
+              {loadingCep ? "Buscando endereço..." : "Digite o CEP para preencher automaticamente cidade, estado e bairro"}
+            </p>
+          </div>
+
+          <div className="md:col-span-2">
             <Label htmlFor="street">Rua</Label>
             <Input
               id="street"
@@ -378,21 +393,6 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
               placeholder="UF"
               maxLength={2}
             />
-          </div>
-
-          <div className="md:col-span-2">
-            <Label htmlFor="zipCode">CEP</Label>
-            <Input
-              id="zipCode"
-              value={data.address.zipCode}
-              onChange={(e) => handleCepChange(e.target.value)}
-              placeholder="00000-000"
-              maxLength={9}
-              disabled={loadingCep}
-            />
-            <p className="text-xs text-muted-foreground mt-1">
-              {loadingCep ? "Buscando endereço..." : "Digite o CEP para preencher automaticamente cidade, estado e bairro"}
-            </p>
           </div>
         </div>
       </Card>

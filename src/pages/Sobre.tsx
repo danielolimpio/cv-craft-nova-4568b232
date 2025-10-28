@@ -25,7 +25,7 @@ const Sobre = () => {
       </section>
 
       {/* Mission Cards */}
-      <section className="py-16 px-4 bg-accent/20">
+      <section className="py-16 px-4" style={{ backgroundColor: "#2C2C2C" }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
@@ -101,15 +101,15 @@ const Sobre = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 px-4 bg-accent/20">
+      <section className="py-16 px-4" style={{ backgroundColor: "#2C2C2C" }}>
         <div className="container mx-auto max-w-4xl">
-          <h3 className="text-3xl font-bold text-center mb-12">Por Que Nos Escolher?</h3>
+          <h3 className="text-3xl font-bold text-center mb-12 text-white">Por Que Nos Escolher?</h3>
           <div className="space-y-6">
             <div className="flex gap-4 items-start">
               <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
-                <h4 className="font-semibold text-lg mb-2">100% Gratuito Para Sempre</h4>
-                <p className="text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-2 text-white">100% Gratuito Para Sempre</h4>
+                <p className="text-white/80">
                   Sem taxas escondidas, sem planos premium obrigatórios, sem limites de uso. 
                   Tudo é realmente grátis.
                 </p>
@@ -119,8 +119,8 @@ const Sobre = () => {
             <div className="flex gap-4 items-start">
               <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
-                <h4 className="font-semibold text-lg mb-2">Sem Cadastro Necessário</h4>
-                <p className="text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-2 text-white">Sem Cadastro Necessário</h4>
+                <p className="text-white/80">
                   Você não precisa criar conta, fornecer email ou passar por processos burocráticos. 
                   É só acessar e criar.
                 </p>
@@ -130,8 +130,8 @@ const Sobre = () => {
             <div className="flex gap-4 items-start">
               <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
-                <h4 className="font-semibold text-lg mb-2">Qualidade Profissional</h4>
-                <p className="text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-2 text-white">Qualidade Profissional</h4>
+                <p className="text-white/80">
                   Nossos templates são desenvolvidos seguindo as melhores práticas de RH e são 
                   compatíveis com sistemas ATS (Applicant Tracking Systems).
                 </p>
@@ -141,8 +141,8 @@ const Sobre = () => {
             <div className="flex gap-4 items-start">
               <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
-                <h4 className="font-semibold text-lg mb-2">Privacidade Garantida</h4>
-                <p className="text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-2 text-white">Privacidade Garantida</h4>
+                <p className="text-white/80">
                   Seus dados não são armazenados em nossos servidores. Tudo fica apenas no seu 
                   navegador, garantindo total privacidade.
                 </p>
@@ -152,8 +152,8 @@ const Sobre = () => {
             <div className="flex gap-4 items-start">
               <div className="w-2 h-2 rounded-full mt-2" style={{ backgroundColor: "#006B3D" }}></div>
               <div>
-                <h4 className="font-semibold text-lg mb-2">Suporte Contínuo</h4>
-                <p className="text-muted-foreground">
+                <h4 className="font-semibold text-lg mb-2 text-white">Suporte Contínuo</h4>
+                <p className="text-white/80">
                   Atualizamos constantemente nossa plataforma com novos recursos, templates e 
                   melhorias baseadas no feedback dos usuários.
                 </p>

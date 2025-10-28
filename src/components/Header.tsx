@@ -11,20 +11,20 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 gradient-premium rounded-lg flex items-center justify-center">
               <FileText className="w-6 h-6 text-white" />
             </div>
             <div className="text-xl font-bold text-gradient-primary">
               FazerCurriculo.com
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
+            <Link to="/" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Início
-            </a>
+            </Link>
             <Link to="/sobre" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Sobre
             </Link>
@@ -34,16 +34,13 @@ const Header = () => {
             <a href="#templates" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Templates
             </a>
-            <a href="#ferramentas" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
-              Ferramentas IA
-            </a>
+            <Link to="/contato" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
+              Contato
+            </Link>
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Entrar
-            </Button>
             <Link to="/criar-curriculo">
               <Button className="btn-hero">
                 <Sparkles className="w-4 h-4 mr-2" />
@@ -65,13 +62,13 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-border mt-4 py-4 animate-fade-in-up">
             <nav className="flex flex-col space-y-4">
-              <a
-                href="#inicio"
+              <Link
+                to="/"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
               >
                 Início
-              </a>
+              </Link>
               <Link
                 to="/sobre"
                 onClick={() => setIsMenuOpen(false)}
@@ -93,19 +90,16 @@ const Header = () => {
               >
                 Templates
               </a>
-              <a
-                href="#ferramentas"
+              <Link
+                to="/contato"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
               >
-                Ferramentas IA
-              </a>
+                Contato
+              </Link>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Entrar
-                </Button>
                 <Link to="/criar-curriculo">
-                  <Button className="btn-hero">
+                  <Button className="btn-hero w-full">
                     <Sparkles className="w-4 h-4 mr-2" />
                     Criar Currículo Grátis
                   </Button>

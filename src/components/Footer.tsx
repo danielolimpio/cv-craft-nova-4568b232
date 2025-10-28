@@ -1,4 +1,5 @@
 import { FileText, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,14 +9,14 @@ const Footer = () => {
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
+            <Link to="/" className="flex items-center space-x-2 mb-6">
               <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                 <FileText className="w-6 h-6 text-secondary-foreground" />
               </div>
               <div className="text-xl font-bold">
                 FazerCurriculo.com
               </div>
-            </div>
+            </Link>
             
             <p className="text-footer-foreground/80 leading-relaxed mb-6 max-w-lg">
               A plataforma mais completa do Brasil para criação de currículos profissionais. 
@@ -28,7 +29,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 bg-footer-foreground/10 rounded-lg flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+                  className="w-10 h-10 bg-footer-foreground/10 rounded-lg flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-all duration-300"
                 >
                   <Social className="w-5 h-5" />
                 </a>
@@ -40,23 +41,36 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-6">Links Rápidos</h4>
             <ul className="space-y-3">
-              {[
-                "Criar Currículo",
-                "Templates",
-                "Ferramentas IA",
-                "Blog",
-                "Tutoriais",
-                "Exemplos"
-              ].map((link, index) => (
-                <li key={index}>
-                  <a
-                    href="#"
-                    className="text-footer-foreground/80 hover:text-accent transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <Link to="/" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Início
+                </Link>
+              </li>
+              <li>
+                <Link to="/criar-curriculo" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Criar Currículo
+                </Link>
+              </li>
+              <li>
+                <Link to="/sobre" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Sobre
+                </Link>
+              </li>
+              <li>
+                <Link to="/como-funciona" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Como Funciona
+                </Link>
+              </li>
+              <li>
+                <a href="#templates" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Templates
+                </a>
+              </li>
+              <li>
+                <Link to="/contato" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Contato
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -108,7 +122,7 @@ const Footer = () => {
         <div className="py-8 border-t border-footer-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-footer-foreground/60 text-sm">
-              © 2024 FazerCurriculo.com. Todos os direitos reservados.
+              © 2025 Copyright | Fazer Currículo Grátis | Todos os direitos reservados | Desenvolvido por <a href="https://danielolimpio.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#006B3D] transition-colors">DanielOlimpio</a>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-footer-foreground/60">

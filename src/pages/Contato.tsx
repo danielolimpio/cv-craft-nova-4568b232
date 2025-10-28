@@ -134,14 +134,14 @@ const Contato = () => {
                 </CardHeader>
                 <CardContent className="p-0">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.567!2d-34.862!3d-7.112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDYnNDMuMiJTIDM0wrA1MSc0My4yIlc!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.567217145442!2d-34.86481708523658!3d-7.112235694856548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839a4e7e0ff%3A0x5e3a9f5e5e3a9f5e!2sAv.%20J%C3%BAlia%20Freire%2C%201200%20-%20Expedicion%C3%A1rios%2C%20Jo%C3%A3o%20Pessoa%20-%20PB!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Localização FazerCurriculo.com"
+                    title="Localização FazerCurriculo.com - Av. Julia Freire, 1200"
                   ></iframe>
                 </CardContent>
               </Card>
