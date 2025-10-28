@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Plus, Trash2, User, Briefcase, GraduationCap, Mail, MapPin, Palette } from "lucide-react";
 import { CurriculumData, Education, Experience } from "@/types/curriculum";
+import { useToast } from "@/hooks/use-toast";
 
 interface CurriculumFormProps {
   data: CurriculumData;
@@ -18,9 +19,45 @@ interface CurriculumFormProps {
 
 const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
   const [photoPreview, setPhotoPreview] = useState<string | null>(data.photo);
+  const [loadingCep, setLoadingCep] = useState(false);
+  const { toast } = useToast();
 
   const updateData = (updates: Partial<CurriculumData>) => {
     onChange({ ...data, ...updates });
+  };
+
+  const handleCepChange = async (cep: string) => {
+    updateData({ address: { ...data.address, zipCode: cep } });
+    
+    const cleanCep = cep.replace(/\D/g, '');
+    if (cleanCep.length === 8) {
+      setLoadingCep(true);
+      try {
+        const response = await fetch(`https://viacep.com.br/ws/${cleanCep}/json/`);
+        const addressData = await response.json();
+        
+        if (!addressData.erro) {
+          updateData({
+            address: {
+              ...data.address,
+              zipCode: cep,
+              street: addressData.logradouro || data.address.street,
+              neighborhood: addressData.bairro || data.address.neighborhood,
+              city: addressData.localidade || data.address.city,
+              state: addressData.uf || data.address.state,
+            }
+          });
+          toast({
+            title: "CEP encontrado!",
+            description: "Endereço preenchido automaticamente.",
+          });
+        }
+      } catch (error) {
+        console.error('Error fetching CEP:', error);
+      } finally {
+        setLoadingCep(false);
+      }
+    }
   };
 
   const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -91,7 +128,7 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       {/* Dados Pessoais */}
       <Card className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <User className="w-5 h-5" style={{ color: "#01F0FF" }} />
+          <User className="w-5 h-5" style={{ color: "#006B3D" }} />
           <h2 className="text-xl font-bold">Dados Pessoais</h2>
         </div>
         
@@ -122,6 +159,9 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
               }
               placeholder="Ex: Desenvolvedor Full Stack"
             />
+            <p className="text-xs text-muted-foreground mt-1">
+              Indique o cargo que você busca. Ex: "Analista de Marketing Digital", "Engenheiro Civil Júnior"
+            </p>
           </div>
 
           <div>
@@ -137,6 +177,9 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
               placeholder="Descreva brevemente sua experiência e objetivos profissionais"
               rows={4}
             />
+            <p className="text-xs text-muted-foreground mt-1">
+              Escreva 2–3 frases sobre sua experiência e objetivo. Ex: "Desenvolvedor com 3 anos em React, buscando atuar em projetos escaláveis."
+            </p>
           </div>
         </div>
       </Card>
@@ -144,7 +187,7 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       {/* Foto de Perfil */}
       <Card className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <User className="w-5 h-5" style={{ color: "#01F0FF" }} />
+          <User className="w-5 h-5" style={{ color: "#006B3D" }} />
           <h2 className="text-xl font-bold">Foto de Perfil</h2>
         </div>
 
@@ -165,20 +208,24 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
                 src={photoPreview}
                 alt="Preview"
                 className={`w-24 h-24 object-cover ${
-                  data.photoStyle === "circular" ? "rounded-full" : "rounded-md"
+                  data.photoStyle === "circular" ? "rounded-full" : data.photoStyle === "square" ? "rounded-md" : ""
                 }`}
               />
               <div className="flex-1">
                 <Label>Estilo da Foto</Label>
                 <RadioGroup
                   value={data.photoStyle}
-                  onValueChange={(value: "circular" | "none") =>
+                  onValueChange={(value: "circular" | "square" | "none") =>
                     updateData({ photoStyle: value })
                   }
                 >
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="circular" id="circular" />
-                    <Label htmlFor="circular">Com borda circular</Label>
+                    <Label htmlFor="circular">Redonda</Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="square" id="square" />
+                    <Label htmlFor="square">Quadrada</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="none" id="none" />
@@ -194,7 +241,7 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       {/* Contato */}
       <Card className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <Mail className="w-5 h-5" style={{ color: "#01F0FF" }} />
+          <Mail className="w-5 h-5" style={{ color: "#006B3D" }} />
           <h2 className="text-xl font-bold">Contato</h2>
         </div>
 
@@ -265,7 +312,7 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       {/* Endereço */}
       <Card className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <MapPin className="w-5 h-5" style={{ color: "#01F0FF" }} />
+          <MapPin className="w-5 h-5" style={{ color: "#006B3D" }} />
           <h2 className="text-xl font-bold">Endereço</h2>
         </div>
 
@@ -338,11 +385,14 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
             <Input
               id="zipCode"
               value={data.address.zipCode}
-              onChange={(e) =>
-                updateData({ address: { ...data.address, zipCode: e.target.value } })
-              }
+              onChange={(e) => handleCepChange(e.target.value)}
               placeholder="00000-000"
+              maxLength={9}
+              disabled={loadingCep}
             />
+            <p className="text-xs text-muted-foreground mt-1">
+              {loadingCep ? "Buscando endereço..." : "Digite o CEP para preencher automaticamente cidade, estado e bairro"}
+            </p>
           </div>
         </div>
       </Card>
@@ -351,14 +401,17 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       <Card className="p-6">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <GraduationCap className="w-5 h-5" style={{ color: "#01F0FF" }} />
+            <GraduationCap className="w-5 h-5" style={{ color: "#006B3D" }} />
             <h2 className="text-xl font-bold">Escolaridade</h2>
           </div>
-          <Button onClick={addEducation} size="sm" variant="outline" style={{ color: "#01F0FF", borderColor: "#01F0FF" }}>
-            <Plus className="w-4 h-4 mr-2" style={{ color: "#01F0FF" }} />
+          <Button onClick={addEducation} size="sm" variant="outline" style={{ color: "#006B3D", borderColor: "#006B3D" }}>
+            <Plus className="w-4 h-4 mr-2" style={{ color: "#006B3D" }} />
             Adicionar Formação
           </Button>
         </div>
+        <p className="text-xs text-muted-foreground mb-4">
+          Adicione suas formações acadêmicas, começando pela mais recente
+        </p>
 
         <div className="space-y-4">
           {data.education.map((edu, index) => (
@@ -463,14 +516,17 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       <Card className="p-6">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <Briefcase className="w-5 h-5" style={{ color: "#01F0FF" }} />
+            <Briefcase className="w-5 h-5" style={{ color: "#006B3D" }} />
             <h2 className="text-xl font-bold">Experiência Profissional</h2>
           </div>
-          <Button onClick={addExperience} size="sm" variant="outline" style={{ color: "#01F0FF", borderColor: "#01F0FF" }}>
-            <Plus className="w-4 h-4 mr-2" style={{ color: "#01F0FF" }} />
+          <Button onClick={addExperience} size="sm" variant="outline" style={{ color: "#006B3D", borderColor: "#006B3D" }}>
+            <Plus className="w-4 h-4 mr-2" style={{ color: "#006B3D" }} />
             Adicionar Experiência
           </Button>
         </div>
+        <p className="text-xs text-muted-foreground mb-4">
+          Liste suas experiências profissionais, começando pela mais recente
+        </p>
 
         <div className="space-y-4">
           {data.experience.map((exp, index) => (
@@ -555,6 +611,9 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
                     placeholder="Descreva suas principais responsabilidades e realizações"
                     rows={3}
                   />
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Liste suas principais responsabilidades e conquistas. Use verbos de ação. Ex: "Desenvolvi sistema que aumentou vendas em 20%"
+                  </p>
                 </div>
               </div>
             </div>
@@ -565,7 +624,7 @@ const CurriculumForm = ({ data, onChange }: CurriculumFormProps) => {
       {/* Personalização Visual */}
       <Card className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <Palette className="w-5 h-5" style={{ color: "#01F0FF" }} />
+          <Palette className="w-5 h-5" style={{ color: "#006B3D" }} />
           <h2 className="text-xl font-bold">Personalização Visual</h2>
         </div>
 

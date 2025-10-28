@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Download, Printer, Trash2 } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { Progress } from "@/components/ui/progress";
 import CurriculumForm from "@/components/curriculum/CurriculumForm";
 import CurriculumPreview from "@/components/curriculum/CurriculumPreview";
 import { CurriculumData } from "@/types/curriculum";
 import { useToast } from "@/hooks/use-toast";
+import { useCurriculumStorage } from "@/hooks/useCurriculumStorage";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -48,6 +51,24 @@ const CriarCurriculo = () => {
       alignment: "left",
     },
   });
+
+  const { clearStorage } = useCurriculumStorage(curriculumData, setCurriculumData);
+
+  const calculateProgress = () => {
+    let filled = 0;
+    const total = 6;
+
+    if (curriculumData.personalData.name && curriculumData.personalData.position && curriculumData.personalData.summary) filled++;
+    if (curriculumData.contact.email || curriculumData.contact.phone) filled++;
+    if (curriculumData.address.city && curriculumData.address.state) filled++;
+    if (curriculumData.education.length > 0) filled++;
+    if (curriculumData.experience.length > 0) filled++;
+    if (curriculumData.photo) filled++;
+
+    return Math.round((filled / total) * 100);
+  };
+
+  const progress = calculateProgress();
 
   const handleDownloadPDF = async () => {
     const element = document.getElementById("curriculum-preview");
@@ -97,7 +118,7 @@ const CriarCurriculo = () => {
 
   const handleClearAll = () => {
     if (window.confirm("Tem certeza que deseja limpar todos os dados?")) {
-      setCurriculumData({
+      const emptyData: CurriculumData = {
         personalData: { name: "", position: "", summary: "" },
         contact: { email: "", phone: "", linkedin: "", github: "", website: "" },
         address: { street: "", number: "", neighborhood: "", city: "", state: "", zipCode: "" },
@@ -114,7 +135,9 @@ const CriarCurriculo = () => {
           spacing: "normal",
           alignment: "left",
         },
-      });
+      };
+      setCurriculumData(emptyData);
+      clearStorage();
       toast({
         title: "Dados limpos!",
         description: "Todos os campos foram resetados.",
@@ -129,22 +152,62 @@ const CriarCurriculo = () => {
       {/* Toolbar */}
       <div className="fixed top-16 left-0 right-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
-            <h1 className="text-xl font-bold">Criar Meu Currículo</h1>
-            <div className="flex gap-2">
-              <Button onClick={handlePrint} variant="outline" size="sm">
-                <Printer className="w-4 h-4 mr-2" />
-                Imprimir
-              </Button>
-              <Button onClick={handleDownloadPDF} size="sm" style={{ backgroundColor: "#006B3D", color: "white" }}>
-                <Download className="w-4 h-4 mr-2" />
-                Baixar PDF
-              </Button>
-              <Button onClick={handleClearAll} variant="destructive" size="sm">
-                <Trash2 className="w-4 h-4 mr-2" />
-                Limpar
-              </Button>
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <h1 className="text-xl font-bold">Criar Meu Currículo</h1>
+              <TooltipProvider>
+                <div className="flex gap-2">
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button onClick={handlePrint} variant="outline" size="sm">
+                        <Printer className="w-4 h-4 mr-2" />
+                        Imprimir
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Imprimir seu currículo diretamente</p>
+                    </TooltipContent>
+                  </Tooltip>
+                  
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button onClick={handleDownloadPDF} size="sm" className="bg-[#006B3D] hover:bg-[#005530] text-white font-semibold px-6">
+                        <Download className="w-4 h-4 mr-2" />
+                        Baixar PDF
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Seu currículo será gerado em PDF em segundos!</p>
+                    </TooltipContent>
+                  </Tooltip>
+                  
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button onClick={handleClearAll} variant="destructive" size="sm">
+                        <Trash2 className="w-4 h-4 mr-2" />
+                        Limpar
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Apagar todos os dados do formulário</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </div>
+              </TooltipProvider>
             </div>
+            
+            {/* Progress Bar */}
+            <div className="flex items-center gap-3">
+              <Progress value={progress} className="flex-1 h-2" />
+              <span className="text-sm font-medium whitespace-nowrap">
+                {progress}% pronto
+              </span>
+            </div>
+            {progress < 100 && (
+              <p className="text-xs text-muted-foreground">
+                Continue preenchendo para completar seu currículo!
+              </p>
+            )}
           </div>
         </div>
       </div>

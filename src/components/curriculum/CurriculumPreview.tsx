@@ -65,7 +65,7 @@ const CurriculumPreview = ({ data }: CurriculumPreviewProps) => {
                 src={photo}
                 alt="Foto de perfil"
                 className={`w-32 h-32 object-cover ${
-                  photoStyle === "circular" ? "rounded-full" : "rounded-md"
+                  photoStyle === "circular" ? "rounded-full" : photoStyle === "square" ? "rounded-md" : ""
                 }`}
               />
             </div>
@@ -119,31 +119,31 @@ const CurriculumPreview = ({ data }: CurriculumPreviewProps) => {
               <div className="grid grid-cols-2 gap-2">
                 {contact.email && (
                   <div className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 flex-shrink-0" style={{ color: "#01F0FF" }} />
+                    <Mail className="w-4 h-4 flex-shrink-0" style={{ color: "#006B3D" }} />
                     <span className="text-sm">{contact.email}</span>
                   </div>
                 )}
                 {contact.phone && (
                   <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 flex-shrink-0" style={{ color: "#01F0FF" }} />
+                    <Phone className="w-4 h-4 flex-shrink-0" style={{ color: "#006B3D" }} />
                     <span className="text-sm">{contact.phone}</span>
                   </div>
                 )}
                 {contact.linkedin && (
                   <div className="flex items-center gap-2">
-                    <Linkedin className="w-4 h-4 flex-shrink-0" style={{ color: "#01F0FF" }} />
+                    <Linkedin className="w-4 h-4 flex-shrink-0" style={{ color: "#006B3D" }} />
                     <span className="text-sm">{contact.linkedin}</span>
                   </div>
                 )}
                 {contact.github && (
                   <div className="flex items-center gap-2">
-                    <Github className="w-4 h-4 flex-shrink-0" style={{ color: "#01F0FF" }} />
+                    <Github className="w-4 h-4 flex-shrink-0" style={{ color: "#006B3D" }} />
                     <span className="text-sm">{contact.github}</span>
                   </div>
                 )}
                 {contact.website && (
                   <div className="flex items-center gap-2 col-span-2">
-                    <Globe className="w-4 h-4 flex-shrink-0" style={{ color: "#01F0FF" }} />
+                    <Globe className="w-4 h-4 flex-shrink-0" style={{ color: "#006B3D" }} />
                     <span className="text-sm">{contact.website}</span>
                   </div>
                 )}
@@ -164,7 +164,7 @@ const CurriculumPreview = ({ data }: CurriculumPreviewProps) => {
                 Endereço
               </h3>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-1" style={{ color: "#01F0FF" }} />
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-1" style={{ color: "#006B3D" }} />
                 <span className="text-sm">
                   {[
                     address.street && address.number ? `${address.street}, ${address.number}` : address.street,

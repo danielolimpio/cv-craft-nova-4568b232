@@ -58,6 +58,6 @@ export interface CurriculumData {
   education: Education[];
   experience: Experience[];
   photo: string | null;
-  photoStyle: 'circular' | 'none';
+  photoStyle: 'circular' | 'square' | 'none';
   visualSettings: VisualSettings;
 }
