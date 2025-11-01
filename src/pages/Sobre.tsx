@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Target, Users, Sparkles } from "lucide-react";
+import { Heart, Target, Users, Sparkles, Facebook, Twitter, Linkedin, Instagram, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const Sobre = () => {
   return (
@@ -96,6 +97,108 @@ const Sobre = () => {
               currículos que realmente se destacam. E continuamos evoluindo, adicionando novos 
               recursos e melhorias baseadas no feedback da nossa comunidade.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Developer Profile Section */}
+      <section className="py-16 px-4 bg-muted/50">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Photo */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative">
+                <img 
+                  src={danielPhoto} 
+                  alt="Daniel Olimpio - Desenvolvedor Web" 
+                  className="w-80 h-80 object-cover rounded-lg shadow-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl font-bold mb-2">Daniel Olimpio</h2>
+              <p className="text-xl mb-6" style={{ color: "#006B3D" }}>Desenvolvedor Web</p>
+              
+              <h3 className="text-xl font-semibold mb-3">Sobre Mim</h3>
+              <p className="text-muted-foreground mb-6">
+                Combinando tecnologia e criatividade para criar soluções digitais impactantes
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3">Minha Jornada</h3>
+              <p className="text-muted-foreground mb-4">
+                Com mais de 20 anos de atuação no mercado digital, sou especializado em desenvolvimento 
+                web e design de interfaces, unindo performance, usabilidade e identidade visual em cada projeto.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Minha expertise está em transformar ideias complexas em soluções digitais funcionais, 
+                escaláveis e visualmente marcantes. Trabalho com foco na harmonia entre código limpo, 
+                arquitetura eficiente e design responsivo, sempre priorizando a experiência do usuário 
+                e os objetivos do negócio.
+              </p>
+              <p className="text-muted-foreground mb-6">
+                Do front-end moderno ao back-end robusto, da prototipagem à entrega final, meu compromisso 
+                é construir produtos digitais que unem forma, função e tecnologia.
+              </p>
+
+              <div className="flex flex-wrap gap-3 mb-6 text-sm text-muted-foreground">
+                <span>Full Stack Development</span>
+                <span>•</span>
+                <span>UI/UX Design</span>
+                <span>•</span>
+                <span>Brand Identity</span>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.facebook.com/danielolimpio.com.br" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://x.com/danielolimpio_" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-colors"
+                  aria-label="Twitter/X"
+                >
+                  <Twitter className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/danielolimpio-com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/danielolimpio_com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://danielolimpio.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-[#006B3D] hover:text-white transition-colors"
+                  aria-label="Website"
+                >
+                  <Globe className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
