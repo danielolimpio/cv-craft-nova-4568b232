@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { FileText } from "lucide-react";
 
 const TermosDeUso = () => {
   return (
@@ -8,7 +9,10 @@ const TermosDeUso = () => {
       
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">Termos de Uso</h1>
+          <div className="flex justify-center mb-6">
+            <FileText className="w-16 h-16" style={{ color: '#006B3D' }} />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Termos de Uso</h1>
           <p className="text-muted-foreground mb-8">Última atualização: 28 de outubro de 2025</p>
 
           <div className="prose prose-lg max-w-none space-y-8">

@@ -33,6 +33,9 @@ const Contato = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Section */}
           <div className="text-center mb-16">
+            <div className="flex justify-center mb-6">
+              <Send className="w-16 h-16" style={{ color: '#006B3D' }} />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Entre em Contato</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Tem alguma dúvida ou sugestão? Estamos aqui para ajudar!

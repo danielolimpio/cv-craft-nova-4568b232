@@ -27,9 +27,9 @@ const Header = () => {
             <Link to="/como-funciona" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Como Funciona
             </Link>
-            <a href="#templates" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
-              Templates
-            </a>
+            <Link to="/criar-curriculo" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
+              Criar Currículo
+            </Link>
             <Link to="/contato" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Contato
             </Link>
@@ -79,13 +79,13 @@ const Header = () => {
               >
                 Como Funciona
               </Link>
-              <a
-                href="#templates"
+              <Link
+                to="/criar-curriculo"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
               >
-                Templates
-              </a>
+                Criar Currículo
+              </Link>
               <Link
                 to="/contato"
                 onClick={() => setIsMenuOpen(false)}

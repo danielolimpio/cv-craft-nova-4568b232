@@ -31,7 +31,7 @@ const ComoFunciona = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="py-16 px-4 bg-accent/20">
+      <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
@@ -178,7 +178,7 @@ const ComoFunciona = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-accent/20">
+      <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-3xl font-bold mb-4">Pronto Para Criar Seu Currículo?</h3>
           <p className="text-xl text-muted-foreground mb-8">

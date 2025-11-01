@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Eye, Download, Sparkles, Star, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import templatesImage from "@/assets/templates-showcase.jpg";
 const TemplatesSection = () => {
   const templates = [{
@@ -186,10 +187,12 @@ const TemplatesSection = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-in-up">
-          <Button size="lg" className="btn-hero text-lg px-8 py-4 bg-emerald-700 hover:bg-emerald-600">
-            <Sparkles className="w-5 h-5 mr-2" />
-            Começar com Template Premium
-          </Button>
+          <Link to="/criar-curriculo">
+            <Button size="lg" className="btn-hero text-lg px-8 py-4 bg-emerald-700 hover:bg-emerald-600">
+              <Sparkles className="w-5 h-5 mr-2" />
+              Começar com Template Premium
+            </Button>
+          </Link>
           <p className="text-muted-foreground mt-4">
             Todos os templates são 100% gratuitos e otimizados para ATS
           </p>
