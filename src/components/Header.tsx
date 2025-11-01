@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, FileText, Sparkles, Target, Users } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,13 +12,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 gradient-premium rounded-lg flex items-center justify-center">
-              <FileText className="w-6 h-6 text-white" />
-            </div>
-            <div className="text-xl font-bold text-gradient-primary">
-              FazerCurriculo.com
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Fazer Currículo" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import { FileText, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,13 +10,8 @@ const Footer = () => {
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <div className="text-xl font-bold">
-                FazerCurriculo.com
-              </div>
+            <Link to="/" className="flex items-center mb-6">
+              <img src={logo} alt="Fazer Currículo" className="h-12" />
             </Link>
             
             <p className="text-footer-foreground/80 leading-relaxed mb-6 max-w-lg">
@@ -24,7 +20,7 @@ const Footer = () => {
               e seja aprovado pelas melhores empresas.
             </p>
             
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-6">
               {[Facebook, Twitter, Linkedin, Instagram].map((Social, index) => (
                 <a
                   key={index}
@@ -34,6 +30,25 @@ const Footer = () => {
                   <Social className="w-5 h-5" />
                 </a>
               ))}
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
+                <Mail className="w-4 h-4" />
+                <span className="text-sm">contato@fazercurriculo.com</span>
+              </div>
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
+                <Phone className="w-4 h-4" />
+                <span className="text-sm">(12) 98251-9116</span>
+              </div>
+              <div className="flex items-center space-x-2 text-footer-foreground/80">
+                <MapPin className="w-4 h-4" />
+                <span className="text-sm">Av. Julia Freire, 1200 - Expedicionários</span>
+              </div>
+              <div className="flex items-center space-x-2 text-footer-foreground/80 ml-6">
+                <span className="text-sm">João Pessoa - PB - Brasil</span>
+              </div>
             </div>
           </div>
 
@@ -77,44 +92,38 @@ const Footer = () => {
           {/* Support */}
           <div>
             <h4 className="font-bold text-lg mb-6">Suporte</h4>
-            <ul className="space-y-3 mb-6">
-              {[
-                "Central de Ajuda",
-                "FAQ",
-                "Contato",
-                "Termos de Uso",
-                "Privacidade",
-                "LGPD"
-              ].map((link, index) => (
-                <li key={index}>
-                  <a
-                    href="#"
-                    className="text-footer-foreground/80 hover:text-accent transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-3">
+              <li>
+                <Link to="/central-de-ajuda" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Central de Ajuda
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/contato" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Contato
+                </Link>
+              </li>
+              <li>
+                <Link to="/termos-de-uso" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Termos de Uso
+                </Link>
+              </li>
+              <li>
+                <Link to="/politica-de-privacidade" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Política de Privacidade
+                </Link>
+              </li>
+              <li>
+                <Link to="/lgpd" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  LGPD
+                </Link>
+              </li>
             </ul>
-
-            {/* Contact Info */}
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2 text-footer-foreground/80">
-                <Mail className="w-4 h-4" />
-                <span className="text-sm">contato@fazercurriculo.com</span>
-              </div>
-              <div className="flex items-center space-x-2 text-footer-foreground/80">
-                <Phone className="w-4 h-4" />
-                <span className="text-sm">(12) 98251-9116</span>
-              </div>
-              <div className="flex items-center space-x-2 text-footer-foreground/80">
-                <MapPin className="w-4 h-4" />
-                <span className="text-sm">Av. Julia Freire, 1200 - Expedicionários</span>
-              </div>
-              <div className="flex items-center space-x-2 text-footer-foreground/80 ml-6">
-                <span className="text-sm">João Pessoa - PB - Brasil</span>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -126,15 +135,15 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-footer-foreground/60">
-              <a href="#" className="hover:text-accent transition-colors duration-300">
+              <Link to="/politica-de-privacidade" className="hover:text-[#006B3D] transition-colors duration-300">
                 Política de Privacidade
-              </a>
-              <a href="#" className="hover:text-accent transition-colors duration-300">
+              </Link>
+              <Link to="/termos-de-uso" className="hover:text-[#006B3D] transition-colors duration-300">
                 Termos de Uso
-              </a>
-              <a href="#" className="hover:text-accent transition-colors duration-300">
+              </Link>
+              <Link to="/lgpd" className="hover:text-[#006B3D] transition-colors duration-300">
                 LGPD
-              </a>
+              </Link>
             </div>
           </div>
         </div>

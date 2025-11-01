@@ -8,6 +8,11 @@ import ComoFunciona from "./pages/ComoFunciona";
 import CriarCurriculo from "./pages/CriarCurriculo";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
+import CentralDeAjuda from "./pages/CentralDeAjuda";
+import FAQ from "./pages/FAQ";
+import TermosDeUso from "./pages/TermosDeUso";
+import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
+import LGPD from "./pages/LGPD";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +29,11 @@ const App = () => (
           <Route path="/criar-curriculo" element={<CriarCurriculo />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/termos-de-uso" element={<TermosDeUso />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
+          <Route path="/lgpd" element={<LGPD />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
