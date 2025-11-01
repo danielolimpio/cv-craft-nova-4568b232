@@ -297,3 +297,52 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
+
+/* Print Styles - Show only curriculum preview */
+@media print {
+  /* Hide everything except curriculum preview */
+  header,
+  footer,
+  .fixed,
+  nav,
+  button,
+  [role="tooltip"],
+  [data-radix-popper-content-wrapper] {
+    display: none !important;
+  }
+
+  /* Hide the form section */
+  main .grid > div:first-child {
+    display: none !important;
+  }
+
+  /* Make preview take full width */
+  main .grid {
+    display: block !important;
+  }
+
+  /* Remove all margins and paddings from main containers */
+  body,
+  html,
+  #root,
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Style the preview for print */
+  #curriculum-preview {
+    margin: 0 !important;
+    padding: 20mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    page-break-after: avoid;
+  }
+
+  /* Ensure proper page breaks */
+  @page {
+    margin: 0;
+    size: A4 portrait;
+  }
+}
