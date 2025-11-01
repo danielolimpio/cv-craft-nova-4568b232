@@ -9,6 +9,7 @@ import ComoFunciona from "./pages/ComoFunciona";
 import CriarCurriculo from "./pages/CriarCurriculo";
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
+import Blog from "./pages/Blog";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/criar-curriculo" element={<CriarCurriculo />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

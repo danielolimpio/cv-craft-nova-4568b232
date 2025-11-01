@@ -30,6 +30,9 @@ const Header = () => {
             <Link to="/criar-curriculo" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Criar Currículo
             </Link>
+            <Link to="/blog" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
+              Blog
+            </Link>
             <Link to="/contato" className="text-foreground hover:text-primary transition-all duration-300 font-medium">
               Contato
             </Link>
@@ -85,6 +88,13 @@ const Header = () => {
                 className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
               >
                 Criar Currículo
+              </Link>
+              <Link
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-foreground hover:text-primary transition-all duration-300 font-medium py-2"
+              >
+                Blog
               </Link>
               <Link
                 to="/contato"

@@ -77,9 +77,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#templates" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
-                  Templates
-                </a>
+                <Link to="/blog" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Blog
+                </Link>
               </li>
               <li>
                 <Link to="/contato" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
