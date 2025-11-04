@@ -21,14 +21,14 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Como Criar um Currículo Profissional que se Destaca em 2025",
-    excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passa pelos sistemas ATS.",
+    title: "Como Criar um Currículo Profissional que se Destaca em 2026",
+    excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
     content: "Conteúdo completo do artigo...",
     author: "Daniel Olímpio",
     date: "28 de Janeiro, 2025",
-    readTime: "5 min",
+    readTime: "15 min",
     category: "Dicas de Currículo",
-    image: "/placeholder.svg"
+    image: "/blog/curriculo-profissional-2026.jpg"
   },
   {
     id: "2",

@@ -37,6 +37,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fazercurriculo.com/blog/1</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://fazercurriculo.com/central-de-ajuda</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>monthly</changefreq>

@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 const BlogPreviewSection = () => {
   const blogPosts = [
     {
-      title: "Como Criar um Currículo Profissional que se Destaca em 2025",
-      excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passa pelos sistemas ATS.",
+      title: "Como Criar um Currículo Profissional que se Destaca em 2026",
+      excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
       date: "28 de Janeiro, 2025",
-      readTime: "5 min",
+      readTime: "15 min",
       category: "Dicas de Currículo",
-      color: "from-blue-600 to-purple-600"
+      color: "from-[#006B3D] to-[#005a32]",
+      link: "/blog/1"
     },
     {
       title: "10 Erros Comuns em Currículos que Você Deve Evitar",
@@ -64,7 +65,7 @@ const BlogPreviewSection = () => {
           {blogPosts.map((post, index) => (
             <Link 
               key={index} 
-              to="/blog"
+              to={post.link || "/blog"}
               className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
