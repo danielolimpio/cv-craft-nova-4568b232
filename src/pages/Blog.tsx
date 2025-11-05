@@ -119,50 +119,55 @@ const Blog = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredPosts.map((post) => (
-                <Card key={post.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  <div className="relative h-48 bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
-                    <div className="absolute bottom-4 left-4 z-20">
-                      <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-xs font-semibold rounded-full">
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <CardHeader>
-                    <CardTitle className="group-hover:text-[#006B3D] transition-colors duration-300">
-                      {post.title}
-                    </CardTitle>
-                    <CardDescription className="line-clamp-2">
-                      {post.excerpt}
-                    </CardDescription>
-                  </CardHeader>
-                  
-                  <CardContent>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                      <div className="flex items-center gap-1">
-                        <User className="w-4 h-4" />
-                        <span>{post.author}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        <span>{post.readTime}</span>
+                <Link key={post.id} to={`/blog/${post.id}`} className="block">
+                  <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden h-full cursor-pointer">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
+                      <div className="absolute bottom-4 left-4 z-20">
+                        <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-xs font-semibold rounded-full">
+                          {post.category}
+                        </span>
                       </div>
                     </div>
                     
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground mb-4">
-                      <Calendar className="w-4 h-4" />
-                      <span>{post.date}</span>
-                    </div>
+                    <CardHeader>
+                      <CardTitle className="group-hover:text-[#006B3D] transition-colors duration-300">
+                        {post.title}
+                      </CardTitle>
+                      <CardDescription className="line-clamp-2">
+                        {post.excerpt}
+                      </CardDescription>
+                    </CardHeader>
                     
-                    <Button variant="ghost" className="w-full group/btn" asChild>
-                      <Link to={`/blog/${post.id}`}>
+                    <CardContent>
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                        <div className="flex items-center gap-1">
+                          <User className="w-4 h-4" />
+                          <span>{post.author}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          <span>{post.readTime}</span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-1 text-sm text-muted-foreground mb-4">
+                        <Calendar className="w-4 h-4" />
+                        <span>{post.date}</span>
+                      </div>
+                      
+                      <div className="flex items-center text-[#006B3D] font-semibold group-hover:translate-x-2 transition-transform">
                         Ler Artigo
-                        <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>

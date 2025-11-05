@@ -66,55 +66,59 @@ const BlogPreviewSection = () => {
             <Link 
               key={index} 
               to={post.link || "/blog"}
-              className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="block"
             >
-              {/* Post Preview */}
-              <div className={`h-48 rounded-lg mb-4 relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
-                {post.link ? (
-                  <img 
-                    src="/blog/curriculo-profissional-2026.jpg" 
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className={`w-full h-full bg-gradient-to-br ${post.color} flex items-center justify-center`}>
-                    <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
-                      <div className="text-white font-bold text-center text-base leading-tight">
-                        {post.title}
+              <div 
+                className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden cursor-pointer"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {/* Post Preview */}
+                <div className={`h-48 rounded-lg mb-4 relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
+                  {post.link ? (
+                    <img 
+                      src="/blog/curriculo-profissional-2026.jpg" 
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className={`w-full h-full bg-gradient-to-br ${post.color} flex items-center justify-center`}>
+                      <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
+                        <div className="text-white font-bold text-center text-base leading-tight">
+                          {post.title}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
-                
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white flex items-center space-x-2">
-                    <span className="text-sm font-semibold">Ler Artigo</span>
-                    <ArrowRight className="w-4 h-4" />
+                  )}
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-white flex items-center space-x-2">
+                      <span className="text-sm font-semibold">Ler Artigo</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              {/* Post Info */}
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <Badge variant="outline" className="text-xs">
-                    {post.category}
-                  </Badge>
+                
+                {/* Post Info */}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <Badge variant="outline" className="text-xs">
+                      {post.category}
+                    </Badge>
+                    <div className="flex items-center space-x-1 text-xs text-muted-foreground">
+                      <Clock className="w-3 h-3" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  
+                  <p className="text-sm text-muted-foreground line-clamp-2">
+                    {post.excerpt}
+                  </p>
+                  
                   <div className="flex items-center space-x-1 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>{post.readTime}</span>
+                    <Calendar className="w-3 h-3" />
+                    <span>{post.date}</span>
                   </div>
-                </div>
-                
-                <p className="text-sm text-muted-foreground line-clamp-2">
-                  {post.excerpt}
-                </p>
-                
-                <div className="flex items-center space-x-1 text-xs text-muted-foreground">
-                  <Calendar className="w-3 h-3" />
-                  <span>{post.date}</span>
                 </div>
               </div>
             </Link>
