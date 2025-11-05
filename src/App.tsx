@@ -11,6 +11,7 @@ import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
 import Blog from "./pages/Blog";
 import BlogArticle1 from "./pages/BlogArticle1";
+import BlogArticle2 from "./pages/BlogArticle2";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/contato" element={<Contato />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/1" element={<BlogArticle1 />} />
+          <Route path="/blog/2" element={<BlogArticle2 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

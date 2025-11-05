@@ -39,7 +39,7 @@ const blogPosts: BlogPost[] = [
     date: "25 de Janeiro, 2025",
     readTime: "7 min",
     category: "Erros Comuns",
-    image: "/placeholder.svg"
+    image: "/blog/10-erros-curriculo.jpg"
   },
   {
     id: "3",

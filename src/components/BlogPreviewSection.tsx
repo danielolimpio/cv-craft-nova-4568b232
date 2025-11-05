@@ -20,7 +20,8 @@ const BlogPreviewSection = () => {
       date: "25 de Janeiro, 2025",
       readTime: "7 min",
       category: "Erros Comuns",
-      color: "from-green-600 to-teal-600"
+      color: "from-green-600 to-teal-600",
+      link: "/blog/2"
     },
     {
       title: "Como Preparar seu Currículo para Sistemas ATS",
