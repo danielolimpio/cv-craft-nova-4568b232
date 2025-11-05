@@ -70,12 +70,22 @@ const BlogPreviewSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Post Preview */}
-              <div className={`h-48 rounded-lg mb-4 bg-gradient-to-br ${post.color} flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
-                <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
-                  <div className="text-white font-bold text-center text-base leading-tight">
-                    {post.title}
+              <div className={`h-48 rounded-lg mb-4 relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
+                {post.link ? (
+                  <img 
+                    src="/blog/curriculo-profissional-2026.jpg" 
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${post.color} flex items-center justify-center`}>
+                    <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
+                      <div className="text-white font-bold text-center text-base leading-tight">
+                        {post.title}
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
                 
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

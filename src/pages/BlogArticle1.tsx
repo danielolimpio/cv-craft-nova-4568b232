@@ -10,7 +10,7 @@ const BlogArticle1 = () => {
     <div className="min-h-screen">
       <Header />
       
-      <article className="py-12">
+      <article className="pt-32 pb-12">
         {/* Hero Section */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="max-w-4xl mx-auto">
