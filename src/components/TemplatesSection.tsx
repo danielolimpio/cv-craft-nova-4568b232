@@ -1,37 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Sparkles, Building2 } from "lucide-react";
+import { Sparkles, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import templatesImage from "@/assets/templates-showcase.jpg";
 
 const TemplatesSection = () => {
-  const templates = [
-    {
-      name: "Harvard Executive",
-      description: "Design executivo elegante, perfeito para posições de liderança",
-      features: ["Seções hierárquicas", "Layout profissional", "Destaque para conquistas"],
-      color: "from-crimson-600 to-red-700"
-    },
-    {
-      name: "Stanford Tech",
-      description: "Moderno e clean, ideal para profissionais de tecnologia",
-      features: ["Visual minimalista", "Foco em skills técnicas", "Projetos em destaque"],
-      color: "from-cardinal-600 to-red-600"
-    },
-    {
-      name: "McKinsey Consulting",
-      description: "Estruturado para consultores e analistas estratégicos",
-      features: ["Dados quantificados", "Impacto mensurável", "Layout sofisticado"],
-      color: "from-blue-600 to-indigo-600"
-    },
-    {
-      name: "Goldman Finance",
-      description: "Formal e impactante para o setor financeiro",
-      features: ["Apresentação premium", "Métricas financeiras", "Credibilidade visual"],
-      color: "from-slate-700 to-gray-900"
-    }
-  ];
-
   return <section id="templates" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -121,50 +93,6 @@ const TemplatesSection = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Templates Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {templates.map((template, index) => (
-            <Link 
-              key={index} 
-              to="/criar-curriculo"
-              className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up relative overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {/* Template Preview */}
-              <div className={`h-48 rounded-lg mb-4 bg-gradient-to-br ${template.color} flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
-                <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
-                  <div className="text-white font-bold text-center text-lg">
-                    {template.name}
-                  </div>
-                </div>
-                
-                {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="text-white flex items-center space-x-2">
-                    <span className="text-sm font-semibold">Usar Template</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
-                </div>
-              </div>
-              
-              {/* Template Info */}
-              <div className="space-y-3">
-                <p className="text-sm text-muted-foreground">
-                  {template.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-1">
-                  {template.features.map((feature, fIndex) => (
-                    <Badge key={fIndex} variant="secondary" className="text-xs">
-                      {feature}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </Link>
-          ))}
         </div>
 
         {/* CTA */}
