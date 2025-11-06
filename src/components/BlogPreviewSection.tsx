@@ -29,9 +29,11 @@ const BlogPreviewSection = () => {
       title: "Como Preparar seu Currículo para Sistemas ATS",
       excerpt: "Entenda como os sistemas de rastreamento de candidatos funcionam e como otimizar seu currículo para passar por eles.",
       date: "22 de Janeiro, 2025",
-      readTime: "6 min",
+      readTime: "12 min",
       category: "Tecnologia",
-      color: "from-purple-600 to-pink-600"
+      color: "from-purple-600 to-pink-600",
+      link: "/blog/3",
+      image: "/blog/curriculo-ats-sistemas.jpg"
     },
     {
       title: "Dicas para Entrevistas de Emprego: Como se Destacar",
