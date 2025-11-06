@@ -12,7 +12,8 @@ const BlogPreviewSection = () => {
       readTime: "15 min",
       category: "Dicas de Currículo",
       color: "from-[#006B3D] to-[#005a32]",
-      link: "/blog/1"
+      link: "/blog/1",
+      image: "/blog/curriculo-profissional-2026.jpg"
     },
     {
       title: "10 Erros Comuns em Currículos que Você Deve Evitar",
@@ -21,7 +22,8 @@ const BlogPreviewSection = () => {
       readTime: "7 min",
       category: "Erros Comuns",
       color: "from-green-600 to-teal-600",
-      link: "/blog/2"
+      link: "/blog/2",
+      image: "/blog/10-erros-curriculo-preview.jpg"
     },
     {
       title: "Como Preparar seu Currículo para Sistemas ATS",
@@ -75,9 +77,9 @@ const BlogPreviewSection = () => {
               >
                 {/* Post Preview */}
                 <div className={`h-48 rounded-lg mb-4 relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
-                  {post.link ? (
+                  {post.image ? (
                     <img 
-                      src="/blog/curriculo-profissional-2026.jpg" 
+                      src={post.image} 
                       alt={post.title}
                       className="w-full h-full object-cover"
                     />
