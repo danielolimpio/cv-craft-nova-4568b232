@@ -39,7 +39,7 @@ const blogPosts: BlogPost[] = [
     date: "25 de Janeiro, 2025",
     readTime: "7 min",
     category: "Erros Comuns",
-    image: "/blog/10-erros-curriculo.jpg"
+    image: "/blog/10-erros-curriculo-preview.jpg"
   },
   {
     id: "3",
@@ -127,11 +127,14 @@ const Blog = () => {
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
-                      <div className="absolute bottom-4 left-4 z-20">
-                        <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-xs font-semibold rounded-full">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                      <div className="absolute bottom-4 left-4 right-4 z-20">
+                        <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-xs font-semibold rounded-full mb-2">
                           {post.category}
                         </span>
+                        <h3 className="text-white font-bold text-sm leading-tight line-clamp-2">
+                          {post.title}
+                        </h3>
                       </div>
                     </div>
                     

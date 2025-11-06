@@ -78,11 +78,19 @@ const BlogPreviewSection = () => {
                 {/* Post Preview */}
                 <div className={`h-48 rounded-lg mb-4 relative overflow-hidden group-hover:scale-105 transition-transform duration-300`}>
                   {post.image ? (
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-full object-cover"
-                    />
+                    <>
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                      {/* Title overlay on image */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
+                        <h3 className="text-white font-bold text-sm leading-tight line-clamp-2">
+                          {post.title}
+                        </h3>
+                      </div>
+                    </>
                   ) : (
                     <div className={`w-full h-full bg-gradient-to-br ${post.color} flex items-center justify-center`}>
                       <div className="w-full h-full bg-white/10 backdrop-blur-sm p-6 flex items-center justify-center">
