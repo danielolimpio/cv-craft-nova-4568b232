@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-12 items-center">
           {/* Content */}
-          <div className="text-white animate-fade-in-up">
+          <div className="text-white animate-fade-in-up pt-20 sm:pt-0">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 glass-effect">
               <Award className="w-4 h-4" style={{
@@ -93,11 +93,11 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative animate-scale-in lg:animate-float" style={{
+          <div className="relative animate-scale-in lg:animate-float lg:!ml-0" style={{
           transform: 'scale(2.2)',
           transformOrigin: 'center',
           width: '130%',
-          marginLeft: '0%'
+          marginLeft: '-15%'
         }}>
             <div className="relative">
               <img src={heroImage} alt="Templates de currículos profissionais" className="w-full h-auto rounded-2xl shadow-2xl" loading="eager" />
@@ -116,7 +116,7 @@ const HeroSection = () => {
                 </div>
               </div>
               
-              <div className="absolute bottom-12 right-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{
+              <div className="absolute bottom-4 sm:bottom-12 right-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float" style={{
               animationDelay: '2s'
             }}>
                 <div className="flex items-center space-x-2 text-white">
