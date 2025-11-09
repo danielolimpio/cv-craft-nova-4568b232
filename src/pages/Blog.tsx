@@ -50,7 +50,7 @@ const blogPosts: BlogPost[] = [
     date: "22 de Janeiro, 2025",
     readTime: "6 min",
     category: "Tecnologia",
-    image: "/placeholder.svg"
+    image: "/blog/curriculo-ats-sistemas.jpg"
   },
   {
     id: "4",
