@@ -36,14 +36,24 @@ const BlogPreviewSection = () => {
       image: "/blog/curriculo-ats-sistemas.jpg"
     },
     {
-      title: "Currículo para Primeiro Emprego",
-      excerpt: "O que incluir e evitar ao criar seu primeiro currículo profissional",
-      date: "28 de Janeiro",
-      readTime: "18 min",
+      title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
+      excerpt: "Dicas objetivas para criar um currículo de primeiro emprego que destaca seu potencial.",
+      date: "12 de novembro de 2025",
+      readTime: "10 min",
       category: "Primeiro Emprego",
       color: "from-purple-500 to-pink-500",
       link: "/blog/4",
       image: "/blog/curriculo-primeiro-emprego.jpg"
+    },
+    {
+      title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
+      excerpt: "Sem histórico profissional? Transforme projetos, voluntariado e habilidades em um currículo competitivo.",
+      date: "13 de novembro de 2025",
+      readTime: "15 min",
+      category: "Sem Experiência",
+      color: "from-cyan-500 to-blue-500",
+      link: "/blog/5",
+      image: "/blog/curriculo-sem-experiencia.jpg"
     },
     {
       title: "Como Destacar suas Competências no Currículo",

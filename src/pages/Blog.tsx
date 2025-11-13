@@ -62,13 +62,24 @@ const blogPosts: BlogPost[] = [
     readTime: "18 min",
     category: "Primeiro Emprego",
     image: "/blog/curriculo-primeiro-emprego.jpg"
+  },
+  {
+    id: "5",
+    title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
+    excerpt: "Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades.",
+    content: "Conteúdo completo do artigo...",
+    author: "Daniel Olímpio",
+    date: "13 de novembro de 2025",
+    readTime: "15 min",
+    category: "Sem Experiência",
+    image: "/blog/curriculo-sem-experiencia.jpg"
   }
 ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
