@@ -3,60 +3,65 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, TrendingUp, Award } from "lucide-react";
+import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, TrendingUp, Award, ArrowLeft } from "lucide-react";
 
 const BlogArticle1 = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
       
-      <article className="pt-32 pb-12">
-        {/* Hero Section */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <span className="inline-block px-4 py-1 bg-[#006B3D] text-white text-sm font-semibold rounded-full mb-4">
+      <main className="pt-32 pb-12">
+        <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          {/* Back Button */}
+          <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Voltar para o Blog
+          </Link>
+
+          {/* Article Header */}
+          <header className="mb-12">
+            <div className="mb-6">
+              <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-sm font-semibold rounded-full">
                 Dicas de Currículo
               </span>
-              
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Como Criar um Currículo Profissional que se Destaca em 2026
-              </h1>
-              
-              <p className="text-xl text-muted-foreground mb-8">
-                Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026, exemplos práticos e dicas que funcionam de verdade no mercado competitivo de hoje.
-              </p>
-              
-              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
-                  <span>Daniel Olímpio</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>28 de Janeiro, 2025</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>15 min de leitura</span>
-                </div>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Como Criar um Currículo Profissional que se Destaca em 2026
+            </h1>
+
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026, exemplos práticos e dicas que funcionam de verdade no mercado competitivo de hoje.
+            </p>
+
+            {/* Meta Info */}
+            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-t py-4">
+              <div className="flex items-center gap-2">
+                <User className="w-4 h-4" />
+                <span>Daniel Olímpio</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4" />
+                <span>28 de Janeiro, 2025</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-4 h-4" />
+                <span>15 min de leitura</span>
               </div>
             </div>
-            
-            <div className="relative h-96 rounded-lg overflow-hidden mb-12">
-              <img 
-                src="/blog/curriculo-profissional-2026.jpg" 
-                alt="Profissional sorridente em ambiente corporativo segurando documentos" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
+          </header>
 
-        {/* Article Content */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="prose prose-lg max-w-none">
+          {/* Featured Image */}
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img 
+              src="/blog/curriculo-profissional-2026.jpg" 
+              alt="Como Criar um Currículo Profissional que se Destaca em 2026"
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Article Content */}
+          <div className="prose prose-lg max-w-none">
               
               {/* Introdução */}
               <section className="mb-12">
@@ -550,10 +555,9 @@ const BlogArticle1 = () => {
                 </CardContent>
               </Card>
 
-            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </main>
       
       <Footer />
     </div>

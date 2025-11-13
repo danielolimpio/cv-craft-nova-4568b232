@@ -4,7 +4,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  ArrowRight, 
+  ArrowRight,
+  ArrowLeft,
   CheckCircle2, 
   XCircle, 
   Lightbulb, 
@@ -16,7 +17,10 @@ import {
   AlertCircle,
   Sparkles,
   BarChart3,
-  MessageSquare
+  MessageSquare,
+  Calendar,
+  Clock,
+  User
 } from "lucide-react";
 
 const BlogArticle4 = () => {
@@ -38,44 +42,55 @@ const BlogArticle4 = () => {
       <div className="min-h-screen bg-background">
         <Header />
         
-        <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
-          {/* Hero Image */}
-          <div className="mb-8 rounded-xl overflow-hidden">
-            <img 
-              src="/blog/curriculo-primeiro-emprego.jpg" 
-              alt="Jovem analisando currículo para primeiro emprego em ambiente profissional"
-              className="w-full h-auto"
-            />
-          </div>
+        <main className="pt-32 pb-12">
+          <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            {/* Back Button */}
+            <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Voltar para o Blog
+            </Link>
 
-          {/* Article Header */}
-          <header className="mb-12">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#006B3D]/10 text-[#006B3D] text-sm font-semibold rounded-full">
-                <Target className="w-4 h-4" />
-                Primeiro Emprego
-              </span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Currículo para Primeiro Emprego: O Que Incluir e Evitar
-            </h1>
-            
-            <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6">
-              <span className="flex items-center gap-1">
-                <Users className="w-4 h-4" />
-                Equipe Fazer Currículo
-              </span>
-              <span>•</span>
-              <span>28 de Janeiro, 2025</span>
-              <span>•</span>
-              <span>18 min de leitura</span>
-            </div>
+            {/* Article Header */}
+            <header className="mb-12">
+              <div className="mb-6">
+                <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-sm font-semibold rounded-full">
+                  Primeiro Emprego
+                </span>
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Currículo para Primeiro Emprego: O Que Incluir e Evitar
+              </h1>
+              
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo.
+              </p>
 
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo.
-            </p>
-          </header>
+              {/* Meta Info */}
+              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-t py-4">
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4" />
+                  <span>Equipe Fazer Currículo</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  <span>28 de Janeiro, 2025</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span>18 min de leitura</span>
+                </div>
+              </div>
+            </header>
+
+            {/* Featured Image */}
+            <div className="mb-12 rounded-lg overflow-hidden">
+              <img 
+                src="/blog/curriculo-primeiro-emprego.jpg" 
+                alt="Currículo para Primeiro Emprego: O Que Incluir e Evitar"
+                className="w-full h-auto"
+              />
+            </div>
 
           {/* Introduction */}
           <section className="mb-12 prose prose-lg max-w-none">
@@ -625,11 +640,12 @@ const BlogArticle4 = () => {
             </Button>
           </div>
         </article>
-
-        <Footer />
-      </div>
-    </>
-  );
+      </main>
+      
+      <Footer />
+    </div>
+  </>
+);
 };
 
 export default BlogArticle4;
