@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowLeft, Calendar, Clock, CheckCircle2, XCircle, AlertTriangle, FileText, Search, Target, TrendingUp, Award, BookOpen } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, User, CheckCircle2, XCircle, AlertTriangle, FileText, Search, Target, TrendingUp, Award, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -22,20 +21,23 @@ const BlogArticle3 = () => {
       <div className="min-h-screen bg-background">
         <Header />
         
-        {/* Hero Section */}
-        <section className="relative py-12 bg-gradient-to-br from-[#006B3D]/5 to-background overflow-hidden">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <Link to="/blog" className="inline-flex items-center text-sm mb-6 hover:text-[#006B3D] transition-colors">
+        <main className="pt-32 pb-12">
+          <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            {/* Back Button */}
+            <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para o Blog
             </Link>
 
-            <div className="max-w-4xl">
-              <Badge variant="outline" className="mb-4">
-                Tecnologia
-              </Badge>
+            {/* Article Header */}
+            <header className="mb-12">
+              <div className="mb-6">
+                <span className="inline-block px-3 py-1 bg-[#006B3D] text-white text-sm font-semibold rounded-full">
+                  Tecnologia
+                </span>
+              </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Como Preparar seu Currículo para Sistemas ATS
               </h1>
 
@@ -43,37 +45,34 @@ const BlogArticle3 = () => {
                 Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores. Dicas práticas, atualizadas e testáveis.
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-                <div className="flex items-center space-x-2">
+              {/* Meta Info */}
+              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-t py-4">
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4" />
+                  <span>Daniel Olímpio</span>
+                </div>
+                <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   <span>22 de Janeiro, 2025</span>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
                   <span>12 min de leitura</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </header>
 
-        {/* Featured Image */}
-        <section className="py-8 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
+            {/* Featured Image */}
+            <div className="mb-12 rounded-lg overflow-hidden">
               <img 
                 src="/blog/curriculo-ats-sistemas.jpg" 
                 alt="Como Preparar seu Currículo para Sistemas ATS"
-                className="w-full h-[400px] object-cover rounded-xl shadow-lg"
+                className="w-full h-auto"
               />
             </div>
-          </div>
-        </section>
 
-        {/* Article Content */}
-        <article className="py-12 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto prose prose-lg">
+            {/* Article Content */}
+            <div className="prose prose-lg max-w-none">
               
               {/* Introdução */}
               <section className="mb-12">
@@ -532,8 +531,8 @@ const BlogArticle3 = () => {
               </section>
 
             </div>
-          </div>
-        </article>
+          </article>
+        </main>
 
         <Footer />
       </div>
