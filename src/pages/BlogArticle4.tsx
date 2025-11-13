@@ -22,6 +22,8 @@ import {
   Clock,
   User
 } from "lucide-react";
+import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const BlogArticle4 = () => {
   return (
@@ -90,6 +92,18 @@ const BlogArticle4 = () => {
                 alt="Currículo para Primeiro Emprego: O Que Incluir e Evitar"
                 className="w-full h-auto"
               />
+            </div>
+
+            {/* Author Info - Start */}
+            <div className="flex items-center gap-3 mb-8 pb-8 border-b border-border">
+              <img 
+                src={danielPhoto} 
+                alt="Daniel Olimpio" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold">Daniel Olimpio</p>
+              </div>
             </div>
 
           {/* Introduction */}
@@ -639,13 +653,16 @@ const BlogArticle4 = () => {
               </Link>
             </Button>
           </div>
+
+          {/* Author Bio */}
+          <AuthorBio />
         </article>
       </main>
-      
+
       <Footer />
     </div>
-  </>
-);
+    </>
+  );
 };
 
 export default BlogArticle4;

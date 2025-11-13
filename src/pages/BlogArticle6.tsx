@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Target, Lightbulb, CheckCircle2, XCircle, AlertTriangle, TrendingUp, Users, Award, Briefcase, GraduationCap, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const BlogArticle6 = () => {
   return (
@@ -51,6 +52,18 @@ const BlogArticle6 = () => {
               alt="Objetivo Profissional no Currículo" 
               className="w-full h-auto rounded-lg shadow-lg mb-12"
             />
+
+            {/* Author Info - Start */}
+            <div className="flex items-center gap-3 mb-8 pb-8 border-b border-border">
+              <img 
+                src={danielPhoto} 
+                alt="Daniel Olimpio" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold">Daniel Olimpio</p>
+              </div>
+            </div>
 
             {/* Introdução */}
             <div className="prose prose-lg max-w-none mb-12">
