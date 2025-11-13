@@ -12,7 +12,7 @@ const BlogPreviewSection = () => {
       readTime: "15 min",
       category: "Dicas de Currículo",
       color: "from-[#006B3D] to-[#005a32]",
-      link: "/blog/1",
+      link: "/blog/como-criar-curriculo-profissional-2026",
       image: "/blog/curriculo-profissional-2026.jpg"
     },
     {
@@ -22,7 +22,7 @@ const BlogPreviewSection = () => {
       readTime: "7 min",
       category: "Erros Comuns",
       color: "from-green-600 to-teal-600",
-      link: "/blog/2",
+      link: "/blog/10-erros-comuns-curriculos",
       image: "/blog/10-erros-curriculo-preview.jpg"
     },
     {
@@ -32,7 +32,7 @@ const BlogPreviewSection = () => {
       readTime: "12 min",
       category: "Tecnologia",
       color: "from-purple-600 to-pink-600",
-      link: "/blog/3",
+      link: "/blog/preparar-curriculo-sistemas-ats",
       image: "/blog/curriculo-ats-sistemas.jpg"
     },
     {
@@ -42,7 +42,7 @@ const BlogPreviewSection = () => {
       readTime: "10 min",
       category: "Primeiro Emprego",
       color: "from-purple-500 to-pink-500",
-      link: "/blog/4",
+      link: "/blog/curriculo-primeiro-emprego-o-que-incluir",
       image: "/blog/curriculo-primeiro-emprego.jpg"
     },
     {
@@ -52,7 +52,7 @@ const BlogPreviewSection = () => {
       readTime: "15 min",
       category: "Sem Experiência",
       color: "from-cyan-500 to-blue-500",
-      link: "/blog/5",
+      link: "/blog/curriculo-sem-experiencia-estrategias",
       image: "/blog/curriculo-sem-experiencia.jpg"
     },
     {

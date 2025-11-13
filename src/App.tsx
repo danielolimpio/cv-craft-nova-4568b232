@@ -38,11 +38,11 @@ const App = () => (
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/1" element={<BlogArticle1 />} />
-          <Route path="/blog/2" element={<BlogArticle2 />} />
-          <Route path="/blog/3" element={<BlogArticle3 />} />
-          <Route path="/blog/4" element={<BlogArticle4 />} />
-          <Route path="/blog/5" element={<BlogArticle5 />} />
+          <Route path="/blog/como-criar-curriculo-profissional-2026" element={<BlogArticle1 />} />
+          <Route path="/blog/10-erros-comuns-curriculos" element={<BlogArticle2 />} />
+          <Route path="/blog/preparar-curriculo-sistemas-ats" element={<BlogArticle3 />} />
+          <Route path="/blog/curriculo-primeiro-emprego-o-que-incluir" element={<BlogArticle4 />} />
+          <Route path="/blog/curriculo-sem-experiencia-estrategias" element={<BlogArticle5 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />
