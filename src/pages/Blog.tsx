@@ -20,7 +20,7 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    id: "1",
+    id: "como-criar-curriculo-profissional-2026",
     title: "Como Criar um Currículo Profissional que se Destaca em 2026",
     excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
     content: "Conteúdo completo do artigo...",
@@ -31,7 +31,7 @@ const blogPosts: BlogPost[] = [
     image: "/blog/curriculo-profissional-2026.jpg"
   },
   {
-    id: "2",
+    id: "10-erros-comuns-curriculos",
     title: "10 Erros Comuns em Currículos que Você Deve Evitar",
     excerpt: "Aprenda quais são os erros mais frequentes que podem comprometer suas chances de conseguir uma entrevista.",
     content: "Conteúdo completo do artigo...",
@@ -42,7 +42,7 @@ const blogPosts: BlogPost[] = [
     image: "/blog/10-erros-curriculo-preview.jpg"
   },
   {
-    id: "3",
+    id: "preparar-curriculo-sistemas-ats",
     title: "Como Preparar seu Currículo para Sistemas ATS",
     excerpt: "Entenda como os sistemas de rastreamento de candidatos funcionam e como otimizar seu currículo para passar por eles.",
     content: "Conteúdo completo do artigo...",
@@ -53,7 +53,7 @@ const blogPosts: BlogPost[] = [
     image: "/blog/curriculo-ats-sistemas.jpg"
   },
   {
-    id: "4",
+    id: "curriculo-primeiro-emprego-o-que-incluir",
     title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
     excerpt: "Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades.",
     content: "Conteúdo completo do artigo...",
@@ -64,7 +64,7 @@ const blogPosts: BlogPost[] = [
     image: "/blog/curriculo-primeiro-emprego.jpg"
   },
   {
-    id: "5",
+    id: "curriculo-sem-experiencia-estrategias",
     title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
     excerpt: "Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades.",
     content: "Conteúdo completo do artigo...",
