@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import BlogArticle1 from "./pages/BlogArticle1";
 import BlogArticle2 from "./pages/BlogArticle2";
 import BlogArticle3 from "./pages/BlogArticle3";
+import BlogArticle4 from "./pages/BlogArticle4";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/blog/1" element={<BlogArticle1 />} />
           <Route path="/blog/2" element={<BlogArticle2 />} />
           <Route path="/blog/3" element={<BlogArticle3 />} />
+          <Route path="/blog/4" element={<BlogArticle4 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

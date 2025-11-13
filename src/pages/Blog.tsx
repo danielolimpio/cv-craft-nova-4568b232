@@ -54,21 +54,21 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "4",
-    title: "Dicas para Entrevistas de Emprego: Como se Destacar",
-    excerpt: "Prepare-se para suas entrevistas com estratégias comprovadas que impressionam recrutadores.",
+    title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
+    excerpt: "Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades.",
     content: "Conteúdo completo do artigo...",
     author: "Equipe Fazer Currículo",
-    date: "20 de Janeiro, 2025",
-    readTime: "8 min",
-    category: "Entrevistas",
-    image: "/placeholder.svg"
+    date: "28 de Janeiro, 2025",
+    readTime: "18 min",
+    category: "Primeiro Emprego",
+    image: "/blog/curriculo-primeiro-emprego.jpg"
   }
 ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Entrevistas"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 

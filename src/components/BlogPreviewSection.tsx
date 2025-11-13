@@ -36,12 +36,14 @@ const BlogPreviewSection = () => {
       image: "/blog/curriculo-ats-sistemas.jpg"
     },
     {
-      title: "Dicas para Entrevistas de Emprego: Como se Destacar",
-      excerpt: "Prepare-se para suas entrevistas com estratégias comprovadas que impressionam recrutadores.",
-      date: "20 de Janeiro, 2025",
-      readTime: "8 min",
-      category: "Entrevistas",
-      color: "from-indigo-600 to-blue-600"
+      title: "Currículo para Primeiro Emprego",
+      excerpt: "O que incluir e evitar ao criar seu primeiro currículo profissional",
+      date: "28 de Janeiro",
+      readTime: "18 min",
+      category: "Primeiro Emprego",
+      color: "from-purple-500 to-pink-500",
+      link: "/blog/4",
+      image: "/blog/curriculo-primeiro-emprego.jpg"
     },
     {
       title: "Como Destacar suas Competências no Currículo",
