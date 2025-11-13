@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Lightbulb, CheckCircle, XCircle, Target, Users, Award, BookOpen, AlertTriangle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const BlogArticle5 = () => {
   return (
@@ -58,6 +60,18 @@ const BlogArticle5 = () => {
               alt="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" 
               className="w-full h-auto rounded-lg mb-12 shadow-lg"
             />
+
+            {/* Author Info - Start */}
+            <div className="flex items-center gap-3 mb-8 pb-8 border-b border-border">
+              <img 
+                src={danielPhoto} 
+                alt="Daniel Olimpio" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold">Daniel Olimpio</p>
+              </div>
+            </div>
 
             <div className="prose prose-lg max-w-none">
               <p>
@@ -748,6 +762,9 @@ const BlogArticle5 = () => {
                   </Link>
                 </div>
               </div>
+
+              {/* Author Bio */}
+              <AuthorBio />
             </div>
           </article>
         </main>

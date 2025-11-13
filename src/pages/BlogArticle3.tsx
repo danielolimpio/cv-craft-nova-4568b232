@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, Calendar, Clock, User, CheckCircle2, XCircle, AlertTriangle, FileText, Search, Target, TrendingUp, Award, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const BlogArticle3 = () => {
   return (
@@ -69,6 +71,18 @@ const BlogArticle3 = () => {
                 alt="Como Preparar seu Currículo para Sistemas ATS"
                 className="w-full h-auto"
               />
+            </div>
+
+            {/* Author Info - Start */}
+            <div className="flex items-center gap-3 mb-8 pb-8 border-b border-border">
+              <img 
+                src={danielPhoto} 
+                alt="Daniel Olimpio" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <p className="font-semibold">Daniel Olimpio</p>
+              </div>
             </div>
 
             {/* Article Content */}
@@ -531,6 +545,9 @@ const BlogArticle3 = () => {
               </section>
 
             </div>
+
+            {/* Author Bio */}
+            <AuthorBio />
           </article>
         </main>
 

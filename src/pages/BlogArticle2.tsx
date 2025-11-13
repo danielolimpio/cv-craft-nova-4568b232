@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowLeft, CheckCircle2, XCircle, AlertCircle, FileText, TrendingUp, Target } from "lucide-react";
+import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const BlogArticle2 = () => {
   return (
@@ -57,6 +59,18 @@ const BlogArticle2 = () => {
               alt="10 Erros Comuns em Currículos que Você Deve Evitar"
               className="w-full h-auto"
             />
+          </div>
+
+          {/* Author Info - Start */}
+          <div className="flex items-center gap-3 mb-8 pb-8 border-b border-border">
+            <img 
+              src={danielPhoto} 
+              alt="Daniel Olimpio" 
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <p className="font-semibold">Daniel Olimpio</p>
+            </div>
           </div>
 
           {/* Article Content */}
@@ -364,6 +378,9 @@ const BlogArticle2 = () => {
               Voltar para todos os artigos
             </Link>
           </div>
+
+          {/* Author Bio */}
+          <AuthorBio />
         </article>
       </main>
 
