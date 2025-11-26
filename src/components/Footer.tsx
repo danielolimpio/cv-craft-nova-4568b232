@@ -123,6 +123,11 @@ const Footer = () => {
                   LGPD
                 </Link>
               </li>
+              <li>
+                <Link to="/sitemap" className="text-footer-foreground/80 hover:text-[#006B3D] transition-colors duration-300">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -143,6 +148,9 @@ const Footer = () => {
               </Link>
               <Link to="/lgpd" className="hover:text-[#006B3D] transition-colors duration-300">
                 LGPD
+              </Link>
+              <Link to="/sitemap" className="hover:text-[#006B3D] transition-colors duration-300">
+                Sitemap
               </Link>
             </div>
           </div>
