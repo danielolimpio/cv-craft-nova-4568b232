@@ -1,17 +1,40 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Palette, Upload, Type, FileText, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const ComoFunciona = () => {
+  const breadcrumbItems = [
+    { label: "Como Funciona" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Como Funciona", url: "/como-funciona" }
+  ]);
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Como Funciona - Criar Currículo Profissional Grátis</title>
+        <meta name="description" content="Aprenda como criar seu currículo profissional em minutos com nossa ferramenta gratuita. Passo a passo simples e intuitivo." />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}
-      <main className="pt-24">
+      <main className="pt-32">
+        <div className="container mx-auto px-4 max-w-4xl mb-6">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+        
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
