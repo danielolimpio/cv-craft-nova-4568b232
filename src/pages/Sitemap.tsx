@@ -63,9 +63,14 @@ const Sitemap = () => {
 
       <Header />
       
-      <main className="container mx-auto px-4 py-12 max-w-6xl">
+      <main className="container mx-auto px-4 pt-32 pb-12 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+              <FileText className="w-8 h-8 text-primary" />
+            </div>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
             Mapa do Site
           </h1>
