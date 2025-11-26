@@ -1,6 +1,22 @@
+# ========================================
+# CONFIGURAÇÕES BÁSICAS
+# ========================================
+
+# Permitir que o .htaccess funcione
+Options +FollowSymLinks -MultiViews -Indexes
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # ========================================
+  # NORMALIZAÇÃO DE URL: Remover trailing slash
+  # ========================================
+  
+  # Remove trailing slash exceto para a raiz
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [R=301,L]
 
   # ========================================
   # ARQUIVOS ESTÁTICOS: Servir diretamente
@@ -25,7 +41,7 @@
   # Se não for arquivo nem diretório existente, redireciona para index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  RewriteRule . /index.html [L,QSA]
 </IfModule>
 
 # ========================================
@@ -33,6 +49,9 @@
 # ========================================
 
 <IfModule mod_headers.c>
+  # Permitir acesso do Googlebot e outros crawlers
+  Header set X-Robots-Tag "index, follow"
+  
   # ads.txt - CRÍTICO para Google AdSense
   <FilesMatch "ads\.txt$">
     Header set Content-Type "text/plain; charset=utf-8"
@@ -48,7 +67,21 @@
   <FilesMatch "sitemap\.xml$">
     Header set Content-Type "application/xml; charset=utf-8"
   </FilesMatch>
+  
+  # index.html - Sempre permitir acesso
+  <FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
 </IfModule>
+
+# ========================================
+# PERMISSÕES: Garantir acesso público
+# ========================================
+
+# Permitir acesso de todos os IPs
+<RequireAll>
+  Require all granted
+</RequireAll>
 
 # ========================================
 # CACHE: Otimizar performance
