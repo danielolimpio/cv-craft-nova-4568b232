@@ -1,5 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { Helmet } from "react-helmet";
+import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import {
   Accordion,
   AccordionContent,
@@ -59,12 +62,34 @@ const FAQ = () => {
     }
   ];
 
+  const breadcrumbItems = [
+    { label: "Perguntas Frequentes" }
+  ];
+
+  const faqSchema = generateFAQSchema(faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "FAQ", url: "/faq" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Perguntas Frequentes - FAQ | Fazer Currículo</title>
+        <meta name="description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente. Respostas rápidas e objetivas." />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <Breadcrumb items={breadcrumbItems} />
+          
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Perguntas Frequentes</h1>

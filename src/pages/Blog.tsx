@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 interface BlogPost {
   id: string;
@@ -85,15 +88,33 @@ const Blog = () => {
     ? blogPosts 
     : blogPosts.filter(post => post.category === selectedCategory);
 
+  const breadcrumbItems = [
+    { label: "Blog" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" }
+  ]);
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Blog - Fazer Currículo | Dicas e Estratégias para Sua Carreira</title>
+        <meta name="description" content="Artigos sobre criação de currículos profissionais, dicas de carreira, estratégias para entrevistas e muito mais." />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
       <main>
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 via-background to-accent/5 py-20">
+        <section className="bg-gradient-to-br from-primary/10 via-background to-accent/5 pt-32 pb-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <Breadcrumb items={breadcrumbItems} />
+            
+            <div className="max-w-4xl mx-auto text-center mt-8">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-[#006B3D] rounded-full mb-6">
                 <BookOpen className="w-8 h-8 text-white" />
               </div>

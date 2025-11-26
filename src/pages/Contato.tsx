@@ -1,11 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 import { useState } from "react";
 
 const Contato = () => {
@@ -15,6 +18,14 @@ const Contato = () => {
     email: "",
     message: ""
   });
+
+  const breadcrumbItems = [
+    { label: "Contato" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Contato", url: "/contato" }
+  ]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,10 +38,20 @@ const Contato = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contato - Fazer Currículo</title>
+        <meta name="description" content="Entre em contato conosco. Estamos prontos para ajudar com suas dúvidas sobre criação de currículos profissionais." />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumb items={breadcrumbItems} />
+          
           {/* Hero Section */}
           <div className="text-center mb-16">
             <div className="flex justify-center mb-6">

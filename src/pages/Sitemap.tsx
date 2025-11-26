@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { FileText, Home, Info, Mail, BookOpen, HelpCircle, Shield, Users } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const Sitemap = () => {
+  const breadcrumbItems = [
+    { label: "Mapa do Site" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Sitemap", url: "/sitemap" }
+  ]);
+
   const sitemapSections = [
     {
       title: "Páginas Principais",
@@ -59,11 +69,16 @@ const Sitemap = () => {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/sitemap" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <Header />
       
       <main className="container mx-auto px-4 pt-32 pb-12 max-w-6xl">
+        <Breadcrumb items={breadcrumbItems} />
+        
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6">

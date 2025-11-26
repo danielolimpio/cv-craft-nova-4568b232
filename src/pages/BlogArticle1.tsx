@@ -1,19 +1,58 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, TrendingUp, Award, ArrowLeft } from "lucide-react";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { Helmet } from "react-helmet";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 const BlogArticle1 = () => {
+  const breadcrumbItems = [
+    { label: "Blog", href: "/blog" },
+    { label: "Como Criar um Currículo Profissional que se Destaca em 2026" }
+  ];
+
+  const articleSchema = generateArticleSchema({
+    title: "Como Criar um Currículo Profissional que se Destaca em 2026",
+    description: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026, exemplos práticos e dicas que funcionam de verdade no mercado competitivo de hoje.",
+    image: "/blog/curriculo-profissional-2026.jpg",
+    datePublished: "2025-01-28",
+    dateModified: "2025-01-28",
+    author: {
+      name: "Daniel Olimpio",
+      url: "/sobre"
+    },
+    url: "/blog/como-criar-curriculo-profissional-2026"
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "Como Criar um Currículo Profissional que se Destaca em 2026", url: "/blog/como-criar-curriculo-profissional-2026" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Como Criar um Currículo Profissional que se Destaca em 2026</title>
+        <meta name="description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026." />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
       <main className="pt-32 pb-12">
         <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <Breadcrumb items={breadcrumbItems} />
+          
           {/* Back Button */}
           <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
