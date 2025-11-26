@@ -1,8 +1,22 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
+
+# Permitir acesso direto ao ads.txt (importante para Google AdSense)
+RewriteCond %{REQUEST_URI} ^/ads\.txt$ [NC]
+RewriteRule ^.*$ - [L]
+
+# Permitir acesso direto ao robots.txt e sitemap.xml
+RewriteCond %{REQUEST_URI} ^/(robots\.txt|sitemap\.xml)$ [NC]
+RewriteRule ^.*$ - [L]
+
 # Se não for arquivo nem diretório, redireciona para index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
 </IfModule>
+
+# Definir tipo MIME correto para ads.txt
+<FilesMatch "ads\.txt$">
+  Header set Content-Type "text/plain; charset=utf-8"
+</FilesMatch>
