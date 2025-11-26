@@ -1,22 +1,78 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
+  RewriteEngine On
+  RewriteBase /
 
-# Permitir acesso direto ao ads.txt (importante para Google AdSense)
-RewriteCond %{REQUEST_URI} ^/ads\.txt$ [NC]
-RewriteRule ^.*$ - [L]
+  # ========================================
+  # ARQUIVOS ESTÁTICOS: Servir diretamente
+  # ========================================
+  
+  # Arquivos de texto na raiz (ads.txt, robots.txt, etc.)
+  RewriteRule ^.*\.(txt|xml|json|webmanifest)$ - [L]
+  
+  # Imagens e ícones
+  RewriteRule ^.*\.(ico|png|jpg|jpeg|gif|svg|webp)$ - [L]
+  
+  # Fontes
+  RewriteRule ^.*\.(woff|woff2|ttf|eot|otf)$ - [L]
+  
+  # Outros arquivos estáticos
+  RewriteRule ^.*\.(css|js|map|pdf)$ - [L]
 
-# Permitir acesso direto ao robots.txt e sitemap.xml
-RewriteCond %{REQUEST_URI} ^/(robots\.txt|sitemap\.xml)$ [NC]
-RewriteRule ^.*$ - [L]
-
-# Se não for arquivo nem diretório, redireciona para index.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+  # ========================================
+  # SPA: Redirecionar para index.html
+  # ========================================
+  
+  # Se não for arquivo nem diretório existente, redireciona para index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
 </IfModule>
 
-# Definir tipo MIME correto para ads.txt
-<FilesMatch "ads\.txt$">
-  Header set Content-Type "text/plain; charset=utf-8"
-</FilesMatch>
+# ========================================
+# MIME TYPES: Garantir tipos corretos
+# ========================================
+
+<IfModule mod_headers.c>
+  # ads.txt - CRÍTICO para Google AdSense
+  <FilesMatch "ads\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set X-Content-Type-Options "nosniff"
+  </FilesMatch>
+  
+  # robots.txt
+  <FilesMatch "robots\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+  </FilesMatch>
+  
+  # sitemap.xml
+  <FilesMatch "sitemap\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+  </FilesMatch>
+</IfModule>
+
+# ========================================
+# CACHE: Otimizar performance
+# ========================================
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Arquivos de texto (sem cache para atualização rápida)
+  ExpiresByType text/plain "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 0 seconds"
+  
+  # Imagens (cache longo)
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS e JavaScript (cache médio)
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Fontes (cache longo)
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+</IfModule>
