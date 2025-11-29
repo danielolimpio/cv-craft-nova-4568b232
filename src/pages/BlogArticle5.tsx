@@ -49,7 +49,7 @@ const BlogArticle5 = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span>Por Daniel Olímpio</span>
                 <span>•</span>
-                <span>13 de novembro de 2025</span>
+                <span>24 de Novembro, 2025</span>
                 <span>•</span>
                 <span>15 min de leitura</span>
               </div>

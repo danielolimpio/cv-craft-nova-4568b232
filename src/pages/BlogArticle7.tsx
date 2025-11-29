@@ -88,24 +88,30 @@ const BlogArticle7 = () => {
 
           {/* Article Header */}
           <header className="mb-8">
-            <img 
-              src={articleData.image}
-              alt={articleData.title}
-              className="w-full h-[400px] object-cover rounded-lg mb-8"
-            />
-            
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               {articleData.title}
             </h1>
 
-            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              {articleData.description}
+            </p>
+
+            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6 border-b border-t py-4">
               <span>Por {articleData.author.name}</span>
               <span>•</span>
-              <time dateTime={articleData.datePublished}>29 de Janeiro, 2025</time>
+              <time dateTime={articleData.datePublished}>29 de Novembro, 2025</time>
               <span>•</span>
               <span>12 min de leitura</span>
             </div>
           </header>
+
+          <div className="mb-12 rounded-lg overflow-hidden">
+            <img 
+              src={articleData.image}
+              alt={articleData.title}
+              className="w-full h-auto"
+            />
+          </div>
 
           {/* Article Content */}
           <div className="prose prose-lg max-w-none">

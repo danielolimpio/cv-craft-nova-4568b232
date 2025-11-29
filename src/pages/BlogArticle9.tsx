@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { ArrowLeft, FileText, Target, CheckCircle, AlertCircle, Lightbulb, MessageSquare, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, FileText, Target, CheckCircle, AlertCircle, Lightbulb, MessageSquare, Calendar, Clock, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorBio from "@/components/AuthorBio";
 
@@ -131,38 +133,48 @@ const BlogArticle9 = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Breadcrumb items={breadcrumbItems} />
-          
-          <Link to="/blog">
-            <Button variant="ghost" className="mb-6">
+        <Header />
+        
+        <main className="pt-32 pb-12">
+          <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <Breadcrumb items={breadcrumbItems} />
+            
+            <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors mt-6">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Voltar para o Blog
-            </Button>
-          </Link>
+            </Link>
 
-          <article className="max-w-4xl mx-auto">
-            <img 
-              src={articleData.image}
-              alt={articleData.title}
-              className="w-full h-[400px] object-cover rounded-lg mb-8"
-            />
+            <header className="mb-12">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                {articleData.title}
+              </h1>
 
-            <AuthorBio />
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                {articleData.description}
+              </p>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-8">
-              {articleData.title}
-            </h1>
-
-            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-8">
-              <div className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                <span>30 de Novembro, 2025</span>
+              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-t py-4">
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4" />
+                  <span>{articleData.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  <span>30 de Novembro, 2025</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  <span>14 min de leitura</span>
+                </div>
               </div>
-              <div className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
-                <span>14 min de leitura</span>
-              </div>
+            </header>
+
+            <div className="mb-12 rounded-lg overflow-hidden">
+              <img 
+                src={articleData.image}
+                alt={articleData.title}
+                className="w-full h-auto"
+              />
             </div>
 
             <div className="prose prose-lg max-w-none">
@@ -464,7 +476,9 @@ const BlogArticle9 = () => {
 
             <AuthorBio />
           </article>
-        </div>
+        </main>
+        
+        <Footer />
       </div>
     </>
   );
