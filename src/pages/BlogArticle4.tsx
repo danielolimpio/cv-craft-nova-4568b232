@@ -76,7 +76,7 @@ const BlogArticle4 = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  <span>28 de Janeiro, 2025</span>
+                  <span>26 de Novembro, 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />

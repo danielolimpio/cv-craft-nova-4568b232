@@ -40,7 +40,7 @@ const BlogArticle6 = () => {
               </h1>
               
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-8">
-                <time dateTime="2025-11-13">13 de novembro de 2025</time>
+                <time dateTime="2025-11-23">23 de Novembro, 2025</time>
                 <span>•</span>
                 <span>15 min de leitura</span>
               </div>
