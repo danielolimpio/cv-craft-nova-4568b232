@@ -21,85 +21,96 @@ interface BlogPost {
   image: string;
 }
 
-const blogPosts: BlogPost[] = [
-  {
-    id: "destaque-habilidades-estrategia-impacto",
-    title: "Destaque suas habilidades com estratégia e impacto",
-    excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
-    content: "Conteúdo completo do artigo...",
-    author: "Daniel Olímpio",
-    date: "29 de Janeiro, 2025",
+  const blogPosts: BlogPost[] = [
+    {
+      id: "destaque-habilidades-estrategia-impacto",
+      title: "Destaque suas habilidades com estratégia e impacto",
+      excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "29 de Novembro, 2025",
     readTime: "12 min",
     category: "Dicas de Currículo",
     image: "/blog/destaque-habilidades-estrategia.jpg"
   },
-  {
-    id: "perfil-linkedin-recrutadores",
-    title: "Como criar um perfil no LinkedIn que atrai recrutadores",
-    excerpt: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
-    content: "Conteúdo completo do artigo...",
-    author: "Daniel Olímpio",
-    date: "29 de Janeiro, 2025",
+    {
+      id: "perfil-linkedin-recrutadores",
+      title: "Como criar um perfil no LinkedIn que atrai recrutadores",
+      excerpt: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "30 de Novembro, 2025",
     readTime: "12 min",
     category: "Networking",
     image: "/blog/perfil-linkedin-recrutadores.jpg"
   },
-  {
-    id: "como-criar-curriculo-profissional-2026",
-    title: "Como Criar um Currículo Profissional que se Destaca em 2026",
-    excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
-    content: "Conteúdo completo do artigo...",
-    author: "Daniel Olímpio",
-    date: "28 de Janeiro, 2025",
+    {
+      id: "como-criar-curriculo-profissional-2026",
+      title: "Como Criar um Currículo Profissional que se Destaca em 2026",
+      excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "28 de Novembro, 2025",
     readTime: "15 min",
     category: "Dicas de Currículo",
     image: "/blog/curriculo-profissional-2026.jpg"
   },
-  {
-    id: "10-erros-comuns-curriculos",
-    title: "10 Erros Comuns em Currículos que Você Deve Evitar",
-    excerpt: "Aprenda quais são os erros mais frequentes que podem comprometer suas chances de conseguir uma entrevista.",
-    content: "Conteúdo completo do artigo...",
-    author: "Equipe Fazer Currículo",
-    date: "25 de Janeiro, 2025",
+    {
+      id: "10-erros-comuns-curriculos",
+      title: "10 Erros Comuns em Currículos que Você Deve Evitar",
+      excerpt: "Aprenda quais são os erros mais frequentes que podem comprometer suas chances de conseguir uma entrevista.",
+      content: "Conteúdo completo do artigo...",
+      author: "Equipe Fazer Currículo",
+      date: "25 de Novembro, 2025",
     readTime: "7 min",
     category: "Erros Comuns",
     image: "/blog/10-erros-curriculo-preview.jpg"
   },
-  {
-    id: "preparar-curriculo-sistemas-ats",
-    title: "Como Preparar seu Currículo para Sistemas ATS",
-    excerpt: "Entenda como os sistemas de rastreamento de candidatos funcionam e como otimizar seu currículo para passar por eles.",
-    content: "Conteúdo completo do artigo...",
-    author: "Daniel Olímpio",
-    date: "22 de Janeiro, 2025",
+    {
+      id: "preparar-curriculo-sistemas-ats",
+      title: "Como Preparar seu Currículo para Sistemas ATS",
+      excerpt: "Entenda como os sistemas de rastreamento de candidatos funcionam e como otimizar seu currículo para passar por eles.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "26 de Novembro, 2025",
     readTime: "6 min",
     category: "Tecnologia",
     image: "/blog/curriculo-ats-sistemas.jpg"
   },
-  {
-    id: "curriculo-primeiro-emprego-o-que-incluir",
-    title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
-    excerpt: "Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades.",
-    content: "Conteúdo completo do artigo...",
-    author: "Equipe Fazer Currículo",
-    date: "28 de Janeiro, 2025",
+    {
+      id: "curriculo-primeiro-emprego-o-que-incluir",
+      title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
+      excerpt: "Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades.",
+      content: "Conteúdo completo do artigo...",
+      author: "Equipe Fazer Currículo",
+      date: "27 de Novembro, 2025",
     readTime: "18 min",
     category: "Primeiro Emprego",
     image: "/blog/curriculo-primeiro-emprego.jpg"
   },
-  {
-    id: "curriculo-sem-experiencia-estrategias",
-    title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
-    excerpt: "Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades.",
-    content: "Conteúdo completo do artigo...",
-    author: "Daniel Olímpio",
-    date: "13 de novembro de 2025",
-    readTime: "15 min",
-    category: "Sem Experiência",
-    image: "/blog/curriculo-sem-experiencia.jpg"
-  }
-];
+    {
+      id: "curriculo-sem-experiencia-estrategias",
+      title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
+      excerpt: "Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "24 de Novembro, 2025",
+      readTime: "15 min",
+      category: "Sem Experiência",
+      image: "/blog/curriculo-sem-experiencia.jpg"
+    },
+    {
+      id: "carta-apresentacao-empregador",
+      title: "Saiba como escrever uma carta de apresentação que conquiste o empregador",
+      excerpt: "Domine a arte de escrever uma carta de apresentação persuasiva que conecta seu valor à vaga desejada.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "30 de Novembro, 2025",
+      readTime: "14 min",
+      category: "Dicas de Currículo",
+      image: "/blog/carta-apresentacao-empregador.jpg"
+    }
+  ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
