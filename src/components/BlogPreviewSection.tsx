@@ -56,36 +56,14 @@ const BlogPreviewSection = () => {
       image: "/blog/curriculo-sem-experiencia.jpg"
     },
     {
-      title: "Como Destacar suas Competências no Currículo",
-      excerpt: "Aprenda a identificar e apresentar suas habilidades de forma estratégica para conquistar a vaga desejada.",
-      date: "18 de Janeiro, 2025",
-      readTime: "10 min",
+      title: "Destaque suas habilidades com estratégia e impacto",
+      excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
+      date: "29 de Janeiro, 2025",
+      readTime: "14 min",
       category: "Dicas de Currículo",
-      color: "from-emerald-600 to-green-600"
-    },
-    {
-      title: "LinkedIn: Como Otimizar seu Perfil Profissional",
-      excerpt: "Descubra as melhores práticas para criar um perfil no LinkedIn que atrai recrutadores e gera oportunidades.",
-      date: "15 de Janeiro, 2025",
-      readTime: "9 min",
-      category: "Networking",
-      color: "from-blue-700 to-cyan-600"
-    },
-    {
-      title: "Carta de Apresentação: Guia Completo 2026",
-      excerpt: "Aprenda a escrever uma carta de apresentação persuasiva que complementa seu currículo perfeitamente.",
-      date: "12 de Janeiro, 2025",
-      readTime: "11 min",
-      category: "Dicas de Currículo",
-      color: "from-orange-600 to-amber-600"
-    },
-    {
-      title: "Transição de Carreira: Como Adaptar seu Currículo",
-      excerpt: "Estratégias eficazes para reposicionar sua experiência ao mudar de área profissional.",
-      date: "10 de Janeiro, 2025",
-      readTime: "12 min",
-      category: "Carreira",
-      color: "from-rose-600 to-pink-600"
+      color: "from-emerald-600 to-green-600",
+      link: "/blog/destaque-habilidades-estrategia-impacto",
+      image: "/blog/destaque-habilidades-estrategia.jpg"
     }
   ];
 
