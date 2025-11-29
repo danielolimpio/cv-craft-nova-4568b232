@@ -64,6 +64,16 @@ const BlogPreviewSection = () => {
       color: "from-emerald-600 to-green-600",
       link: "/blog/destaque-habilidades-estrategia-impacto",
       image: "/blog/destaque-habilidades-estrategia.jpg"
+    },
+    {
+      title: "Como criar um perfil no LinkedIn que atrai recrutadores",
+      excerpt: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
+      date: "29 de Janeiro, 2025",
+      readTime: "12 min",
+      category: "Networking",
+      color: "from-blue-700 to-cyan-600",
+      link: "/blog/perfil-linkedin-recrutadores",
+      image: "/blog/perfil-linkedin-recrutadores.jpg"
     }
   ];
 

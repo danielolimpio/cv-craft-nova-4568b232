@@ -34,6 +34,17 @@ const blogPosts: BlogPost[] = [
     image: "/blog/destaque-habilidades-estrategia.jpg"
   },
   {
+    id: "perfil-linkedin-recrutadores",
+    title: "Como criar um perfil no LinkedIn que atrai recrutadores",
+    excerpt: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
+    content: "Conteúdo completo do artigo...",
+    author: "Daniel Olímpio",
+    date: "29 de Janeiro, 2025",
+    readTime: "12 min",
+    category: "Networking",
+    image: "/blog/perfil-linkedin-recrutadores.jpg"
+  },
+  {
     id: "como-criar-curriculo-profissional-2026",
     title: "Como Criar um Currículo Profissional que se Destaca em 2026",
     excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
