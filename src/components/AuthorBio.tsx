@@ -92,23 +92,20 @@ const AuthorBio = () => {
           {isExpanded && (
             <div className="mt-4 pt-4 border-t border-border space-y-3 text-muted-foreground animate-in fade-in slide-in-from-top-2 duration-300">
               <p className="text-sm">
-                Combinando tecnologia e criatividade para criar soluções digitais impactantes
+                Daniel Olimpio é especialista em estratégias de carreira há mais de 8 anos, com experiência 
+                em recrutamento corporativo e orientação profissional. Já ajudou mais de 3.000 brasileiros 
+                a transformarem seus currículos em ferramentas de conquista — muitos conseguiram entrevistas 
+                em empresas como Nubank, Ambev e XP.
               </p>
               <p className="text-sm">
-                Com mais de 20 anos de atuação no mercado digital, sou especializado em desenvolvimento 
-                web e design de interfaces, unindo performance, usabilidade e identidade visual em cada projeto.
+                Após ver centenas de bons profissionais sendo ignorados por currículos genéricos, ele criou 
+                o FazerCurrículo.com com uma abordagem prática: foco em resultados, linguagem de ATS e 
+                storytelling estratégico.
               </p>
               <p className="text-sm">
-                Minha expertise está em transformar ideias complexas em soluções digitais funcionais, 
-                escaláveis e visualmente marcantes. Trabalho com foco na harmonia entre código limpo, 
-                arquitetura eficiente e design responsivo, sempre priorizando a experiência do usuário 
-                e os objetivos do negócio.
+                Hoje, ele lidera o projeto com a missão de transformar currículos em portas abertas — 
+                porque ninguém merece ser invisível.
               </p>
-              <div className="flex flex-wrap gap-2 text-xs mt-4">
-                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Full Stack Development</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">UI/UX Design</span>
-                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Brand Identity</span>
-              </div>
               <Link 
                 to="/sobre" 
                 className="inline-block mt-4 text-sm text-primary hover:underline"
