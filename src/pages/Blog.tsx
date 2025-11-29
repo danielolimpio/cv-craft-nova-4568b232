@@ -23,6 +23,17 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "destaque-habilidades-estrategia-impacto",
+    title: "Destaque suas habilidades com estratégia e impacto",
+    excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
+    content: "Conteúdo completo do artigo...",
+    author: "Daniel Olímpio",
+    date: "29 de Janeiro, 2025",
+    readTime: "12 min",
+    category: "Dicas de Currículo",
+    image: "/blog/destaque-habilidades-estrategia.jpg"
+  },
+  {
     id: "como-criar-curriculo-profissional-2026",
     title: "Como Criar um Currículo Profissional que se Destaca em 2026",
     excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
