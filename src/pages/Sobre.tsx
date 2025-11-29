@@ -142,36 +142,26 @@ const Sobre = () => {
             {/* Content */}
             <div>
               <h2 className="text-3xl font-bold mb-2">Daniel Olimpio</h2>
-              <p className="text-xl mb-6" style={{ color: "#006B3D" }}>Desenvolvedor Web</p>
+              <p className="text-xl mb-6" style={{ color: "#006B3D" }}>Especialista em Estratégias de Carreira</p>
               
               <h3 className="text-xl font-semibold mb-3">Sobre Mim</h3>
               <p className="text-muted-foreground mb-6">
-                Combinando tecnologia e criatividade para criar soluções digitais impactantes
+                Daniel Olimpio é especialista em estratégias de carreira há mais de 8 anos, com experiência 
+                em recrutamento corporativo e orientação profissional. Já ajudou mais de 3.000 brasileiros 
+                a transformarem seus currículos em ferramentas de conquista — muitos conseguiram entrevistas 
+                em empresas como Nubank, Ambev e XP.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3">Minha Jornada</h3>
+              <h3 className="text-xl font-semibold mb-3">Minha Missão</h3>
               <p className="text-muted-foreground mb-4">
-                Com mais de 20 anos de atuação no mercado digital, sou especializado em desenvolvimento 
-                web e design de interfaces, unindo performance, usabilidade e identidade visual em cada projeto.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Minha expertise está em transformar ideias complexas em soluções digitais funcionais, 
-                escaláveis e visualmente marcantes. Trabalho com foco na harmonia entre código limpo, 
-                arquitetura eficiente e design responsivo, sempre priorizando a experiência do usuário 
-                e os objetivos do negócio.
+                Após ver centenas de bons profissionais sendo ignorados por currículos genéricos, ele criou 
+                o FazerCurrículo.com com uma abordagem prática: foco em resultados, linguagem de ATS e 
+                storytelling estratégico.
               </p>
               <p className="text-muted-foreground mb-6">
-                Do front-end moderno ao back-end robusto, da prototipagem à entrega final, meu compromisso 
-                é construir produtos digitais que unem forma, função e tecnologia.
+                Hoje, ele lidera o projeto com a missão de transformar currículos em portas abertas — 
+                porque ninguém merece ser invisível.
               </p>
-
-              <div className="flex flex-wrap gap-3 mb-6 text-sm text-muted-foreground">
-                <span>Full Stack Development</span>
-                <span>•</span>
-                <span>UI/UX Design</span>
-                <span>•</span>
-                <span>Brand Identity</span>
-              </div>
 
               {/* Social Links */}
               <div className="flex gap-4">
