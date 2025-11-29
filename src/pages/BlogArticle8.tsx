@@ -79,31 +79,35 @@ const BlogArticle8 = () => {
           {/* Article Header */}
           <article className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <img 
-                src="/blog/perfil-linkedin-recrutadores.jpg" 
-                alt="Como criar um perfil no LinkedIn que atrai recrutadores"
-                className="w-full h-[400px] object-cover rounded-2xl shadow-lg mb-8"
-              />
-              
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Como criar um perfil no LinkedIn que atrai recrutadores
               </h1>
               
-              <div className="flex items-center space-x-4 text-muted-foreground mb-8">
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                {articleData.description}
+              </p>
+              
+              <div className="flex items-center space-x-4 text-muted-foreground mb-8 border-t border-b py-4">
                 <img 
-                  src="/src/assets/daniel-olimpio.jpg" 
+                  src="/assets/daniel-olimpio.jpg" 
                   alt="Daniel Olimpio" 
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
                   <p className="font-semibold text-foreground">Daniel Olimpio</p>
                   <div className="flex items-center space-x-2 text-sm">
-                    <time dateTime="2025-01-29">29 de Janeiro, 2025</time>
+                    <time dateTime="2025-11-29">29 de Novembro, 2025</time>
                     <span>•</span>
                     <span>12 min de leitura</span>
                   </div>
                 </div>
               </div>
+
+              <img 
+                src="/blog/perfil-linkedin-recrutadores.jpg" 
+                alt="Como criar um perfil no LinkedIn que atrai recrutadores"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-lg mb-8"
+              />
             </div>
 
             {/* Article Content */}

@@ -13,7 +13,7 @@ const TermosDeUso = () => {
             <FileText className="w-16 h-16" style={{ color: '#006B3D' }} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Termos de Uso</h1>
-          <p className="text-muted-foreground mb-8">Última atualização: 28 de outubro de 2025</p>
+          <p className="text-muted-foreground mb-8">Última atualização: 29 de novembro de 2025</p>
 
           <div className="prose prose-lg max-w-none space-y-8">
             <section>

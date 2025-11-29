@@ -153,18 +153,19 @@ const BlogArticle9 = () => {
                 {articleData.description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-t py-4">
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
-                  <span>{articleData.author}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>30 de Novembro, 2025</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>14 min de leitura</span>
+              <div className="flex items-center space-x-4 text-muted-foreground mb-8 border-t border-b py-4">
+                <img 
+                  src="/assets/daniel-olimpio.jpg" 
+                  alt="Daniel Olimpio" 
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-semibold text-foreground">Daniel Olimpio</p>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <time dateTime="2025-11-30">30 de Novembro, 2025</time>
+                    <span>•</span>
+                    <span>14 min de leitura</span>
+                  </div>
                 </div>
               </div>
             </header>
