@@ -38,64 +38,64 @@ const FeaturesSection = () => {
     color: "text-red-500",
     bgColor: "bg-red-50"
   }];
-  return <section id="ferramentas" className="py-24 bg-background">
+  return <section id="ferramentas" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-6">
+        <div className="text-center mb-12 lg:mb-16 animate-fade-in-up">
+          <div className="inline-flex items-center space-x-2 bg-primary/10 rounded-full px-4 py-2 mb-4 lg:mb-6">
             <Zap className="w-4 h-4" style={{
             color: '#006B3D'
           }} />
-            <span className="font-semibold" style={{
+            <span className="font-semibold text-sm lg:text-base" style={{
             color: '#006B3D'
           }}>Ferramentas Revolucionárias</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
             Ferramentas <span className="text-gradient-primary">Profissionais</span> e Avançadas
           </h2>
           
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
             Desenvolvemos as ferramentas mais completas do mercado para garantir que seu currículo 
             se destaque e seja aprovado pelas melhores empresas do Brasil e do mundo.
           </p>
         </div>
 
         {/* Main Feature Highlight */}
-        <div className="rounded-2xl shadow-xl p-8 mb-16 animate-scale-in" style={{
+        <div className="rounded-2xl shadow-xl p-6 lg:p-8 mb-12 lg:mb-16 animate-scale-in" style={{
           backgroundColor: '#2C2C2C'
         }}>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center space-x-3 mb-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="flex items-center space-x-3 mb-4 lg:mb-6">
                 <div style={{
                 background: 'rgba(0, 100, 61, 0.3)'
-              }} className="w-12 h-12 rounded-xl flex items-center justify-center">
-                  <Brain className="w-6 h-6" style={{ color: '#006B3D' }} />
+              }} className="w-10 h-10 lg:w-12 lg:h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Brain className="w-5 h-5 lg:w-6 lg:h-6" style={{ color: '#006B3D' }} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Editor Profissional Completo</h3>
-                  <p className="text-white/70">Recursos avançados e intuitivos</p>
+                  <h3 className="text-xl lg:text-2xl font-bold text-white">Editor Profissional Completo</h3>
+                  <p className="text-sm lg:text-base text-white/70">Recursos avançados e intuitivos</p>
                 </div>
               </div>
               
-              <p className="text-lg text-white/80 mb-6 leading-relaxed">
+              <p className="text-base lg:text-lg text-white/80 mb-4 lg:mb-6 leading-relaxed">
                 Nossa plataforma oferece ferramentas completas de edição e personalização, 
                 desenvolvidas com base nas melhores práticas de RH de empresas como Google, 
                 Microsoft, McKinsey e outras líderes de mercado.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-3 lg:space-y-4">
                 {["Editor visual intuitivo e completo", "Personalização total de cores e fontes", "Compatibilidade garantida com ATS", "Exportação em PDF profissional"].map((item, index) => <div key={index} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 rounded-full" style={{
+                    <div className="w-2 h-2 rounded-full flex-shrink-0" style={{
                   backgroundColor: '#006B3D'
                 }} />
-                    <span className="text-white font-medium">{item}</span>
+                    <span className="text-white font-medium text-sm lg:text-base">{item}</span>
                   </div>)}
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <img src={aiAnalysisIcon} alt="Editor de currículo profissional" className="w-full h-auto rounded-xl shadow-lg" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-xl" />
             </div>
@@ -103,21 +103,21 @@ const FeaturesSection = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => <div key={index} className="card-feature group hover:scale-105 transform transition-all duration-500 animate-fade-in-up" style={{
           animationDelay: `${index * 100}ms`
         }}>
-              <div className={`w-14 h-14 ${feature.bgColor} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-7 h-7" style={{
+              <div className={`w-12 h-12 lg:w-14 lg:h-14 ${feature.bgColor} rounded-xl flex items-center justify-center mb-4 lg:mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <feature.icon className="w-6 h-6 lg:w-7 lg:h-7" style={{
               color: '#006B3D'
             }} />
               </div>
               
-              <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-lg lg:text-xl font-bold mb-3 lg:mb-4 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
               
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
               
@@ -127,7 +127,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-in-up">
+        <div className="mt-16 lg:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 animate-fade-in-up">
           {[{
           label: "Currículos Criados",
           value: "50.000+",
@@ -145,15 +145,15 @@ const FeaturesSection = () => {
           value: "4.9/5",
           icon: Sparkles
         }].map((stat, index) => <div key={index} className="text-center group">
-              <div className="w-16 h-16 gradient-card rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <stat.icon className="w-8 h-8" style={{
+              <div className="w-14 h-14 lg:w-16 lg:h-16 gradient-card rounded-full flex items-center justify-center mx-auto mb-3 lg:mb-4 group-hover:scale-110 transition-transform duration-300">
+                <stat.icon className="w-7 h-7 lg:w-8 lg:h-8" style={{
               color: '#006B3D'
             }} />
               </div>
-              <div className="text-3xl font-bold mb-2" style={{
+              <div className="text-2xl lg:text-3xl font-bold mb-2" style={{
             color: '#006B3D'
           }}>{stat.value}</div>
-              <div className="text-muted-foreground font-medium">{stat.label}</div>
+              <div className="text-sm lg:text-base text-muted-foreground font-medium">{stat.label}</div>
             </div>)}
         </div>
       </div>
