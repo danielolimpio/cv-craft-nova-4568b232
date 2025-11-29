@@ -8,7 +8,7 @@ const BlogPreviewSection = () => {
     {
       title: "Como Criar um Currículo Profissional que se Destaca em 2026",
       excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
-      date: "28 de Janeiro, 2025",
+      date: "28 de Novembro, 2025",
       readTime: "15 min",
       category: "Dicas de Currículo",
       color: "from-[#006B3D] to-[#005a32]",
@@ -18,7 +18,7 @@ const BlogPreviewSection = () => {
     {
       title: "10 Erros Comuns em Currículos que Você Deve Evitar",
       excerpt: "Aprenda quais são os erros mais frequentes que podem comprometer suas chances de conseguir uma entrevista.",
-      date: "25 de Janeiro, 2025",
+      date: "25 de Novembro, 2025",
       readTime: "7 min",
       category: "Erros Comuns",
       color: "from-green-600 to-teal-600",
@@ -28,7 +28,7 @@ const BlogPreviewSection = () => {
     {
       title: "Como Preparar seu Currículo para Sistemas ATS",
       excerpt: "Entenda como os sistemas de rastreamento de candidatos funcionam e como otimizar seu currículo para passar por eles.",
-      date: "22 de Janeiro, 2025",
+      date: "26 de Novembro, 2025",
       readTime: "12 min",
       category: "Tecnologia",
       color: "from-purple-600 to-pink-600",
@@ -38,7 +38,7 @@ const BlogPreviewSection = () => {
     {
       title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
       excerpt: "Dicas objetivas para criar um currículo de primeiro emprego que destaca seu potencial.",
-      date: "12 de novembro de 2025",
+      date: "27 de Novembro, 2025",
       readTime: "10 min",
       category: "Primeiro Emprego",
       color: "from-purple-500 to-pink-500",
@@ -48,7 +48,7 @@ const BlogPreviewSection = () => {
     {
       title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
       excerpt: "Sem histórico profissional? Transforme projetos, voluntariado e habilidades em um currículo competitivo.",
-      date: "13 de novembro de 2025",
+      date: "24 de Novembro, 2025",
       readTime: "15 min",
       category: "Sem Experiência",
       color: "from-cyan-500 to-blue-500",
@@ -58,7 +58,7 @@ const BlogPreviewSection = () => {
     {
       title: "Destaque suas habilidades com estratégia e impacto",
       excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
-      date: "29 de Janeiro, 2025",
+      date: "29 de Novembro, 2025",
       readTime: "14 min",
       category: "Dicas de Currículo",
       color: "from-emerald-600 to-green-600",
@@ -68,12 +68,22 @@ const BlogPreviewSection = () => {
     {
       title: "Como criar um perfil no LinkedIn que atrai recrutadores",
       excerpt: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
-      date: "29 de Janeiro, 2025",
+      date: "30 de Novembro, 2025",
       readTime: "12 min",
       category: "Networking",
       color: "from-blue-700 to-cyan-600",
       link: "/blog/perfil-linkedin-recrutadores",
       image: "/blog/perfil-linkedin-recrutadores.jpg"
+    },
+    {
+      title: "Saiba como escrever uma carta de apresentação que conquiste o empregador",
+      excerpt: "Domine a arte de escrever uma carta de apresentação persuasiva que conecta seu valor à vaga desejada.",
+      date: "30 de Novembro, 2025",
+      readTime: "14 min",
+      category: "Dicas de Currículo",
+      color: "from-amber-600 to-orange-600",
+      link: "/blog/carta-apresentacao-empregador",
+      image: "/blog/carta-apresentacao-empregador.jpg"
     }
   ];
 
