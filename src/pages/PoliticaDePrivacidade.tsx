@@ -13,7 +13,7 @@ const PoliticaDePrivacidade = () => {
             <Shield className="w-16 h-16" style={{ color: '#006B3D' }} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Política de Privacidade</h1>
-          <p className="text-muted-foreground mb-8">Última atualização: 28 de outubro de 2025</p>
+          <p className="text-muted-foreground mb-8">Última atualização: 29 de novembro de 2025</p>
 
           <div className="prose prose-lg max-w-none space-y-8">
             <section>
@@ -48,6 +48,7 @@ const PoliticaDePrivacidade = () => {
                 <li>Fornecer e manter nosso serviço de criação de currículos</li>
                 <li>Melhorar e personalizar sua experiência</li>
                 <li>Analisar como o serviço é usado</li>
+                <li>Exibir anúncios relevantes através do Google AdSense</li>
                 <li>Detectar, prevenir e resolver problemas técnicos</li>
                 <li>Comunicar atualizações e novidades (se você optar por receber)</li>
               </ul>
@@ -102,14 +103,36 @@ const PoliticaDePrivacidade = () => {
 
             <section>
               <h2 className="text-2xl font-bold mb-4">8. Cookies</h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 Utilizamos cookies para melhorar sua experiência. Você pode configurar seu navegador para 
                 recusar cookies, mas isso pode afetar algumas funcionalidades do site.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Cookies de terceiros (como Google Analytics e Google AdSense) podem ser usados para 
+                personalizar anúncios e analisar o tráfego do site. Para mais informações sobre como 
+                o Google usa dados, visite a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Política de Privacidade do Google</a>.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4">9. Alterações nesta Política</h2>
+              <h2 className="text-2xl font-bold mb-4">9. Publicidade</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Este site utiliza o Google AdSense para exibir anúncios relevantes. O Google pode usar 
+                cookies e tecnologias semelhantes para:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Exibir anúncios personalizados baseados em suas visitas anteriores a este e outros sites</li>
+                <li>Medir a eficácia dos anúncios</li>
+                <li>Evitar que você veja o mesmo anúncio repetidamente</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Você pode gerenciar suas preferências de anúncios visitando o <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Gerenciador de Preferências de Anúncios do Google</a> 
+                ou optar por não receber anúncios personalizados através da <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Digital Advertising Alliance</a>.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold mb-4">10. Alterações nesta Política</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre alterações 
                 significativas publicando a nova política nesta página e atualizando a data de "última 
@@ -118,7 +141,7 @@ const PoliticaDePrivacidade = () => {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4">10. Contato</h2>
+              <h2 className="text-2xl font-bold mb-4">11. Contato</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco através 
                 do email contato@fazercurriculo.com ou pelo telefone (12) 98251-9116.
