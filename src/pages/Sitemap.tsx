@@ -38,6 +38,10 @@ const Sitemap = () => {
         { url: "/blog/curriculo-primeiro-emprego-o-que-incluir", label: "Currículo para Primeiro Emprego: O Que Incluir e Evitar" },
         { url: "/blog/curriculo-sem-experiencia-estrategias", label: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" },
         { url: "/blog/objetivo-profissional-curriculo", label: "Objetivo Profissional no Currículo: Exemplos Práticos" },
+        { url: "/blog/destaque-habilidades-estrategia-impacto", label: "Destaque suas Habilidades com Estratégia e Impacto" },
+        { url: "/blog/perfil-linkedin-recrutadores", label: "Como Criar um Perfil no LinkedIn que Atrai Recrutadores" },
+        { url: "/blog/carta-apresentacao-empregador", label: "Carta de Apresentação que Conquiste o Empregador" },
+        { url: "/blog/curriculo-estagio-estudantes", label: "Currículo para Estágio: O Guia Definitivo para Estudantes" },
       ],
     },
     {
