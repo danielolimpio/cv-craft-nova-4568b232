@@ -38,7 +38,7 @@ const BlogArticle4 = () => {
         <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo." />
         <meta property="og:image" content="/blog/curriculo-primeiro-emprego.jpg" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://fazercurriculo.com.br/blog/4" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

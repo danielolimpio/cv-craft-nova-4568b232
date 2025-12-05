@@ -17,20 +17,20 @@ const Index = () => {
         <title>Criar Currículo Grátis Online - Modelos Profissionais | Fazer Currículo</title>
         <meta name="description" content="Crie seu currículo profissional gratuitamente com nossos modelos modernos e otimizados para ATS. Ferramenta 100% grátis para criar currículos que impressionam recrutadores." />
         <meta name="keywords" content="criar currículo grátis, currículo profissional, fazer currículo online, modelos de currículo, currículo ATS, currículo para emprego" />
-        <link rel="canonical" href="https://fazercurriculo.online/" />
+        <link rel="canonical" href="https://fazercurriculo.com/" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Criar Currículo Grátis Online - Modelos Profissionais" />
         <meta property="og:description" content="Crie seu currículo profissional gratuitamente com nossos modelos modernos e otimizados para ATS. 100% grátis para sempre." />
-        <meta property="og:url" content="https://fazercurriculo.online/" />
+        <meta property="og:url" content="https://fazercurriculo.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://fazercurriculo.online/og-fazer-curriculo.png" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Criar Currículo Grátis Online - Modelos Profissionais" />
         <meta name="twitter:description" content="Crie seu currículo profissional gratuitamente com nossos modelos modernos e otimizados para ATS." />
-        <meta name="twitter:image" content="https://fazercurriculo.online/og-fazer-curriculo.png" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}

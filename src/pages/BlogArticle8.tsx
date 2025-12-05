@@ -17,8 +17,8 @@ const BlogArticle8 = () => {
     author: {
       name: "Daniel Olimpio"
     },
-    image: "https://fazercurriculo.online/blog/perfil-linkedin-recrutadores.jpg",
-    url: "https://fazercurriculo.online/blog/perfil-linkedin-recrutadores"
+    image: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg",
+    url: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores"
   };
 
   const breadcrumbSchemaItems = [
@@ -38,20 +38,20 @@ const BlogArticle8 = () => {
         <title>Como criar um perfil no LinkedIn que atrai recrutadores | Fazer Currículo</title>
         <meta name="description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
         <meta name="keywords" content="linkedin, perfil profissional, recrutadores, networking, oportunidades de emprego, perfil linkedin, otimização linkedin" />
-        <link rel="canonical" href="https://fazercurriculo.online/blog/perfil-linkedin-recrutadores" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Como criar um perfil no LinkedIn que atrai recrutadores" />
         <meta property="og:description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://fazercurriculo.online/blog/perfil-linkedin-recrutadores" />
-        <meta property="og:image" content="https://fazercurriculo.online/blog/perfil-linkedin-recrutadores.jpg" />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Como criar um perfil no LinkedIn que atrai recrutadores" />
         <meta name="twitter:description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
-        <meta name="twitter:image" content="https://fazercurriculo.online/blog/perfil-linkedin-recrutadores.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg" />
         
         {/* Schema.org JSON-LD */}
         <script type="application/ld+json">
