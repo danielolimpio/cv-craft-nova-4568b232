@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Lightbulb, CheckCircle, XCircle, Target, Users, Award, BookOpen, AlertTriangle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogSidebar from "@/components/BlogSidebar";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
@@ -22,7 +23,10 @@ const BlogArticle5 = () => {
         <Header />
         
         <main className="flex-grow pt-24 pb-12">
-          <article className="container mx-auto px-4 max-w-4xl">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+              {/* Main Article */}
+              <article className="flex-1 max-w-4xl">
             <Link 
               to="/blog" 
               className="inline-flex items-center text-primary hover:text-primary/80 transition-colors mb-8 group"
@@ -766,7 +770,14 @@ const BlogArticle5 = () => {
               {/* Author Bio */}
               <AuthorBio />
             </div>
-          </article>
+              </article>
+
+              {/* Sidebar */}
+              <div className="lg:w-80 xl:w-96 flex-shrink-0">
+                <BlogSidebar />
+              </div>
+            </div>
+          </div>
         </main>
 
         <Footer />

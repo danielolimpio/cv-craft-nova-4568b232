@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import BlogSidebar from "@/components/BlogSidebar";
 import AuthorBio from "@/components/AuthorBio";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -65,8 +66,12 @@ const BlogArticle8 = () => {
       <div className="min-h-screen bg-background">
         <Header />
         
-        <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-          <Breadcrumb items={breadcrumbItems} />
+        <main className="pt-24 pb-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+              {/* Main Content */}
+              <div className="flex-1 max-w-4xl">
+                <Breadcrumb items={breadcrumbItems} />
           
           {/* Back Button */}
           <Link to="/blog">
@@ -455,6 +460,14 @@ const BlogArticle8 = () => {
               <AuthorBio />
             </div>
           </article>
+              </div>
+
+              {/* Sidebar */}
+              <div className="lg:w-80 xl:w-96 flex-shrink-0">
+                <BlogSidebar />
+              </div>
+            </div>
+          </div>
         </main>
 
         <Footer />

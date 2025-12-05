@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import BlogSidebar from "@/components/BlogSidebar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, GraduationCap, Briefcase, Award, ArrowLeft, Lightbulb, AlertTriangle, BookOpen, Clock3, ListChecks } from "lucide-react";
@@ -94,8 +95,11 @@ const BlogArticle10 = () => {
       <Header />
       
       <main className="pt-32 pb-12">
-        <article className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <Breadcrumb items={breadcrumbItems} />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+            {/* Main Article */}
+            <article className="flex-1 max-w-4xl">
+              <Breadcrumb items={breadcrumbItems} />
           
           {/* Back Button */}
           <Link to="/blog" className="inline-flex items-center text-[#006B3D] hover:text-[#005a32] mb-8 transition-colors">
@@ -969,7 +973,14 @@ const BlogArticle10 = () => {
 
           {/* Author Bio */}
           <AuthorBio />
-        </article>
+            </article>
+
+            {/* Sidebar */}
+            <div className="lg:w-80 xl:w-96 flex-shrink-0">
+              <BlogSidebar />
+            </div>
+          </div>
+        </div>
       </main>
       
       <Footer />
