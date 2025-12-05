@@ -17,7 +17,7 @@ const BlogArticle3 = () => {
         <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores. Dicas práticas, atualizadas e testáveis." />
         <meta property="og:image" content="/blog/curriculo-ats-sistemas.jpg" />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href="https://fazercurriculo.com.br/blog/3" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

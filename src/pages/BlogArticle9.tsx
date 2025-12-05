@@ -20,7 +20,7 @@ const BlogArticle9 = () => {
     author: "Daniel Olimpio",
     publishDate: "2025-11-30",
     image: "/blog/carta-apresentacao-empregador.jpg",
-    url: "https://fazercurriculo.online/blog/carta-apresentacao-empregador"
+    url: "https://fazercurriculo.com/blog/carta-apresentacao-empregador"
   };
 
   const generateBreadcrumbSchema = () => ({
@@ -30,7 +30,7 @@ const BlogArticle9 = () => {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.label,
-      "item": item.href ? `https://fazercurriculo.online${item.href}` : undefined
+      "item": item.href ? `https://fazercurriculo.com${item.href}` : undefined
     }))
   });
 
@@ -39,7 +39,7 @@ const BlogArticle9 = () => {
     "@type": "Article",
     "headline": articleData.title,
     "description": articleData.description,
-    "image": `https://fazercurriculo.online${articleData.image}`,
+    "image": `https://fazercurriculo.com${articleData.image}`,
     "author": {
       "@type": "Person",
       "name": articleData.author
@@ -49,7 +49,7 @@ const BlogArticle9 = () => {
       "name": "Fazer Currículo",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://fazercurriculo.online/logo.png"
+        "url": "https://fazercurriculo.com/logo.png"
       }
     },
     "datePublished": articleData.publishDate,
@@ -114,12 +114,12 @@ const BlogArticle9 = () => {
         <meta property="og:description" content={articleData.description} />
         <meta property="og:url" content={articleData.url} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={`https://fazercurriculo.online${articleData.image}`} />
+        <meta property="og:image" content={`https://fazercurriculo.com${articleData.image}`} />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={articleData.title} />
         <meta name="twitter:description" content={articleData.description} />
-        <meta name="twitter:image" content={`https://fazercurriculo.online${articleData.image}`} />
+        <meta name="twitter:image" content={`https://fazercurriculo.com${articleData.image}`} />
         
         <script type="application/ld+json">
           {JSON.stringify(generateBreadcrumbSchema())}

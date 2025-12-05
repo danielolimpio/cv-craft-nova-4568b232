@@ -15,7 +15,7 @@ const BlogArticle5 = () => {
         <meta property="og:title" content="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" />
         <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado, habilidades e potencial — sem inventar." />
         <meta property="og:image" content="/blog/curriculo-sem-experiencia.jpg" />
-        <link rel="canonical" href="https://fazercurriculo.online/blog/5" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">
