@@ -58,6 +58,20 @@ Options +FollowSymLinks -MultiViews -Indexes
   RewriteBase /
 
   # ========================================
+  # FORÇAR HTTPS (Redirecionar HTTP para HTTPS)
+  # ========================================
+  
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # ========================================
+  # FORÇAR SEM WWW (Redirecionar www para não-www)
+  # ========================================
+  
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # ========================================
   # ARQUIVOS ESTÁTICOS NA RAIZ - NUNCA REDIRECIONAR
   # ========================================
   
@@ -139,6 +153,12 @@ Options +FollowSymLinks -MultiViews -Indexes
 
 <IfModule mod_authz_core.c>
   Require all granted
+</IfModule>
+
+# Para Apache 2.2
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Allow from all
 </IfModule>
 
 # ========================================
