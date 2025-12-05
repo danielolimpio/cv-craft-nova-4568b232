@@ -109,13 +109,24 @@ interface BlogPost {
       readTime: "14 min",
       category: "Dicas de Currículo",
       image: "/blog/carta-apresentacao-empregador.jpg"
+    },
+    {
+      id: "curriculo-estagio-estudantes",
+      title: "Currículo para Estágio: O Guia Definitivo para Estudantes",
+      excerpt: "Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "5 de Dezembro, 2025",
+      readTime: "18 min",
+      category: "Estágio",
+      image: "/blog/curriculo-estagio-estudantes.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 

@@ -84,6 +84,16 @@ const BlogPreviewSection = () => {
       color: "from-amber-600 to-orange-600",
       link: "/blog/carta-apresentacao-empregador",
       image: "/blog/carta-apresentacao-empregador.jpg"
+    },
+    {
+      title: "Currículo para Estágio: O Guia Definitivo para Estudantes",
+      excerpt: "Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional.",
+      date: "5 de Dezembro, 2025",
+      readTime: "18 min",
+      category: "Estágio",
+      color: "from-indigo-600 to-purple-600",
+      link: "/blog/curriculo-estagio-estudantes",
+      image: "/blog/curriculo-estagio-estudantes.jpg"
     }
   ];
 
