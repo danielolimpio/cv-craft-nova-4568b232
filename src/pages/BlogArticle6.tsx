@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BlogSidebar from "@/components/BlogSidebar";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Target, Lightbulb, CheckCircle2, XCircle, AlertTriangle, TrendingUp, Users, Award, Briefcase, GraduationCap, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -25,8 +26,11 @@ const BlogArticle6 = () => {
         <Header />
         
         <main className="pt-24 pb-16">
-          <article className="container mx-auto max-w-4xl px-4">
-            {/* Back Button & Header */}
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+              {/* Main Article */}
+              <article className="flex-1 max-w-4xl">
+                {/* Back Button & Header */}
             <div className="mb-8">
               <Link to="/blog">
                 <Button variant="ghost" className="mb-6 -ml-4">
@@ -720,7 +724,14 @@ const BlogArticle6 = () => {
             {/* Author Bio */}
             <AuthorBio />
 
-          </article>
+              </article>
+
+              {/* Sidebar */}
+              <div className="lg:w-80 xl:w-96 flex-shrink-0">
+                <BlogSidebar />
+              </div>
+            </div>
+          </div>
         </main>
 
         <Footer />
