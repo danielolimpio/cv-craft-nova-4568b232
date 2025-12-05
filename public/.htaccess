@@ -5,9 +5,76 @@
 # Permitir que o .htaccess funcione
 Options +FollowSymLinks -MultiViews -Indexes
 
+# ========================================
+# MIME TYPES PRIORITÁRIOS
+# ========================================
+
+# Forçar tipo correto ANTES de qualquer processamento
+<IfModule mod_mime.c>
+  AddType text/plain .txt
+  AddType application/xml .xml
+  AddType application/json .json
+</IfModule>
+
+# ========================================
+# ARQUIVOS CRÍTICOS: ads.txt, robots.txt
+# ========================================
+
+# ads.txt - Servir diretamente como texto puro
+<Files "ads.txt">
+  ForceType text/plain
+  SetHandler None
+  <IfModule mod_headers.c>
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </IfModule>
+</Files>
+
+# robots.txt - Servir diretamente como texto puro
+<Files "robots.txt">
+  ForceType text/plain
+  SetHandler None
+  <IfModule mod_headers.c>
+    Header set Content-Type "text/plain; charset=utf-8"
+  </IfModule>
+</Files>
+
+# sitemap.xml - Servir diretamente como XML
+<Files "sitemap.xml">
+  ForceType application/xml
+  SetHandler None
+  <IfModule mod_headers.c>
+    Header set Content-Type "application/xml; charset=utf-8"
+  </IfModule>
+</Files>
+
+# ========================================
+# REWRITE RULES
+# ========================================
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # ========================================
+  # ARQUIVOS ESTÁTICOS NA RAIZ - NUNCA REDIRECIONAR
+  # ========================================
+  
+  # ads.txt - CRÍTICO para Google AdSense
+  RewriteRule ^ads\.txt$ - [L,T=text/plain]
+  
+  # robots.txt
+  RewriteRule ^robots\.txt$ - [L,T=text/plain]
+  
+  # sitemap.xml
+  RewriteRule ^sitemap\.xml$ - [L,T=application/xml]
+  
+  # favicon
+  RewriteRule ^favicon\.ico$ - [L]
+  
+  # apple-touch-icon
+  RewriteRule ^apple-touch-icon\.png$ - [L]
 
   # ========================================
   # NORMALIZAÇÃO DE URL: Remover trailing slash
@@ -22,16 +89,20 @@ Options +FollowSymLinks -MultiViews -Indexes
   # ARQUIVOS ESTÁTICOS: Servir diretamente
   # ========================================
   
-  # Arquivos de texto na raiz (ads.txt, robots.txt, etc.)
+  # Qualquer arquivo de texto
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(txt|xml|json|webmanifest)$ - [L]
   
   # Imagens e ícones
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(ico|png|jpg|jpeg|gif|svg|webp)$ - [L]
   
   # Fontes
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(woff|woff2|ttf|eot|otf)$ - [L]
   
   # Outros arquivos estáticos
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(css|js|map|pdf)$ - [L]
 
   # ========================================
@@ -45,28 +116,16 @@ Options +FollowSymLinks -MultiViews -Indexes
 </IfModule>
 
 # ========================================
-# MIME TYPES: Garantir tipos corretos
+# HEADERS GERAIS
 # ========================================
 
 <IfModule mod_headers.c>
   # Permitir acesso do Googlebot e outros crawlers
   Header set X-Robots-Tag "index, follow"
   
-  # ads.txt - CRÍTICO para Google AdSense
-  <FilesMatch "ads\.txt$">
-    Header set Content-Type "text/plain; charset=utf-8"
-    Header set X-Content-Type-Options "nosniff"
-  </FilesMatch>
-  
-  # robots.txt
-  <FilesMatch "robots\.txt$">
-    Header set Content-Type "text/plain; charset=utf-8"
-  </FilesMatch>
-  
-  # sitemap.xml
-  <FilesMatch "sitemap\.xml$">
-    Header set Content-Type "application/xml; charset=utf-8"
-  </FilesMatch>
+  # Segurança
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
   
   # index.html - Sempre permitir acesso
   <FilesMatch "index\.html$">
@@ -78,10 +137,9 @@ Options +FollowSymLinks -MultiViews -Indexes
 # PERMISSÕES: Garantir acesso público
 # ========================================
 
-# Permitir acesso de todos os IPs
-<RequireAll>
+<IfModule mod_authz_core.c>
   Require all granted
-</RequireAll>
+</IfModule>
 
 # ========================================
 # CACHE: Otimizar performance
