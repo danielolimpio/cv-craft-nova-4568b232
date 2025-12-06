@@ -94,6 +94,16 @@ const BlogPreviewSection = () => {
       color: "from-indigo-600 to-purple-600",
       link: "/blog/curriculo-estagio-estudantes",
       image: "/blog/curriculo-estagio-estudantes.jpg"
+    },
+    {
+      title: "Diferença Entre Currículo e Perfil no LinkedIn em 2026",
+      excerpt: "Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte.",
+      date: "6 de Dezembro, 2025",
+      readTime: "22 min",
+      category: "LinkedIn",
+      color: "from-blue-600 to-cyan-500",
+      link: "/blog/curriculo-vs-linkedin-2026",
+      image: "/blog/curriculo-vs-linkedin-2026.jpg"
     }
   ];
 

@@ -21,6 +21,7 @@ import BlogArticle7 from "./pages/BlogArticle7";
 import BlogArticle8 from "./pages/BlogArticle8";
 import BlogArticle9 from "./pages/BlogArticle9";
 import BlogArticle10 from "./pages/BlogArticle10";
+import BlogArticle11 from "./pages/BlogArticle11";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -65,6 +66,7 @@ const App = () => (
             <Route path="/blog/perfil-linkedin-recrutadores" element={<BlogArticle8 />} />
             <Route path="/blog/carta-apresentacao-empregador" element={<BlogArticle9 />} />
             <Route path="/blog/curriculo-estagio-estudantes" element={<BlogArticle10 />} />
+            <Route path="/blog/curriculo-vs-linkedin-2026" element={<BlogArticle11 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />
