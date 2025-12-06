@@ -42,6 +42,7 @@ const Sitemap = () => {
         { url: "/blog/perfil-linkedin-recrutadores", label: "Como Criar um Perfil no LinkedIn que Atrai Recrutadores" },
         { url: "/blog/carta-apresentacao-empregador", label: "Carta de Apresentação que Conquiste o Empregador" },
         { url: "/blog/curriculo-estagio-estudantes", label: "Currículo para Estágio: O Guia Definitivo para Estudantes" },
+        { url: "/blog/curriculo-vs-linkedin-2026", label: "Diferença Entre Currículo e Perfil no LinkedIn em 2026" },
       ],
     },
     {

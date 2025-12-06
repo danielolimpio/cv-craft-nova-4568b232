@@ -120,13 +120,24 @@ interface BlogPost {
       readTime: "18 min",
       category: "Estágio",
       image: "/blog/curriculo-estagio-estudantes.jpg"
+    },
+    {
+      id: "curriculo-vs-linkedin-2026",
+      title: "Diferença Entre Currículo e Perfil no LinkedIn em 2026",
+      excerpt: "Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "6 de Dezembro, 2025",
+      readTime: "22 min",
+      category: "LinkedIn",
+      image: "/blog/curriculo-vs-linkedin-2026.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
