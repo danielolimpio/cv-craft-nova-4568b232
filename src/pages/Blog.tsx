@@ -164,13 +164,24 @@ interface BlogPost {
       readTime: "22 min",
       category: "TI",
       image: "/blog/curriculo-ti-priorizar-2026.jpg"
+    },
+    {
+      id: "profissoes-mais-vagas-brasil-2030",
+      title: "Quais profissões terão mais vagas no Brasil até 2030?",
+      excerpt: "Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "19 de Dezembro, 2025",
+      readTime: "25 min",
+      category: "Carreira",
+      image: "/blog/profissoes-mais-vagas-brasil-2030.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 

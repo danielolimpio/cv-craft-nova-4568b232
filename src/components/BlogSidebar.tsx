@@ -6,7 +6,7 @@ import { FileText, Briefcase, Tag, Clock, ArrowRight, Sparkles } from "lucide-re
 const categories = [
   { name: "Currículo", slug: "Currículo", count: 5 },
   { name: "LinkedIn", slug: "LinkedIn", count: 2 },
-  { name: "Carreira", slug: "Carreira", count: 2 },
+  { name: "Carreira", slug: "Carreira", count: 3 },
   { name: "Entrevistas", slug: "Entrevistas", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
@@ -16,15 +16,15 @@ const categories = [
 
 const recentPosts = [
   {
-    title: "Currículo para Área de TI: O Que Priorizar",
-    slug: "/blog/curriculo-ti-priorizar-2026",
-    image: "/blog/curriculo-ti-priorizar-2026.jpg",
+    title: "Profissões com mais vagas até 2030",
+    slug: "/blog/profissoes-mais-vagas-brasil-2030",
+    image: "/blog/profissoes-mais-vagas-brasil-2030.jpg",
     date: "19 Dez 2025"
   },
   {
-    title: "Currículo em Inglês: Estrutura e Exemplos",
-    slug: "/blog/curriculo-ingles-estrutura-erros",
-    image: "/blog/curriculo-ingles-estrutura-erros.jpg",
+    title: "Currículo para Área de TI: O Que Priorizar",
+    slug: "/blog/curriculo-ti-priorizar-2026",
+    image: "/blog/curriculo-ti-priorizar-2026.jpg",
     date: "19 Dez 2025"
   },
   {
