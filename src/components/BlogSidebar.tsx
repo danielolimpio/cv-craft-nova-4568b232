@@ -9,6 +9,7 @@ const categories = [
   { name: "Carreira", slug: "Carreira", count: 2 },
   { name: "Entrevistas", slug: "Entrevistas", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
+  { name: "Recrutamento", slug: "Recrutamento", count: 1 },
 ];
 
 const recentPosts = [

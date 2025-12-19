@@ -131,13 +131,24 @@ interface BlogPost {
       readTime: "22 min",
       category: "LinkedIn",
       image: "/blog/curriculo-vs-linkedin-2026.jpg"
+    },
+    {
+      id: "o-que-recrutadores-buscam-curriculo",
+      title: "O Que Recrutadores Realmente Buscam em um Currículo Hoje",
+      excerpt: "Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "19 de Dezembro, 2025",
+      readTime: "20 min",
+      category: "Recrutamento",
+      image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
