@@ -124,6 +124,16 @@ const BlogPreviewSection = () => {
       color: "from-violet-600 to-purple-600",
       link: "/blog/curriculo-ingles-estrutura-erros",
       image: "/blog/curriculo-ingles-estrutura-erros.jpg"
+    },
+    {
+      title: "Currículo para Área de TI: O Que Priorizar em 2026",
+      excerpt: "Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação.",
+      date: "19 de Dezembro, 2025",
+      readTime: "22 min",
+      category: "TI",
+      color: "from-cyan-600 to-teal-600",
+      link: "/blog/curriculo-ti-priorizar-2026",
+      image: "/blog/curriculo-ti-priorizar-2026.jpg"
     }
   ];
 

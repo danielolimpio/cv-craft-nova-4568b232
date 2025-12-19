@@ -11,9 +11,16 @@ const categories = [
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
   { name: "Inglês", slug: "Inglês", count: 1 },
+  { name: "TI", slug: "TI", count: 1 },
 ];
 
 const recentPosts = [
+  {
+    title: "Currículo para Área de TI: O Que Priorizar",
+    slug: "/blog/curriculo-ti-priorizar-2026",
+    image: "/blog/curriculo-ti-priorizar-2026.jpg",
+    date: "19 Dez 2025"
+  },
   {
     title: "Currículo em Inglês: Estrutura e Exemplos",
     slug: "/blog/curriculo-ingles-estrutura-erros",
@@ -31,12 +38,6 @@ const recentPosts = [
     slug: "/blog/curriculo-vs-linkedin-2026",
     image: "/blog/curriculo-vs-linkedin-2026.jpg",
     date: "6 Dez 2025"
-  },
-  {
-    title: "Currículo para Estágio: O Guia Definitivo",
-    slug: "/blog/curriculo-estagio-estudantes",
-    image: "/blog/curriculo-estagio-estudantes.jpg",
-    date: "5 Dez 2025"
   },
 ];
 
