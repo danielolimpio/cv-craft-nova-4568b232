@@ -23,6 +23,7 @@ import BlogArticle9 from "./pages/BlogArticle9";
 import BlogArticle10 from "./pages/BlogArticle10";
 import BlogArticle11 from "./pages/BlogArticle11";
 import BlogArticle12 from "./pages/BlogArticle12";
+import BlogArticle13 from "./pages/BlogArticle13";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -69,6 +70,7 @@ const App = () => (
             <Route path="/blog/curriculo-estagio-estudantes" element={<BlogArticle10 />} />
             <Route path="/blog/curriculo-vs-linkedin-2026" element={<BlogArticle11 />} />
             <Route path="/blog/o-que-recrutadores-buscam-curriculo" element={<BlogArticle12 />} />
+            <Route path="/blog/curriculo-ingles-estrutura-erros" element={<BlogArticle13 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

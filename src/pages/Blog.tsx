@@ -142,13 +142,24 @@ interface BlogPost {
       readTime: "20 min",
       category: "Recrutamento",
       image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
+    },
+    {
+      id: "curriculo-ingles-estrutura-erros",
+      title: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos",
+      excerpt: "Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "19 de Dezembro, 2025",
+      readTime: "20 min",
+      category: "Inglês",
+      image: "/blog/curriculo-ingles-estrutura-erros.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
