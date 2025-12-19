@@ -153,13 +153,24 @@ interface BlogPost {
       readTime: "20 min",
       category: "Inglês",
       image: "/blog/curriculo-ingles-estrutura-erros.jpg"
+    },
+    {
+      id: "curriculo-ti-priorizar-2026",
+      title: "Currículo para Área de TI: O Que Priorizar em 2026",
+      excerpt: "Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "19 de Dezembro, 2025",
+      readTime: "22 min",
+      category: "TI",
+      image: "/blog/curriculo-ti-priorizar-2026.jpg"
     }
   ];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 

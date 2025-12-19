@@ -45,6 +45,7 @@ const Sitemap = () => {
         { url: "/blog/curriculo-vs-linkedin-2026", label: "Diferença Entre Currículo e Perfil no LinkedIn em 2026" },
         { url: "/blog/o-que-recrutadores-buscam-curriculo", label: "O Que Recrutadores Realmente Buscam em um Currículo Hoje" },
         { url: "/blog/curriculo-ingles-estrutura-erros", label: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos" },
+        { url: "/blog/curriculo-ti-priorizar-2026", label: "Currículo para Área de TI: O Que Priorizar em 2026" },
       ],
     },
     {
