@@ -104,6 +104,16 @@ const BlogPreviewSection = () => {
       color: "from-blue-600 to-cyan-500",
       link: "/blog/curriculo-vs-linkedin-2026",
       image: "/blog/curriculo-vs-linkedin-2026.jpg"
+    },
+    {
+      title: "O Que Recrutadores Realmente Buscam em um Currículo Hoje",
+      excerpt: "Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página.",
+      date: "19 de Dezembro, 2025",
+      readTime: "20 min",
+      category: "Recrutamento",
+      color: "from-rose-600 to-pink-600",
+      link: "/blog/o-que-recrutadores-buscam-curriculo",
+      image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
     }
   ];
 
