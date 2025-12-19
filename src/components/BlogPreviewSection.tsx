@@ -134,6 +134,16 @@ const BlogPreviewSection = () => {
       color: "from-cyan-600 to-teal-600",
       link: "/blog/curriculo-ti-priorizar-2026",
       image: "/blog/curriculo-ti-priorizar-2026.jpg"
+    },
+    {
+      title: "Quais profissões terão mais vagas no Brasil até 2030?",
+      excerpt: "Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora.",
+      date: "19 de Dezembro, 2025",
+      readTime: "25 min",
+      category: "Carreira",
+      color: "from-orange-600 to-amber-600",
+      link: "/blog/profissoes-mais-vagas-brasil-2030",
+      image: "/blog/profissoes-mais-vagas-brasil-2030.jpg"
     }
   ];
 
