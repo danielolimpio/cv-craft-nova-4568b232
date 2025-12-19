@@ -5,37 +5,38 @@ import { FileText, Briefcase, Tag, Clock, ArrowRight, Sparkles } from "lucide-re
 
 const categories = [
   { name: "Currículo", slug: "Currículo", count: 5 },
-  { name: "LinkedIn", slug: "LinkedIn", count: 1 },
+  { name: "LinkedIn", slug: "LinkedIn", count: 2 },
   { name: "Carreira", slug: "Carreira", count: 2 },
   { name: "Entrevistas", slug: "Entrevistas", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
+  { name: "Inglês", slug: "Inglês", count: 1 },
 ];
 
 const recentPosts = [
+  {
+    title: "Currículo em Inglês: Estrutura e Exemplos",
+    slug: "/blog/curriculo-ingles-estrutura-erros",
+    image: "/blog/curriculo-ingles-estrutura-erros.jpg",
+    date: "19 Dez 2025"
+  },
+  {
+    title: "O Que Recrutadores Buscam no Currículo",
+    slug: "/blog/o-que-recrutadores-buscam-curriculo",
+    image: "/blog/o-que-recrutadores-buscam-curriculo.jpg",
+    date: "19 Dez 2025"
+  },
+  {
+    title: "Currículo vs LinkedIn em 2026",
+    slug: "/blog/curriculo-vs-linkedin-2026",
+    image: "/blog/curriculo-vs-linkedin-2026.jpg",
+    date: "6 Dez 2025"
+  },
   {
     title: "Currículo para Estágio: O Guia Definitivo",
     slug: "/blog/curriculo-estagio-estudantes",
     image: "/blog/curriculo-estagio-estudantes.jpg",
     date: "5 Dez 2025"
-  },
-  {
-    title: "LinkedIn que Atrai Recrutadores",
-    slug: "/blog/perfil-linkedin-recrutadores",
-    image: "/blog/perfil-linkedin-recrutadores.jpg",
-    date: "29 Nov 2025"
-  },
-  {
-    title: "Destaque suas Habilidades com Estratégia",
-    slug: "/blog/destaque-habilidades-estrategia",
-    image: "/blog/destaque-habilidades-estrategia.jpg",
-    date: "29 Nov 2025"
-  },
-  {
-    title: "Carta de Apresentação que Conquista",
-    slug: "/blog/carta-apresentacao-empregador",
-    image: "/blog/carta-apresentacao-empregador.jpg",
-    date: "30 Nov 2025"
   },
 ];
 

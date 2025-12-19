@@ -114,6 +114,16 @@ const BlogPreviewSection = () => {
       color: "from-rose-600 to-pink-600",
       link: "/blog/o-que-recrutadores-buscam-curriculo",
       image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
+    },
+    {
+      title: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos",
+      excerpt: "Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem.",
+      date: "19 de Dezembro, 2025",
+      readTime: "20 min",
+      category: "Inglês",
+      color: "from-violet-600 to-purple-600",
+      link: "/blog/curriculo-ingles-estrutura-erros",
+      image: "/blog/curriculo-ingles-estrutura-erros.jpg"
     }
   ];
 

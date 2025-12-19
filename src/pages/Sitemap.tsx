@@ -44,6 +44,7 @@ const Sitemap = () => {
         { url: "/blog/curriculo-estagio-estudantes", label: "Currículo para Estágio: O Guia Definitivo para Estudantes" },
         { url: "/blog/curriculo-vs-linkedin-2026", label: "Diferença Entre Currículo e Perfil no LinkedIn em 2026" },
         { url: "/blog/o-que-recrutadores-buscam-curriculo", label: "O Que Recrutadores Realmente Buscam em um Currículo Hoje" },
+        { url: "/blog/curriculo-ingles-estrutura-erros", label: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos" },
       ],
     },
     {
