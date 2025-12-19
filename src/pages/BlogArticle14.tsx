@@ -264,7 +264,7 @@ const BlogArticle14 = () => {
             <Card className="bg-muted/30 mb-8">
               <CardContent className="p-6">
                 <p className="text-muted-foreground italic">
-                  "Full-stack developer with 4+ years building scalable web applications using React and Node.js. Reduced API response time by 60% and led a team that delivered 3 MVPs in 2024, all now in production with 50k+ active users."
+                  "Desenvolvedor full-stack com mais de 4 anos construindo aplicações web escaláveis usando React e Node.js. Reduzi o tempo de resposta da API em 60% e liderei uma equipe que entregou 3 MVPs em 2024, todos agora em produção com mais de 50 mil usuários ativos."
                 </p>
               </CardContent>
             </Card>
@@ -320,8 +320,8 @@ const BlogArticle14 = () => {
               <CardContent className="p-6">
                 <p className="font-semibold mb-3">Exemplos:</p>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• "Implemented automated testing with Jest and Cypress, reducing bug reports by 45% post-deployment."</li>
-                  <li>• "Migrated legacy monolith to microservices using Docker and Kubernetes, cutting server costs by 30%."</li>
+                  <li>• "Implementei testes automatizados com Jest e Cypress, reduzindo relatórios de bugs em 45% após o deploy."</li>
+                  <li>• "Migrei monolito legado para microsserviços usando Docker e Kubernetes, cortando custos de servidor em 30%."</li>
                 </ul>
               </CardContent>
             </Card>
@@ -487,7 +487,7 @@ const BlogArticle14 = () => {
                 </div>
                 <div>
                   <span className="font-semibold">Comunicação:</span>
-                  <span className="text-muted-foreground"> "Presented technical solutions to non-technical stakeholders, securing buy-in for a $200K infrastructure upgrade"</span>
+                  <span className="text-muted-foreground"> "Apresentei soluções técnicas para stakeholders não técnicos, garantindo aprovação para upgrade de infraestrutura de R$ 1 milhão"</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -496,7 +496,7 @@ const BlogArticle14 = () => {
                 </div>
                 <div>
                   <span className="font-semibold">Adaptabilidade:</span>
-                  <span className="text-muted-foreground"> "Pivoted project stack from Angular to React mid-cycle to align with company-wide standardization"</span>
+                  <span className="text-muted-foreground"> "Pivotei a stack do projeto de Angular para React no meio do ciclo para alinhar com a padronização da empresa"</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -505,7 +505,7 @@ const BlogArticle14 = () => {
                 </div>
                 <div>
                   <span className="font-semibold">Liderança:</span>
-                  <span className="text-muted-foreground"> "Mentored 2 junior developers through code reviews and pair programming, reducing onboarding time by 40%"</span>
+                  <span className="text-muted-foreground"> "Mentorei 2 desenvolvedores juniores através de code reviews e pair programming, reduzindo o tempo de onboarding em 40%"</span>
                 </div>
               </li>
             </ul>
@@ -610,7 +610,7 @@ const BlogArticle14 = () => {
             <Card className="bg-muted/30 mb-8">
               <CardContent className="p-6">
                 <p className="text-muted-foreground italic">
-                  "Built 'FocusBlock' – a browser extension that uses machine learning to detect procrastination patterns and suggests focused work sessions. Deployed to 1,200+ users with 4.7/5 rating on Chrome Web Store."
+                  "Desenvolvi o 'FocusBlock' – uma extensão de navegador que usa machine learning para detectar padrões de procrastinação e sugere sessões de trabalho focado. Publicado para mais de 1.200 usuários com avaliação de 4.7/5 na Chrome Web Store."
                 </p>
               </CardContent>
             </Card>
