@@ -200,6 +200,24 @@ const Blog = () => {
       <Helmet>
         <title>Blog - Fazer Currículo | Dicas e Estratégias para Sua Carreira</title>
         <meta name="description" content="Artigos sobre criação de currículos profissionais, dicas de carreira, estratégias para entrevistas e muito mais." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Blog - Fazer Currículo | Dicas e Estratégias para Sua Carreira" />
+        <meta property="og:description" content="Artigos sobre criação de currículos profissionais, dicas de carreira e estratégias para entrevistas." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog - Fazer Currículo" />
+        <meta name="twitter:description" content="Artigos sobre criação de currículos profissionais e dicas de carreira." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>

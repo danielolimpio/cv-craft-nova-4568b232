@@ -71,13 +71,29 @@ const Sitemap = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Mapa do Site - Fazer Currículo</title>
+        <title>Mapa do Site - Fazer Currículo | Navegação Completa</title>
         <meta 
           name="description" 
           content="Navegue por todas as páginas do Fazer Currículo: ferramentas, artigos, guias e recursos para criar currículos profissionais." 
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/sitemap" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Mapa do Site - Fazer Currículo" />
+        <meta property="og:description" content="Navegue por todas as páginas do Fazer Currículo: ferramentas, artigos e recursos." />
+        <meta property="og:url" content="https://fazercurriculo.com/sitemap" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mapa do Site - Fazer Currículo" />
+        <meta name="twitter:description" content="Navegue por todas as páginas do Fazer Currículo." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>

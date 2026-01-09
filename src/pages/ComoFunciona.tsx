@@ -20,8 +20,26 @@ const ComoFunciona = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Como Funciona - Criar Currículo Profissional Grátis</title>
+        <title>Como Funciona - Criar Currículo Profissional Grátis | Fazer Currículo</title>
         <meta name="description" content="Aprenda como criar seu currículo profissional em minutos com nossa ferramenta gratuita. Passo a passo simples e intuitivo." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/como-funciona" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Como Funciona - Criar Currículo Profissional Grátis" />
+        <meta property="og:description" content="Aprenda como criar seu currículo profissional em minutos com nossa ferramenta gratuita." />
+        <meta property="og:url" content="https://fazercurriculo.com/como-funciona" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Como Funciona - Criar Currículo Grátis" />
+        <meta name="twitter:description" content="Aprenda como criar seu currículo profissional em minutos." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>

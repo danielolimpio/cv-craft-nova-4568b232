@@ -1,17 +1,56 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { HelpCircle, BookOpen, Video, MessageCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const CentralDeAjuda = () => {
+  const breadcrumbItems = [
+    { label: "Central de Ajuda" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Central de Ajuda", url: "/central-de-ajuda" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Central de Ajuda - Fazer Currículo | Suporte e Tutoriais</title>
+        <meta name="description" content="Encontre respostas rápidas e aprenda a usar todas as funcionalidades da nossa plataforma de criação de currículos." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/central-de-ajuda" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Central de Ajuda - Fazer Currículo" />
+        <meta property="og:description" content="Encontre respostas rápidas e aprenda a usar todas as funcionalidades da nossa plataforma." />
+        <meta property="og:url" content="https://fazercurriculo.com/central-de-ajuda" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Central de Ajuda - Fazer Currículo" />
+        <meta name="twitter:description" content="Encontre respostas rápidas e tutoriais para criar seu currículo." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumb items={breadcrumbItems} />
+          
           {/* Hero Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 mt-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Central de Ajuda</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Encontre respostas rápidas e aprenda a usar todas as funcionalidades da nossa plataforma

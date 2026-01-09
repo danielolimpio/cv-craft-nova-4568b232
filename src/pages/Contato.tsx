@@ -39,8 +39,26 @@ const Contato = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contato - Fazer Currículo</title>
+        <title>Contato - Fazer Currículo | Fale Conosco</title>
         <meta name="description" content="Entre em contato conosco. Estamos prontos para ajudar com suas dúvidas sobre criação de currículos profissionais." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/contato" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Contato - Fazer Currículo" />
+        <meta property="og:description" content="Entre em contato conosco. Estamos prontos para ajudar com suas dúvidas sobre criação de currículos." />
+        <meta property="og:url" content="https://fazercurriculo.com/contato" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contato - Fazer Currículo" />
+        <meta name="twitter:description" content="Entre em contato conosco para suas dúvidas sobre currículos." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>

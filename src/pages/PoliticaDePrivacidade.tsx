@@ -1,15 +1,54 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Shield } from "lucide-react";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const PoliticaDePrivacidade = () => {
+  const breadcrumbItems = [
+    { label: "Política de Privacidade" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Política de Privacidade", url: "/politica-de-privacidade" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Política de Privacidade - Fazer Currículo</title>
+        <meta name="description" content="Conheça nossa política de privacidade e como protegemos seus dados pessoais na plataforma Fazer Currículo." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/politica-de-privacidade" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Política de Privacidade - Fazer Currículo" />
+        <meta property="og:description" content="Conheça nossa política de privacidade e como protegemos seus dados pessoais." />
+        <meta property="og:url" content="https://fazercurriculo.com/politica-de-privacidade" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Política de Privacidade - Fazer Currículo" />
+        <meta name="twitter:description" content="Conheça nossa política de privacidade e proteção de dados." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="flex justify-center mb-6">
+          <Breadcrumb items={breadcrumbItems} />
+          
+          <div className="flex justify-center mb-6 mt-8">
             <Shield className="w-16 h-16" style={{ color: '#006B3D' }} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Política de Privacidade</h1>
