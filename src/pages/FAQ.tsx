@@ -76,6 +76,24 @@ const FAQ = () => {
       <Helmet>
         <title>Perguntas Frequentes - FAQ | Fazer Currículo</title>
         <meta name="description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente. Respostas rápidas e objetivas." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/faq" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Perguntas Frequentes - FAQ | Fazer Currículo" />
+        <meta property="og:description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente." />
+        <meta property="og:url" content="https://fazercurriculo.com/faq" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FAQ - Fazer Currículo" />
+        <meta name="twitter:description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>

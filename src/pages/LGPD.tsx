@@ -1,15 +1,54 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Scale } from "lucide-react";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const LGPD = () => {
+  const breadcrumbItems = [
+    { label: "LGPD" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "LGPD", url: "/lgpd" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>LGPD - Lei Geral de Proteção de Dados | Fazer Currículo</title>
+        <meta name="description" content="Saiba como o Fazer Currículo está em conformidade com a LGPD e como protegemos seus dados pessoais segundo a legislação brasileira." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/lgpd" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="LGPD - Lei Geral de Proteção de Dados | Fazer Currículo" />
+        <meta property="og:description" content="Saiba como o Fazer Currículo está em conformidade com a LGPD." />
+        <meta property="og:url" content="https://fazercurriculo.com/lgpd" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="LGPD - Fazer Currículo" />
+        <meta name="twitter:description" content="Conformidade com a Lei Geral de Proteção de Dados." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="flex justify-center mb-6">
+          <Breadcrumb items={breadcrumbItems} />
+          
+          <div className="flex justify-center mb-6 mt-8">
             <Scale className="w-16 h-16" style={{ color: '#006B3D' }} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Lei Geral de Proteção de Dados (LGPD)</h1>

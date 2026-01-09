@@ -12,6 +12,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useCurriculumStorage } from "@/hooks/useCurriculumStorage";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import { Helmet } from "react-helmet";
 
 const CriarCurriculo = () => {
   const { toast } = useToast();
@@ -145,8 +146,48 @@ const CriarCurriculo = () => {
     }
   };
 
+  const softwareAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Fazer Currículo - Criador de Currículos",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "description": "Ferramenta gratuita para criar currículos profissionais otimizados para ATS"
+  };
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Criar Currículo Grátis Online - Editor Profissional | Fazer Currículo</title>
+        <meta name="description" content="Crie seu currículo profissional gratuitamente agora. Editor online fácil de usar, templates modernos e download em PDF. 100% grátis, sem cadastro." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/criar-curriculo" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Criar Currículo Grátis Online - Editor Profissional" />
+        <meta property="og:description" content="Crie seu currículo profissional gratuitamente agora. Editor online fácil de usar e download em PDF." />
+        <meta property="og:url" content="https://fazercurriculo.com/criar-curriculo" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Criar Currículo Grátis Online" />
+        <meta name="twitter:description" content="Crie seu currículo profissional gratuitamente. Editor online e download em PDF." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(softwareAppSchema)}
+        </script>
+      </Helmet>
+      
       <Header />
       
       {/* Toolbar */}

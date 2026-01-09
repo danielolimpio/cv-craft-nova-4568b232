@@ -1,15 +1,54 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { FileText } from "lucide-react";
+import { Helmet } from "react-helmet";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 const TermosDeUso = () => {
+  const breadcrumbItems = [
+    { label: "Termos de Uso" }
+  ];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Termos de Uso", url: "/termos-de-uso" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Termos de Uso - Fazer Currículo</title>
+        <meta name="description" content="Leia os termos de uso da plataforma Fazer Currículo. Condições para utilização do serviço gratuito de criação de currículos." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://fazercurriculo.com/termos-de-uso" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Termos de Uso - Fazer Currículo" />
+        <meta property="og:description" content="Leia os termos de uso da plataforma Fazer Currículo." />
+        <meta property="og:url" content="https://fazercurriculo.com/termos-de-uso" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Termos de Uso - Fazer Currículo" />
+        <meta name="twitter:description" content="Termos e condições de uso da plataforma Fazer Currículo." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+
       <Header />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="flex justify-center mb-6">
+          <Breadcrumb items={breadcrumbItems} />
+          
+          <div className="flex justify-center mb-6 mt-8">
             <FileText className="w-16 h-16" style={{ color: '#006B3D' }} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Termos de Uso</h1>
