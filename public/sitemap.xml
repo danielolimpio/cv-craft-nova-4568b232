@@ -7,175 +7,175 @@
   <!-- Página Principal -->
   <url>
     <loc>https://fazercurriculo.com/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Páginas Principais -->
   <url>
-    <loc>https://fazercurriculo.com/criar-curriculo</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/criar-curriculo/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/sobre</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/como-funciona/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/como-funciona</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/sobre/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/contato</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/contato/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Blog -->
   <url>
-    <loc>https://fazercurriculo.com/blog</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/blog/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   
   <!-- Artigos do Blog -->
   <url>
-    <loc>https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026</loc>
-    <lastmod>2025-11-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/10-erros-comuns-curriculos</loc>
-    <lastmod>2025-11-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats</loc>
-    <lastmod>2025-11-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir</loc>
-    <lastmod>2025-11-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/objetivo-profissional-curriculo</loc>
-    <lastmod>2025-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/destaque-habilidades-estrategia-impacto</loc>
-    <lastmod>2025-11-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://fazercurriculo.com/blog/perfil-linkedin-recrutadores</loc>
-    <lastmod>2025-11-30</lastmod>
+    <loc>https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/carta-apresentacao-empregador</loc>
-    <lastmod>2025-11-30</lastmod>
+    <loc>https://fazercurriculo.com/blog/10-erros-comuns-curriculos/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-estagio-estudantes</loc>
-    <lastmod>2025-12-05</lastmod>
+    <loc>https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026</loc>
-    <lastmod>2025-12-06</lastmod>
+    <loc>https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo</loc>
-    <lastmod>2025-12-19</lastmod>
+    <loc>https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros</loc>
-    <lastmod>2025-12-19</lastmod>
+    <loc>https://fazercurriculo.com/blog/objetivo-profissional-curriculo/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026</loc>
-    <lastmod>2025-12-19</lastmod>
+    <loc>https://fazercurriculo.com/blog/destaque-habilidades-estrategia-impacto/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030</loc>
-    <lastmod>2025-12-19</lastmod>
+    <loc>https://fazercurriculo.com/blog/perfil-linkedin-recrutadores/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/carta-apresentacao-empregador/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/curriculo-estagio-estudantes/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Suporte e Ajuda -->
   <url>
-    <loc>https://fazercurriculo.com/central-de-ajuda</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/central-de-ajuda/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/faq</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/faq/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Legal -->
   <url>
-    <loc>https://fazercurriculo.com/termos-de-uso</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/termos-de-uso/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/politica-de-privacidade</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/politica-de-privacidade/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://fazercurriculo.com/lgpd</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/lgpd/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <!-- Mapa do Site -->
   <url>
-    <loc>https://fazercurriculo.com/sitemap</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://fazercurriculo.com/sitemap/</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

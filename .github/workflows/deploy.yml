@@ -23,8 +23,16 @@ jobs:
       - name: Build do projeto
         run: npm run build
 
+      - name: Gerar páginas estáticas pré-renderizadas
+        run: node scripts/prerender.mjs
+
       - name: Mostrar arquivos gerados
-        run: ls -al dist/
+        run: |
+          echo "=== Root files ==="
+          ls -al dist/
+          echo ""
+          echo "=== Static directories ==="
+          find dist/ -name "index.html" | sort
 
       - name: Deploy FTP para Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

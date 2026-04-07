@@ -1,25 +1,16 @@
 # Robots.txt for https://fazercurriculo.com
-# Permite indexação completa do site
 
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Arquivos importantes
-Allow: /ads.txt
-Allow: /sitemap.xml
-Allow: /robots.txt
-
-# Sitemap
-Sitemap: https://fazercurriculo.com/sitemap.xml
-
-# Google specific
 User-agent: Googlebot
 Allow: /
 
-# Bing specific
 User-agent: Bingbot
 Allow: /
 
-# Crawl delay para bots menos importantes
-User-agent: *
-Crawl-delay: 1
+User-agent: Yandex
+Allow: /
+
+Sitemap: https://fazercurriculo.com/sitemap.xml
