@@ -2,25 +2,24 @@
 # CONFIGURAÇÕES BÁSICAS
 # ========================================
 
-# Permitir que o .htaccess funcione
 Options +FollowSymLinks -MultiViews -Indexes
+DirectoryIndex index.html
 
 # ========================================
 # MIME TYPES PRIORITÁRIOS
 # ========================================
 
-# Forçar tipo correto ANTES de qualquer processamento
 <IfModule mod_mime.c>
   AddType text/plain .txt
   AddType application/xml .xml
   AddType application/json .json
+  AddType text/html .html
 </IfModule>
 
 # ========================================
 # ARQUIVOS CRÍTICOS: ads.txt, robots.txt
 # ========================================
 
-# ads.txt - Servir diretamente como texto puro
 <Files "ads.txt">
   ForceType text/plain
   SetHandler None
@@ -31,7 +30,6 @@ Options +FollowSymLinks -MultiViews -Indexes
   </IfModule>
 </Files>
 
-# robots.txt - Servir diretamente como texto puro
 <Files "robots.txt">
   ForceType text/plain
   SetHandler None
@@ -40,7 +38,6 @@ Options +FollowSymLinks -MultiViews -Indexes
   </IfModule>
 </Files>
 
-# sitemap.xml - Servir diretamente como XML
 <Files "sitemap.xml">
   ForceType application/xml
   SetHandler None
@@ -48,6 +45,16 @@ Options +FollowSymLinks -MultiViews -Indexes
     Header set Content-Type "application/xml; charset=utf-8"
   </IfModule>
 </Files>
+
+# ========================================
+# COMPRESSÃO GZIP / BROTLI
+# ========================================
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
 
 # ========================================
 # REWRITE RULES
@@ -58,14 +65,14 @@ Options +FollowSymLinks -MultiViews -Indexes
   RewriteBase /
 
   # ========================================
-  # FORÇAR HTTPS (Redirecionar HTTP para HTTPS)
+  # FORÇAR HTTPS
   # ========================================
   
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
   # ========================================
-  # FORÇAR SEM WWW (Redirecionar www para não-www)
+  # FORÇAR SEM WWW
   # ========================================
   
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
@@ -75,55 +82,51 @@ Options +FollowSymLinks -MultiViews -Indexes
   # ARQUIVOS ESTÁTICOS NA RAIZ - NUNCA REDIRECIONAR
   # ========================================
   
-  # ads.txt - CRÍTICO para Google AdSense
   RewriteRule ^ads\.txt$ - [L,T=text/plain]
-  
-  # robots.txt
   RewriteRule ^robots\.txt$ - [L,T=text/plain]
-  
-  # sitemap.xml
   RewriteRule ^sitemap\.xml$ - [L,T=application/xml]
-  
-  # favicon
   RewriteRule ^favicon\.ico$ - [L]
-  
-  # apple-touch-icon
   RewriteRule ^apple-touch-icon\.png$ - [L]
 
   # ========================================
-  # NORMALIZAÇÃO DE URL: Remover trailing slash
+  # NORMALIZAÇÃO: Adicionar trailing slash para diretórios
   # ========================================
   
-  # Remove trailing slash exceto para a raiz
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} (.+)/$
-  RewriteRule ^ %1 [R=301,L]
+  # Se o caminho é um diretório real mas não tem trailing slash, adicionar
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+  # ========================================
+  # PÁGINAS ESTÁTICAS PRÉ-RENDERIZADAS
+  # ========================================
+  
+  # Se existe um diretório com index.html para esta rota, servir diretamente
+  # Ex: /sobre/ -> /sobre/index.html (handled by DirectoryIndex)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ - [L]
 
   # ========================================
   # ARQUIVOS ESTÁTICOS: Servir diretamente
   # ========================================
   
-  # Qualquer arquivo de texto
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(txt|xml|json|webmanifest)$ - [L]
   
-  # Imagens e ícones
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(ico|png|jpg|jpeg|gif|svg|webp)$ - [L]
   
-  # Fontes
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(woff|woff2|ttf|eot|otf)$ - [L]
   
-  # Outros arquivos estáticos
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^.*\.(css|js|map|pdf)$ - [L]
 
   # ========================================
-  # SPA: Redirecionar para index.html
+  # SPA FALLBACK: Qualquer rota não encontrada
   # ========================================
   
-  # Se não for arquivo nem diretório existente, redireciona para index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L,QSA]
@@ -134,56 +137,59 @@ Options +FollowSymLinks -MultiViews -Indexes
 # ========================================
 
 <IfModule mod_headers.c>
-  # Permitir acesso do Googlebot e outros crawlers
+  # SEO: Permitir indexação
   Header set X-Robots-Tag "index, follow"
   
   # Segurança
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
   
-  # index.html - Sempre permitir acesso
-  <FilesMatch "index\.html$">
+  # HTML pages - não cachear para atualizações rápidas
+  <FilesMatch "\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+  
+  # Assets com hash - cache agressivo
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 </IfModule>
 
 # ========================================
-# PERMISSÕES: Garantir acesso público
+# PERMISSÕES
 # ========================================
 
 <IfModule mod_authz_core.c>
   Require all granted
 </IfModule>
 
-# Para Apache 2.2
 <IfModule !mod_authz_core.c>
   Order allow,deny
   Allow from all
 </IfModule>
 
 # ========================================
-# CACHE: Otimizar performance
+# CACHE
 # ========================================
 
 <IfModule mod_expires.c>
   ExpiresActive On
   
-  # Arquivos de texto (sem cache para atualização rápida)
+  ExpiresByType text/html "access plus 0 seconds"
   ExpiresByType text/plain "access plus 0 seconds"
   ExpiresByType application/xml "access plus 0 seconds"
   
-  # Imagens (cache longo)
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
   
-  # CSS e JavaScript (cache médio)
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
   
-  # Fontes (cache longo)
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
 </IfModule>
