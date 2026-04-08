@@ -36,8 +36,8 @@ const BlogArticle8 = () => {
   return (
     <>
       <Helmet>
-        <title>Como criar um perfil no LinkedIn que atrai recrutadores | Fazer Currículo</title>
-        <meta name="description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
+        <title>Perfil LinkedIn: Como Atrair Recrutadores em 2026</title>
+        <meta name="description" content="Recrutadores buscam no LinkedIn antes de abrir seu currículo. Veja como otimizar título, resumo, foto e experiências para ser encontrado e chamado." />
         <meta name="keywords" content="linkedin, perfil profissional, recrutadores, networking, oportunidades de emprego, perfil linkedin, otimização linkedin" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores" />
         

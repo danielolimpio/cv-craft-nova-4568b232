@@ -21,8 +21,8 @@ const Sobre = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Sobre Nós - Fazer Currículo | Nossa Missão e História</title>
-        <meta name="description" content="Conheça a missão do Fazer Currículo: democratizar o acesso a ferramentas profissionais de criação de currículos. 100% gratuito para sempre." />
+        <title>Sobre o Fazer Currículo — Quem Somos e Nossa Missão</title>
+        <meta name="description" content="Conheça o Fazer Currículo: plataforma 100% gratuita que já ajudou milhares de brasileiros a criar currículos profissionais e conquistar vagas." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/sobre" />
         

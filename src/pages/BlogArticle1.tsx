@@ -38,8 +38,8 @@ const BlogArticle1 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Como Criar um Currículo Profissional que se Destaca em 2026</title>
-        <meta name="description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026." />
+        <title>Como Criar um Currículo que se Destaca em 2026 [Guia]</title>
+        <meta name="description" content="Guia completo com técnicas atualizadas para 2026: o que incluir, o que evitar e exemplos reais para criar um currículo que impressiona recrutadores." />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

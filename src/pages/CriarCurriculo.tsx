@@ -163,8 +163,8 @@ const CriarCurriculo = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Criar Currículo Grátis Online - Editor Profissional | Fazer Currículo</title>
-        <meta name="description" content="Crie seu currículo profissional gratuitamente agora. Editor online fácil de usar, templates modernos e download em PDF. 100% grátis, sem cadastro." />
+        <title>Criar Currículo Grátis Agora — Editor Online com PDF</title>
+        <meta name="description" content="Monte seu currículo profissional agora mesmo: editor online grátis, sem cadastro, com templates modernos e download em PDF. Pronto em 5 minutos." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/criar-curriculo" />
         

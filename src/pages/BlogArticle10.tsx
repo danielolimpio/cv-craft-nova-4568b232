@@ -69,8 +69,8 @@ const BlogArticle10 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Currículo para Estágio: O Guia Definitivo para Estudantes | Fazer Currículo</title>
-        <meta name="description" content="Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional." />
+        <title>Currículo para Estágio: Guia Completo para Estudantes</title>
+        <meta name="description" content="Estudante buscando estágio? Veja como montar um currículo que destaca sua formação, projetos acadêmicos e habilidades — mesmo sem experiência." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-estagio-estudantes" />
         <meta property="og:title" content="Currículo para Estágio: O Guia Definitivo para Estudantes" />
         <meta property="og:description" content="Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional." />

@@ -61,8 +61,8 @@ const BlogArticle12 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>O Que Recrutadores Realmente Buscam em um Currículo Hoje | Fazer Currículo</title>
-        <meta name="description" content="Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página." />
+        <title>O Que Recrutadores Buscam no Currículo — 5 Critérios</title>
+        <meta name="description" content="Baseado em entrevistas reais com recrutadores: os 5 critérios que fazem seu currículo ser selecionado ou descartado em segundos. Veja como se destacar." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo" />
         <meta property="og:title" content="O Que Recrutadores Realmente Buscam em um Currículo Hoje" />
         <meta property="og:description" content="Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página." />
