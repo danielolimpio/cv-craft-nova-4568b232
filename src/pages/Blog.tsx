@@ -198,8 +198,8 @@ const Blog = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Blog sobre Currículo e Carreira — Dicas Práticas | 2026</title>
-        <meta name="description" content="Artigos sobre criação de currículos profissionais, dicas de carreira, estratégias para entrevistas e muito mais." />
+        <title>Blog Currículo e Carreira ✓ 15 Dicas Práticas | 2026</title>
+        <meta name="description" content="Dicas comprovadas para criar currículos que impressionam recrutadores. Artigos sobre ATS, LinkedIn, primeiro emprego e mais. Atualize-se e conquiste sua vaga!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/blog" />
         

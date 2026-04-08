@@ -15,14 +15,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Fazer Currículo Grátis Online em 5 Minutos | 2026</title>
-        <meta name="description" content="Crie seu currículo profissional grátis agora — sem cadastro. Modelos prontos, otimizados para ATS e com download em PDF. Mais de 50 mil currículos já criados." />
+        <title>Fazer Currículo Grátis Online em 5 Min ✓ Modelo 2026</title>
+        <meta name="description" content="Crie seu currículo profissional grátis em 5 minutos — sem cadastro. Modelos prontos para ATS + download em PDF. Já são 50 mil currículos criados. Conquiste sua vaga!" />
         <meta name="keywords" content="criar currículo grátis, currículo profissional, fazer currículo online, modelos de currículo, currículo ATS, currículo para emprego" />
         <link rel="canonical" href="https://fazercurriculo.com/" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Fazer Currículo Grátis Online em 5 Minutos | 2026" />
-        <meta property="og:description" content="Crie seu currículo profissional grátis agora — sem cadastro. Modelos prontos e download em PDF." />
+        <meta property="og:title" content="Fazer Currículo Grátis Online em 5 Min ✓ Modelo 2026" />
+        <meta property="og:description" content="Crie seu currículo grátis em 5 min — sem cadastro. Modelos ATS + PDF. 50 mil currículos criados!" />
         <meta property="og:url" content="https://fazercurriculo.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />

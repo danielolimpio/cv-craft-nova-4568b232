@@ -32,8 +32,8 @@ const ComoFunciona = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Como Criar Currículo Online Grátis: 4 Passos Simples</title>
-        <meta name="description" content="Veja como criar seu currículo profissional em 4 passos — escolha o modelo, preencha, personalize e baixe em PDF. 100% grátis, sem cadastro." />
+        <title>Como Fazer Currículo em 4 Passos ✓ Grátis e Rápido</title>
+        <meta name="description" content="Aprenda como criar seu currículo profissional em 4 passos simples — escolha o modelo, preencha, personalize e baixe em PDF. 100% grátis, sem cadastro. Comece agora!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/como-funciona" />
         

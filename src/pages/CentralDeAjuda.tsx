@@ -18,8 +18,8 @@ const CentralDeAjuda = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Central de Ajuda — Tutoriais e Suporte | Fazer Currículo</title>
-        <meta name="description" content="Precisa de ajuda? Veja tutoriais passo a passo, dicas de uso e respostas rápidas para criar seu currículo profissional sem complicação." />
+        <title>Central de Ajuda ✓ Tutoriais Passo a Passo | Currículo</title>
+        <meta name="description" content="Tutoriais passo a passo para criar seu currículo perfeito. Dicas de formatação, PDF, ATS e mais — tudo explicado de forma simples. Resolva em minutos!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/central-de-ajuda" />
         
