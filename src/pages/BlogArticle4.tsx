@@ -23,6 +23,8 @@ import {
   Clock,
   User
 } from "lucide-react";
+import AuthorBio from "@/components/AuthorBio";
+import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
 import RelatedArticles from "@/components/RelatedArticles";
 
