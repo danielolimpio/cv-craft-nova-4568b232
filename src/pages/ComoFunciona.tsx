@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Palette, Upload, Type, FileText, Download, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateHowToSchema, generateWebPageSchema } from "@/lib/schema";
 
 const ComoFunciona = () => {
   const breadcrumbItems = [
@@ -16,6 +16,18 @@ const ComoFunciona = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Como Funciona", url: "/como-funciona" }
   ]);
+
+  const howToSchema = generateHowToSchema();
+  
+  const webPageSchema = generateWebPageSchema(
+    "Como Criar Currículo Online Grátis: 4 Passos Simples",
+    "Veja como criar seu currículo profissional em 4 passos — escolha o modelo, preencha, personalize e baixe em PDF.",
+    "/como-funciona",
+    [
+      { name: "Currículo", sameAs: "https://pt.wikipedia.org/wiki/Curr%C3%ADculo_(documento)" },
+      { name: "PDF", sameAs: "https://pt.wikipedia.org/wiki/Portable_Document_Format" }
+    ]
+  );
 
   return (
     <div className="min-h-screen">
@@ -42,6 +54,12 @@ const ComoFunciona = () => {
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(howToSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 
