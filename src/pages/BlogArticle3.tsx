@@ -7,18 +7,42 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle3 = () => {
+  const articleUrl = "/blog/preparar-curriculo-sistemas-ats";
+  const articleSchema = generateArticleSchema({
+    title: "Como Preparar seu Currículo para Sistemas ATS",
+    description: "Seu currículo é rejeitado antes de chegar ao recrutador? Aprenda a otimizar para sistemas ATS com dicas práticas, palavras-chave e formatação correta.",
+    image: "/blog/curriculo-ats-sistemas.jpg",
+    datePublished: "2025-11-28",
+    dateModified: "2025-11-28",
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/como-criar-curriculo-profissional-2026", "/blog/destaque-habilidades-estrategia-impacto", "/blog/o-que-recrutadores-buscam-curriculo"]
+  });
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "Currículo para ATS", url: articleUrl }
+  ]);
   return (
     <>
       <Helmet>
         <title>Currículo para ATS: Como Passar nos Filtros Automáticos</title>
         <meta name="description" content="Seu currículo é rejeitado antes de chegar ao recrutador? Aprenda a otimizar para sistemas ATS com dicas práticas, palavras-chave e formatação correta." />
         <meta property="og:title" content="Como Preparar seu Currículo para Sistemas ATS" />
-        <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores. Dicas práticas, atualizadas e testáveis." />
-        <meta property="og:image" content="/blog/curriculo-ats-sistemas.jpg" />
+        <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores." />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ats-sistemas.jpg" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -549,6 +573,8 @@ const BlogArticle3 = () => {
               </section>
 
             </div>
+
+            <RelatedArticles currentUrl={articleUrl} />
 
             {/* Author Bio */}
             <AuthorBio />

@@ -25,8 +25,26 @@ import {
 } from "lucide-react";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle4 = () => {
+  const articleUrl = "/blog/curriculo-primeiro-emprego-o-que-incluir";
+  const articleSchema = generateArticleSchema({
+    title: "Currículo para Primeiro Emprego: O Que Incluir",
+    description: "Nunca trabalhou? Veja exatamente o que incluir e o que evitar no currículo de primeiro emprego — com exemplos prontos.",
+    image: "/blog/curriculo-primeiro-emprego.jpg",
+    datePublished: "2025-11-25",
+    dateModified: "2025-11-25",
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-sem-experiencia-estrategias", "/blog/curriculo-estagio-estudantes", "/blog/como-criar-curriculo-profissional-2026"]
+  });
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "Currículo para Primeiro Emprego", url: articleUrl }
+  ]);
   return (
     <>
       <Helmet>
@@ -36,10 +54,16 @@ const BlogArticle4 = () => {
           content="Nunca trabalhou? Veja exatamente o que incluir (e o que evitar) no currículo de primeiro emprego — com exemplos prontos e dicas de recrutadores." 
         />
         <meta property="og:title" content="Currículo para Primeiro Emprego: O Que Incluir e Evitar" />
-        <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo." />
-        <meta property="og:image" content="/blog/curriculo-primeiro-emprego.jpg" />
+        <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades." />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego.jpg" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -657,6 +681,8 @@ const BlogArticle4 = () => {
               </Link>
             </Button>
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />

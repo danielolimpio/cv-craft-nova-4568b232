@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Briefcas
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle13 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle13 = () => {
     { label: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos" }
   ];
 
+  const articleUrl = "/blog/curriculo-ingles-estrutura-erros";
   const articleSchema = generateArticleSchema({
     title: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos",
     description: "Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem.",
     image: "/blog/curriculo-ingles-estrutura-erros.jpg",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/curriculo-ingles-estrutura-erros"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/10-erros-comuns-curriculos", "/blog/destaque-habilidades-estrategia-impacto", "/blog/curriculo-ti-priorizar-2026"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -798,6 +799,8 @@ const BlogArticle13 = () => {
             </div>
 
           </div>
+          
+          <RelatedArticles currentUrl={articleUrl} />
           
           {/* Author Bio */}
           <AuthorBio />

@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Briefcas
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle15 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle15 = () => {
     { label: "Quais profissões terão mais vagas no Brasil até 2030?" }
   ];
 
+  const articleUrl = "/blog/profissoes-mais-vagas-brasil-2030";
   const articleSchema = generateArticleSchema({
     title: "Quais profissões terão mais vagas no Brasil até 2030?",
     description: "Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade.",
     image: "/blog/profissoes-mais-vagas-brasil-2030.jpg",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/profissoes-mais-vagas-brasil-2030"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-vs-linkedin-2026", "/blog/curriculo-ti-priorizar-2026", "/blog/curriculo-primeiro-emprego-o-que-incluir"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -701,6 +702,8 @@ const BlogArticle15 = () => {
             </div>
 
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />

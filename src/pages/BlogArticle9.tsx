@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import BlogSidebar from "@/components/BlogSidebar";
 import AuthorBio from "@/components/AuthorBio";
+import { generateArticleSchema as genArticleSchema, generateBreadcrumbSchema as genBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle9 = () => {
   const breadcrumbItems = [
@@ -478,6 +480,8 @@ const BlogArticle9 = () => {
                 </div>
               </div>
             </div>
+
+            <RelatedArticles currentUrl="/blog/carta-apresentacao-empregador" />
 
             <AuthorBio />
               </article>

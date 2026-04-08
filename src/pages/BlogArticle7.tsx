@@ -7,7 +7,8 @@ import AuthorBio from "@/components/AuthorBio";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Target, Lightbulb, TrendingUp, CheckCircle2, AlertCircle, Users, Award } from "lucide-react";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle7 = () => {
   const breadcrumbItems = [
@@ -15,6 +16,7 @@ const BlogArticle7 = () => {
     { label: "Destaque suas habilidades com estratégia e impacto" }
   ];
 
+  const articleUrl = "/blog/destaque-habilidades-estrategia-impacto";
   const articleData = {
     title: "Como Destacar Habilidades no Currículo com Impacto",
     description: "Aprenda a identificar, organizar e comunicar suas habilidades de forma estratégica — com exemplos práticos que chamam atenção de recrutadores.",
@@ -22,9 +24,9 @@ const BlogArticle7 = () => {
     url: "https://fazercurriculo.com/blog/destaque-habilidades-estrategia-impacto",
     datePublished: "2025-01-29",
     dateModified: "2025-01-29",
-    author: {
-      name: "Daniel Olímpio"
-    }
+    author: { name: "Daniel Olímpio" },
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/objetivo-profissional-curriculo", "/blog/10-erros-comuns-curriculos", "/blog/curriculo-ingles-estrutura-erros"]
   };
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -428,6 +430,8 @@ const BlogArticle7 = () => {
               </div>
             </div>
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />

@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Briefcas
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle12 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle12 = () => {
     { label: "O Que Recrutadores Realmente Buscam em um Currículo Hoje" }
   ];
 
+  const articleUrl = "/blog/o-que-recrutadores-buscam-curriculo";
   const articleSchema = generateArticleSchema({
     title: "O Que Recrutadores Realmente Buscam em um Currículo Hoje",
     description: "Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página.",
     image: "/blog/o-que-recrutadores-buscam-curriculo.jpg",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/o-que-recrutadores-buscam-curriculo"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/carta-apresentacao-empregador", "/blog/como-criar-curriculo-profissional-2026", "/blog/preparar-curriculo-sistemas-ats"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -869,6 +870,8 @@ const BlogArticle12 = () => {
                 </Card>
               </div>
             </section>
+
+            <RelatedArticles currentUrl={articleUrl} />
 
             {/* Author Bio */}
             <AuthorBio />

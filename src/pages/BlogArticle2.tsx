@@ -7,9 +7,11 @@ import { Calendar, Clock, User, ArrowLeft, CheckCircle2, XCircle, AlertCircle, F
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle2 = () => {
+  const articleUrl = "/blog/10-erros-comuns-curriculos";
   const articleSchema = generateArticleSchema({
     title: "10 Erros Comuns em Currículos que Você Deve Evitar",
     description: "Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns e como corrigir cada um com exemplos práticos.",
@@ -17,7 +19,9 @@ const BlogArticle2 = () => {
     datePublished: "2025-11-25",
     dateModified: "2025-11-25",
     author: { name: "Equipe Fazer Currículo" },
-    url: "/blog/10-erros-comuns-curriculos"
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/objetivo-profissional-curriculo", "/blog/destaque-habilidades-estrategia-impacto", "/blog/curriculo-ingles-estrutura-erros"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -421,6 +425,8 @@ const BlogArticle2 = () => {
               Voltar para todos os artigos
             </Link>
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />
