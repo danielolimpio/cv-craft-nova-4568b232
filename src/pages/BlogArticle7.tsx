@@ -7,7 +7,8 @@ import AuthorBio from "@/components/AuthorBio";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Target, Lightbulb, TrendingUp, CheckCircle2, AlertCircle, Users, Award } from "lucide-react";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle7 = () => {
   const breadcrumbItems = [

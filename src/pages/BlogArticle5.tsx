@@ -6,17 +6,41 @@ import Footer from "@/components/Footer";
 import BlogSidebar from "@/components/BlogSidebar";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle5 = () => {
+  const articleUrl = "/blog/curriculo-sem-experiencia-estrategias";
+  const articleSchema = generateArticleSchema({
+    title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
+    description: "Primeiro emprego ou mudança de carreira? Veja 7 estratégias comprovadas para montar um currículo competitivo mesmo sem experiência profissional.",
+    image: "/blog/curriculo-sem-experiencia.jpg",
+    datePublished: "2025-11-25",
+    dateModified: "2025-11-25",
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-primeiro-emprego-o-que-incluir", "/blog/curriculo-estagio-estudantes", "/blog/objetivo-profissional-curriculo"]
+  });
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "Currículo Sem Experiência", url: articleUrl }
+  ]);
   return (
     <>
       <Helmet>
         <title>Currículo Sem Experiência: 7 Estratégias que Funcionam</title>
         <meta name="description" content="Primeiro emprego ou mudança de carreira? Veja 7 estratégias comprovadas para montar um currículo competitivo mesmo sem experiência profissional." />
         <meta property="og:title" content="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" />
-        <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado, habilidades e potencial — sem inventar." />
-        <meta property="og:image" content="/blog/curriculo-sem-experiencia.jpg" />
+        <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades." />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia.jpg" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">

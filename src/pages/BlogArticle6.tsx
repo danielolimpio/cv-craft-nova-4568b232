@@ -7,8 +7,26 @@ import { ArrowLeft, Target, Lightbulb, CheckCircle2, XCircle, AlertTriangle, Tre
 import { Link } from "react-router-dom";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle6 = () => {
+  const articleUrl = "/blog/objetivo-profissional-curriculo";
+  const articleSchema = generateArticleSchema({
+    title: "Objetivo Profissional no Currículo: Exemplos Práticos",
+    description: "Não sabe o que escrever no objetivo? Veja 15 exemplos prontos por área e aprenda a escrever um objetivo que chama atenção.",
+    image: "/blog/objetivo-profissional-curriculo.jpg",
+    datePublished: "2025-11-23",
+    dateModified: "2025-11-23",
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/destaque-habilidades-estrategia-impacto", "/blog/10-erros-comuns-curriculos", "/blog/como-criar-curriculo-profissional-2026"]
+  });
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "Objetivo Profissional no Currículo", url: articleUrl }
+  ]);
   return (
     <>
       <Helmet>

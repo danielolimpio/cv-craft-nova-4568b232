@@ -7,7 +7,8 @@ import AuthorBio from "@/components/AuthorBio";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Linkedin, Target, TrendingUp, Users, CheckCircle2, XCircle, Clock } from "lucide-react";
-import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle8 = () => {
   const articleData = {
