@@ -11,16 +11,17 @@ import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from
 import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle8 = () => {
+  const articleUrl = "/blog/perfil-linkedin-recrutadores";
   const articleData = {
     title: "Como criar um perfil no LinkedIn que atrai recrutadores",
     description: "Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades.",
     datePublished: "2025-01-29",
     dateModified: "2025-01-29",
-    author: {
-      name: "Daniel Olimpio"
-    },
+    author: { name: "Daniel Olimpio" },
     image: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg",
-    url: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores"
+    url: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores",
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-vs-linkedin-2026", "/blog/curriculo-ti-priorizar-2026", "/blog/o-que-recrutadores-buscam-curriculo"]
   };
 
   const breadcrumbSchemaItems = [
