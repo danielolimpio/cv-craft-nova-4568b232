@@ -65,8 +65,8 @@ const BlogArticle15 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Quais profissões terão mais vagas no Brasil até 2030? | Fazer Currículo</title>
-        <meta name="description" content="Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade." />
+        <title>Profissões com Mais Vagas no Brasil até 2030 [Dados]</title>
+        <meta name="description" content="Quais carreiras terão mais vagas até 2030? Veja dados do Ministério do Trabalho, MEC e WEF — com salários, formações e como se preparar agora." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030" />
         <meta property="og:title" content="Quais profissões terão mais vagas no Brasil até 2030?" />
         <meta property="og:description" content="Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade." />

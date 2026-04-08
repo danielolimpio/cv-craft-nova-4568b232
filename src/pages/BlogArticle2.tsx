@@ -6,11 +6,50 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User, ArrowLeft, CheckCircle2, XCircle, AlertCircle, FileText, TrendingUp, Target } from "lucide-react";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
+import { Helmet } from "react-helmet";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 const BlogArticle2 = () => {
+  const articleSchema = generateArticleSchema({
+    title: "10 Erros Comuns em Currículos que Você Deve Evitar",
+    description: "Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns e como corrigir cada um com exemplos práticos.",
+    image: "/blog/10-erros-comuns-curriculos.jpg",
+    datePublished: "2025-11-25",
+    dateModified: "2025-11-25",
+    author: { name: "Equipe Fazer Currículo" },
+    url: "/blog/10-erros-comuns-curriculos"
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Blog", url: "/blog" },
+    { name: "10 Erros Comuns em Currículos", url: "/blog/10-erros-comuns-curriculos" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Helmet>
+        <title>10 Erros no Currículo que Te Eliminam — Como Corrigir</title>
+        <meta name="description" content="Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns (com exemplos) e como corrigir cada um para ser chamado para entrevistas." />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/10-erros-comuns-curriculos" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="10 Erros no Currículo que Te Eliminam — Como Corrigir" />
+        <meta property="og:description" content="Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns e como corrigir." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.jpg" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="10 Erros no Currículo que Te Eliminam" />
+        <meta name="twitter:description" content="Veja os 10 erros mais comuns em currículos e como corrigir cada um." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
       
       <main className="pt-32 pb-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

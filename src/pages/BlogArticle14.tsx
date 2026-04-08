@@ -65,8 +65,8 @@ const BlogArticle14 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Currículo para Área de TI: O Que Priorizar em 2026 | Fazer Currículo</title>
-        <meta name="description" content="Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação." />
+        <title>Currículo para TI: O Que Priorizar em 2026 [Guia]</title>
+        <meta name="description" content="Desenvolvedor, analista ou DevOps? Veja o que colocar no currículo de TI em 2026: GitHub, certificações, projetos reais e as skills que recrutadores buscam." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026" />
         <meta property="og:title" content="Currículo para Área de TI: O Que Priorizar em 2026" />
         <meta property="og:description" content="Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação." />
