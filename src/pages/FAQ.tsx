@@ -74,8 +74,8 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Perguntas Frequentes - FAQ | Fazer Currículo</title>
-        <meta name="description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente. Respostas rápidas e objetivas." />
+        <title>Perguntas Frequentes sobre Currículo Online Grátis | FAQ</title>
+        <meta name="description" content="Respostas rápidas: como baixar em PDF, se é grátis mesmo, como funciona o ATS, se precisa de cadastro e muito mais. Tire suas dúvidas agora." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/faq" />
         

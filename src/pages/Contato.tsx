@@ -39,8 +39,8 @@ const Contato = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Contato - Fazer Currículo | Fale Conosco</title>
-        <meta name="description" content="Entre em contato conosco. Estamos prontos para ajudar com suas dúvidas sobre criação de currículos profissionais." />
+        <title>Fale Conosco — Contato Fazer Currículo</title>
+        <meta name="description" content="Tem dúvidas sobre como criar seu currículo? Entre em contato com nossa equipe — respondemos em até 24h. Suporte gratuito e humanizado." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/contato" />
         
