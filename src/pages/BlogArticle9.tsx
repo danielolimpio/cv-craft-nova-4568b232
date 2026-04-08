@@ -16,8 +16,8 @@ const BlogArticle9 = () => {
   ];
 
   const articleData = {
-    title: "Saiba como escrever uma carta de apresentação que conquiste o empregador",
-    description: "Domine a arte de escrever uma carta de apresentação persuasiva que conecta seu valor à vaga desejada.",
+    title: "Carta de Apresentação: Como Escrever e Conquistar a Vaga",
+    description: "Veja como escrever uma carta de apresentação persuasiva com exemplos prontos — o complemento ideal para seu currículo se destacar.",
     author: "Daniel Olimpio",
     publishDate: "2025-11-30",
     image: "/blog/carta-apresentacao-empregador.jpg",

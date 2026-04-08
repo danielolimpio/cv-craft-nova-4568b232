@@ -30,10 +30,10 @@ const BlogArticle4 = () => {
   return (
     <>
       <Helmet>
-        <title>Currículo para Primeiro Emprego: O Que Incluir e Evitar | Fazer Currículo</title>
+        <title>Currículo para Primeiro Emprego: O Que Colocar [2026]</title>
         <meta 
           name="description" 
-          content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo." 
+          content="Nunca trabalhou? Veja exatamente o que incluir (e o que evitar) no currículo de primeiro emprego — com exemplos prontos e dicas de recrutadores." 
         />
         <meta property="og:title" content="Currículo para Primeiro Emprego: O Que Incluir e Evitar" />
         <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades — e o que evitar a todo custo." />
