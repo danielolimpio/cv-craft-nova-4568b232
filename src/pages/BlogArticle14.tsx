@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Briefcas
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle14 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle14 = () => {
     { label: "Currículo para Área de TI: O Que Priorizar em 2026" }
   ];
 
+  const articleUrl = "/blog/curriculo-ti-priorizar-2026";
   const articleSchema = generateArticleSchema({
     title: "Currículo para Área de TI: O Que Priorizar em 2026",
     description: "Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação.",
     image: "/blog/curriculo-ti-priorizar-2026.jpg",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/curriculo-ti-priorizar-2026"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-vs-linkedin-2026", "/blog/perfil-linkedin-recrutadores", "/blog/profissoes-mais-vagas-brasil-2030"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -885,6 +886,8 @@ const BlogArticle14 = () => {
             </div>
 
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />
