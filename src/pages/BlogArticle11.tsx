@@ -382,7 +382,7 @@ const BlogArticle11 = () => {
                     <div>
                       <p className="font-semibold mb-2">Leia também:</p>
                       <p>
-                        Confira nosso <Link to="/blog/curriculo-ats-sistemas" className="text-[#006B3D] underline hover:text-[#005a32]">guia completo sobre como criar um currículo que passa por sistemas de IA</Link>.
+                        Confira nosso <Link to="/blog/preparar-curriculo-sistemas-ats" className="text-[#006B3D] underline hover:text-[#005a32]">guia completo sobre como criar um currículo que passa pelos sistemas ATS</Link>.
                       </p>
                     </div>
                   </div>

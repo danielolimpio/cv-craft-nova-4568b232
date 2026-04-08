@@ -4,6 +4,7 @@
 
 Options +FollowSymLinks -MultiViews -Indexes
 DirectoryIndex index.html
+ErrorDocument 404 /404.html
 
 # ========================================
 # MIME TYPES PRIORITÁRIOS
@@ -17,7 +18,7 @@ DirectoryIndex index.html
 </IfModule>
 
 # ========================================
-# ARQUIVOS CRÍTICOS: ads.txt, robots.txt
+# ARQUIVOS CRÍTICOS: ads.txt, robots.txt, sitemap.xml
 # ========================================
 
 <Files "ads.txt">
@@ -46,6 +47,13 @@ DirectoryIndex index.html
   </IfModule>
 </Files>
 
+<Files "404.html">
+  <IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </IfModule>
+</Files>
+
 # ========================================
 # COMPRESSÃO GZIP / BROTLI
 # ========================================
@@ -64,72 +72,31 @@ DirectoryIndex index.html
   RewriteEngine On
   RewriteBase /
 
-  # ========================================
-  # FORÇAR HTTPS
-  # ========================================
-  
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+  # Canonicalização em um único salto: HTTPS + sem WWW
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\.fazercurriculo\.com$ [NC]
+  RewriteRule ^(.*)$ https://fazercurriculo.com/$1 [R=301,L]
 
-  # ========================================
-  # FORÇAR SEM WWW
-  # ========================================
-  
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
-  # ========================================
-  # ARQUIVOS ESTÁTICOS NA RAIZ - NUNCA REDIRECIONAR
-  # ========================================
-  
+  # Arquivos críticos da raiz - nunca redirecionar para SPA
   RewriteRule ^ads\.txt$ - [L,T=text/plain]
   RewriteRule ^robots\.txt$ - [L,T=text/plain]
   RewriteRule ^sitemap\.xml$ - [L,T=application/xml]
   RewriteRule ^favicon\.ico$ - [L]
   RewriteRule ^apple-touch-icon\.png$ - [L]
+  RewriteRule ^404\.html$ - [L]
 
-  # ========================================
-  # NORMALIZAÇÃO: Adicionar trailing slash para diretórios
-  # ========================================
-  
-  # Se o caminho é um diretório real mas não tem trailing slash, adicionar
+  # Adicionar trailing slash somente para diretórios reais
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteCond %{REQUEST_URI} !/$
-  RewriteRule ^(.*)$ /$1/ [R=301,L]
+  RewriteRule ^(.*)$ https://fazercurriculo.com/$1/ [R=301,L]
 
-  # ========================================
-  # PÁGINAS ESTÁTICAS PRÉ-RENDERIZADAS
-  # ========================================
-  
-  # Se existe um diretório com index.html para esta rota, servir diretamente
-  # Ex: /sobre/ -> /sobre/index.html (handled by DirectoryIndex)
+  # Servir arquivos e diretórios reais diretamente
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
-  RewriteCond %{REQUEST_FILENAME}/index.html -f
-  RewriteRule ^(.*)$ - [L]
+  RewriteRule ^ - [L]
 
-  # ========================================
-  # ARQUIVOS ESTÁTICOS: Servir diretamente
-  # ========================================
-  
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^.*\.(txt|xml|json|webmanifest)$ - [L]
-  
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^.*\.(ico|png|jpg|jpeg|gif|svg|webp)$ - [L]
-  
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^.*\.(woff|woff2|ttf|eot|otf)$ - [L]
-  
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^.*\.(css|js|map|pdf)$ - [L]
-
-  # ========================================
-  # SPA FALLBACK: Qualquer rota não encontrada
-  # ========================================
-  
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L,QSA]
+  # Qualquer rota inexistente deve ser 404 real
+  RewriteRule ^ - [R=404,L]
 </IfModule>
 
 # ========================================
@@ -137,21 +104,15 @@ DirectoryIndex index.html
 # ========================================
 
 <IfModule mod_headers.c>
-  # SEO: Permitir indexação
-  Header set X-Robots-Tag "index, follow"
-  
-  # Segurança
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
-  
-  # HTML pages - não cachear para atualizações rápidas
+
   <FilesMatch "\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
     Header set Pragma "no-cache"
   </FilesMatch>
-  
-  # Assets com hash - cache agressivo
+
   <FilesMatch "\.(js|css)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
@@ -176,20 +137,20 @@ DirectoryIndex index.html
 
 <IfModule mod_expires.c>
   ExpiresActive On
-  
+
   ExpiresByType text/html "access plus 0 seconds"
   ExpiresByType text/plain "access plus 0 seconds"
   ExpiresByType application/xml "access plus 0 seconds"
-  
+
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
-  
+
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
-  
+
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
 </IfModule>

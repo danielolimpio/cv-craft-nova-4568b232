@@ -756,11 +756,11 @@ const BlogArticle5 = () => {
               <div className="mt-12 pt-8 border-t border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Leia também:</h3>
                 <div className="grid md:grid-cols-2 gap-4">
-                  <Link to="/blog/4" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
+                  <Link to="/blog/curriculo-primeiro-emprego-o-que-incluir" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
                     <h4 className="font-semibold text-foreground mb-2">Currículo para Primeiro Emprego: O Que Incluir e Evitar</h4>
                     <p className="text-sm text-muted-foreground">Dicas objetivas para destacar atitudes e atividades no seu primeiro currículo.</p>
                   </Link>
-                  <Link to="/blog/2" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
+                  <Link to="/blog/10-erros-comuns-curriculos" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
                     <h4 className="font-semibold text-foreground mb-2">10 Erros Comuns em Currículos que Você Deve Evitar</h4>
                     <p className="text-sm text-muted-foreground">Descubra os erros que podem eliminar seu currículo antes da entrevista.</p>
                   </Link>
