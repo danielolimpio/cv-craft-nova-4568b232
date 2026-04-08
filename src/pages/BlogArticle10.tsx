@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Graduati
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle10 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle10 = () => {
     { label: "Currículo para Estágio: O Guia Definitivo para Estudantes" }
   ];
 
+  const articleUrl = "/blog/curriculo-estagio-estudantes";
   const articleSchema = generateArticleSchema({
     title: "Currículo para Estágio: O Guia Definitivo para Estudantes",
     description: "Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional.",
     image: "/blog/curriculo-estagio-estudantes.jpg",
     datePublished: "2025-12-05",
     dateModified: "2025-12-05",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/curriculo-estagio-estudantes"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/curriculo-primeiro-emprego-o-que-incluir", "/blog/curriculo-sem-experiencia-estrategias", "/blog/como-criar-curriculo-profissional-2026"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -970,6 +971,8 @@ const BlogArticle10 = () => {
               </CardContent>
             </Card>
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />

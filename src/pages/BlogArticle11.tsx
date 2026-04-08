@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Briefcas
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle11 = () => {
   const breadcrumbItems = [
@@ -17,17 +18,17 @@ const BlogArticle11 = () => {
     { label: "Diferença Entre Currículo e Perfil no LinkedIn em 2026" }
   ];
 
+  const articleUrl = "/blog/curriculo-vs-linkedin-2026";
   const articleSchema = generateArticleSchema({
     title: "Diferença Entre Currículo e Perfil no LinkedIn em 2026",
     description: "Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte.",
     image: "/blog/curriculo-vs-linkedin-2026.jpg",
     datePublished: "2025-12-06",
     dateModified: "2025-12-06",
-    author: {
-      name: "Daniel Olimpio",
-      url: "/sobre"
-    },
-    url: "/blog/curriculo-vs-linkedin-2026"
+    author: { name: "Daniel Olimpio", url: "/sobre" },
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/perfil-linkedin-recrutadores", "/blog/curriculo-ti-priorizar-2026", "/blog/profissoes-mais-vagas-brasil-2030"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -1003,6 +1004,8 @@ const BlogArticle11 = () => {
             </section>
 
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />
