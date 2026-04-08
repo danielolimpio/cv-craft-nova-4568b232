@@ -5,11 +5,12 @@ import TemplatesSection from "@/components/TemplatesSection";
 import BlogPreviewSection from "@/components/BlogPreviewSection";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet";
-import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
+import { generateOrganizationSchema, generateWebSiteSchema, generateSoftwareAppSchema } from "@/lib/schema";
 
 const Index = () => {
   const organizationSchema = generateOrganizationSchema();
   const websiteSchema = generateWebSiteSchema();
+  const softwareAppSchema = generateSoftwareAppSchema();
 
   return (
     <div className="min-h-screen">
@@ -37,6 +38,9 @@ const Index = () => {
         </script>
         <script type="application/ld+json">
           {JSON.stringify(websiteSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(softwareAppSchema)}
         </script>
       </Helmet>
       
