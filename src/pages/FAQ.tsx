@@ -74,8 +74,8 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Perguntas Frequentes sobre Currículo Online Grátis | FAQ</title>
-        <meta name="description" content="Respostas rápidas: como baixar em PDF, se é grátis mesmo, como funciona o ATS, se precisa de cadastro e muito mais. Tire suas dúvidas agora." />
+        <title>FAQ Currículo Online Grátis — 10 Respostas Rápidas</title>
+        <meta name="description" content="É realmente grátis? Precisa de cadastro? Como baixar em PDF? Veja as 10 perguntas mais comuns sobre criar currículo online — respostas diretas e sem enrolação." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/faq" />
         

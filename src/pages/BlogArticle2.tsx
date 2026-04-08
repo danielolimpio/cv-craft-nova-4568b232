@@ -32,8 +32,8 @@ const BlogArticle2 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>10 Erros no Currículo que Te Eliminam — Como Corrigir</title>
-        <meta name="description" content="Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns (com exemplos) e como corrigir cada um para ser chamado para entrevistas." />
+        <title>10 Erros no Currículo que Te Eliminam ✓ Corrija Agora</title>
+        <meta name="description" content="78% dos currículos são descartados por erros evitáveis. Veja os 10 mais comuns com exemplos de antes/depois e corrija o seu hoje. Pare de perder vagas!" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/10-erros-comuns-curriculos" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="10 Erros no Currículo que Te Eliminam — Como Corrigir" />

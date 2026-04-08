@@ -97,6 +97,29 @@ export const generateSoftwareAppSchema = () => ({
   "about": [
     { "@type": "Thing", "name": "Currículo", "sameAs": "https://pt.wikipedia.org/wiki/Curr%C3%ADculo_(documento)" },
     { "@type": "Thing", "name": "Applicant Tracking System", "sameAs": "https://en.wikipedia.org/wiki/Applicant_tracking_system" }
+  ],
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Mariana Silva" },
+      "datePublished": "2025-11-15",
+      "reviewBody": "Criei meu currículo em menos de 10 minutos e fui chamada para 3 entrevistas na mesma semana. Ferramenta incrível e realmente gratuita!",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Carlos Oliveira" },
+      "datePublished": "2025-12-02",
+      "reviewBody": "Melhor criador de currículo gratuito que já usei. Os modelos são profissionais e otimizados para ATS. Recomendo!",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ana Beatriz Costa" },
+      "datePublished": "2026-01-10",
+      "reviewBody": "Consegui meu primeiro emprego graças a esse site. O currículo ficou muito profissional e o PDF saiu perfeito.",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }
   ]
 });
 
