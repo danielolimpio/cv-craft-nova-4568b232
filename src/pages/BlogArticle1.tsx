@@ -9,7 +9,8 @@ import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, Trending
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
-import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbSchema, articleEntities } from "@/lib/schema";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const BlogArticle1 = () => {
   const breadcrumbItems = [
@@ -17,6 +18,7 @@ const BlogArticle1 = () => {
     { label: "Como Criar um Currículo Profissional que se Destaca em 2026" }
   ];
 
+  const articleUrl = "/blog/como-criar-curriculo-profissional-2026";
   const articleSchema = generateArticleSchema({
     title: "Como Criar um Currículo Profissional que se Destaca em 2026",
     description: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026, exemplos práticos e dicas que funcionam de verdade no mercado competitivo de hoje.",
@@ -27,7 +29,9 @@ const BlogArticle1 = () => {
       name: "Daniel Olimpio",
       url: "/sobre"
     },
-    url: "/blog/como-criar-curriculo-profissional-2026"
+    url: articleUrl,
+    about: articleEntities[articleUrl],
+    relatedLinks: ["/blog/10-erros-comuns-curriculos", "/blog/preparar-curriculo-sistemas-ats", "/blog/curriculo-primeiro-emprego-o-que-incluir", "/blog/curriculo-sem-experiencia-estrategias"]
   });
 
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -613,6 +617,8 @@ const BlogArticle1 = () => {
               </Card>
 
           </div>
+
+          <RelatedArticles currentUrl={articleUrl} />
 
           {/* Author Bio */}
           <AuthorBio />
