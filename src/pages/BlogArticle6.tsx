@@ -12,8 +12,8 @@ const BlogArticle6 = () => {
   return (
     <>
       <Helmet>
-        <title>Objetivo Profissional no Currículo: Exemplos Práticos | FazerCurriculo.com</title>
-        <meta name="description" content="Objetivo ainda é relevante? Veja modelos reais por área (TI, administração, saúde) e aprenda a escrever um focado, realista e impactante." />
+        <title>Objetivo Profissional no Currículo — 15 Exemplos Prontos</title>
+        <meta name="description" content="Não sabe o que escrever no objetivo? Veja 15 exemplos prontos por área (TI, saúde, administração) e aprenda a escrever um objetivo que chama atenção." />
         <meta property="og:title" content="Objetivo Profissional no Currículo: Exemplos Práticos" />
         <meta property="og:description" content="Objetivo ainda é relevante? Veja modelos reais por área (TI, administração, saúde) e aprenda a escrever um focado, realista e impactante." />
         <meta property="og:type" content="article" />

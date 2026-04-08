@@ -11,8 +11,8 @@ const BlogArticle5 = () => {
   return (
     <>
       <Helmet>
-        <title>Currículo Sem Experiência: Estratégias para Jovens e Iniciantes - Fazer Currículo</title>
-        <meta name="description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado, habilidades e potencial — sem inventar." />
+        <title>Currículo Sem Experiência: 7 Estratégias que Funcionam</title>
+        <meta name="description" content="Primeiro emprego ou mudança de carreira? Veja 7 estratégias comprovadas para montar um currículo competitivo mesmo sem experiência profissional." />
         <meta property="og:title" content="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" />
         <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado, habilidades e potencial — sem inventar." />
         <meta property="og:image" content="/blog/curriculo-sem-experiencia.jpg" />

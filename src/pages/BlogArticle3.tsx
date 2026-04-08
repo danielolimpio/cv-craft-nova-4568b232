@@ -12,8 +12,8 @@ const BlogArticle3 = () => {
   return (
     <>
       <Helmet>
-        <title>Como Preparar seu Currículo para Sistemas ATS | Fazer Currículo</title>
-        <meta name="description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores. Dicas práticas, atualizadas e testáveis." />
+        <title>Currículo para ATS: Como Passar nos Filtros Automáticos</title>
+        <meta name="description" content="Seu currículo é rejeitado antes de chegar ao recrutador? Aprenda a otimizar para sistemas ATS com dicas práticas, palavras-chave e formatação correta." />
         <meta property="og:title" content="Como Preparar seu Currículo para Sistemas ATS" />
         <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores. Dicas práticas, atualizadas e testáveis." />
         <meta property="og:image" content="/blog/curriculo-ats-sistemas.jpg" />

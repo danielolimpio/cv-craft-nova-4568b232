@@ -65,8 +65,8 @@ const BlogArticle13 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Currículo em Inglês: Estrutura, Erros Comuns e Exemplos | Fazer Currículo</title>
-        <meta name="description" content="Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem." />
+        <title>Currículo em Inglês: Estrutura + Exemplos Prontos [2026]</title>
+        <meta name="description" content="Vai se candidatar a vagas internacionais? Veja a estrutura correta do currículo em inglês, erros comuns de brasileiros e exemplos prontos para copiar." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros" />
         <meta property="og:title" content="Currículo em Inglês: Estrutura, Erros Comuns e Exemplos" />
         <meta property="og:description" content="Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem." />

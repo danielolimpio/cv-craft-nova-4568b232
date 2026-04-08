@@ -65,8 +65,8 @@ const BlogArticle11 = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Diferença Entre Currículo e Perfil no LinkedIn em 2026 | Fazer Currículo</title>
-        <meta name="description" content="Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte." />
+        <title>Currículo vs LinkedIn: Qual Usar e Quando? [2026]</title>
+        <meta name="description" content="Currículo ou LinkedIn — qual o recrutador olha primeiro? Entenda as diferenças, quando priorizar cada um e como alinhar os dois para máximo impacto." />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026" />
         <meta property="og:title" content="Diferença Entre Currículo e Perfil no LinkedIn em 2026" />
         <meta property="og:description" content="Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte." />
