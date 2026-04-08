@@ -60,8 +60,8 @@ const BlogArticle7 = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>{articleData.title} | Fazer Currículo</title>
-        <meta name="description" content={articleData.description} />
+        <title>Habilidades no Currículo: Estratégia de Impacto ✓ 2026</title>
+        <meta name="description" content="Aprenda a destacar suas habilidades com impacto real no currículo. Exemplos práticos de hard e soft skills que recrutadores buscam em 2026. Destaque-se agora!" />
         <meta property="og:title" content={articleData.title} />
         <meta property="og:description" content={articleData.description} />
         <meta property="og:image" content={articleData.image} />

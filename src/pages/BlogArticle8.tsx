@@ -38,8 +38,8 @@ const BlogArticle8 = () => {
   return (
     <>
       <Helmet>
-        <title>Perfil LinkedIn: Como Atrair Recrutadores em 2026</title>
-        <meta name="description" content="Recrutadores buscam no LinkedIn antes de abrir seu currículo. Veja como otimizar título, resumo, foto e experiências para ser encontrado e chamado." />
+        <title>Perfil LinkedIn: Atraia 3x Mais Recrutadores ✓ 2026</title>
+        <meta name="description" content="87% dos recrutadores buscam no LinkedIn antes do currículo. Otimize título, resumo, foto e experiências para ser encontrado e chamado para entrevistas." />
         <meta name="keywords" content="linkedin, perfil profissional, recrutadores, networking, oportunidades de emprego, perfil linkedin, otimização linkedin" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores" />
         

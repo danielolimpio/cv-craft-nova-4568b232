@@ -30,8 +30,8 @@ const BlogArticle3 = () => {
   return (
     <>
       <Helmet>
-        <title>Currículo para ATS: Como Passar nos Filtros Automáticos</title>
-        <meta name="description" content="Seu currículo é rejeitado antes de chegar ao recrutador? Aprenda a otimizar para sistemas ATS com dicas práticas, palavras-chave e formatação correta." />
+        <title>Currículo ATS: 90% São Rejeitados ✓ Como Passar</title>
+        <meta name="description" content="90% dos currículos são eliminados por robôs antes de chegar ao recrutador. Aprenda a otimizar para ATS com palavras-chave certas e formatação aprovada." />
         <meta property="og:title" content="Como Preparar seu Currículo para Sistemas ATS" />
         <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores." />
         <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ats-sistemas.jpg" />

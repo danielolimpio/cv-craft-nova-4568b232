@@ -30,8 +30,8 @@ const BlogArticle6 = () => {
   return (
     <>
       <Helmet>
-        <title>Objetivo Profissional no Currículo — 15 Exemplos Prontos</title>
-        <meta name="description" content="Não sabe o que escrever no objetivo? Veja 15 exemplos prontos por área (TI, saúde, administração) e aprenda a escrever um objetivo que chama atenção." />
+        <title>Objetivo Profissional: 15 Exemplos Prontos ✓ Copie Já</title>
+        <meta name="description" content="Não sabe o que escrever no objetivo do currículo? Copie 15 exemplos prontos por área (TI, saúde, administração). Impressione o recrutador nos primeiros segundos!" />
         <meta property="og:title" content="Objetivo Profissional no Currículo: Exemplos Práticos" />
         <meta property="og:description" content="Objetivo ainda é relevante? Veja modelos reais por área e aprenda a escrever um focado, realista e impactante." />
         <meta property="og:type" content="article" />

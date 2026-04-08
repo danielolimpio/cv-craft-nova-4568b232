@@ -109,8 +109,8 @@ const BlogArticle9 = () => {
   return (
     <>
       <Helmet>
-        <title>{articleData.title} | Fazer Currículo</title>
-        <meta name="description" content={articleData.description} />
+        <title>Carta de Apresentação: Modelo Pronto ✓ Conquiste a Vaga</title>
+        <meta name="description" content="Escreva uma carta de apresentação que conquiste o empregador — com modelo pronto para copiar. O complemento perfeito do currículo para se destacar na seleção." />
         <link rel="canonical" href={articleData.url} />
         
         <meta property="og:title" content={articleData.title} />
