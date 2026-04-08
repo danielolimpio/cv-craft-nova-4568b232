@@ -481,6 +481,8 @@ const BlogArticle9 = () => {
               </div>
             </div>
 
+            <RelatedArticles currentUrl="/blog/carta-apresentacao-empregador" />
+
             <AuthorBio />
               </article>
 

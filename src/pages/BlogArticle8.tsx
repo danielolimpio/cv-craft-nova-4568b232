@@ -459,6 +459,7 @@ const BlogArticle8 = () => {
 
             {/* Author Bio */}
             <div className="mt-16">
+              <RelatedArticles currentUrl={articleUrl} />
               <AuthorBio />
             </div>
           </article>

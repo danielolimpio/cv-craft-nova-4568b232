@@ -791,6 +791,8 @@ const BlogArticle5 = () => {
                 </div>
               </div>
 
+              <RelatedArticles currentUrl={articleUrl} />
+
               {/* Author Bio */}
               <AuthorBio />
             </div>

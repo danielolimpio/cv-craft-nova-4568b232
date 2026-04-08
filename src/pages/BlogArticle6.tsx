@@ -33,11 +33,17 @@ const BlogArticle6 = () => {
         <title>Objetivo Profissional no Currículo — 15 Exemplos Prontos</title>
         <meta name="description" content="Não sabe o que escrever no objetivo? Veja 15 exemplos prontos por área (TI, saúde, administração) e aprenda a escrever um objetivo que chama atenção." />
         <meta property="og:title" content="Objetivo Profissional no Currículo: Exemplos Práticos" />
-        <meta property="og:description" content="Objetivo ainda é relevante? Veja modelos reais por área (TI, administração, saúde) e aprenda a escrever um focado, realista e impactante." />
+        <meta property="og:description" content="Objetivo ainda é relevante? Veja modelos reais por área e aprenda a escrever um focado, realista e impactante." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo-exemplos" />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo" />
         <meta property="og:image" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo.jpg" />
-        <link rel="canonical" href="https://fazercurriculo.com/blog/objetivo-profissional-curriculo-exemplos" />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/objetivo-profissional-curriculo" />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen">
@@ -738,6 +744,8 @@ const BlogArticle6 = () => {
                 Escrito com base em entrevistas com 12 recrutadores de RH e análise de 200+ currículos reais de 2024–2025.
               </p>
             </div>
+
+            <RelatedArticles currentUrl={articleUrl} />
 
             {/* Author Bio */}
             <AuthorBio />
