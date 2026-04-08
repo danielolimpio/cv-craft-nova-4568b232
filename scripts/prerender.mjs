@@ -214,18 +214,21 @@ const routes = [
  * Generate a static HTML file for a given route
  */
 function generatePage(route) {
-  const canonical = route.path === '/' 
-    ? `${BASE_URL}/` 
-    : `${BASE_URL}${route.path}`;
-  
+  const canonical = route.canonicalPath
+    ? `${BASE_URL}${route.canonicalPath}`
+    : route.path === '/'
+      ? `${BASE_URL}/`
+      : `${BASE_URL}${route.path}/`;
+
   const ogImage = `${BASE_URL}/og-fazer-curriculo.png`;
-  
+  const robots = route.robots ?? 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
+
   // Build unique <head> content for this route
   const headTags = `
     <title>${route.title}</title>
     <meta name="description" content="${route.description}" />
     <meta name="keywords" content="${route.keywords}" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="robots" content="${robots}" />
     <link rel="canonical" href="${canonical}" />
     
     <!-- Open Graph -->
@@ -310,24 +313,34 @@ function generatePage(route) {
 let count = 0;
 for (const route of routes) {
   const html = generatePage(route);
-  
+
   if (route.path === '/') {
-    // Overwrite the root index.html
     writeFileSync(resolve(DIST, 'index.html'), html, 'utf-8');
     count++;
     continue;
   }
-  
-  // Create directory structure: /sobre -> dist/sobre/index.html
-  const dirPath = resolve(DIST, route.path.slice(1)); // remove leading /
+
+  const dirPath = resolve(DIST, route.path.slice(1));
   mkdirSync(dirPath, { recursive: true });
   writeFileSync(resolve(dirPath, 'index.html'), html, 'utf-8');
   count++;
 }
 
+const notFoundHtml = generatePage({
+  path: '/404',
+  canonicalPath: '/',
+  title: '404 - Página Não Encontrada | Fazer Currículo',
+  description: 'A página que você tentou acessar não existe. Use a navegação do site para encontrar o conteúdo certo.',
+  keywords: '404, página não encontrada, fazer currículo',
+  ogType: 'website',
+  robots: 'noindex, nofollow'
+});
+writeFileSync(resolve(DIST, '404.html'), notFoundHtml, 'utf-8');
+count++;
+
 console.log(`✅ Pre-rendered ${count} static HTML pages`);
 
-// List generated directories for verification
-const generatedPaths = routes.filter(r => r.path !== '/').map(r => r.path);
+const generatedPaths = routes.filter(r => r.path !== '/').map(r => `${r.path}/index.html`);
+generatedPaths.push('/404.html');
 console.log('Generated paths:');
-generatedPaths.forEach(p => console.log(`  ${p}/index.html`));
+generatedPaths.forEach(p => console.log(`  ${p}`));
