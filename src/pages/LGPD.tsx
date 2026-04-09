@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Scale } from "lucide-react";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 
 const LGPD = () => {
   const breadcrumbItems = [

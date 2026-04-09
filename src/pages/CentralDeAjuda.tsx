@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { HelpCircle, BookOpen, Video, MessageCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 
 const CentralDeAjuda = () => {
   const breadcrumbItems = [

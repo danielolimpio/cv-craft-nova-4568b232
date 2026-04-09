@@ -6,7 +6,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Heart, Target, Users, Sparkles, Facebook, Twitter, Linkedin, Instagram, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 
 const Sobre = () => {

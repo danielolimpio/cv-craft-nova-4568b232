@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { FileText, Home, Info, Mail, BookOpen, HelpCircle, Shield, Users } from "lucide-react";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 
 const Sitemap = () => {
   const breadcrumbItems = [

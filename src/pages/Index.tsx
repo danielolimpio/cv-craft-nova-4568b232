@@ -26,6 +26,8 @@ const Index = () => {
         <meta property="og:url" content="https://fazercurriculo.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
