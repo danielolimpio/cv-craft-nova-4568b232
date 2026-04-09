@@ -38,8 +38,8 @@ const ComoFunciona = () => {
         <link rel="canonical" href="https://fazercurriculo.com/como-funciona" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Como Criar Currículo Online Grátis: 4 Passos Simples" />
-        <meta property="og:description" content="Crie seu currículo em 4 passos — escolha o modelo, preencha, personalize e baixe em PDF." />
+        <meta property="og:title" content="Como Fazer Currículo em 4 Passos ✓ Grátis e Rápido" />
+        <meta property="og:description" content="Aprenda como criar seu currículo profissional em 4 passos simples — 100% grátis, sem cadastro. Comece agora!" />
         <meta property="og:url" content="https://fazercurriculo.com/como-funciona" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -48,8 +48,8 @@ const ComoFunciona = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Como Funciona - Criar Currículo Grátis" />
-        <meta name="twitter:description" content="Aprenda como criar seu currículo profissional em minutos." />
+        <meta name="twitter:title" content="Como Fazer Currículo em 4 Passos ✓ Grátis e Rápido" />
+        <meta name="twitter:description" content="Aprenda como criar seu currículo profissional em 4 passos simples." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">

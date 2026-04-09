@@ -103,6 +103,9 @@ const Sitemap = () => {
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
+        </script>
       </Helmet>
 
       <Header />
