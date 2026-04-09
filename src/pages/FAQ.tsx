@@ -80,8 +80,8 @@ const FAQ = () => {
         <link rel="canonical" href="https://fazercurriculo.com/faq" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Perguntas Frequentes - FAQ | Fazer Currículo" />
-        <meta property="og:description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente." />
+        <meta property="og:title" content="FAQ Currículo Online Grátis — 10 Respostas Rápidas" />
+        <meta property="og:description" content="É realmente grátis? Precisa de cadastro? Como baixar em PDF? Veja as 10 perguntas mais comuns." />
         <meta property="og:url" content="https://fazercurriculo.com/faq" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -90,8 +90,8 @@ const FAQ = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="FAQ - Fazer Currículo" />
-        <meta name="twitter:description" content="Tire todas suas dúvidas sobre como criar currículos profissionais gratuitamente." />
+        <meta name="twitter:title" content="FAQ Currículo Online Grátis — 10 Respostas Rápidas" />
+        <meta name="twitter:description" content="As 10 perguntas mais comuns sobre criar currículo online — respostas diretas!" />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">

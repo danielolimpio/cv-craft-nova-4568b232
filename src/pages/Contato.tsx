@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Helmet } from "react-helmet";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema";
 import { useState } from "react";
 
 const Contato = () => {
@@ -26,6 +26,12 @@ const Contato = () => {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Contato", url: "/contato" }
   ]);
+
+  const webPageSchema = generateWebPageSchema(
+    "Contato — Fale com o Fazer Currículo em 24h",
+    "Precisa de ajuda com seu currículo? Fale conosco — respondemos em até 24h com suporte gratuito e humanizado.",
+    "/contato"
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -45,8 +51,8 @@ const Contato = () => {
         <link rel="canonical" href="https://fazercurriculo.com/contato" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Contato - Fazer Currículo" />
-        <meta property="og:description" content="Entre em contato conosco. Estamos prontos para ajudar com suas dúvidas sobre criação de currículos." />
+        <meta property="og:title" content="Contato — Fale com o Fazer Currículo em 24h" />
+        <meta property="og:description" content="Precisa de ajuda com seu currículo? Fale conosco — respondemos em até 24h com suporte gratuito." />
         <meta property="og:url" content="https://fazercurriculo.com/contato" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -55,12 +61,15 @@ const Contato = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contato - Fazer Currículo" />
-        <meta name="twitter:description" content="Entre em contato conosco para suas dúvidas sobre currículos." />
+        <meta name="twitter:title" content="Contato — Fale com o Fazer Currículo em 24h" />
+        <meta name="twitter:description" content="Respondemos em até 24h com suporte gratuito e humanizado. Tire suas dúvidas!" />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 

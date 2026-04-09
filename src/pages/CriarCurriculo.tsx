@@ -169,8 +169,8 @@ const CriarCurriculo = () => {
         <link rel="canonical" href="https://fazercurriculo.com/criar-curriculo" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Criar Currículo Grátis Online - Editor Profissional" />
-        <meta property="og:description" content="Crie seu currículo profissional gratuitamente agora. Editor online fácil de usar e download em PDF." />
+        <meta property="og:title" content="Criar Currículo Grátis Agora ✓ Editor Online + PDF" />
+        <meta property="og:description" content="Monte seu currículo profissional agora: editor online grátis, sem cadastro, templates modernos e download em PDF." />
         <meta property="og:url" content="https://fazercurriculo.com/criar-curriculo" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -179,8 +179,8 @@ const CriarCurriculo = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Criar Currículo Grátis Online" />
-        <meta name="twitter:description" content="Crie seu currículo profissional gratuitamente. Editor online e download em PDF." />
+        <meta name="twitter:title" content="Criar Currículo Grátis Agora ✓ Editor Online + PDF" />
+        <meta name="twitter:description" content="Editor online grátis, sem cadastro, templates modernos e download em PDF." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
