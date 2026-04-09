@@ -14,17 +14,23 @@ const LGPD = () => {
     { name: "LGPD", url: "/lgpd" }
   ]);
 
+  const webPageSchema = generateWebPageSchema(
+    "LGPD — Proteção de Dados | Fazer Currículo",
+    "Saiba como o Fazer Currículo está em conformidade com a LGPD e como protegemos seus dados pessoais.",
+    "/lgpd"
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>LGPD - Lei Geral de Proteção de Dados | Fazer Currículo</title>
+        <title>LGPD — Proteção de Dados | Fazer Currículo</title>
         <meta name="description" content="Saiba como o Fazer Currículo está em conformidade com a LGPD e como protegemos seus dados pessoais segundo a legislação brasileira." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/lgpd" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="LGPD - Lei Geral de Proteção de Dados | Fazer Currículo" />
-        <meta property="og:description" content="Saiba como o Fazer Currículo está em conformidade com a LGPD." />
+        <meta property="og:title" content="LGPD — Proteção de Dados | Fazer Currículo" />
+        <meta property="og:description" content="Saiba como o Fazer Currículo está em conformidade com a LGPD e protege seus dados." />
         <meta property="og:url" content="https://fazercurriculo.com/lgpd" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -33,12 +39,15 @@ const LGPD = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="LGPD - Fazer Currículo" />
+        <meta name="twitter:title" content="LGPD — Proteção de Dados | Fazer Currículo" />
         <meta name="twitter:description" content="Conformidade com a Lei Geral de Proteção de Dados." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 

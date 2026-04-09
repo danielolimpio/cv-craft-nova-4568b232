@@ -14,16 +14,22 @@ const TermosDeUso = () => {
     { name: "Termos de Uso", url: "/termos-de-uso" }
   ]);
 
+  const webPageSchema = generateWebPageSchema(
+    "Termos de Uso | Fazer Currículo",
+    "Leia os termos de uso da plataforma Fazer Currículo. Regras claras para uma experiência segura e transparente.",
+    "/termos-de-uso"
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Termos de Uso - Fazer Currículo</title>
+        <title>Termos de Uso | Fazer Currículo</title>
         <meta name="description" content="Leia os termos de uso da plataforma Fazer Currículo. Condições para utilização do serviço gratuito de criação de currículos." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/termos-de-uso" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Termos de Uso - Fazer Currículo" />
+        <meta property="og:title" content="Termos de Uso | Fazer Currículo" />
         <meta property="og:description" content="Leia os termos de uso da plataforma Fazer Currículo." />
         <meta property="og:url" content="https://fazercurriculo.com/termos-de-uso" />
         <meta property="og:type" content="website" />
@@ -33,12 +39,15 @@ const TermosDeUso = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Termos de Uso - Fazer Currículo" />
+        <meta name="twitter:title" content="Termos de Uso | Fazer Currículo" />
         <meta name="twitter:description" content="Termos e condições de uso da plataforma Fazer Currículo." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 

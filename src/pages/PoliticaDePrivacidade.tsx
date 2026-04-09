@@ -14,16 +14,22 @@ const PoliticaDePrivacidade = () => {
     { name: "Política de Privacidade", url: "/politica-de-privacidade" }
   ]);
 
+  const webPageSchema = generateWebPageSchema(
+    "Política de Privacidade | Fazer Currículo",
+    "Conheça nossa política de privacidade e como protegemos seus dados pessoais na plataforma Fazer Currículo.",
+    "/politica-de-privacidade"
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Política de Privacidade - Fazer Currículo</title>
+        <title>Política de Privacidade | Fazer Currículo</title>
         <meta name="description" content="Conheça nossa política de privacidade e como protegemos seus dados pessoais na plataforma Fazer Currículo." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://fazercurriculo.com/politica-de-privacidade" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Política de Privacidade - Fazer Currículo" />
+        <meta property="og:title" content="Política de Privacidade | Fazer Currículo" />
         <meta property="og:description" content="Conheça nossa política de privacidade e como protegemos seus dados pessoais." />
         <meta property="og:url" content="https://fazercurriculo.com/politica-de-privacidade" />
         <meta property="og:type" content="website" />
@@ -33,12 +39,15 @@ const PoliticaDePrivacidade = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Política de Privacidade - Fazer Currículo" />
+        <meta name="twitter:title" content="Política de Privacidade | Fazer Currículo" />
         <meta name="twitter:description" content="Conheça nossa política de privacidade e proteção de dados." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 

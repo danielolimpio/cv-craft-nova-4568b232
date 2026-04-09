@@ -15,6 +15,12 @@ const Sitemap = () => {
     { name: "Sitemap", url: "/sitemap" }
   ]);
 
+  const webPageSchema = generateWebPageSchema(
+    "Mapa do Site | Fazer Currículo — Navegação Completa",
+    "Navegue por todas as páginas do Fazer Currículo: ferramentas, artigos, guias e recursos para criar currículos profissionais.",
+    "/sitemap"
+  );
+
   const sitemapSections = [
     {
       title: "Páginas Principais",
@@ -71,7 +77,7 @@ const Sitemap = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Mapa do Site - Fazer Currículo | Navegação Completa</title>
+        <title>Mapa do Site | Fazer Currículo — Navegação Completa</title>
         <meta 
           name="description" 
           content="Navegue por todas as páginas do Fazer Currículo: ferramentas, artigos, guias e recursos para criar currículos profissionais." 
@@ -80,7 +86,7 @@ const Sitemap = () => {
         <link rel="canonical" href="https://fazercurriculo.com/sitemap" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Mapa do Site - Fazer Currículo" />
+        <meta property="og:title" content="Mapa do Site | Fazer Currículo — Navegação Completa" />
         <meta property="og:description" content="Navegue por todas as páginas do Fazer Currículo: ferramentas, artigos e recursos." />
         <meta property="og:url" content="https://fazercurriculo.com/sitemap" />
         <meta property="og:type" content="website" />
@@ -90,7 +96,7 @@ const Sitemap = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mapa do Site - Fazer Currículo" />
+        <meta name="twitter:title" content="Mapa do Site | Fazer Currículo" />
         <meta name="twitter:description" content="Navegue por todas as páginas do Fazer Currículo." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
