@@ -18,6 +18,13 @@ const Sobre = () => {
     { name: "Sobre", url: "/sobre" }
   ]);
 
+  const webPageSchema = generateWebPageSchema(
+    "Sobre Nós — Fazer Currículo ✓ 50 Mil CVs Criados",
+    "Conheça o Fazer Currículo: plataforma 100% gratuita que já ajudou 50 mil brasileiros a criar currículos profissionais e conquistar a vaga dos sonhos.",
+    "/sobre",
+    [{ name: "Currículo", sameAs: "https://pt.wikipedia.org/wiki/Curr%C3%ADculo_(documento)", type: "Thing" }]
+  );
+
   return (
     <div className="min-h-screen">
       <Helmet>
@@ -27,8 +34,8 @@ const Sobre = () => {
         <link rel="canonical" href="https://fazercurriculo.com/sobre" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Sobre Nós - Fazer Currículo" />
-        <meta property="og:description" content="Conheça a missão do Fazer Currículo: democratizar o acesso a ferramentas profissionais de criação de currículos." />
+        <meta property="og:title" content="Sobre Nós — Fazer Currículo ✓ 50 Mil CVs Criados" />
+        <meta property="og:description" content="Conheça o Fazer Currículo: plataforma 100% gratuita que já ajudou 50 mil brasileiros a criar currículos profissionais." />
         <meta property="og:url" content="https://fazercurriculo.com/sobre" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
@@ -37,12 +44,15 @@ const Sobre = () => {
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sobre Nós - Fazer Currículo" />
-        <meta name="twitter:description" content="Conheça a missão do Fazer Currículo: democratizar o acesso a ferramentas profissionais." />
+        <meta name="twitter:title" content="Sobre Nós — Fazer Currículo ✓ 50 Mil CVs Criados" />
+        <meta name="twitter:description" content="Conheça o Fazer Currículo: plataforma 100% gratuita que já ajudou 50 mil brasileiros." />
         <meta name="twitter:image" content="https://fazercurriculo.com/og-fazer-curriculo.png" />
         
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webPageSchema)}
         </script>
       </Helmet>
 
