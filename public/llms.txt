@@ -1,0 +1,39 @@
+# Fazer Currículo
+
+> Plataforma brasileira para criar currículos profissionais grátis online. Oferece modelos prontos compatíveis com ATS, personalização completa e download em PDF — sem cadastro, em menos de 5 minutos. Mais de 50 mil currículos já criados.
+
+## Páginas Principais
+
+- [Home](https://fazercurriculo.com/): Crie seu currículo grátis em 5 minutos com modelos profissionais e ATS-friendly.
+- [Criar Currículo](https://fazercurriculo.com/criar-curriculo/): Editor online gratuito para montar e baixar seu currículo em PDF.
+- [Como Funciona](https://fazercurriculo.com/como-funciona/): Guia passo a passo de como usar a plataforma e dicas para um currículo vencedor.
+- [Blog](https://fazercurriculo.com/blog/): Artigos, guias e estratégias para melhorar seu currículo e conseguir emprego.
+- [Sobre](https://fazercurriculo.com/sobre/): Conheça a missão, visão e equipe por trás do Fazer Currículo.
+- [Contato](https://fazercurriculo.com/contato/): Fale conosco para suporte, parcerias e sugestões.
+- [Central de Ajuda](https://fazercurriculo.com/central-de-ajuda/): Respostas rápidas para as dúvidas mais comuns.
+- [FAQ](https://fazercurriculo.com/faq/): Perguntas frequentes sobre criação, download e uso do currículo.
+
+## Artigos do Blog
+
+- [Como Criar um Currículo Profissional 2026](https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026/): Guia completo com estrutura, seções e dicas de formatação.
+- [10 Erros Comuns em Currículos](https://fazercurriculo.com/blog/10-erros-comuns-curriculos/): Erros que eliminam candidatos e como evitá-los.
+- [Preparar Currículo para Sistemas ATS](https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats/): Como otimizar seu CV para passar nos robôs de triagem.
+- [Currículo para Primeiro Emprego](https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir/): O que incluir quando você ainda não tem experiência.
+- [Currículo Sem Experiência: Estratégias](https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias/): Como destacar habilidades e projetos pessoais.
+- [Objetivo Profissional no Currículo](https://fazercurriculo.com/blog/objetivo-profissional-curriculo/): Exemplos e dicas para escrever um objetivo que impressiona.
+- [Destaque Habilidades com Estratégia](https://fazercurriculo.com/blog/destaque-habilidades-estrategia-impacto/): Técnicas para posicionar soft e hard skills no CV.
+- [Perfil LinkedIn para Recrutadores](https://fazercurriculo.com/blog/perfil-linkedin-recrutadores/): Como deixar seu LinkedIn alinhado ao currículo.
+- [Carta de Apresentação para Empregador](https://fazercurriculo.com/blog/carta-apresentacao-empregador/): Modelos e estratégias para uma carta que converte.
+- [Currículo para Estágio](https://fazercurriculo.com/blog/curriculo-estagio-estudantes/): Dicas específicas para estudantes e recém-formados.
+- [Currículo vs LinkedIn 2026](https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026/): Diferenças, complementaridades e estratégias para ambos.
+- [O Que Recrutadores Buscam no Currículo](https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo/): Insights do outro lado da mesa para se destacar.
+- [Currículo em Inglês](https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros/): Estrutura correta e erros comuns de brasileiros.
+- [Currículo de TI 2026](https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026/): Como priorizar projetos, certificações e tecnologias.
+- [Profissões com Mais Vagas no Brasil 2030](https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030/): Tendências de mercado e carreiras em alta.
+
+## Legal
+
+- [Termos de Uso](https://fazercurriculo.com/termos-de-uso/): Condições de uso da plataforma.
+- [Política de Privacidade](https://fazercurriculo.com/politica-de-privacidade/): Como coletamos, usamos e protegemos seus dados.
+- [LGPD](https://fazercurriculo.com/lgpd/): Direitos dos titulares e conformidade com a Lei Geral de Proteção de Dados.
+- [Mapa do Site](https://fazercurriculo.com/sitemap/): Índice completo de todas as páginas.
