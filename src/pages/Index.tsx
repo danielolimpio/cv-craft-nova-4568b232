@@ -16,7 +16,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Fazer Currículo Grátis Online em 5 Min ✓ Modelo 2026</title>
-        <meta name="description" content="Crie seu currículo profissional grátis em 5 minutos — sem cadastro. Modelos prontos para ATS + download em PDF. Já são 50 mil currículos criados. Conquiste sua vaga!" />
+        <meta name="description" content="Crie seu currículo grátis em 5 min — sem cadastro. Modelos ATS + download PDF. 50 mil currículos criados. Conquiste sua vaga!" />
         <meta name="keywords" content="criar currículo grátis, currículo profissional, fazer currículo online, modelos de currículo, currículo ATS, currículo para emprego" />
         <link rel="canonical" href="https://fazercurriculo.com/" />
         
