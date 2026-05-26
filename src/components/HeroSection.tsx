@@ -77,7 +77,7 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-8 flex items-center space-x-6 text-white/70">
+            <div className="mt-8 flex items-center space-x-6 text-white/90">
               <div className="flex items-center space-x-2">
                 <div className="flex -space-x-2">
                   <img src={profile1} alt="Usuário satisfeito" className="w-8 h-8 rounded-full border-2 border-white/30 object-cover" />
