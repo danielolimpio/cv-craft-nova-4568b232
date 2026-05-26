@@ -135,11 +135,11 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="py-8 border-t border-footer-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-footer-foreground/60 text-sm text-center md:text-left">
+            <div className="text-footer-foreground/85 text-sm text-center md:text-left">
               © 2025 Copyright | Fazer Currículo Grátis | Todos os direitos reservados | Desenvolvido por <a href="https://danielolimpio.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#006B3D] transition-colors">DanielOlimpio</a>
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-footer-foreground/60">
+            <div className="flex items-center space-x-6 text-sm text-footer-foreground/85">
               <Link to="/politica-de-privacidade" className="hover:text-[#006B3D] transition-colors duration-300">
                 Política de Privacidade
               </Link>

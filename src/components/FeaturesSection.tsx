@@ -75,7 +75,7 @@ const FeaturesSection = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Editor Profissional Completo</h3>
-                  <p className="text-white/70">Recursos avançados e intuitivos</p>
+                  <p className="text-white/90">Recursos avançados e intuitivos</p>
                 </div>
               </div>
               

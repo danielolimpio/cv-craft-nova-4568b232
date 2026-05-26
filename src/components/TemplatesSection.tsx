@@ -39,7 +39,7 @@ const TemplatesSection = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white">Templates Exclusivos</h3>
-                  <p className="text-white/70">Aprovados por recrutadores</p>
+                  <p className="text-white/90">Aprovados por recrutadores</p>
                 </div>
               </div>
               
