@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Play, CheckCircle, TrendingUp, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-curriculos.png";
 import profile1 from "@/assets/profile-1.jpg";
 import profile2 from "@/assets/profile-2.jpg";
 import profile3 from "@/assets/profile-3.jpg";
