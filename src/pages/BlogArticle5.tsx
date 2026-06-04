@@ -33,7 +33,9 @@ const BlogArticle5 = () => {
         <meta name="description" content="Sem experiência profissional? Use estas 7 estratégias comprovadas para montar um currículo competitivo com projetos, voluntariado e habilidades. Comece agora!" />
         <meta property="og:title" content="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" />
         <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
         <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia.jpg" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}

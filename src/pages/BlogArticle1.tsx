@@ -44,6 +44,23 @@ const BlogArticle1 = () => {
       <Helmet>
         <title>Como Criar Currículo Profissional 2026 ✓ Guia Completo</title>
         <meta name="description" content="Guia definitivo para 2026: o que incluir, o que evitar e exemplos reais. Aumente suas chances em 70% com um currículo que impressiona recrutadores em 6 segundos." />
+        <link rel="canonical" href="https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Como Criar um Currículo Profissional que se Destaca em 2026" />
+        <meta property="og:description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores — com estratégias atualizadas para 2026 e exemplos práticos." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.jpg" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Fazer Currículo" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Como Criar um Currículo Profissional que se Destaca em 2026" />
+        <meta name="twitter:description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores." />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.jpg" />
+        
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>

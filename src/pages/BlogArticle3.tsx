@@ -34,6 +34,7 @@ const BlogArticle3 = () => {
         <meta name="description" content="90% dos currículos são eliminados por robôs antes de chegar ao recrutador. Aprenda a otimizar para ATS com palavras-chave certas e formatação aprovada." />
         <meta property="og:title" content="Como Preparar seu Currículo para Sistemas ATS" />
         <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />
         <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ats-sistemas.jpg" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />

@@ -64,6 +64,7 @@ const BlogArticle7 = () => {
         <meta name="description" content="Aprenda a destacar suas habilidades com impacto real no currículo. Exemplos práticos de hard e soft skills que recrutadores buscam em 2026. Destaque-se agora!" />
         <meta property="og:title" content={articleData.title} />
         <meta property="og:description" content={articleData.description} />
+        <meta property="og:url" content={articleData.url} />
         <meta property="og:image" content={articleData.image} />
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
