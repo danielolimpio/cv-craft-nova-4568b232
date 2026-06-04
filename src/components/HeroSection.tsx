@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Play, CheckCircle, TrendingUp, Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-curriculos.png";
 import profile1 from "@/assets/profile-1.jpg";
 import profile2 from "@/assets/profile-2.jpg";
 import profile3 from "@/assets/profile-3.jpg";
@@ -100,7 +99,7 @@ const HeroSection = () => {
           marginLeft: '-15%'
         }}>
             <div className="relative">
-              <img src={heroImage} alt="Templates de currículos profissionais" className="w-full h-auto rounded-2xl shadow-2xl" loading="eager" />
+              <img src="/hero-curriculos.png" alt="Templates de currículos profissionais" className="w-full h-auto rounded-2xl shadow-2xl" loading="eager" width="1680" height="1344" fetchPriority="high" />
               {/* Floating Elements */}
               <div className="absolute top-12 left-4 bg-white/10 backdrop-blur-sm border border-white/5 rounded-lg p-2 glass-effect animate-float">
                 <div className="flex items-center space-x-2 text-white">
