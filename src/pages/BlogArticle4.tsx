@@ -52,6 +52,7 @@ const BlogArticle4 = () => {
         <meta name="description" content="Nunca trabalhou? Veja exatamente o que incluir no currículo de primeiro emprego — com exemplos prontos e dicas de recrutadores. Conquiste sua 1ª vaga!" />
         <meta property="og:title" content="Currículo para Primeiro Emprego: O Que Incluir e Evitar" />
         <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades." />
+        <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
         <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego.jpg" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
