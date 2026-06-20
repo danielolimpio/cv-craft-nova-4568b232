@@ -22,21 +22,21 @@ const routes = [
     path: '/',
     title: 'Fazer Currículo Grátis Online em 5 Min ✓ Modelo 2026',
     description: 'Crie seu currículo profissional grátis em 5 minutos — sem cadastro. Modelos prontos para ATS + download em PDF. Já são 50 mil currículos criados. Conquiste sua vaga!',
-    keywords: 'criar currículo grátis, fazer currículo online, currículo profissional, modelos de currículo, currículo ATS',
+    keywords: 'criar currículo grátis, fazer currículo online, currículo profissional, modelos de currículo, currículo ATS, fazer currículo grátis online sem cadastro, criar currículo profissional em PDF, modelo de currículo Word grátis para preencher, currículo simples para primeiro emprego, currículo pronto para baixar grátis, fazer currículo online em 5 minutos, currículo moderno 2026, currículo para jovem aprendiz, currículo para estágio universitário, currículo para vagas remotas',
     ogType: 'website',
   },
   {
     path: '/como-funciona',
     title: 'Como Fazer Currículo em 4 Passos ✓ Grátis e Rápido',
     description: 'Aprenda como criar seu currículo profissional em 4 passos simples — escolha o modelo, preencha, personalize e baixe em PDF. 100% grátis, sem cadastro. Comece agora!',
-    keywords: 'como fazer currículo, passo a passo currículo, criar currículo online grátis',
+    keywords: 'como fazer currículo, passo a passo currículo, criar currículo online grátis, como fazer currículo no celular grátis, como montar currículo sem experiência profissional, como elaborar currículo passo a passo no Word, como fazer currículo bonito e profissional, como criar currículo para primeiro emprego, como fazer currículo simples e objetivo',
     ogType: 'website',
   },
   {
     path: '/criar-curriculo',
     title: 'Criar Currículo Grátis Agora ✓ Editor Online + PDF',
     description: 'Monte seu currículo profissional agora: editor online grátis, sem cadastro, templates modernos e download em PDF. Pronto em 5 minutos. Comece já!',
-    keywords: 'criar currículo, editor de currículo grátis, currículo online, gerar currículo PDF',
+    keywords: 'criar currículo, editor de currículo grátis, currículo online, gerar currículo PDF, editor de currículo online grátis sem cadastro, gerador de currículo em PDF para baixar, criar currículo no celular grátis, fazer currículo online com foto, criar currículo ATS aprovado, montar currículo profissional grátis em minutos',
     ogType: 'website',
   },
   {
@@ -57,7 +57,7 @@ const routes = [
     path: '/blog',
     title: 'Blog Currículo e Carreira ✓ 15 Dicas Práticas | 2026',
     description: 'Dicas comprovadas para criar currículos que impressionam recrutadores. Artigos sobre ATS, LinkedIn, primeiro emprego e mais. Atualize-se e conquiste sua vaga!',
-    keywords: 'dicas currículo, blog emprego, carreira profissional, mercado de trabalho 2026',
+    keywords: 'dicas currículo, blog emprego, carreira profissional, mercado de trabalho 2026, dicas para passar em entrevista de emprego, como conseguir o primeiro emprego sem experiência, como se destacar no LinkedIn para recrutadores, dicas de currículo para 2026, melhores profissões em alta no Brasil, como mudar de carreira aos 30, 40 e 50 anos',
     ogType: 'website',
   },
   {
