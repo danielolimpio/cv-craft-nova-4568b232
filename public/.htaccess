@@ -15,7 +15,9 @@ ErrorDocument 404 /404.html
   AddType application/xml .xml
   AddType application/json .json
   AddType text/html .html
+  AddType application/manifest+json .webmanifest
 </IfModule>
+
 
 # ========================================
 # ARQUIVOS CRÍTICOS: ads.txt, robots.txt, sitemap.xml
