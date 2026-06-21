@@ -29,7 +29,7 @@ const routes = [
     path: '/como-funciona',
     title: 'Como Fazer Currículo em 4 Passos ✓ Grátis e Rápido',
     description: 'Aprenda como criar seu currículo profissional em 4 passos simples — escolha o modelo, preencha, personalize e baixe em PDF. 100% grátis, sem cadastro. Comece agora!',
-    keywords: 'como fazer currículo, passo a passo currículo, criar currículo online grátis, como fazer currículo no celular grátis, como montar currículo sem experiência profissional, como elaborar currículo passo a passo no Word, como fazer currículo bonito e profissional, como criar currículo para primeiro emprego, como fazer currículo simples e objetivo',
+    keywords: 'como fazer currículo, como fazer currículo grátis, como fazer curriculo gratis, como fazer um currículo grátis, como fazer um curriculo gratis, como fazer um currículo gratis, como fazer curriculo, como fazer currículo online gratis, como fazer currículo online grátis, como fazer curriculo no celular grátis, como montar curriculo sem experiencia profissional, como elaborar curriculo passo a passo no Word, como fazer curriculo bonito e profissional, como criar curriculo para primeiro emprego, como fazer curriculo simples e objetivo, passo a passo currículo, criar currículo online grátis, fazer curriculum vitae online gratis, fazer curriculo gratis primeiro emprego, montar currículo passo a passo, como fazer curriculo no Word, como fazer curriculo no celular',
     ogType: 'website',
   },
   {
