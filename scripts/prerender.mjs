@@ -121,7 +121,7 @@ const routes = [
     path: '/blog/preparar-curriculo-sistemas-ats',
     title: 'Currículo ATS: 90% São Rejeitados ✓ Como Passar',
     description: '90% dos currículos são eliminados por robôs antes de chegar ao recrutador. Aprenda a otimizar para ATS com palavras-chave certas e formatação aprovada.',
-    keywords: 'currículo ATS, sistemas rastreamento, otimizar currículo ATS',
+    keywords: 'currículo ATS, sistemas rastreamento, otimizar currículo ATS, ats currículo, curriculo ats, ats curriculo, sistema ats, exemplos de ats, currículo aprovado em ATS, palavras-chave ATS, formatação ATS, currículo passar no ATS',
     ogType: 'article',
   },
   {
