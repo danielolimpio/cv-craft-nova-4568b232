@@ -36,7 +36,7 @@ const routes = [
     path: '/criar-curriculo',
     title: 'Criar Currículo Grátis Agora ✓ Editor Online + PDF',
     description: 'Monte seu currículo profissional agora: editor online grátis, sem cadastro, templates modernos e download em PDF. Pronto em 5 minutos. Comece já!',
-    keywords: 'criar currículo, editor de currículo grátis, currículo online, gerar currículo PDF, editor de currículo online grátis sem cadastro, gerador de currículo em PDF para baixar, criar currículo no celular grátis, fazer currículo online com foto, criar currículo ATS aprovado, montar currículo profissional grátis em minutos',
+    keywords: 'criar currículo, editor de currículo grátis, currículo online, gerar currículo PDF, editor de currículo online grátis sem cadastro, gerador de currículo em PDF para baixar, criar currículo no celular grátis, fazer currículo online com foto, criar currículo ATS aprovado, montar currículo profissional grátis em minutos, criar curriculo, criar currículo grátis, criar currículo online, criar currículo profissional, criar curriculum vitae, criar curriculo online gratis, gerar curriculo gratis, montar curriculo, montar curriculo online, montar currículo grátis, editar currículo grátis, currículo PDF grátis, currículo para baixar grátis, currículo digital grátis, baixar currículo PDF, criador de curriculo gratis, currículo 2026, currículo moderno',
     ogType: 'website',
   },
   {
