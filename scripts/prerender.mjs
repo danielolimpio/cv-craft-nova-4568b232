@@ -114,7 +114,7 @@ const routes = [
     path: '/blog/10-erros-comuns-curriculos',
     title: '10 Erros no Currículo que Te Eliminam ✓ Corrija Agora',
     description: '78% dos currículos são descartados por erros evitáveis. Veja os 10 mais comuns com exemplos de antes/depois e corrija o seu hoje. Pare de perder vagas!',
-    keywords: 'erros currículo, erros comuns, currículo rejeitado, dicas recrutadores',
+    keywords: 'erros currículo, erros comuns, currículo rejeitado, dicas recrutadores, o que não colocar em um currículo, o que nao colocar no curriculo, o que não colocar no currículo, erros comuns em currículos brasileiros 2025, erros que eliminam o currículo, erros comuns currículo evitar, erros comuns currículo estagiário brasil, erros comuns em currículos estagiários brasil, currículo errado, curriculo errado',
     ogType: 'article',
   },
   {
