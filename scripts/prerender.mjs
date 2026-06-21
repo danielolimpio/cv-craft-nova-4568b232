@@ -142,7 +142,7 @@ const routes = [
     path: '/blog/objetivo-profissional-curriculo',
     title: 'Objetivo Profissional: 15 Exemplos Prontos ✓ Copie Já',
     description: 'Não sabe o que escrever no objetivo do currículo? Copie 15 exemplos prontos por área (TI, saúde, administração). Impressione o recrutador nos primeiros segundos!',
-    keywords: 'objetivo profissional, currículo objetivo, exemplos objetivo profissional',
+    keywords: 'objetivo profissional, currículo objetivo, exemplos objetivo profissional, objetivo de carreira para currículo, objetivo de carreira, objetivo curriculum exemplo, objetivos profissionais para curriculo, objetivo profissional curriculo exemplos, exemplos de objetivos para currículo, o que colocar no objetivo do currículo, bons objetivos para curriculum, exemplo de um bom objetivo para curriculum, informe seu objetivo profissional exemplos, objetivo curriculo, objetivo profissional curriculum, propósito de vida profissional exemplos, objetivos profissionais curriculum, objetivo exemplo de curriculo, curriculum objetivos exemplos, objetivo para curriculum exemplos',
     ogType: 'article',
   },
   {
