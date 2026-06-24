@@ -14,11 +14,19 @@ const FAQ = () => {
   const faqs = [
     {
       question: "O serviço é realmente gratuito?",
-      answer: "Sim! Nossa plataforma é 100% gratuita. Você pode criar, editar e baixar quantos currículos quiser sem pagar nada."
+      answer: "Sim! Nossa plataforma é 100% gratuita. Você pode criar, editar e baixar quantos currículos quiser sem pagar nada, sem trial, sem cobrança escondida e sem marca d'água no PDF final."
     },
     {
       question: "Preciso criar uma conta para usar?",
-      answer: "Não é necessário criar uma conta. Você pode começar a criar seu currículo imediatamente. Seus dados são salvos automaticamente no seu navegador."
+      answer: "Não é necessário criar uma conta nem fornecer e-mail. Você pode começar a criar seu currículo imediatamente. Seus dados são salvos automaticamente no seu navegador."
+    },
+    {
+      question: "Como fazer currículo grátis online em 5 minutos?",
+      answer: "Acesse 'Criar Currículo', escolha um modelo, preencha seus dados pessoais, experiências e habilidades, personalize cores e fontes, e baixe em PDF. Todo o processo leva entre 5 e 10 minutos."
+    },
+    {
+      question: "Como fazer currículo pelo celular?",
+      answer: "Nossa plataforma é 100% responsiva. Basta abrir o site no navegador do seu Android ou iPhone, criar o currículo normalmente e baixar o PDF direto no aparelho. Não precisa instalar app."
     },
     {
       question: "Meus dados ficam salvos?",
@@ -30,35 +38,99 @@ const FAQ = () => {
     },
     {
       question: "Em que formato posso baixar meu currículo?",
-      answer: "Você pode baixar seu currículo em formato PDF, que é o formato mais aceito por empresas e sistemas de recrutamento."
+      answer: "Você pode baixar em PDF, o formato mais aceito por empresas e pelos sistemas ATS. O PDF é gerado em alta qualidade, com fontes embutidas e pronto para impressão."
+    },
+    {
+      question: "Posso baixar o currículo em Word para editar?",
+      answer: "Hoje o download oficial é em PDF. Como nossos modelos seguem o padrão A4 limpo, você pode imprimir, anexar a vagas ou abrir o PDF em editores que aceitam conversão para Word."
     },
     {
       question: "Quantos templates de currículo estão disponíveis?",
-      answer: "Atualmente oferecemos diversos templates profissionais, todos otimizados para sistemas ATS (Applicant Tracking System) usados por empresas."
+      answer: "Oferecemos diversos templates profissionais, modernos, simples e criativos, todos otimizados para sistemas ATS (Applicant Tracking System) usados por empresas no Brasil."
     },
     {
-      question: "O que é otimização ATS?",
-      answer: "ATS (Applicant Tracking System) são sistemas usados por empresas para filtrar currículos. Nossos templates são otimizados para serem facilmente lidos por esses sistemas, aumentando suas chances de aprovação."
+      question: "O que é otimização ATS e por que importa?",
+      answer: "ATS (Applicant Tracking System) são sistemas como Gupy, Kenoby, Vagas.com, Catho e Solides que filtram currículos automaticamente. Cerca de 90% dos currículos enviados online passam por um ATS antes de chegar ao recrutador. Nossos templates usam fontes, layout e estrutura aprovados por esses sistemas."
+    },
+    {
+      question: "Como deixar meu currículo aprovado em ATS?",
+      answer: "Use um dos nossos modelos ATS-friendly, escreva títulos padrão (Experiência, Formação, Habilidades), inclua palavras-chave da vaga, evite tabelas complexas, imagens e colunas. Salve sempre em PDF."
     },
     {
       question: "Posso adicionar foto ao currículo?",
-      answer: "Sim! Você pode adicionar sua foto profissional e escolher entre formato redondo ou quadrado."
+      answer: "Sim! Você pode adicionar sua foto profissional e escolher entre formato redondo ou quadrado. Para vagas internacionais (EUA, Reino Unido, Canadá), recomendamos remover a foto."
+    },
+    {
+      question: "Currículo precisa ter foto em 2026?",
+      answer: "No Brasil, foto ainda é comum e bem aceita, especialmente em vagas de atendimento e vendas. Para vagas corporativas, internacionais ou que passam por ATS, optar por currículo sem foto pode ser mais estratégico."
     },
     {
       question: "Como funciona o preenchimento automático de endereço?",
-      answer: "Ao digitar seu CEP, nosso sistema busca automaticamente os dados de cidade, estado e bairro, facilitando o preenchimento."
+      answer: "Ao digitar seu CEP, nosso sistema busca automaticamente cidade, estado e bairro nos dados oficiais dos Correios, agilizando o preenchimento e evitando erros de digitação."
     },
     {
       question: "Posso imprimir meu currículo?",
-      answer: "Sim! Além de baixar em PDF, você também pode imprimir seu currículo diretamente pela plataforma."
+      answer: "Sim! Além de baixar em PDF, você pode imprimir direto pelo navegador. O layout é otimizado para impressão em folha A4."
     },
     {
       question: "Meus dados estão seguros?",
-      answer: "Sim! Seus dados são armazenados apenas no seu navegador e não são enviados para nossos servidores, garantindo total privacidade."
+      answer: "Sim! Seus dados são armazenados apenas no seu navegador (localStorage) e não são enviados para nossos servidores. Cumprimos integralmente a LGPD — Lei Geral de Proteção de Dados."
     },
     {
       question: "Posso criar currículos para diferentes vagas?",
-      answer: "Sim! Você pode criar quantos currículos diferentes quiser, personalizando cada um para uma vaga específica."
+      answer: "Sim! O ideal é personalizar o currículo para cada vaga, ajustando objetivo, palavras-chave e ordem das experiências. Você pode criar quantos quiser."
+    },
+    {
+      question: "Como fazer currículo sem experiência profissional?",
+      answer: "Destaque sua formação, cursos livres, trabalhos voluntários, projetos acadêmicos, freelas, habilidades técnicas e comportamentais. Inclua um objetivo profissional claro mostrando interesse em aprender."
+    },
+    {
+      question: "Como fazer currículo para primeiro emprego?",
+      answer: "Foque em formação escolar, cursos extracurriculares (idiomas, informática), atividades voluntárias, hobbies relevantes e qualidades pessoais. Inclua dados de contato atualizados e um objetivo profissional simples."
+    },
+    {
+      question: "Como fazer currículo para jovem aprendiz?",
+      answer: "Currículo de jovem aprendiz deve ser objetivo: dados pessoais, formação (ensino médio em andamento ou concluído), cursos, habilidades e disponibilidade. Use linguagem simples e profissional."
+    },
+    {
+      question: "Como fazer currículo para estágio?",
+      answer: "Inclua curso e semestre atual, projetos acadêmicos, iniciações científicas, monitorias, idiomas, softwares dominados e disponibilidade de horário. Mencione o CIEE, Nube ou IEL se for indicado por eles."
+    },
+    {
+      question: "Como fazer currículo em inglês?",
+      answer: "Use 'Resume' (1 página, padrão americano) ou 'CV' (mais longo, padrão acadêmico/europeu). Inclua summary, experience, education, skills. Evite traduções literais — use action verbs como 'developed', 'led', 'managed'."
+    },
+    {
+      question: "Quantas páginas o currículo ideal deve ter?",
+      answer: "Para a maioria das vagas, 1 página é o ideal. Profissionais com mais de 10 anos de carreira ou cargos sêniores podem usar até 2 páginas. Currículos acadêmicos (Lattes) podem ser maiores."
+    },
+    {
+      question: "O que NÃO colocar no currículo?",
+      answer: "Evite: fotos informais, e-mail amador, dados sensíveis (CPF, RG), pretensão salarial (a menos que a vaga peça), redes sociais pessoais, religião, partido político, mentiras e cargos irrelevantes para a vaga."
+    },
+    {
+      question: "Como descrever experiência profissional no currículo?",
+      answer: "Use o formato: cargo, empresa, período, e 3 a 5 bullets descrevendo responsabilidades e resultados quantificáveis (ex: 'Aumentei vendas em 30%'). Comece cada bullet com um verbo de ação."
+    },
+    {
+      question: "Qual o melhor objetivo profissional para colocar?",
+      answer: "Um objetivo curto, claro e alinhado à vaga. Exemplo: 'Atuar como Auxiliar Administrativo, contribuindo com organização e atendimento ao cliente em ambiente corporativo'. Veja exemplos por área no nosso blog."
+    },
+    {
+      question: "Quais habilidades colocar no currículo em 2026?",
+      answer: "Combine hard skills (Excel avançado, Power BI, inglês fluente, programação) com soft skills (comunicação, liderança, resolução de problemas, inteligência emocional, adaptabilidade). Priorize as exigidas na vaga."
+    },
+    {
+      question: "Devo colocar pretensão salarial no currículo?",
+      answer: "Só coloque se a vaga pedir explicitamente. Caso contrário, deixe para conversar na entrevista. Pesquise a faixa de mercado no site da Catho, Glassdoor ou Vagas.com antes de informar um valor."
+    },
+    {
+      question: "Como criar currículo otimizado para Gupy, Vagas.com e Catho?",
+      answer: "Use modelo ATS-friendly (uma coluna, fontes padrão, sem imagens decorativas), inclua as palavras-chave do anúncio da vaga, salve em PDF e suba diretamente nas plataformas. Nossos templates já seguem esse padrão."
+    },
+    {
+      question: "Posso usar o currículo no LinkedIn?",
+      answer: "Sim! Baixe o PDF e anexe ao seu perfil LinkedIn em 'Destaques'. Você também pode usar o conteúdo do currículo para preencher a seção 'Sobre' e 'Experiência' do LinkedIn."
     }
   ];
 
