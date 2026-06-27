@@ -7,7 +7,7 @@ const categories = [
   { name: "Currículo", slug: "Currículo", count: 5 },
   { name: "LinkedIn", slug: "LinkedIn", count: 2 },
   { name: "Carreira", slug: "Carreira", count: 3 },
-  { name: "Entrevistas", slug: "Entrevistas", count: 1 },
+  { name: "Entrevistas", slug: "Entrevistas", count: 2 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
   { name: "Inglês", slug: "Inglês", count: 1 },
@@ -15,6 +15,12 @@ const categories = [
 ];
 
 const recentPosts = [
+  {
+    title: "Como se preparar para entrevista de emprego em 2026",
+    slug: "/blog/como-se-preparar-entrevista-emprego-2026",
+    image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg",
+    date: "10 Jan 2026"
+  },
   {
     title: "Profissões com mais vagas até 2030",
     slug: "/blog/profissoes-mais-vagas-brasil-2030",
@@ -32,12 +38,6 @@ const recentPosts = [
     slug: "/blog/o-que-recrutadores-buscam-curriculo",
     image: "/blog/o-que-recrutadores-buscam-curriculo.jpg",
     date: "19 Dez 2025"
-  },
-  {
-    title: "Currículo vs LinkedIn em 2026",
-    slug: "/blog/curriculo-vs-linkedin-2026",
-    image: "/blog/curriculo-vs-linkedin-2026.jpg",
-    date: "6 Dez 2025"
   },
 ];
 

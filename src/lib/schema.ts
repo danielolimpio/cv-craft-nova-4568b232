@@ -344,6 +344,7 @@ export const topicClusters: Record<string, ClusterArticle[]> = {
     { title: "Carta de Apresentação", url: "/blog/carta-apresentacao-empregador", description: "Como escrever uma carta que complementa seu currículo" },
     { title: "O Que Recrutadores Buscam", url: "/blog/o-que-recrutadores-buscam-curriculo", description: "Critérios reais usados na triagem de currículos" },
     { title: "Networking Profissional", url: "/blog/perfil-linkedin-recrutadores", description: "Construa conexões que abrem portas profissionais" },
+    { title: "Como se Preparar para Entrevista em 2026", url: "/blog/como-se-preparar-entrevista-emprego-2026", description: "Guia completo: pesquisa, STAR, perguntas comportamentais e entrevistas por vídeo" },
   ]
 };
 
@@ -454,5 +455,10 @@ export const articleEntities: Record<string, ArticleEntity[]> = {
     { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
     { name: "Profissão", sameAs: "https://pt.wikipedia.org/wiki/Profiss%C3%A3o", type: "Thing" },
     { name: "Brasil", sameAs: "https://pt.wikipedia.org/wiki/Brasil", type: "Thing" },
+  ],
+  "/blog/como-se-preparar-entrevista-emprego-2026": [
+    { name: "Entrevista de emprego", sameAs: "https://pt.wikipedia.org/wiki/Entrevista_de_emprego", type: "Thing" },
+    { name: "Recrutamento", sameAs: "https://pt.wikipedia.org/wiki/Recrutamento", type: "Thing" },
+    { name: "Comunicação interpessoal", sameAs: "https://pt.wikipedia.org/wiki/Comunica%C3%A7%C3%A3o_interpessoal", type: "Thing" },
   ],
 };
