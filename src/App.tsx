@@ -26,6 +26,7 @@ import BlogArticle12 from "./pages/BlogArticle12";
 import BlogArticle13 from "./pages/BlogArticle13";
 import BlogArticle14 from "./pages/BlogArticle14";
 import BlogArticle15 from "./pages/BlogArticle15";
+import BlogArticle16 from "./pages/BlogArticle16";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -75,6 +76,7 @@ const App = () => (
             <Route path="/blog/curriculo-ingles-estrutura-erros" element={<BlogArticle13 />} />
             <Route path="/blog/curriculo-ti-priorizar-2026" element={<BlogArticle14 />} />
             <Route path="/blog/profissoes-mais-vagas-brasil-2030" element={<BlogArticle15 />} />
+            <Route path="/blog/como-se-preparar-entrevista-emprego-2026" element={<BlogArticle16 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

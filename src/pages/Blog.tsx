@@ -23,6 +23,17 @@ interface BlogPost {
 
   const blogPosts: BlogPost[] = [
     {
+      id: "como-se-preparar-entrevista-emprego-2026",
+      title: "Como se preparar para uma entrevista de emprego em 2026: guia completo",
+      excerpt: "Pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo: o passo a passo real para chegar pronto e seguro à sua próxima entrevista.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "10 de Janeiro, 2026",
+      readTime: "18 min",
+      category: "Entrevistas",
+      image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg"
+    },
+    {
       id: "destaque-habilidades-estrategia-impacto",
       title: "Destaque suas habilidades com estratégia e impacto",
       excerpt: "Aprenda a identificar e comunicar suas habilidades de forma estratégica para se destacar no mercado de trabalho.",
@@ -181,7 +192,7 @@ interface BlogPost {
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 

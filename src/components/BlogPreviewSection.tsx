@@ -144,6 +144,16 @@ const BlogPreviewSection = () => {
       color: "from-orange-600 to-amber-600",
       link: "/blog/profissoes-mais-vagas-brasil-2030",
       image: "/blog/profissoes-mais-vagas-brasil-2030.jpg"
+    },
+    {
+      title: "Como se preparar para uma entrevista de emprego em 2026",
+      excerpt: "Pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo: o passo a passo real para chegar pronto.",
+      date: "10 de Janeiro, 2026",
+      readTime: "18 min",
+      category: "Entrevistas",
+      color: "from-emerald-600 to-teal-600",
+      link: "/blog/como-se-preparar-entrevista-emprego-2026",
+      image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg"
     }
   ];
 
