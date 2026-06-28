@@ -23,6 +23,17 @@ interface BlogPost {
 
   const blogPosts: BlogPost[] = [
     {
+      id: "como-negociar-salario-entrevista",
+      title: "Como negociar salário em uma entrevista de emprego: o guia completo",
+      excerpt: "Pesquisa de mercado, pretensão salarial, contraproposta e negociação de benefícios: o passo a passo real para chegar à melhor oferta possível.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "22 de Janeiro, 2026",
+      readTime: "17 min",
+      category: "Salário",
+      image: "/blog/como-negociar-salario-entrevista.jpg"
+    },
+    {
       id: "como-se-preparar-entrevista-emprego-2026",
       title: "Como se preparar para uma entrevista de emprego em 2026: guia completo",
       excerpt: "Pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo: o passo a passo real para chegar pronto e seguro à sua próxima entrevista.",
@@ -192,7 +203,7 @@ interface BlogPost {
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas", "Salário"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
