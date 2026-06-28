@@ -343,8 +343,8 @@ export const topicClusters: Record<string, ClusterArticle[]> = {
   "processo-seletivo": [
     { title: "Carta de Apresentação", url: "/blog/carta-apresentacao-empregador", description: "Como escrever uma carta que complementa seu currículo" },
     { title: "O Que Recrutadores Buscam", url: "/blog/o-que-recrutadores-buscam-curriculo", description: "Critérios reais usados na triagem de currículos" },
-    { title: "Networking Profissional", url: "/blog/perfil-linkedin-recrutadores", description: "Construa conexões que abrem portas profissionais" },
     { title: "Como se Preparar para Entrevista em 2026", url: "/blog/como-se-preparar-entrevista-emprego-2026", description: "Guia completo: pesquisa, STAR, perguntas comportamentais e entrevistas por vídeo" },
+    { title: "Como Negociar Salário na Entrevista", url: "/blog/como-negociar-salario-entrevista", description: "Pesquisa de mercado, pretensão, contraproposta e benefícios" },
   ]
 };
 
@@ -460,5 +460,11 @@ export const articleEntities: Record<string, ArticleEntity[]> = {
     { name: "Entrevista de emprego", sameAs: "https://pt.wikipedia.org/wiki/Entrevista_de_emprego", type: "Thing" },
     { name: "Recrutamento", sameAs: "https://pt.wikipedia.org/wiki/Recrutamento", type: "Thing" },
     { name: "Comunicação interpessoal", sameAs: "https://pt.wikipedia.org/wiki/Comunica%C3%A7%C3%A3o_interpessoal", type: "Thing" },
+  ],
+  "/blog/como-negociar-salario-entrevista": [
+    { name: "Negociação", sameAs: "https://pt.wikipedia.org/wiki/Negocia%C3%A7%C3%A3o", type: "Thing" },
+    { name: "Salário", sameAs: "https://pt.wikipedia.org/wiki/Sal%C3%A1rio", type: "Thing" },
+    { name: "Entrevista de emprego", sameAs: "https://pt.wikipedia.org/wiki/Entrevista_de_emprego", type: "Thing" },
+    { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
   ],
 };

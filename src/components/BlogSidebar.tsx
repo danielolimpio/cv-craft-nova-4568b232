@@ -8,6 +8,7 @@ const categories = [
   { name: "LinkedIn", slug: "LinkedIn", count: 2 },
   { name: "Carreira", slug: "Carreira", count: 3 },
   { name: "Entrevistas", slug: "Entrevistas", count: 2 },
+  { name: "Salário", slug: "Salário", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
   { name: "Inglês", slug: "Inglês", count: 1 },
@@ -15,6 +16,12 @@ const categories = [
 ];
 
 const recentPosts = [
+  {
+    title: "Como negociar salário em uma entrevista de emprego",
+    slug: "/blog/como-negociar-salario-entrevista",
+    image: "/blog/como-negociar-salario-entrevista.jpg",
+    date: "22 Jan 2026"
+  },
   {
     title: "Como se preparar para entrevista de emprego em 2026",
     slug: "/blog/como-se-preparar-entrevista-emprego-2026",
@@ -25,12 +32,6 @@ const recentPosts = [
     title: "Profissões com mais vagas até 2030",
     slug: "/blog/profissoes-mais-vagas-brasil-2030",
     image: "/blog/profissoes-mais-vagas-brasil-2030.jpg",
-    date: "19 Dez 2025"
-  },
-  {
-    title: "Currículo para Área de TI: O Que Priorizar",
-    slug: "/blog/curriculo-ti-priorizar-2026",
-    image: "/blog/curriculo-ti-priorizar-2026.jpg",
     date: "19 Dez 2025"
   },
   {

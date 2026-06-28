@@ -154,6 +154,16 @@ const BlogPreviewSection = () => {
       color: "from-emerald-600 to-teal-600",
       link: "/blog/como-se-preparar-entrevista-emprego-2026",
       image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg"
+    },
+    {
+      title: "Como negociar salário em uma entrevista de emprego: o guia completo",
+      excerpt: "Pesquisa de mercado, pretensão salarial, contraproposta e negociação de benefícios: o passo a passo real para chegar à melhor oferta.",
+      date: "22 de Janeiro, 2026",
+      readTime: "17 min",
+      category: "Salário",
+      color: "from-yellow-600 to-amber-600",
+      link: "/blog/como-negociar-salario-entrevista",
+      image: "/blog/como-negociar-salario-entrevista.jpg"
     }
   ];
 
