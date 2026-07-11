@@ -345,6 +345,12 @@ export const topicClusters: Record<string, ClusterArticle[]> = {
     { title: "O Que Recrutadores Buscam", url: "/blog/o-que-recrutadores-buscam-curriculo", description: "Critérios reais usados na triagem de currículos" },
     { title: "Como se Preparar para Entrevista em 2026", url: "/blog/como-se-preparar-entrevista-emprego-2026", description: "Guia completo: pesquisa, STAR, perguntas comportamentais e entrevistas por vídeo" },
     { title: "Como Negociar Salário na Entrevista", url: "/blog/como-negociar-salario-entrevista", description: "Pesquisa de mercado, pretensão, contraproposta e benefícios" },
+  ],
+  "trabalho-exterior-futuro": [
+    { title: "Trabalhar nos Estados Unidos: guia de vistos e vagas", url: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas", description: "Vistos H-2A, H-2B, H-1B, EB-3 e J-1 explicados com fontes oficiais" },
+    { title: "IA no mercado de trabalho até 2030", url: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030", description: "Profissões que vão surgir, mudar e desaparecer com a IA" },
+    { title: "Profissões com mais vagas até 2030", url: "/blog/profissoes-mais-vagas-brasil-2030", description: "As carreiras com maior demanda no Brasil até 2030" },
+    { title: "Currículo em Inglês", url: "/blog/curriculo-ingles-estrutura-erros", description: "Estrutura correta e erros comuns no CV em inglês" },
   ]
 };
 
@@ -466,5 +472,17 @@ export const articleEntities: Record<string, ArticleEntity[]> = {
     { name: "Salário", sameAs: "https://pt.wikipedia.org/wiki/Sal%C3%A1rio", type: "Thing" },
     { name: "Entrevista de emprego", sameAs: "https://pt.wikipedia.org/wiki/Entrevista_de_emprego", type: "Thing" },
     { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
+  ],
+  "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas": [
+    { name: "Estados Unidos", sameAs: "https://pt.wikipedia.org/wiki/Estados_Unidos", type: "Thing" },
+    { name: "Visto de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Visto_(documento)", type: "Thing" },
+    { name: "Imigração", sameAs: "https://pt.wikipedia.org/wiki/Imigra%C3%A7%C3%A3o", type: "Thing" },
+    { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
+  ],
+  "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030": [
+    { name: "Inteligência artificial", sameAs: "https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial", type: "Thing" },
+    { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
+    { name: "Automação", sameAs: "https://pt.wikipedia.org/wiki/Automa%C3%A7%C3%A3o", type: "Thing" },
+    { name: "Futuro do trabalho", type: "Thing" },
   ],
 };

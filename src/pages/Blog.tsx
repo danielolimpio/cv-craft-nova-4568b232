@@ -23,6 +23,28 @@ interface BlogPost {
 
   const blogPosts: BlogPost[] = [
     {
+      id: "inteligencia-artificial-mercado-trabalho-profissoes-2030",
+      title: "Inteligência Artificial no mercado de trabalho: profissões até 2030",
+      excerpt: "Panorama honesto, com dados do Fórum Econômico Mundial e da OIT, sobre quais profissões vão surgir, mudar e desaparecer com o avanço da IA.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "05 de Fevereiro, 2026",
+      readTime: "21 min",
+      category: "Futuro do Trabalho",
+      image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg"
+    },
+    {
+      id: "trabalhar-nos-estados-unidos-guia-vistos-vagas",
+      title: "Trabalhar nos Estados Unidos: guia completo de vistos, vagas e como se candidatar",
+      excerpt: "Vistos H-2A, H-2B, H-1B, EB-3 e J-1 explicados sem promessa mágica: SeasonalJobs.dol.gov, salários médios e passo a passo real da candidatura.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "04 de Fevereiro, 2026",
+      readTime: "19 min",
+      category: "Trabalho no Exterior",
+      image: "/blog/trabalhar-nos-estados-unidos-guia.jpg"
+    },
+    {
       id: "como-negociar-salario-entrevista",
       title: "Como negociar salário em uma entrevista de emprego: o guia completo",
       excerpt: "Pesquisa de mercado, pretensão salarial, contraproposta e negociação de benefícios: o passo a passo real para chegar à melhor oferta possível.",
