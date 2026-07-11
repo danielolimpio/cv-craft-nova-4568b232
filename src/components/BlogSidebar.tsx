@@ -9,6 +9,8 @@ const categories = [
   { name: "Carreira", slug: "Carreira", count: 3 },
   { name: "Entrevistas", slug: "Entrevistas", count: 2 },
   { name: "Salário", slug: "Salário", count: 1 },
+  { name: "Trabalho no Exterior", slug: "Trabalho no Exterior", count: 1 },
+  { name: "Futuro do Trabalho", slug: "Futuro do Trabalho", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
   { name: "Inglês", slug: "Inglês", count: 1 },
@@ -16,6 +18,18 @@ const categories = [
 ];
 
 const recentPosts = [
+  {
+    title: "IA no mercado de trabalho: profissões até 2030",
+    slug: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
+    image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg",
+    date: "05 Fev 2026"
+  },
+  {
+    title: "Trabalhar nos Estados Unidos: guia de vistos e vagas",
+    slug: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
+    image: "/blog/trabalhar-nos-estados-unidos-guia.jpg",
+    date: "04 Fev 2026"
+  },
   {
     title: "Como negociar salário em uma entrevista de emprego",
     slug: "/blog/como-negociar-salario-entrevista",
@@ -27,18 +41,6 @@ const recentPosts = [
     slug: "/blog/como-se-preparar-entrevista-emprego-2026",
     image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg",
     date: "10 Jan 2026"
-  },
-  {
-    title: "Profissões com mais vagas até 2030",
-    slug: "/blog/profissoes-mais-vagas-brasil-2030",
-    image: "/blog/profissoes-mais-vagas-brasil-2030.jpg",
-    date: "19 Dez 2025"
-  },
-  {
-    title: "O Que Recrutadores Buscam no Currículo",
-    slug: "/blog/o-que-recrutadores-buscam-curriculo",
-    image: "/blog/o-que-recrutadores-buscam-curriculo.jpg",
-    date: "19 Dez 2025"
   },
 ];
 

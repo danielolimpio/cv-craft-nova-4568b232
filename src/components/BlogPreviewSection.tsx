@@ -6,6 +6,26 @@ import { Link } from "react-router-dom";
 const BlogPreviewSection = () => {
   const blogPosts = [
     {
+      title: "IA no mercado de trabalho: profissões até 2030",
+      excerpt: "Panorama honesto, com dados do Fórum Econômico Mundial e da OIT, sobre quais profissões vão surgir, mudar e desaparecer com o avanço da inteligência artificial.",
+      date: "05 de Fevereiro, 2026",
+      readTime: "21 min",
+      category: "Futuro do Trabalho",
+      color: "from-slate-700 to-indigo-700",
+      link: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
+      image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg"
+    },
+    {
+      title: "Trabalhar nos Estados Unidos: guia de vistos e vagas",
+      excerpt: "Vistos H-2A, H-2B, H-1B, EB-3 e J-1 explicados sem promessa mágica: como usar o SeasonalJobs.dol.gov, salários médios e passo a passo real da candidatura.",
+      date: "04 de Fevereiro, 2026",
+      readTime: "19 min",
+      category: "Trabalho no Exterior",
+      color: "from-blue-700 to-red-600",
+      link: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
+      image: "/blog/trabalhar-nos-estados-unidos-guia.jpg"
+    },
+    {
       title: "Como Criar um Currículo Profissional que se Destaca em 2026",
       excerpt: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026.",
       date: "28 de Novembro, 2025",
