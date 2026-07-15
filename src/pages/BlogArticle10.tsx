@@ -22,7 +22,7 @@ const BlogArticle10 = () => {
   const articleSchema = generateArticleSchema({
     title: "Currículo para Estágio: O Guia Definitivo para Estudantes",
     description: "Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional.",
-    image: "/blog/curriculo-estagio-estudantes.jpg",
+    image: "/blog/curriculo-estagio-estudantes.webp",
     datePublished: "2025-12-05",
     dateModified: "2025-12-05",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -77,11 +77,11 @@ const BlogArticle10 = () => {
         <meta property="og:description" content="Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-estagio-estudantes" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-estagio-estudantes.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-estagio-estudantes.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Currículo para Estágio: O Guia Definitivo para Estudantes" />
         <meta name="twitter:description" content="Tudo o que estudantes precisam saber para montar um currículo de estágio: disponibilidade, disciplinas relevantes, projetos e postura profissional." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-estagio-estudantes.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-estagio-estudantes.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -144,7 +144,7 @@ const BlogArticle10 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/curriculo-estagio-estudantes.jpg" 
+              src="/blog/curriculo-estagio-estudantes.webp" 
               alt="Currículo para Estágio: O Guia Definitivo para Estudantes"
               className="w-full h-auto"
             />

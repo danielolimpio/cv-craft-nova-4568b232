@@ -15,7 +15,7 @@ const BlogArticle3 = () => {
   const articleSchema = generateArticleSchema({
     title: "Como Preparar seu Currículo para Sistemas ATS",
     description: "Seu currículo é rejeitado antes de chegar ao recrutador? Aprenda a otimizar para sistemas ATS com dicas práticas, palavras-chave e formatação correta.",
-    image: "/blog/curriculo-ats-sistemas.jpg",
+    image: "/blog/curriculo-ats-sistemas.webp",
     datePublished: "2025-11-28",
     dateModified: "2025-11-28",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -35,7 +35,7 @@ const BlogArticle3 = () => {
         <meta property="og:title" content="Como Preparar seu Currículo para Sistemas ATS" />
         <meta property="og:description" content="Descubra como otimizar seu currículo para sistemas ATS e garantir que ele seja visto por recrutadores." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ats-sistemas.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ats-sistemas.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/preparar-curriculo-sistemas-ats" />
         <script type="application/ld+json">
@@ -96,7 +96,7 @@ const BlogArticle3 = () => {
             {/* Featured Image */}
             <div className="mb-12 rounded-lg overflow-hidden">
               <img 
-                src="/blog/curriculo-ats-sistemas.jpg" 
+                src="/blog/curriculo-ats-sistemas.webp" 
                 alt="Como Preparar seu Currículo para Sistemas ATS"
                 className="w-full h-auto"
               />
@@ -233,7 +233,7 @@ const BlogArticle3 = () => {
               {/* Imagem do meio */}
               <div className="my-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/curriculo-ats-sistemas-meio.jpg"
+                  src="/blog/curriculo-ats-sistemas-meio.webp"
                   alt="Currículo otimizado para sistemas ATS — compatível, relevante e aprovado na triagem"
                   className="w-full h-auto"
                   width={1280}

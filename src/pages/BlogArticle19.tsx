@@ -22,7 +22,7 @@ const BlogArticle19 = () => {
   const articleSchema = generateArticleSchema({
     title: "Inteligência Artificial no mercado de trabalho: profissões que vão surgir, mudar e desaparecer até 2030",
     description: "Como a inteligência artificial está transformando o mercado de trabalho, quais profissões devem crescer, quais serão automatizadas e como se preparar para o futuro do trabalho até 2030.",
-    image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg",
+    image: "/blog/ia-mercado-trabalho-profissoes-2030.webp",
     datePublished: "2026-02-05",
     dateModified: "2026-02-05",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -59,11 +59,11 @@ const BlogArticle19 = () => {
         <meta property="og:description" content="Quais profissões vão surgir, mudar e desaparecer com a IA até 2030 — e como se preparar agora com dados do WEF e da OIT." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/ia-mercado-trabalho-profissoes-2030.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/ia-mercado-trabalho-profissoes-2030.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="IA no mercado de trabalho: profissões que vão surgir e desaparecer até 2030" />
         <meta name="twitter:description" content="Um panorama honesto com dados oficiais sobre o futuro do trabalho na era da inteligência artificial." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/ia-mercado-trabalho-profissoes-2030.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/ia-mercado-trabalho-profissoes-2030.webp" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -106,7 +106,7 @@ const BlogArticle19 = () => {
 
               <div className="mb-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/ia-mercado-trabalho-profissoes-2030.jpg"
+                  src="/blog/ia-mercado-trabalho-profissoes-2030.webp"
                   alt="Profissional brasileiro trabalhando em escritório moderno com dois monitores e assistente robô ao lado, representando IA no mercado de trabalho"
                   className="w-full h-auto"
                   width={1600}
@@ -206,7 +206,7 @@ const BlogArticle19 = () => {
                 {/* Imagem meio */}
                 <div className="my-12 rounded-lg overflow-hidden">
                   <img
-                    src="/blog/ia-automacao-emprego-meio.jpg"
+                    src="/blog/ia-automacao-emprego-meio.webp"
                     alt="Operadora industrial supervisionando linha de produção automatizada com braços robóticos e monitores de dados"
                     className="w-full h-auto"
                     width={1600}

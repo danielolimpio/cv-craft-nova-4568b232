@@ -22,7 +22,7 @@ const BlogArticle18 = () => {
   const articleSchema = generateArticleSchema({
     title: "Trabalhar nos Estados Unidos: guia completo de vistos, vagas e como se candidatar",
     description: "Como conseguir trabalho legal nos EUA: vistos H-2A, H-2B, H-1B, EB-3, J-1, sites oficiais como SeasonalJobs.dol.gov, salários médios e passo a passo real de candidatura para brasileiros.",
-    image: "/blog/trabalhar-nos-estados-unidos-guia.jpg",
+    image: "/blog/trabalhar-nos-estados-unidos-guia.webp",
     datePublished: "2026-02-04",
     dateModified: "2026-02-04",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -59,11 +59,11 @@ const BlogArticle18 = () => {
         <meta property="og:description" content="Vistos H-2A, H-2B, H-1B, EB-3 e J-1, portais oficiais e passo a passo real para brasileiros conseguirem trabalho legal nos EUA em 2026." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/trabalhar-nos-estados-unidos-guia.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/trabalhar-nos-estados-unidos-guia.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Trabalhar nos Estados Unidos: guia completo de vistos e vagas" />
         <meta name="twitter:description" content="Vistos, portais oficiais e passo a passo real para brasileiros trabalharem legal nos EUA." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/trabalhar-nos-estados-unidos-guia.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/trabalhar-nos-estados-unidos-guia.webp" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -106,7 +106,7 @@ const BlogArticle18 = () => {
 
               <div className="mb-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/trabalhar-nos-estados-unidos-guia.jpg"
+                  src="/blog/trabalhar-nos-estados-unidos-guia.webp"
                   alt="Profissional brasileira segurando passaporte diante da vista do skyline de Nova York ao entardecer"
                   className="w-full h-auto"
                   width={1600}
@@ -221,7 +221,7 @@ const BlogArticle18 = () => {
                 {/* Imagem meio */}
                 <div className="my-12 rounded-lg overflow-hidden">
                   <img
-                    src="/blog/trabalho-sazonal-eua-h2a-meio.jpg"
+                    src="/blog/trabalho-sazonal-eua-h2a-meio.webp"
                     alt="Trabalhadores sazonais colhendo maçãs em fazenda americana ao amanhecer, com foco em trabalhador latino sorridente"
                     className="w-full h-auto"
                     width={1600}

@@ -22,7 +22,7 @@ const BlogArticle17 = () => {
   const articleSchema = generateArticleSchema({
     title: "Como negociar salário em uma entrevista de emprego: o guia completo",
     description: "Aprenda como negociar salário na entrevista de emprego: pesquisa de mercado, pretensão salarial, contraproposta, benefícios e os erros que derrubam até bons candidatos.",
-    image: "/blog/como-negociar-salario-entrevista.jpg",
+    image: "/blog/como-negociar-salario-entrevista.webp",
     datePublished: "2026-01-22",
     dateModified: "2026-01-22",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -57,11 +57,11 @@ const BlogArticle17 = () => {
         <meta property="og:description" content="Pesquisa de mercado, pretensão salarial, contraproposta e negociação de benefícios: o passo a passo real para chegar à oferta certa." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/como-negociar-salario-entrevista" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/como-negociar-salario-entrevista.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/como-negociar-salario-entrevista.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Como negociar salário em uma entrevista de emprego" />
         <meta name="twitter:description" content="Pesquisa de mercado, pretensão salarial, contraproposta e negociação de benefícios: o passo a passo real." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/como-negociar-salario-entrevista.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/como-negociar-salario-entrevista.webp" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -107,7 +107,7 @@ const BlogArticle17 = () => {
               {/* Featured Image */}
               <div className="mb-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/como-negociar-salario-entrevista.jpg"
+                  src="/blog/como-negociar-salario-entrevista.webp"
                   alt="Candidata negociando salário e cumprimentando o recrutador em uma entrevista de emprego"
                   className="w-full h-auto"
                   width={1280}
@@ -196,7 +196,7 @@ const BlogArticle17 = () => {
                 {/* Imagem do meio */}
                 <div className="my-12 rounded-lg overflow-hidden">
                   <img
-                    src="/blog/negociacao-salario-pesquisa-meio.jpg"
+                    src="/blog/negociacao-salario-pesquisa-meio.webp"
                     alt="Mesa de trabalho com currículo impresso, calculadora e bloco de notas com cálculos de pretensão salarial"
                     className="w-full h-auto"
                     width={1280}

@@ -22,7 +22,7 @@ const BlogArticle9 = () => {
     description: "Veja como escrever uma carta de apresentação persuasiva com exemplos prontos — o complemento ideal para seu currículo se destacar.",
     author: "Daniel Olimpio",
     publishDate: "2025-11-30",
-    image: "/blog/carta-apresentacao-empregador.jpg",
+    image: "/blog/carta-apresentacao-empregador.webp",
     url: "https://fazercurriculo.com/blog/carta-apresentacao-empregador"
   };
 

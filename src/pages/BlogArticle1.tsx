@@ -22,7 +22,7 @@ const BlogArticle1 = () => {
   const articleSchema = generateArticleSchema({
     title: "Como Criar um Currículo Profissional que se Destaca em 2026",
     description: "Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores e passar pelas entrevistas — com estratégias atualizadas para 2026, exemplos práticos e dicas que funcionam de verdade no mercado competitivo de hoje.",
-    image: "/blog/curriculo-profissional-2026.jpg",
+    image: "/blog/curriculo-profissional-2026.webp",
     datePublished: "2025-01-28",
     dateModified: "2025-01-28",
     author: {
@@ -51,7 +51,7 @@ const BlogArticle1 = () => {
         <meta property="og:description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores — com estratégias atualizadas para 2026 e exemplos práticos." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/como-criar-curriculo-profissional-2026" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.webp" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:site_name" content="Fazer Currículo" />
         
@@ -59,7 +59,7 @@ const BlogArticle1 = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Como Criar um Currículo Profissional que se Destaca em 2026" />
         <meta name="twitter:description" content="Descubra as técnicas mais eficazes para criar um currículo que chama atenção dos recrutadores." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-profissional-2026.webp" />
         
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
@@ -120,7 +120,7 @@ const BlogArticle1 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/curriculo-profissional-2026.jpg" 
+              src="/blog/curriculo-profissional-2026.webp" 
               alt="Como Criar um Currículo Profissional que se Destaca em 2026"
               className="w-full h-auto"
             />
@@ -362,7 +362,7 @@ const BlogArticle1 = () => {
               {/* Imagem do meio */}
               <div className="my-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/curriculo-profissional-2026-meio.jpg"
+                  src="/blog/curriculo-profissional-2026-meio.webp"
                   alt="Como criar um currículo profissional que se destaca em 2026 — passo a passo visual"
                   className="w-full h-auto"
                   width={1280}
