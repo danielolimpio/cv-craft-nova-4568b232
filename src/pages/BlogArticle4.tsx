@@ -240,6 +240,21 @@ const BlogArticle4 = () => {
             </div>
           </section>
 
+          {/* Imagem do meio */}
+          <div className="my-12 rounded-lg overflow-hidden">
+            <img
+              src="/blog/curriculo-primeiro-emprego-meio.webp"
+              alt="Currículo para primeiro emprego — aprenda o que incluir, o que evitar e como se destacar"
+              className="w-full h-auto"
+              width={1280}
+              height={720}
+              loading="lazy"
+            />
+            <p className="text-sm text-muted-foreground text-center mt-3 italic">
+              Seu primeiro emprego começa com um bom currículo: aprenda, inclua o essencial e destaque-se.
+            </p>
+          </div>
+
           {/* Section 2 */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
