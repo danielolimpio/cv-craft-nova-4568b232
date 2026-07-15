@@ -359,6 +359,21 @@ const BlogArticle1 = () => {
                 </CardContent>
               </Card>
 
+              {/* Imagem do meio */}
+              <div className="my-12 rounded-lg overflow-hidden">
+                <img
+                  src="/blog/curriculo-profissional-2026-meio.jpg"
+                  alt="Como criar um currículo profissional que se destaca em 2026 — passo a passo visual"
+                  className="w-full h-auto"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                  Estrutura, destaque de habilidades e resultados: o passo a passo de um currículo irresistível em 2026.
+                </p>
+              </div>
+
               {/* Estratégias avançadas */}
               <section className="mb-12">
                 <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">

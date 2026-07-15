@@ -244,6 +244,21 @@ const BlogArticle2 = () => {
               </div>
             </div>
 
+            {/* Imagem do meio */}
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/10-erros-curriculo-meio.jpg"
+                alt="10 erros comuns em currículos que você deve evitar — pequenos erros, grandes consequências"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Revise com atenção, evite exageros e foque no que realmente importa para o recrutador.
+              </p>
+            </div>
+
             {/* Error 5 */}
             <h3 className="text-2xl font-bold mt-8 mb-4 text-[#006B3D]">
               5. Experiência Profissional Desorganizada ou Fora de Ordem
