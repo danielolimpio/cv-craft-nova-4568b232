@@ -232,6 +232,21 @@ const BlogArticle7 = () => {
               </div>
             </div>
 
+            {/* Imagem do meio */}
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/destaque-habilidades-estrategia-meio.webp"
+                alt="Habilidades que abrem portas — destaque seu talento, mostre seu diferencial e impulsione sua carreira"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Destacar habilidades com estratégia transforma competências em oportunidades reais de carreira.
+              </p>
+            </div>
+
             {/* Section 3 */}
             <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg mb-12">
               <div className="flex items-start gap-4">
