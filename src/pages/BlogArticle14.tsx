@@ -22,7 +22,7 @@ const BlogArticle14 = () => {
   const articleSchema = generateArticleSchema({
     title: "Currículo para Área de TI: O Que Priorizar em 2026",
     description: "Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação.",
-    image: "/blog/curriculo-ti-priorizar-2026.jpg",
+    image: "/blog/curriculo-ti-priorizar-2026.webp",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -73,11 +73,11 @@ const BlogArticle14 = () => {
         <meta property="og:description" content="Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Currículo para Área de TI: O Que Priorizar em 2026" />
         <meta name="twitter:description" content="Em TI, tecnologias mudam rápido. Descubra o que valorizar hoje: GitHub, certificações, soft skills e projetos — não só linguagens de programação." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-ti-priorizar-2026.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -140,7 +140,7 @@ const BlogArticle14 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/curriculo-ti-priorizar-2026.jpg" 
+              src="/blog/curriculo-ti-priorizar-2026.webp" 
               alt="Currículo para Área de TI: O Que Priorizar em 2026"
               className="w-full h-auto"
             />

@@ -33,7 +33,7 @@ const BlogArticle4 = () => {
   const articleSchema = generateArticleSchema({
     title: "Currículo para Primeiro Emprego: O Que Incluir",
     description: "Nunca trabalhou? Veja exatamente o que incluir e o que evitar no currículo de primeiro emprego — com exemplos prontos.",
-    image: "/blog/curriculo-primeiro-emprego.jpg",
+    image: "/blog/curriculo-primeiro-emprego.webp",
     datePublished: "2025-11-25",
     dateModified: "2025-11-25",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -53,7 +53,7 @@ const BlogArticle4 = () => {
         <meta property="og:title" content="Currículo para Primeiro Emprego: O Que Incluir e Evitar" />
         <meta property="og:description" content="Dicas objetivas para criar um currículo de primeiro emprego: como destacar atitudes, escolaridade e atividades." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-primeiro-emprego.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-primeiro-emprego-o-que-incluir" />
         <script type="application/ld+json">
@@ -114,7 +114,7 @@ const BlogArticle4 = () => {
             {/* Featured Image */}
             <div className="mb-12 rounded-lg overflow-hidden">
               <img 
-                src="/blog/curriculo-primeiro-emprego.jpg" 
+                src="/blog/curriculo-primeiro-emprego.webp" 
                 alt="Currículo para Primeiro Emprego: O Que Incluir e Evitar"
                 className="w-full h-auto"
               />

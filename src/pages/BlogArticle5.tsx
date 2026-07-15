@@ -14,7 +14,7 @@ const BlogArticle5 = () => {
   const articleSchema = generateArticleSchema({
     title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
     description: "Primeiro emprego ou mudança de carreira? Veja 7 estratégias comprovadas para montar um currículo competitivo mesmo sem experiência profissional.",
-    image: "/blog/curriculo-sem-experiencia.jpg",
+    image: "/blog/curriculo-sem-experiencia.webp",
     datePublished: "2025-11-25",
     dateModified: "2025-11-25",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -34,7 +34,7 @@ const BlogArticle5 = () => {
         <meta property="og:title" content="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" />
         <meta property="og:description" content="Sem histórico profissional? Descubra como construir um currículo competitivo com projetos, voluntariado e habilidades." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-sem-experiencia.webp" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/curriculo-sem-experiencia-estrategias" />
         <script type="application/ld+json">
@@ -86,7 +86,7 @@ const BlogArticle5 = () => {
             </div>
 
             <img 
-              src="/blog/curriculo-sem-experiencia.jpg" 
+              src="/blog/curriculo-sem-experiencia.webp" 
               alt="Currículo Sem Experiência: Estratégias para Jovens e Iniciantes" 
               className="w-full h-auto rounded-lg mb-12 shadow-lg"
             />

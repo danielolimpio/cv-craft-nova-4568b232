@@ -22,7 +22,7 @@ const BlogArticle15 = () => {
   const articleSchema = generateArticleSchema({
     title: "Quais profissões terão mais vagas no Brasil até 2030?",
     description: "Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade.",
-    image: "/blog/profissoes-mais-vagas-brasil-2030.jpg",
+    image: "/blog/profissoes-mais-vagas-brasil-2030.webp",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -73,11 +73,11 @@ const BlogArticle15 = () => {
         <meta property="og:description" content="Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quais profissões terão mais vagas no Brasil até 2030?" />
         <meta name="twitter:description" content="Descubra as carreiras com maior demanda futura segundo o Ministério do Trabalho, MEC e relatórios do WEF — e como se preparar agora, mesmo sem faculdade." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/profissoes-mais-vagas-brasil-2030.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -140,7 +140,7 @@ const BlogArticle15 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/profissoes-mais-vagas-brasil-2030.jpg" 
+              src="/blog/profissoes-mais-vagas-brasil-2030.webp" 
               alt="Quais profissões terão mais vagas no Brasil até 2030"
               className="w-full h-auto"
             />

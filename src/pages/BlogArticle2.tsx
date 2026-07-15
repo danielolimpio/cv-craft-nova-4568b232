@@ -15,7 +15,7 @@ const BlogArticle2 = () => {
   const articleSchema = generateArticleSchema({
     title: "10 Erros Comuns em Currículos que Você Deve Evitar",
     description: "Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns e como corrigir cada um com exemplos práticos.",
-    image: "/blog/10-erros-comuns-curriculos.jpg",
+    image: "/blog/10-erros-comuns-curriculos.webp",
     datePublished: "2025-11-25",
     dateModified: "2025-11-25",
     author: { name: "Equipe Fazer Currículo" },
@@ -40,13 +40,13 @@ const BlogArticle2 = () => {
         <meta property="og:description" content="Seu currículo pode estar sendo descartado por erros simples. Veja os 10 mais comuns e como corrigir." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.webp" />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:site_name" content="Fazer Currículo" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="10 Erros no Currículo que Te Eliminam" />
         <meta name="twitter:description" content="Veja os 10 erros mais comuns em currículos e como corrigir cada um." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/10-erros-comuns-curriculos.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -102,7 +102,7 @@ const BlogArticle2 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/10-erros-curriculo.jpg" 
+              src="/blog/10-erros-curriculo.webp" 
               alt="10 Erros Comuns em Currículos que Você Deve Evitar"
               className="w-full h-auto"
             />
@@ -247,7 +247,7 @@ const BlogArticle2 = () => {
             {/* Imagem do meio */}
             <div className="my-12 rounded-lg overflow-hidden">
               <img
-                src="/blog/10-erros-curriculo-meio.jpg"
+                src="/blog/10-erros-curriculo-meio.webp"
                 alt="10 erros comuns em currículos que você deve evitar — pequenos erros, grandes consequências"
                 className="w-full h-auto"
                 width={1280}

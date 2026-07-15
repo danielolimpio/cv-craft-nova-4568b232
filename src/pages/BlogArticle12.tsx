@@ -22,7 +22,7 @@ const BlogArticle12 = () => {
   const articleSchema = generateArticleSchema({
     title: "O Que Recrutadores Realmente Buscam em um Currículo Hoje",
     description: "Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página.",
-    image: "/blog/o-que-recrutadores-buscam-curriculo.jpg",
+    image: "/blog/o-que-recrutadores-buscam-curriculo.webp",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -69,11 +69,11 @@ const BlogArticle12 = () => {
         <meta property="og:description" content="Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="O Que Recrutadores Realmente Buscam em um Currículo Hoje" />
         <meta name="twitter:description" content="Baseado em entrevistas com recrutadores, revelamos os 5 critérios decisivos que fazem um currículo avançar — e como atendê-los em 1 página." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/o-que-recrutadores-buscam-curriculo.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -136,7 +136,7 @@ const BlogArticle12 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/o-que-recrutadores-buscam-curriculo.jpg" 
+              src="/blog/o-que-recrutadores-buscam-curriculo.webp" 
               alt="O Que Recrutadores Realmente Buscam em um Currículo Hoje"
               className="w-full h-auto"
             />

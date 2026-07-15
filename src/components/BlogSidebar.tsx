@@ -21,25 +21,25 @@ const recentPosts = [
   {
     title: "IA no mercado de trabalho: profissões até 2030",
     slug: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
-    image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg",
+    image: "/blog/ia-mercado-trabalho-profissoes-2030.webp",
     date: "05 Fev 2026"
   },
   {
     title: "Trabalhar nos Estados Unidos: guia de vistos e vagas",
     slug: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
-    image: "/blog/trabalhar-nos-estados-unidos-guia.jpg",
+    image: "/blog/trabalhar-nos-estados-unidos-guia.webp",
     date: "04 Fev 2026"
   },
   {
     title: "Como negociar salário em uma entrevista de emprego",
     slug: "/blog/como-negociar-salario-entrevista",
-    image: "/blog/como-negociar-salario-entrevista.jpg",
+    image: "/blog/como-negociar-salario-entrevista.webp",
     date: "22 Jan 2026"
   },
   {
     title: "Como se preparar para entrevista de emprego em 2026",
     slug: "/blog/como-se-preparar-entrevista-emprego-2026",
-    image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg",
+    image: "/blog/como-se-preparar-entrevista-emprego-2026.webp",
     date: "10 Jan 2026"
   },
 ];

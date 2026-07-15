@@ -22,7 +22,7 @@ const BlogArticle11 = () => {
   const articleSchema = generateArticleSchema({
     title: "Diferença Entre Currículo e Perfil no LinkedIn em 2026",
     description: "Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte.",
-    image: "/blog/curriculo-vs-linkedin-2026.jpg",
+    image: "/blog/curriculo-vs-linkedin-2026.webp",
     datePublished: "2025-12-06",
     dateModified: "2025-12-06",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -73,11 +73,11 @@ const BlogArticle11 = () => {
         <meta property="og:description" content="Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Diferença Entre Currículo e Perfil no LinkedIn em 2026" />
         <meta name="twitter:description" content="Entenda quando usar currículo, quando priorizar o LinkedIn e como alinhar ambos para construir uma presença profissional coerente e forte." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-vs-linkedin-2026.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -140,7 +140,7 @@ const BlogArticle11 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/curriculo-vs-linkedin-2026.jpg" 
+              src="/blog/curriculo-vs-linkedin-2026.webp" 
               alt="Diferença Entre Currículo e Perfil no LinkedIn em 2026"
               className="w-full h-auto"
             />

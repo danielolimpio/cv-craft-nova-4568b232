@@ -31,7 +31,7 @@ interface BlogPost {
       date: "05 de Fevereiro, 2026",
       readTime: "21 min",
       category: "Futuro do Trabalho",
-      image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg"
+      image: "/blog/ia-mercado-trabalho-profissoes-2030.webp"
     },
     {
       id: "trabalhar-nos-estados-unidos-guia-vistos-vagas",
@@ -42,7 +42,7 @@ interface BlogPost {
       date: "04 de Fevereiro, 2026",
       readTime: "19 min",
       category: "Trabalho no Exterior",
-      image: "/blog/trabalhar-nos-estados-unidos-guia.jpg"
+      image: "/blog/trabalhar-nos-estados-unidos-guia.webp"
     },
     {
       id: "como-negociar-salario-entrevista",
@@ -53,7 +53,7 @@ interface BlogPost {
       date: "22 de Janeiro, 2026",
       readTime: "17 min",
       category: "Salário",
-      image: "/blog/como-negociar-salario-entrevista.jpg"
+      image: "/blog/como-negociar-salario-entrevista.webp"
     },
     {
       id: "como-se-preparar-entrevista-emprego-2026",
@@ -64,7 +64,7 @@ interface BlogPost {
       date: "10 de Janeiro, 2026",
       readTime: "18 min",
       category: "Entrevistas",
-      image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg"
+      image: "/blog/como-se-preparar-entrevista-emprego-2026.webp"
     },
     {
       id: "destaque-habilidades-estrategia-impacto",
@@ -75,7 +75,7 @@ interface BlogPost {
       date: "29 de Novembro, 2025",
     readTime: "12 min",
     category: "Dicas de Currículo",
-    image: "/blog/destaque-habilidades-estrategia.jpg"
+    image: "/blog/destaque-habilidades-estrategia.webp"
   },
     {
       id: "perfil-linkedin-recrutadores",
@@ -86,7 +86,7 @@ interface BlogPost {
       date: "30 de Novembro, 2025",
     readTime: "12 min",
     category: "Networking",
-    image: "/blog/perfil-linkedin-recrutadores.jpg"
+    image: "/blog/perfil-linkedin-recrutadores.webp"
   },
     {
       id: "como-criar-curriculo-profissional-2026",
@@ -97,7 +97,7 @@ interface BlogPost {
       date: "28 de Novembro, 2025",
     readTime: "15 min",
     category: "Dicas de Currículo",
-    image: "/blog/curriculo-profissional-2026.jpg"
+    image: "/blog/curriculo-profissional-2026.webp"
   },
     {
       id: "10-erros-comuns-curriculos",
@@ -108,7 +108,7 @@ interface BlogPost {
       date: "25 de Novembro, 2025",
     readTime: "7 min",
     category: "Erros Comuns",
-    image: "/blog/10-erros-curriculo-preview.jpg"
+    image: "/blog/10-erros-curriculo-preview.webp"
   },
     {
       id: "preparar-curriculo-sistemas-ats",
@@ -119,7 +119,7 @@ interface BlogPost {
       date: "26 de Novembro, 2025",
     readTime: "6 min",
     category: "Tecnologia",
-    image: "/blog/curriculo-ats-sistemas.jpg"
+    image: "/blog/curriculo-ats-sistemas.webp"
   },
     {
       id: "curriculo-primeiro-emprego-o-que-incluir",
@@ -130,7 +130,7 @@ interface BlogPost {
       date: "27 de Novembro, 2025",
     readTime: "18 min",
     category: "Primeiro Emprego",
-    image: "/blog/curriculo-primeiro-emprego.jpg"
+    image: "/blog/curriculo-primeiro-emprego.webp"
   },
     {
       id: "curriculo-sem-experiencia-estrategias",
@@ -141,7 +141,7 @@ interface BlogPost {
       date: "24 de Novembro, 2025",
       readTime: "15 min",
       category: "Sem Experiência",
-      image: "/blog/curriculo-sem-experiencia.jpg"
+      image: "/blog/curriculo-sem-experiencia.webp"
     },
     {
       id: "carta-apresentacao-empregador",
@@ -152,7 +152,7 @@ interface BlogPost {
       date: "30 de Novembro, 2025",
       readTime: "14 min",
       category: "Dicas de Currículo",
-      image: "/blog/carta-apresentacao-empregador.jpg"
+      image: "/blog/carta-apresentacao-empregador.webp"
     },
     {
       id: "curriculo-estagio-estudantes",
@@ -163,7 +163,7 @@ interface BlogPost {
       date: "5 de Dezembro, 2025",
       readTime: "18 min",
       category: "Estágio",
-      image: "/blog/curriculo-estagio-estudantes.jpg"
+      image: "/blog/curriculo-estagio-estudantes.webp"
     },
     {
       id: "curriculo-vs-linkedin-2026",
@@ -174,7 +174,7 @@ interface BlogPost {
       date: "6 de Dezembro, 2025",
       readTime: "22 min",
       category: "LinkedIn",
-      image: "/blog/curriculo-vs-linkedin-2026.jpg"
+      image: "/blog/curriculo-vs-linkedin-2026.webp"
     },
     {
       id: "o-que-recrutadores-buscam-curriculo",
@@ -185,7 +185,7 @@ interface BlogPost {
       date: "19 de Dezembro, 2025",
       readTime: "20 min",
       category: "Recrutamento",
-      image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
+      image: "/blog/o-que-recrutadores-buscam-curriculo.webp"
     },
     {
       id: "curriculo-ingles-estrutura-erros",
@@ -196,7 +196,7 @@ interface BlogPost {
       date: "19 de Dezembro, 2025",
       readTime: "20 min",
       category: "Inglês",
-      image: "/blog/curriculo-ingles-estrutura-erros.jpg"
+      image: "/blog/curriculo-ingles-estrutura-erros.webp"
     },
     {
       id: "curriculo-ti-priorizar-2026",
@@ -207,7 +207,7 @@ interface BlogPost {
       date: "19 de Dezembro, 2025",
       readTime: "22 min",
       category: "TI",
-      image: "/blog/curriculo-ti-priorizar-2026.jpg"
+      image: "/blog/curriculo-ti-priorizar-2026.webp"
     },
     {
       id: "profissoes-mais-vagas-brasil-2030",
@@ -218,7 +218,7 @@ interface BlogPost {
       date: "19 de Dezembro, 2025",
       readTime: "25 min",
       category: "Carreira",
-      image: "/blog/profissoes-mais-vagas-brasil-2030.jpg"
+      image: "/blog/profissoes-mais-vagas-brasil-2030.webp"
     }
   ];
 

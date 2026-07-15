@@ -20,7 +20,7 @@ const BlogArticle7 = () => {
   const articleData = {
     title: "Como Destacar Habilidades no Currículo com Impacto",
     description: "Aprenda a identificar, organizar e comunicar suas habilidades de forma estratégica — com exemplos práticos que chamam atenção de recrutadores.",
-    image: "/blog/destaque-habilidades-estrategia.jpg",
+    image: "/blog/destaque-habilidades-estrategia.webp",
     url: "https://fazercurriculo.com/blog/destaque-habilidades-estrategia-impacto",
     datePublished: "2025-01-29",
     dateModified: "2025-01-29",

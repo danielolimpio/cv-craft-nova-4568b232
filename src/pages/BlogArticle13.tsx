@@ -22,7 +22,7 @@ const BlogArticle13 = () => {
   const articleSchema = generateArticleSchema({
     title: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos",
     description: "Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem.",
-    image: "/blog/curriculo-ingles-estrutura-erros.jpg",
+    image: "/blog/curriculo-ingles-estrutura-erros.webp",
     datePublished: "2025-12-19",
     dateModified: "2025-12-19",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -73,11 +73,11 @@ const BlogArticle13 = () => {
         <meta property="og:description" content="Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Currículo em Inglês: Estrutura, Erros Comuns e Exemplos" />
         <meta name="twitter:description" content="Como montar um currículo em inglês para multinacionais: estrutura padrão internacional, termos técnicos e erros gramaticais que prejudicam sua imagem." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/curriculo-ingles-estrutura-erros.webp" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
@@ -140,7 +140,7 @@ const BlogArticle13 = () => {
           {/* Featured Image */}
           <div className="mb-12 rounded-lg overflow-hidden">
             <img 
-              src="/blog/curriculo-ingles-estrutura-erros.jpg" 
+              src="/blog/curriculo-ingles-estrutura-erros.webp" 
               alt="Currículo em Inglês: Estrutura, Erros Comuns e Exemplos"
               className="w-full h-auto"
             />

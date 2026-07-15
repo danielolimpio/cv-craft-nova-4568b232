@@ -13,7 +13,7 @@ const BlogPreviewSection = () => {
       category: "Futuro do Trabalho",
       color: "from-slate-700 to-indigo-700",
       link: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
-      image: "/blog/ia-mercado-trabalho-profissoes-2030.jpg"
+      image: "/blog/ia-mercado-trabalho-profissoes-2030.webp"
     },
     {
       title: "Trabalhar nos Estados Unidos: guia de vistos e vagas",
@@ -23,7 +23,7 @@ const BlogPreviewSection = () => {
       category: "Trabalho no Exterior",
       color: "from-blue-700 to-red-600",
       link: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
-      image: "/blog/trabalhar-nos-estados-unidos-guia.jpg"
+      image: "/blog/trabalhar-nos-estados-unidos-guia.webp"
     },
     {
       title: "Como Criar um Currículo Profissional que se Destaca em 2026",
@@ -33,7 +33,7 @@ const BlogPreviewSection = () => {
       category: "Dicas de Currículo",
       color: "from-[#006B3D] to-[#005a32]",
       link: "/blog/como-criar-curriculo-profissional-2026",
-      image: "/blog/curriculo-profissional-2026.jpg"
+      image: "/blog/curriculo-profissional-2026.webp"
     },
     {
       title: "10 Erros Comuns em Currículos que Você Deve Evitar",
@@ -43,7 +43,7 @@ const BlogPreviewSection = () => {
       category: "Erros Comuns",
       color: "from-green-600 to-teal-600",
       link: "/blog/10-erros-comuns-curriculos",
-      image: "/blog/10-erros-curriculo-preview.jpg"
+      image: "/blog/10-erros-curriculo-preview.webp"
     },
     {
       title: "Como Preparar seu Currículo para Sistemas ATS",
@@ -53,7 +53,7 @@ const BlogPreviewSection = () => {
       category: "Tecnologia",
       color: "from-purple-600 to-pink-600",
       link: "/blog/preparar-curriculo-sistemas-ats",
-      image: "/blog/curriculo-ats-sistemas.jpg"
+      image: "/blog/curriculo-ats-sistemas.webp"
     },
     {
       title: "Currículo para Primeiro Emprego: O Que Incluir e Evitar",
@@ -63,7 +63,7 @@ const BlogPreviewSection = () => {
       category: "Primeiro Emprego",
       color: "from-purple-500 to-pink-500",
       link: "/blog/curriculo-primeiro-emprego-o-que-incluir",
-      image: "/blog/curriculo-primeiro-emprego.jpg"
+      image: "/blog/curriculo-primeiro-emprego.webp"
     },
     {
       title: "Currículo Sem Experiência: Estratégias para Jovens e Iniciantes",
@@ -73,7 +73,7 @@ const BlogPreviewSection = () => {
       category: "Sem Experiência",
       color: "from-cyan-500 to-blue-500",
       link: "/blog/curriculo-sem-experiencia-estrategias",
-      image: "/blog/curriculo-sem-experiencia.jpg"
+      image: "/blog/curriculo-sem-experiencia.webp"
     },
     {
       title: "Destaque suas habilidades com estratégia e impacto",
@@ -83,7 +83,7 @@ const BlogPreviewSection = () => {
       category: "Dicas de Currículo",
       color: "from-emerald-600 to-green-600",
       link: "/blog/destaque-habilidades-estrategia-impacto",
-      image: "/blog/destaque-habilidades-estrategia.jpg"
+      image: "/blog/destaque-habilidades-estrategia.webp"
     },
     {
       title: "Como criar um perfil no LinkedIn que atrai recrutadores",
@@ -93,7 +93,7 @@ const BlogPreviewSection = () => {
       category: "Networking",
       color: "from-blue-700 to-cyan-600",
       link: "/blog/perfil-linkedin-recrutadores",
-      image: "/blog/perfil-linkedin-recrutadores.jpg"
+      image: "/blog/perfil-linkedin-recrutadores.webp"
     },
     {
       title: "Saiba como escrever uma carta de apresentação que conquiste o empregador",
@@ -103,7 +103,7 @@ const BlogPreviewSection = () => {
       category: "Dicas de Currículo",
       color: "from-amber-600 to-orange-600",
       link: "/blog/carta-apresentacao-empregador",
-      image: "/blog/carta-apresentacao-empregador.jpg"
+      image: "/blog/carta-apresentacao-empregador.webp"
     },
     {
       title: "Currículo para Estágio: O Guia Definitivo para Estudantes",
@@ -113,7 +113,7 @@ const BlogPreviewSection = () => {
       category: "Estágio",
       color: "from-indigo-600 to-purple-600",
       link: "/blog/curriculo-estagio-estudantes",
-      image: "/blog/curriculo-estagio-estudantes.jpg"
+      image: "/blog/curriculo-estagio-estudantes.webp"
     },
     {
       title: "Diferença Entre Currículo e Perfil no LinkedIn em 2026",
@@ -123,7 +123,7 @@ const BlogPreviewSection = () => {
       category: "LinkedIn",
       color: "from-blue-600 to-cyan-500",
       link: "/blog/curriculo-vs-linkedin-2026",
-      image: "/blog/curriculo-vs-linkedin-2026.jpg"
+      image: "/blog/curriculo-vs-linkedin-2026.webp"
     },
     {
       title: "O Que Recrutadores Realmente Buscam em um Currículo Hoje",
@@ -133,7 +133,7 @@ const BlogPreviewSection = () => {
       category: "Recrutamento",
       color: "from-rose-600 to-pink-600",
       link: "/blog/o-que-recrutadores-buscam-curriculo",
-      image: "/blog/o-que-recrutadores-buscam-curriculo.jpg"
+      image: "/blog/o-que-recrutadores-buscam-curriculo.webp"
     },
     {
       title: "Currículo em Inglês: Estrutura, Erros Comuns e Exemplos",
@@ -143,7 +143,7 @@ const BlogPreviewSection = () => {
       category: "Inglês",
       color: "from-violet-600 to-purple-600",
       link: "/blog/curriculo-ingles-estrutura-erros",
-      image: "/blog/curriculo-ingles-estrutura-erros.jpg"
+      image: "/blog/curriculo-ingles-estrutura-erros.webp"
     },
     {
       title: "Currículo para Área de TI: O Que Priorizar em 2026",
@@ -153,7 +153,7 @@ const BlogPreviewSection = () => {
       category: "TI",
       color: "from-cyan-600 to-teal-600",
       link: "/blog/curriculo-ti-priorizar-2026",
-      image: "/blog/curriculo-ti-priorizar-2026.jpg"
+      image: "/blog/curriculo-ti-priorizar-2026.webp"
     },
     {
       title: "Quais profissões terão mais vagas no Brasil até 2030?",
@@ -163,7 +163,7 @@ const BlogPreviewSection = () => {
       category: "Carreira",
       color: "from-orange-600 to-amber-600",
       link: "/blog/profissoes-mais-vagas-brasil-2030",
-      image: "/blog/profissoes-mais-vagas-brasil-2030.jpg"
+      image: "/blog/profissoes-mais-vagas-brasil-2030.webp"
     },
     {
       title: "Como se preparar para uma entrevista de emprego em 2026",
@@ -173,7 +173,7 @@ const BlogPreviewSection = () => {
       category: "Entrevistas",
       color: "from-emerald-600 to-teal-600",
       link: "/blog/como-se-preparar-entrevista-emprego-2026",
-      image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg"
+      image: "/blog/como-se-preparar-entrevista-emprego-2026.webp"
     },
     {
       title: "Como negociar salário em uma entrevista de emprego: o guia completo",
@@ -183,7 +183,7 @@ const BlogPreviewSection = () => {
       category: "Salário",
       color: "from-yellow-600 to-amber-600",
       link: "/blog/como-negociar-salario-entrevista",
-      image: "/blog/como-negociar-salario-entrevista.jpg"
+      image: "/blog/como-negociar-salario-entrevista.webp"
     }
   ];
 

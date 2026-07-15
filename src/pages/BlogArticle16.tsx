@@ -22,7 +22,7 @@ const BlogArticle16 = () => {
   const articleSchema = generateArticleSchema({
     title: "Como se preparar para uma entrevista de emprego em 2026: guia completo",
     description: "Aprenda como se preparar para uma entrevista de emprego com técnicas reais usadas por candidatos aprovados: pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo.",
-    image: "/blog/como-se-preparar-entrevista-emprego-2026.jpg",
+    image: "/blog/como-se-preparar-entrevista-emprego-2026.webp",
     datePublished: "2026-01-10",
     dateModified: "2026-01-10",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -57,11 +57,11 @@ const BlogArticle16 = () => {
         <meta property="og:description" content="Pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo: o passo a passo completo para chegar pronto." />
         <meta property="og:url" content="https://fazercurriculo.com/blog/como-se-preparar-entrevista-emprego-2026" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/como-se-preparar-entrevista-emprego-2026.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/como-se-preparar-entrevista-emprego-2026.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Como se preparar para uma entrevista de emprego em 2026" />
         <meta name="twitter:description" content="Pesquisa da empresa, método STAR, perguntas comportamentais e entrevistas por vídeo: o passo a passo completo para chegar pronto." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/como-se-preparar-entrevista-emprego-2026.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/como-se-preparar-entrevista-emprego-2026.webp" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -107,7 +107,7 @@ const BlogArticle16 = () => {
               {/* Featured Image */}
               <div className="mb-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/como-se-preparar-entrevista-emprego-2026.jpg"
+                  src="/blog/como-se-preparar-entrevista-emprego-2026.webp"
                   alt="Candidata cumprimentando recrutadores no início de uma entrevista de emprego"
                   className="w-full h-auto"
                   width={1280}
@@ -201,7 +201,7 @@ const BlogArticle16 = () => {
                 {/* Imagem do meio */}
                 <div className="my-12 rounded-lg overflow-hidden">
                   <img
-                    src="/blog/preparacao-entrevista-emprego-meio.jpg"
+                    src="/blog/preparacao-entrevista-emprego-meio.webp"
                     alt="Profissional se preparando em casa para uma entrevista de emprego por vídeo"
                     className="w-full h-auto"
                     width={1280}

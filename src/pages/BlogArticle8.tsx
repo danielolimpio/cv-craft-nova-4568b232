@@ -18,7 +18,7 @@ const BlogArticle8 = () => {
     datePublished: "2025-01-29",
     dateModified: "2025-01-29",
     author: { name: "Daniel Olimpio" },
-    image: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg",
+    image: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.webp",
     url: "https://fazercurriculo.com/blog/perfil-linkedin-recrutadores",
     about: articleEntities[articleUrl],
     relatedLinks: ["/blog/curriculo-vs-linkedin-2026", "/blog/curriculo-ti-priorizar-2026", "/blog/o-que-recrutadores-buscam-curriculo"]
@@ -48,13 +48,13 @@ const BlogArticle8 = () => {
         <meta property="og:description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.webp" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Como criar um perfil no LinkedIn que atrai recrutadores" />
         <meta name="twitter:description" content="Descubra as melhores práticas para construir um perfil no LinkedIn que chame a atenção de recrutadores e gere oportunidades." />
-        <meta name="twitter:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.jpg" />
+        <meta name="twitter:image" content="https://fazercurriculo.com/blog/perfil-linkedin-recrutadores.webp" />
         
         {/* Schema.org JSON-LD */}
         <script type="application/ld+json">
@@ -111,7 +111,7 @@ const BlogArticle8 = () => {
               </div>
 
               <img 
-                src="/blog/perfil-linkedin-recrutadores.jpg" 
+                src="/blog/perfil-linkedin-recrutadores.webp" 
                 alt="Como criar um perfil no LinkedIn que atrai recrutadores"
                 className="w-full h-[400px] object-cover rounded-2xl shadow-lg mb-8"
               />
@@ -269,7 +269,7 @@ const BlogArticle8 = () => {
               {/* Imagem do meio */}
               <div className="my-12 rounded-lg overflow-hidden">
                 <img
-                  src="/blog/perfil-linkedin-recrutadores-meio.jpg"
+                  src="/blog/perfil-linkedin-recrutadores-meio.webp"
                   alt="Perfil no LinkedIn que abre portas — conecte, destaque e gere oportunidades"
                   className="w-full h-auto"
                   width={1280}

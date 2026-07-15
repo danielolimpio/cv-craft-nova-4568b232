@@ -15,7 +15,7 @@ const BlogArticle6 = () => {
   const articleSchema = generateArticleSchema({
     title: "Objetivo Profissional no Currículo: Exemplos Práticos",
     description: "Não sabe o que escrever no objetivo? Veja 15 exemplos prontos por área e aprenda a escrever um objetivo que chama atenção.",
-    image: "/blog/objetivo-profissional-curriculo.jpg",
+    image: "/blog/objetivo-profissional-curriculo.webp",
     datePublished: "2025-11-23",
     dateModified: "2025-11-23",
     author: { name: "Daniel Olimpio", url: "/sobre" },
@@ -36,7 +36,7 @@ const BlogArticle6 = () => {
         <meta property="og:description" content="Objetivo ainda é relevante? Veja modelos reais por área e aprenda a escrever um focado, realista e impactante." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo" />
-        <meta property="og:image" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo.jpg" />
+        <meta property="og:image" content="https://fazercurriculo.com/blog/objetivo-profissional-curriculo.webp" />
         <link rel="canonical" href="https://fazercurriculo.com/blog/objetivo-profissional-curriculo" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
@@ -76,7 +76,7 @@ const BlogArticle6 = () => {
 
             {/* Featured Image */}
             <img 
-              src="/blog/objetivo-profissional-curriculo.jpg" 
+              src="/blog/objetivo-profissional-curriculo.webp" 
               alt="Objetivo Profissional no Currículo" 
               className="w-full h-auto rounded-lg shadow-lg mb-12"
             />
