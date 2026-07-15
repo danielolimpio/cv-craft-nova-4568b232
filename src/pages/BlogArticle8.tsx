@@ -266,6 +266,21 @@ const BlogArticle8 = () => {
                 Priorize habilidades alinhadas às vagas que deseja, e não todas que você tem. O algoritmo do LinkedIn favorece perfis com foco temático.
               </p>
 
+              {/* Imagem do meio */}
+              <div className="my-12 rounded-lg overflow-hidden">
+                <img
+                  src="/blog/perfil-linkedin-recrutadores-meio.jpg"
+                  alt="Perfil no LinkedIn que abre portas — conecte, destaque e gere oportunidades"
+                  className="w-full h-auto"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                  Um perfil completo e otimizado é a porta de entrada para ser encontrado por recrutadores todos os dias.
+                </p>
+              </div>
+
               <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center">
                 <Linkedin className="w-8 h-8 mr-3" style={{ color: '#006B3D' }} />
                 Palavras-chave: o segredo invisível que conecta você às vagas
