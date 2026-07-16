@@ -626,6 +626,20 @@ const BlogArticle12 = () => {
               </Card>
             </section>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/o-que-recrutadores-buscam-meio.webp"
+                alt="O que recrutadores realmente buscam no currículo hoje: clareza, experiência, habilidades, alinhamento e comunicação"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Recrutadores buscam além do óbvio: perfil alinhado, habilidades relevantes e resultados comprovados fazem seu currículo avançar.
+              </p>
+            </div>
+
             {/* Como aplicar tudo isso */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
