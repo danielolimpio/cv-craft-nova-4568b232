@@ -494,6 +494,20 @@ const BlogArticle15 = () => {
               Para mais estratégias, veja nosso artigo sobre <Link to="/blog/curriculo-sem-experiencia-estrategias" className="text-[#006B3D] hover:underline font-semibold">como montar um currículo sem experiência que realmente converte</Link>.
             </p>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/profissoes-mais-vagas-brasil-2030-meio.webp"
+                alt="Profissões com mais vagas no Brasil até 2030: áreas em crescimento, carreiras em alta e habilidades do futuro"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                O futuro é das escolhas: entender áreas em crescimento hoje é a vantagem competitiva para as profissões de amanhã.
+              </p>
+            </div>
+
             {/* Regiões com mais oportunidades */}
             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
               <MapPin className="w-8 h-8 text-[#006B3D]" />

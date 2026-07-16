@@ -337,6 +337,20 @@ const BlogArticle9 = () => {
                 </div>
               </div>
 
+              <div className="my-12 rounded-lg overflow-hidden">
+                <img
+                  src="/blog/carta-apresentacao-empregador-meio.webp"
+                  alt="Estrutura de uma carta de apresentação que conquista o empregador: da saudação ao encerramento profissional"
+                  className="w-full h-auto"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                  Conecte suas qualificações ao que o empregador procura: da carta genérica à carta que impressiona.
+                </p>
+              </div>
+
               <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
                 <MessageSquare className="w-8 h-8 text-primary" />
                 Modelo prático (sem ser engessado)
