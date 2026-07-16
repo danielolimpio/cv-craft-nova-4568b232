@@ -507,6 +507,20 @@ const BlogArticle13 = () => {
               Vale lembrar que, segundo o <a href="https://www.gov.br/mre" target="_blank" rel="noopener noreferrer" className="text-[#006B3D] hover:underline">Ministério das Relações Exteriores do Brasil</a>, profissionais que buscam emprego no exterior devem estar atentos às normas locais de proteção de dados — o que reforça a necessidade de um currículo enxuto e focado.
             </p>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/curriculo-ingles-meio.webp"
+                alt="Currículo em inglês: comparação entre versão amadora e versão profissional focada no mercado global"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Do currículo genérico ao resume profissional: estrutura, palavras-chave e resultados que abrem portas internacionais.
+              </p>
+            </div>
+
             {/* Section 5 - Before and After Examples */}
             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
               <Eye className="w-8 h-8 text-[#006B3D]" />
