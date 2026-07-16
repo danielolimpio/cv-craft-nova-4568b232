@@ -580,6 +580,20 @@ const BlogArticle10 = () => {
               </Card>
             </section>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/curriculo-estagio-meio.webp"
+                alt="Currículo para estágio: guia definitivo para estudantes conquistarem a primeira oportunidade"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Um bom currículo é o primeiro passo para grandes oportunidades — do início da faculdade ao seu futuro profissional.
+              </p>
+            </div>
+
             {/* Disponibilidade: Mais Importante do Que Você Imagina */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">

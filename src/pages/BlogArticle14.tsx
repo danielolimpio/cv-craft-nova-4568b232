@@ -522,6 +522,20 @@ const BlogArticle14 = () => {
               </CardContent>
             </Card>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/curriculo-ti-meio.webp"
+                alt="Currículo para área de TI em 2026: foque no que realmente importa — habilidades, projetos e impacto"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Em TI, o recrutador quer ver evidência: código, arquitetura, decisões técnicas e resultados — não apenas linguagens listadas.
+              </p>
+            </div>
+
             {/* Section 5 - O que NÃO priorizar */}
             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
               <AlertTriangle className="w-8 h-8 text-[#006B3D]" />

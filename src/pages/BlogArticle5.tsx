@@ -427,6 +427,20 @@ const BlogArticle5 = () => {
                 </div>
               </div>
 
+              <div className="my-12 rounded-lg overflow-hidden">
+                <img
+                  src="/blog/curriculo-sem-experiencia-meio.webp"
+                  alt="Currículo sem experiência: estratégias para jovens e iniciantes destacarem seu potencial"
+                  className="w-full h-auto"
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                />
+                <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                  Destaque habilidades, mostre potencial e conquiste sua oportunidade — mesmo sem histórico profissional.
+                </p>
+              </div>
+
               <h2 className="flex items-center gap-3 text-3xl font-bold mt-12 mb-6 text-foreground">
                 <AlertTriangle className="h-8 w-8 text-red-600" />
                 O Que Evitar: 5 Erros Que Eliminam Antes da Entrevista

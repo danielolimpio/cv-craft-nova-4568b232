@@ -485,6 +485,20 @@ const BlogArticle11 = () => {
               </Card>
             </section>
 
+            <div className="my-12 rounded-lg overflow-hidden">
+              <img
+                src="/blog/curriculo-vs-linkedin-meio.webp"
+                alt="Diferença entre currículo e perfil no LinkedIn em 2026: objetivos, formatos e visibilidade"
+                className="w-full h-auto"
+                width={1280}
+                height={720}
+                loading="lazy"
+              />
+              <p className="text-sm text-muted-foreground text-center mt-3 italic">
+                Currículo e LinkedIn têm objetivos diferentes, mas se completam — use os dois a seu favor para impulsionar sua carreira.
+              </p>
+            </div>
+
             {/* Guia prático de alinhamento */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
