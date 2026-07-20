@@ -55,6 +55,8 @@ const Sitemap = () => {
         { url: "/blog/profissoes-mais-vagas-brasil-2030", label: "Quais profissões terão mais vagas no Brasil até 2030?" },
         { url: "/blog/como-se-preparar-entrevista-emprego-2026", label: "Como se preparar para uma entrevista de emprego em 2026: guia completo" },
         { url: "/blog/como-negociar-salario-entrevista", label: "Como negociar salário em uma entrevista de emprego: o guia completo" },
+        { url: "/blog/home-office-brasil-direitos-clt-vagas-remotas", label: "Home Office no Brasil em 2026: direitos CLT e vagas remotas" },
+        { url: "/blog/concurso-publico-brasil-guia-completo-preparacao", label: "Concurso Público 2026: como se preparar, salários e carreiras" },
       ],
     },
     {

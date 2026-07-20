@@ -23,6 +23,28 @@ interface BlogPost {
 
   const blogPosts: BlogPost[] = [
     {
+      id: "concurso-publico-brasil-guia-completo-preparacao",
+      title: "Concurso Público 2026 no Brasil: como se preparar, salários e melhores carreiras",
+      excerpt: "Guia completo do concurso público em 2026: como estudar, cronograma, salários por carreira, editais, materiais gratuitos e o passo a passo para passar.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "20 de Fevereiro, 2026",
+      readTime: "22 min",
+      category: "Concurso Público",
+      image: "/blog/concurso-publico-brasil-guia.webp"
+    },
+    {
+      id: "home-office-brasil-direitos-clt-vagas-remotas",
+      title: "Home Office no Brasil em 2026: direitos CLT, vagas remotas e como conseguir a sua",
+      excerpt: "Direitos CLT pela Lei 14.442/2022, como negociar trabalho remoto, onde encontrar vagas 100% remotas e como se destacar em processos seletivos online.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "18 de Fevereiro, 2026",
+      readTime: "20 min",
+      category: "Trabalho Remoto",
+      image: "/blog/home-office-brasil-direitos-clt.webp"
+    },
+    {
       id: "inteligencia-artificial-mercado-trabalho-profissoes-2030",
       title: "Inteligência Artificial no mercado de trabalho: profissões até 2030",
       excerpt: "Panorama honesto, com dados do Fórum Econômico Mundial e da OIT, sobre quais profissões vão surgir, mudar e desaparecer com o avanço da IA.",
@@ -225,7 +247,7 @@ interface BlogPost {
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas", "Salário"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas", "Salário", "Trabalho Remoto", "Concurso Público"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
