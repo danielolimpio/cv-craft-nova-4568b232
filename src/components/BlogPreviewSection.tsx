@@ -6,6 +6,26 @@ import { Link } from "react-router-dom";
 const BlogPreviewSection = () => {
   const blogPosts = [
     {
+      title: "Concurso Público 2026: como se preparar, salários e carreiras",
+      excerpt: "Guia honesto do concurso público em 2026: CNU, cronograma de estudos, salários por carreira, editais em aberto e método passo a passo para passar.",
+      date: "20 de Fevereiro, 2026",
+      readTime: "22 min",
+      category: "Concurso Público",
+      color: "from-emerald-800 to-green-700",
+      link: "/blog/concurso-publico-brasil-guia-completo-preparacao",
+      image: "/blog/concurso-publico-brasil-guia.webp"
+    },
+    {
+      title: "Home Office no Brasil em 2026: direitos CLT e vagas remotas",
+      excerpt: "Direitos CLT pela Lei 14.442/2022, auxílio home office, como conseguir vagas 100% remotas e como se destacar em entrevistas por vídeo.",
+      date: "18 de Fevereiro, 2026",
+      readTime: "20 min",
+      category: "Trabalho Remoto",
+      color: "from-blue-700 to-teal-600",
+      link: "/blog/home-office-brasil-direitos-clt-vagas-remotas",
+      image: "/blog/home-office-brasil-direitos-clt.webp"
+    },
+    {
       title: "IA no mercado de trabalho: profissões até 2030",
       excerpt: "Panorama honesto, com dados do Fórum Econômico Mundial e da OIT, sobre quais profissões vão surgir, mudar e desaparecer com o avanço da inteligência artificial.",
       date: "05 de Fevereiro, 2026",

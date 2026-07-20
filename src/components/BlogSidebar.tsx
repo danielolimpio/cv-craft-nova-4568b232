@@ -10,6 +10,8 @@ const categories = [
   { name: "Entrevistas", slug: "Entrevistas", count: 2 },
   { name: "Salário", slug: "Salário", count: 1 },
   { name: "Trabalho no Exterior", slug: "Trabalho no Exterior", count: 1 },
+  { name: "Trabalho Remoto", slug: "Trabalho Remoto", count: 1 },
+  { name: "Concurso Público", slug: "Concurso Público", count: 1 },
   { name: "Futuro do Trabalho", slug: "Futuro do Trabalho", count: 1 },
   { name: "Estágio", slug: "Estágio", count: 1 },
   { name: "Recrutamento", slug: "Recrutamento", count: 1 },
@@ -18,6 +20,18 @@ const categories = [
 ];
 
 const recentPosts = [
+  {
+    title: "Concurso Público 2026: como se preparar e carreiras",
+    slug: "/blog/concurso-publico-brasil-guia-completo-preparacao",
+    image: "/blog/concurso-publico-brasil-guia.webp",
+    date: "20 Fev 2026"
+  },
+  {
+    title: "Home Office no Brasil em 2026: direitos CLT e vagas remotas",
+    slug: "/blog/home-office-brasil-direitos-clt-vagas-remotas",
+    image: "/blog/home-office-brasil-direitos-clt.webp",
+    date: "18 Fev 2026"
+  },
   {
     title: "IA no mercado de trabalho: profissões até 2030",
     slug: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
@@ -29,18 +43,6 @@ const recentPosts = [
     slug: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
     image: "/blog/trabalhar-nos-estados-unidos-guia.webp",
     date: "04 Fev 2026"
-  },
-  {
-    title: "Como negociar salário em uma entrevista de emprego",
-    slug: "/blog/como-negociar-salario-entrevista",
-    image: "/blog/como-negociar-salario-entrevista.webp",
-    date: "22 Jan 2026"
-  },
-  {
-    title: "Como se preparar para entrevista de emprego em 2026",
-    slug: "/blog/como-se-preparar-entrevista-emprego-2026",
-    image: "/blog/como-se-preparar-entrevista-emprego-2026.webp",
-    date: "10 Jan 2026"
   },
 ];
 
