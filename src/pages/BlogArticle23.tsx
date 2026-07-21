@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BlogSidebar from "@/components/BlogSidebar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, ArrowLeft, Lightbulb, AlertTriangle, BookOpen, TrendingUp, DollarSign, Briefcase, Rocket } from "lucide-react";
+import { Calendar, Clock, User, CheckCircle, XCircle, FileText, Target, ArrowLeft, AlertTriangle, BookOpen, TrendingUp, DollarSign, Briefcase, Rocket, Shield } from "lucide-react";
 import AuthorBio from "@/components/AuthorBio";
 import danielPhoto from "@/assets/daniel-olimpio.jpg";
 import { Helmet } from "react-helmet";
