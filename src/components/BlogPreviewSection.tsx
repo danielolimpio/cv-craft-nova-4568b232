@@ -6,6 +6,26 @@ import { Link } from "react-router-dom";
 const BlogPreviewSection = () => {
   const blogPosts = [
     {
+      title: "MEI 2026: como abrir CNPJ, DAS e viver da própria empresa",
+      excerpt: "Guia completo do Microempreendedor Individual: passo a passo para abrir CNPJ grátis, valor do DAS, atividades permitidas, faturamento e declaração anual.",
+      date: "08 de Março, 2026",
+      readTime: "23 min",
+      category: "Empreendedorismo",
+      color: "from-orange-600 to-amber-700",
+      link: "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj",
+      image: "/blog/mei-microempreendedor-individual-guia.webp"
+    },
+    {
+      title: "Direitos Trabalhistas CLT 2026: guia completo",
+      excerpt: "FGTS, férias, 13º, horas extras, aviso prévio, seguro-desemprego e novas regras da CLT em 2026 explicadas com base nas leis oficiais.",
+      date: "05 de Março, 2026",
+      readTime: "24 min",
+      category: "Direitos Trabalhistas",
+      color: "from-blue-800 to-indigo-700",
+      link: "/blog/direitos-trabalhistas-clt-brasil-guia-completo",
+      image: "/blog/direitos-trabalhistas-clt-brasil-guia.webp"
+    },
+    {
       title: "Concurso Público 2026: como se preparar, salários e carreiras",
       excerpt: "Guia honesto do concurso público em 2026: CNU, cronograma de estudos, salários por carreira, editais em aberto e método passo a passo para passar.",
       date: "20 de Fevereiro, 2026",

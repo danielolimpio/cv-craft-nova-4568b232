@@ -351,6 +351,12 @@ export const topicClusters: Record<string, ClusterArticle[]> = {
     { title: "IA no mercado de trabalho até 2030", url: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030", description: "Profissões que vão surgir, mudar e desaparecer com a IA" },
     { title: "Profissões com mais vagas até 2030", url: "/blog/profissoes-mais-vagas-brasil-2030", description: "As carreiras com maior demanda no Brasil até 2030" },
     { title: "Currículo em Inglês", url: "/blog/curriculo-ingles-estrutura-erros", description: "Estrutura correta e erros comuns no CV em inglês" },
+  ],
+  "trabalho-legislacao-empreender": [
+    { title: "Direitos Trabalhistas CLT 2026: guia completo", url: "/blog/direitos-trabalhistas-clt-brasil-guia-completo", description: "FGTS, férias, 13º, horas extras e novas regras da CLT" },
+    { title: "MEI 2026: como abrir CNPJ e viver da própria empresa", url: "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj", description: "Passo a passo do Microempreendedor Individual, DAS e faturamento" },
+    { title: "Home Office no Brasil: direitos CLT e vagas remotas", url: "/blog/home-office-brasil-direitos-clt-vagas-remotas", description: "Lei 14.442/2022, teletrabalho e como conseguir vagas remotas" },
+    { title: "Concurso Público 2026: guia completo", url: "/blog/concurso-publico-brasil-guia-completo-preparacao", description: "Como se preparar, salários e melhores carreiras públicas" },
   ]
 };
 
@@ -484,5 +490,17 @@ export const articleEntities: Record<string, ArticleEntity[]> = {
     { name: "Mercado de trabalho", sameAs: "https://pt.wikipedia.org/wiki/Mercado_de_trabalho", type: "Thing" },
     { name: "Automação", sameAs: "https://pt.wikipedia.org/wiki/Automa%C3%A7%C3%A3o", type: "Thing" },
     { name: "Futuro do trabalho", type: "Thing" },
+  ],
+  "/blog/direitos-trabalhistas-clt-brasil-guia-completo": [
+    { name: "Direito do trabalho", sameAs: "https://pt.wikipedia.org/wiki/Direito_do_trabalho", type: "Thing" },
+    { name: "Consolidação das Leis do Trabalho", sameAs: "https://pt.wikipedia.org/wiki/Consolida%C3%A7%C3%A3o_das_Leis_do_Trabalho", type: "Thing" },
+    { name: "FGTS", sameAs: "https://pt.wikipedia.org/wiki/Fundo_de_Garantia_do_Tempo_de_Servi%C3%A7o", type: "Thing" },
+    { name: "Brasil", sameAs: "https://pt.wikipedia.org/wiki/Brasil", type: "Thing" },
+  ],
+  "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj": [
+    { name: "Microempreendedor individual", sameAs: "https://pt.wikipedia.org/wiki/Microempreendedor_individual", type: "Thing" },
+    { name: "Empreendedorismo", sameAs: "https://pt.wikipedia.org/wiki/Empreendedorismo", type: "Thing" },
+    { name: "Simples Nacional", sameAs: "https://pt.wikipedia.org/wiki/Simples_Nacional", type: "Thing" },
+    { name: "CNPJ", sameAs: "https://pt.wikipedia.org/wiki/Cadastro_Nacional_da_Pessoa_Jur%C3%ADdica", type: "Thing" },
   ],
 };

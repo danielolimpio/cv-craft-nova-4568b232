@@ -32,6 +32,8 @@ import BlogArticle18 from "./pages/BlogArticle18";
 import BlogArticle19 from "./pages/BlogArticle19";
 import BlogArticle20 from "./pages/BlogArticle20";
 import BlogArticle21 from "./pages/BlogArticle21";
+import BlogArticle22 from "./pages/BlogArticle22";
+import BlogArticle23 from "./pages/BlogArticle23";
 import CentralDeAjuda from "./pages/CentralDeAjuda";
 import FAQ from "./pages/FAQ";
 import TermosDeUso from "./pages/TermosDeUso";
@@ -87,6 +89,8 @@ const App = () => (
             <Route path="/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030" element={<BlogArticle19 />} />
             <Route path="/blog/home-office-brasil-direitos-clt-vagas-remotas" element={<BlogArticle20 />} />
             <Route path="/blog/concurso-publico-brasil-guia-completo-preparacao" element={<BlogArticle21 />} />
+            <Route path="/blog/direitos-trabalhistas-clt-brasil-guia-completo" element={<BlogArticle22 />} />
+            <Route path="/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj" element={<BlogArticle23 />} />
           <Route path="/central-de-ajuda" element={<CentralDeAjuda />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/termos-de-uso" element={<TermosDeUso />} />

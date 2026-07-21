@@ -23,6 +23,28 @@ interface BlogPost {
 
   const blogPosts: BlogPost[] = [
     {
+      id: "mei-microempreendedor-individual-guia-completo-abrir-cnpj",
+      title: "MEI 2026: como abrir CNPJ, pagar o DAS e viver da própria empresa",
+      excerpt: "Guia completo do Microempreendedor Individual em 2026: passo a passo para abrir CNPJ grátis, valor do DAS, atividades permitidas, faturamento e declaração.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "08 de Março, 2026",
+      readTime: "23 min",
+      category: "Empreendedorismo",
+      image: "/blog/mei-microempreendedor-individual-guia.webp"
+    },
+    {
+      id: "direitos-trabalhistas-clt-brasil-guia-completo",
+      title: "Direitos Trabalhistas CLT 2026: guia completo do trabalhador brasileiro",
+      excerpt: "FGTS, férias, 13º, horas extras, aviso prévio, seguro-desemprego e novas regras da CLT em 2026 explicadas de forma clara com base nas leis oficiais.",
+      content: "Conteúdo completo do artigo...",
+      author: "Daniel Olímpio",
+      date: "05 de Março, 2026",
+      readTime: "24 min",
+      category: "Direitos Trabalhistas",
+      image: "/blog/direitos-trabalhistas-clt-brasil-guia.webp"
+    },
+    {
       id: "concurso-publico-brasil-guia-completo-preparacao",
       title: "Concurso Público 2026 no Brasil: como se preparar, salários e melhores carreiras",
       excerpt: "Guia completo do concurso público em 2026: como estudar, cronograma, salários por carreira, editais, materiais gratuitos e o passo a passo para passar.",
@@ -247,7 +269,7 @@ interface BlogPost {
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
   
-  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas", "Salário", "Trabalho Remoto", "Concurso Público"];
+  const categories = ["Todos", "Dicas de Currículo", "Erros Comuns", "Tecnologia", "Primeiro Emprego", "Sem Experiência", "Estágio", "LinkedIn", "Recrutamento", "Inglês", "TI", "Carreira", "Entrevistas", "Salário", "Trabalho Remoto", "Concurso Público", "Direitos Trabalhistas", "Empreendedorismo"];
   
   const filteredPosts = selectedCategory === "Todos" 
     ? blogPosts 
