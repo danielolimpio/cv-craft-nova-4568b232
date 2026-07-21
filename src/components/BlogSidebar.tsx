@@ -9,6 +9,8 @@ const categories = [
   { name: "Carreira", slug: "Carreira", count: 3 },
   { name: "Entrevistas", slug: "Entrevistas", count: 2 },
   { name: "Salário", slug: "Salário", count: 1 },
+  { name: "Direitos Trabalhistas", slug: "Direitos Trabalhistas", count: 1 },
+  { name: "Empreendedorismo", slug: "Empreendedorismo", count: 1 },
   { name: "Trabalho no Exterior", slug: "Trabalho no Exterior", count: 1 },
   { name: "Trabalho Remoto", slug: "Trabalho Remoto", count: 1 },
   { name: "Concurso Público", slug: "Concurso Público", count: 1 },
@@ -21,6 +23,18 @@ const categories = [
 
 const recentPosts = [
   {
+    title: "MEI 2026: como abrir CNPJ, DAS e viver da própria empresa",
+    slug: "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj",
+    image: "/blog/mei-microempreendedor-individual-guia.webp",
+    date: "08 Mar 2026"
+  },
+  {
+    title: "Direitos Trabalhistas CLT 2026: guia completo",
+    slug: "/blog/direitos-trabalhistas-clt-brasil-guia-completo",
+    image: "/blog/direitos-trabalhistas-clt-brasil-guia.webp",
+    date: "05 Mar 2026"
+  },
+  {
     title: "Concurso Público 2026: como se preparar e carreiras",
     slug: "/blog/concurso-publico-brasil-guia-completo-preparacao",
     image: "/blog/concurso-publico-brasil-guia.webp",
@@ -31,18 +45,6 @@ const recentPosts = [
     slug: "/blog/home-office-brasil-direitos-clt-vagas-remotas",
     image: "/blog/home-office-brasil-direitos-clt.webp",
     date: "18 Fev 2026"
-  },
-  {
-    title: "IA no mercado de trabalho: profissões até 2030",
-    slug: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030",
-    image: "/blog/ia-mercado-trabalho-profissoes-2030.webp",
-    date: "05 Fev 2026"
-  },
-  {
-    title: "Trabalhar nos Estados Unidos: guia de vistos e vagas",
-    slug: "/blog/trabalhar-nos-estados-unidos-guia-vistos-vagas",
-    image: "/blog/trabalhar-nos-estados-unidos-guia.webp",
-    date: "04 Fev 2026"
   },
 ];
 

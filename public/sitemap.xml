@@ -173,6 +173,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/direitos-trabalhistas-clt-brasil-guia-completo/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fazercurriculo.com/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
   <!-- Suporte e Ajuda -->
   <url>

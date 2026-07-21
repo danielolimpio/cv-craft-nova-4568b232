@@ -485,4 +485,16 @@ export const articleEntities: Record<string, ArticleEntity[]> = {
     { name: "Automação", sameAs: "https://pt.wikipedia.org/wiki/Automa%C3%A7%C3%A3o", type: "Thing" },
     { name: "Futuro do trabalho", type: "Thing" },
   ],
+  "/blog/direitos-trabalhistas-clt-brasil-guia-completo": [
+    { name: "Direito do trabalho", sameAs: "https://pt.wikipedia.org/wiki/Direito_do_trabalho", type: "Thing" },
+    { name: "Consolidação das Leis do Trabalho", sameAs: "https://pt.wikipedia.org/wiki/Consolida%C3%A7%C3%A3o_das_Leis_do_Trabalho", type: "Thing" },
+    { name: "FGTS", sameAs: "https://pt.wikipedia.org/wiki/Fundo_de_Garantia_do_Tempo_de_Servi%C3%A7o", type: "Thing" },
+    { name: "Brasil", sameAs: "https://pt.wikipedia.org/wiki/Brasil", type: "Thing" },
+  ],
+  "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj": [
+    { name: "Microempreendedor individual", sameAs: "https://pt.wikipedia.org/wiki/Microempreendedor_individual", type: "Thing" },
+    { name: "Empreendedorismo", sameAs: "https://pt.wikipedia.org/wiki/Empreendedorismo", type: "Thing" },
+    { name: "Simples Nacional", sameAs: "https://pt.wikipedia.org/wiki/Simples_Nacional", type: "Thing" },
+    { name: "CNPJ", sameAs: "https://pt.wikipedia.org/wiki/Cadastro_Nacional_da_Pessoa_Jur%C3%ADdica", type: "Thing" },
+  ],
 };
