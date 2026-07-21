@@ -57,6 +57,8 @@ const Sitemap = () => {
         { url: "/blog/como-negociar-salario-entrevista", label: "Como negociar salário em uma entrevista de emprego: o guia completo" },
         { url: "/blog/home-office-brasil-direitos-clt-vagas-remotas", label: "Home Office no Brasil em 2026: direitos CLT e vagas remotas" },
         { url: "/blog/concurso-publico-brasil-guia-completo-preparacao", label: "Concurso Público 2026: como se preparar, salários e carreiras" },
+        { url: "/blog/direitos-trabalhistas-clt-brasil-guia-completo", label: "Direitos Trabalhistas CLT 2026: guia completo do trabalhador brasileiro" },
+        { url: "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj", label: "MEI 2026: como abrir CNPJ, DAS e viver da própria empresa" },
       ],
     },
     {
