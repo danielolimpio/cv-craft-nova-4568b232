@@ -351,6 +351,12 @@ export const topicClusters: Record<string, ClusterArticle[]> = {
     { title: "IA no mercado de trabalho até 2030", url: "/blog/inteligencia-artificial-mercado-trabalho-profissoes-2030", description: "Profissões que vão surgir, mudar e desaparecer com a IA" },
     { title: "Profissões com mais vagas até 2030", url: "/blog/profissoes-mais-vagas-brasil-2030", description: "As carreiras com maior demanda no Brasil até 2030" },
     { title: "Currículo em Inglês", url: "/blog/curriculo-ingles-estrutura-erros", description: "Estrutura correta e erros comuns no CV em inglês" },
+  ],
+  "trabalho-legislacao-empreender": [
+    { title: "Direitos Trabalhistas CLT 2026: guia completo", url: "/blog/direitos-trabalhistas-clt-brasil-guia-completo", description: "FGTS, férias, 13º, horas extras e novas regras da CLT" },
+    { title: "MEI 2026: como abrir CNPJ e viver da própria empresa", url: "/blog/mei-microempreendedor-individual-guia-completo-abrir-cnpj", description: "Passo a passo do Microempreendedor Individual, DAS e faturamento" },
+    { title: "Home Office no Brasil: direitos CLT e vagas remotas", url: "/blog/home-office-brasil-direitos-clt-vagas-remotas", description: "Lei 14.442/2022, teletrabalho e como conseguir vagas remotas" },
+    { title: "Concurso Público 2026: guia completo", url: "/blog/concurso-publico-brasil-guia-completo-preparacao", description: "Como se preparar, salários e melhores carreiras públicas" },
   ]
 };
 
